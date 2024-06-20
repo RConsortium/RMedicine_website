@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R/Medicine 2025 - R/Medicine 2024</title>
+<title>R/Medicine 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#an-r-consortium-virtual-conference" id="toc-an-r-consortium-virtual-conference" class="nav-link active" data-scroll-target="#an-r-consortium-virtual-conference"><strong>AN R CONSORTIUM VIRTUAL CONFERENCE</strong></a></li>
+  <li><a href="#rmedicine-2025-is-coming-soon-see-the-rmedicine-2024-site-here" id="toc-rmedicine-2025-is-coming-soon-see-the-rmedicine-2024-site-here" class="nav-link active" data-scroll-target="#rmedicine-2025-is-coming-soon-see-the-rmedicine-2024-site-here">R/Medicine 2025 is coming soon, see the R/Medicine 2024 site here:</a></li>
+  <li><a href="#an-r-consortium-virtual-conference" id="toc-an-r-consortium-virtual-conference" class="nav-link" data-scroll-target="#an-r-consortium-virtual-conference"><strong>AN R CONSORTIUM VIRTUAL CONFERENCE</strong></a></li>
   <li><a href="#why-attend" id="toc-why-attend" class="nav-link" data-scroll-target="#why-attend">WHY ATTEND</a></li>
   <li><a href="#keynote-addresses" id="toc-keynote-addresses" class="nav-link" data-scroll-target="#keynote-addresses">Keynote Addresses</a>
   <ul class="collapse">
@@ -165,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R/Medicine 2024</h1>
+<h1 class="title">R/Medicine 2025</h1>
 </div>
 
 
@@ -182,10 +183,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="images/Main.png" class="img-fluid"></p>
+<section id="rmedicine-2025-is-coming-soon-see-the-rmedicine-2024-site-here" class="level2">
+<h2 class="anchored" data-anchor-id="rmedicine-2025-is-coming-soon-see-the-rmedicine-2024-site-here">R/Medicine 2025 is coming soon, see the R/Medicine 2024 site here:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://rconsortium.github.io/RMedicine_2024/"><img src="images/Main.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="R Consortium"></a></p>
+</figure>
+</div>
+</section>
 <section id="an-r-consortium-virtual-conference" class="level2 r-stack">
 <h2 class="anchored" data-anchor-id="an-r-consortium-virtual-conference"><strong>AN R CONSORTIUM VIRTUAL CONFERENCE</strong></h2>
 </section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.r-consortium.org/"><img src="images/R-con.png" class="quarto-figure quarto-figure-center figure-img" alt="R Consortium" height="150"></a></p>
+</figure>
+</div>
 <section id="why-attend" class="level2">
 <h2 class="anchored" data-anchor-id="why-attend">WHY ATTEND</h2>
 <p>The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and gain insights from health data. Conference workshops provide a way to learn and develop your R skills. Midweek demos allow you to try out new R packages and tools, and our hackathon provides an opportunity to learn how to develop new R tools. The conference talks share new packages, and successes in analyzing health, laboratory, and clinical data with R and Shiny with a vigorous ongoing discussion with speakers (with pre-recorded talks) in the chat.</p>
@@ -315,6 +328,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/RConsortium\.github\.io\/RMedicine_website\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -349,7 +380,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
