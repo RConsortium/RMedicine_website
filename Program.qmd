@@ -1,0 +1,13 @@
+---
+title: "R/Medicine Schedule"
+# author: "Rich Iannone"
+# date: "5/10/2024"
+format: 
+  html:
+    code-fold: false
+    echo: false
+---
+
+**Speakers: Please see additional instructions and deadlines in the [speaker guide](speaker_info.qmd).**
+
+### TBD
