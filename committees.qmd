@@ -1,5 +1,5 @@
 ---
-title: "Committees for R/Medicine 2024"
+title: "Committees for R/Medicine 2025"
 ---
 
 ::: columns
