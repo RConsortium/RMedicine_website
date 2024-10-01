@@ -2,15 +2,13 @@
 title: "R/Medicine 2025"
 ---
 
-
-## R/Medicine 2025 is coming soon, see the R/Medicine 2024 site here:
+## R/Medicine 2025 is coming June 9-13, 2025, see the R/Medicine 2024 site here:
 
 [![](images/Main.png){fig-alt="R Consortium" fig-align="center"}](https://rconsortium.github.io/RMedicine_2024/)
 
 ::: r-stack
 ## **AN R CONSORTIUM VIRTUAL CONFERENCE**
 :::
-
 
 [![](images/R-con.png){fig-alt="R Consortium" fig-align="center" height="150"}](https://www.r-consortium.org/)
 
@@ -31,7 +29,6 @@ The R/Medicine conference provides a forum for sharing R based tools and approac
 ## SPONSORED BY
 
 ### Silver Sponsors
-
 
 ## MAILING LIST
 

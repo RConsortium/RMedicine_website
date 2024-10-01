@@ -1,44 +1,42 @@
 ---
-title: "Committees for R/Medicine 2024"
+title: "Committees for R/Medicine 2025"
 ---
 
 ::: columns
 ::: {.column width="45%"}
 ## Organizing Committee
 
--   Peter Higgins, Chair
+-   **Chair: Emily Zabor, Cleveland Clinic**
 
--   Joy Payton
+-   Terry Christiani, The R Consortium
 
--   Emily Zabor
+-   Peter Higgins, University of Michigan
 
--   Steven Schwager
+-   Joy Payton, Children's Hospital of Philadelphia
 
--   Joseph Rickert
+-   Steven Schwager, Cornell University
 
--   Ray Balise
+-   Ray Balise, University of Miami
 
--   Beth Atkinson
+-   Beth Atkinson, Mayo Clinic
 
--   Michael Kane
+-   Michael Kane, MD Anderson
 
--   Stephan Kadauke
+-   Daniel Chen, The University of BC & Posit
 
--   Daniel Chen
+-   Jaclyn Janis, Posit
 
--   Jaclyn Janis
+-   Bryan Mayfield, Precision Analytical Inc
 
--   Bryan Mayfield
+-   Andey Nunes-Brewster, Oregon Health Authority
 
--   Andey Nunes
+-   Ben Gerber, UMass
 
--   Ben Gerber
+-   Daniel Sjoberg, Genentech
 
--   Daniel Sjoberg
+-   Chris Beeley, National Health Service
 
--   Mara Alexeev
-
--   Denise Esserman
+-   Kalyani Chandupatla, Amgen
 :::
 
 ::: {.column width="10%"}
@@ -48,16 +46,8 @@ title: "Committees for R/Medicine 2024"
 ::: {.column width="45%"}
 ## Program Committee
 
--   Steven Schwager, Chair
+TBD
 
--   Emily Zabor
 
--   Beth Atkinson
-
--   Michael Kane
-
--   Daniel Sjoberg
-
--   Ray Balise
 :::
 :::
