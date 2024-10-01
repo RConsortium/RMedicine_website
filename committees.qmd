@@ -8,13 +8,13 @@ title: "Committees for R/Medicine 2025"
 
 -   **Chair: Emily Zabor, Cleveland Clinic**
 
+-   Terry Christiani, The R Consortium
+
 -   Peter Higgins, University of Michigan
 
 -   Joy Payton, Children's Hospital of Philadelphia
 
 -   Steven Schwager, Cornell University
-
--   Joseph Rickert, The R Consortium
 
 -   Ray Balise, University of Miami
 
