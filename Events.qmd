@@ -10,7 +10,7 @@ listing:
   image-height: 100%
   template: event-listing.ejs
 page-layout: full
-title-block-banner: "#330033"
+title-block-banner: "#009473"
 title-block-banner-color: "white"
 title-block-style: default
 ---
