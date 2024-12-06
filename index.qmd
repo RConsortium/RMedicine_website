@@ -10,23 +10,23 @@ title: "R/Medicine 2025"
 
 ## WHY ATTEND
 
-The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and gain insights from health data. Conference workshops provide a way to learn and develop your R skills. Midweek demos allow you to try out new R packages and tools, and our hackathon provides an opportunity to learn how to develop new R tools. The conference talks share new packages, and successes in analyzing health, laboratory, and clinical data with R and Shiny with a vigorous ongoing discussion with speakers (with pre-recorded talks) in the chat.
+The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and gain insights from health data. Conference workshops and demos provide a way to learn and develop your R skills, and to try out new R packages and tools. Conference talks share new packages, and successes in analyzing health, laboratory, and clinical data with R and Shiny, and an opportunity to interact with speakers in the chat during their pre-recorded talks.
 
-## November Webinar: Containerization and R for Reproducibility and More
+## KEYNOTE ADDRESSES
 
-![](images/containerization-and-r-webinar-main-image.png)
+::: columns
+::: {.column width="45%"}
+**Coming soon!**
+:::
 
-### Abstract
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
 
-Containerization has become a dominant computing paradigm for computing in the past decade due to its many advantages: isolation and security, scalability and efficiency with lightweight containers sharing an operating kernel and resources, and portability across cloud computing providers. For the researcher, analyst, or R user, containers have applications ranging from reproducible analytical environments to packaging statistical code to use in web applications. I will discuss how biomedical researchers can make use of containerization technology, particularly the tools provided by the Rocker Project, which publishes powerful standardized containers for the R language.
+::: {.column width="45%"}
 
-### Registration
-
-[https://zoom.us/webinar/register/WN_aWMKlQngTUqgp4G_qkkD_g](https://zoom.us/webinar/register/WN_aWMKlQngTUqgp4G_qkkD_g)
-
-### Speaker Bio
-
-Noam Ross is a computational disease ecologist and Executive Director of rOpenSci, a nonprofit dedicated to promoting open science and validating data science and computational methods. He is a core member of the Rocker Project, which maintains standardized containers for the R computer language. Noam’s work includes spearheading rOpenSci’s work in software peer review, developing a widely emulated system for leveraging the academic peer-review process coupled with state-of-the art automated code analysis to improve code quality in the scientific software in ecosystem, as well as using review as a mechanism for community building and training. His research interests and contributions span a wide range of topics, including disease ecology, zoonotic spillover, mechanistic modeling of disease dynamics, and non-parametric data science methods. His applied work includes creating early outbreak assessment models for the U.S. Defense Threat Reduction Agency, and modeling and forecasting for New York State’s COVID-19 emergency response. Noam holds a Ph.D. in theoretical ecology from the University of California-Davis and a B.Sc. from Brown University.
+:::
+:::
 
 ## BROUGHT TO YOU BY
 
