@@ -19,6 +19,8 @@ If you said yes to any of those questions, then you need Personal R Administrati
 
 ### Biographies
 
+E. David Aja is a Software Engineer at Posit. Before joining Posit, he worked as a data scientist in the public sector.
+
 [Shannon Pileggi](https://www.pipinghotdata.com/) (she/her) is a Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium, a frequent blogger, and a member of the R-Ladies Global leadership team. She enjoys automating data wrangling and data outputs, and making both data insights and learning new material digestible.
 
 :::
