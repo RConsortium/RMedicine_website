@@ -7,11 +7,11 @@
     "text": "Personal R Administration\n\nDavid Aja and Shannon Pileggi\n \n\n\nDescription\n\nDoes the release of a new R version fill you with dread?\nAre there passwords in your R code?\nDo you look at the output of a failed package installation and think to yourself, “WTF?!”\n\nIf you said yes to any of those questions, then you need Personal R Administration. You’ll come away with tips, tricks, tweaks, and some hacks for building data science dev environments that you won’t be afraid to come back to in a year.\n\n\nBiographies\nE. David Aja is a Software Engineer at Posit. Before joining Posit, he worked as a data scientist in the public sector.\nShannon Pileggi (she/her) is a Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium, a frequent blogger, and a member of the R-Ladies Global leadership team. She enjoys automating data wrangling and data outputs, and making both data insights and learning new material digestible."
   },
   {
-    "objectID": "workshops.html#tbd",
-    "href": "workshops.html#tbd",
+    "objectID": "workshops.html#teal-mastery-from-pre-built-modules-to-custom-module-creation",
+    "href": "workshops.html#teal-mastery-from-pre-built-modules-to-custom-module-creation",
     "title": "R/Medicine 2025",
-    "section": "TBD",
-    "text": "TBD"
+    "section": "teal Mastery: From Pre-built Modules to Custom Module Creation",
+    "text": "teal Mastery: From Pre-built Modules to Custom Module Creation\n\nDony Unardi\n\n\n\nDescription\nThis session provides a comprehensive introduction to teal programming, starting with creating a simple teal application from scratch. You’ll learn the fundamentals of building a basic teal app and understand its core components. Next, we will explore the practical use of pre-built modules from teal.modules.general and teal.modules.clinical, demonstrating how these ready-to-use components can streamline the development of robust teal applications. Participants will gain hands-on experience in integrating these modules into their projects. The workshop will then focus on building upon this foundation by learning how to create custom teal modules that meet specific project needs. You’ll learn how to leverage the core features of the teal framework to develop tailored solutions and take your skills to the next level. This session will provide practical insights and coding examples, empowering you to extend and customize your teal applications beyond the capabilities of pre-built modules. By the end of this workshop, you will have a comprehensive understanding of both pre-built and custom module development in teal, making it an ideal choice for beginners and intermediate learners looking to expand their R skills with teal.\n\n\nBiography\nDony Unardi is a Principal Data Scientist at Genentech, and the Engineering Team Lead in the development effort of an open-source R product called teal, a Shiny-based R package focused on interactive and reproducible data analysis and visualization in clinical trials."
   },
   {
     "objectID": "Register.html",
