@@ -93,3 +93,37 @@ Hannah Frick is a software engineer on the tidymodels team at Posit. She holds a
 
 :::
 :::
+
+
+## Title TBD
+
+
+::: columns
+::: {.column width="45%"}
+
+### Description
+
+TBD
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+
+### Cara Thompson
+
+![](images/profile pictures-7660.jpg)
+
+Cara is a data visualisation consultant with an academic background, specialising in helping research teams and data-driven organisations turn their data insights into to clear and compelling visualisations. 
+
+Following her PhD in Psychology and a spell teaching research methods at Edinburgh Uni, she embarked on a career in psychometrics at the Royal college of Surgeons of Edinburgh. After ten years of helping surgeons and other medical professionals understand complex patterns in exam data, she set out as an independent data visualisation consultant and launched her business "Building Stories with Data", to continue crafting innovative dataviz solutions for a range of different organisations.
+
+She lives in Edinburgh, Scotland, with her husband and two young daughters. Cara regularly shares coding tips for dataviz online, and genuinely enjoys helping others level up their dataviz skills through talks, bespoke toolkits, organisational training, and one-to-one coaching.
+
+
+:::
+:::
+
