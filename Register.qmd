@@ -1,8 +1,10 @@
 ## Registration
 
+### Registration opening soon!
+
 ### Registration Pricing
 
-The following table list the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. Early Bird pricing ends **May 13, 2025**.
+The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. Early Bird pricing ends **April 10, 2025**.
 
 | Category              | Early Bird | Regular |
 |-----------------------|:----------:|:-------:|
@@ -14,13 +16,11 @@ The following table list the registration fees for three categories of attendees
 
 A limited number of complimentary registrations are available to enable community members to attend when they would otherwise be unable due to a lack of funding. We place an emphasis on funding applicants who are from historically underrepresented or untapped groups, from low GDP countries, and/or those of lower socioeconomic status.
 
-Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. Submit [here](https://docs.google.com/forms/d/1Rnd9GLI9dhQvTYmMRHMWCC9RsJWyQdYacr-vUMNyvAI/edit).
-
-## [Register Here](https://cvent.me/79MlP4)
+Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. Submit [here](https://docs.google.com/forms/d/e/1FAIpQLSdGQ_QqQdOmAvuT_1oLMC_LFVgWeq3NBJ013tVJizklv4bm5g/viewform?usp=header).
 
 ## Additional Information
 
-::: columns
+:::::: columns
 ::: {.column width="45%"}
 ### Invoices & Certificates of Attendance
 
@@ -42,14 +42,10 @@ To request a Certificate of Attendance, please submit a request here. Please Not
 
 #### Cancellations:
 
-If you must cancel for any reason, please sign back into your registration, click the “Register/Modify” button and select “Unregister.” If you need further assistance, email registration\@linuxfoundation.org.
-
-Refunds will only be issued for cancellations received two weeks prior to the event start date, including bulk ticket request refunds, and will appear as a credit on the card’s statement 7 – 10 business days after cancellation. Due to the ongoing pandemic, individual refund requests due to COVID-19 positive tests will be honored up until the start date of the event, and must be accompanied by a photo of a positive COVID-19 test.
-
-Please note: Refunds can only be issued on the card the original payment was made.
+If you must cancel for any reason, please sign back into your registration, click the “Register/Modify” button and select “Unregister.” If you need further assistance, email registration\@linuxfoundation.org. Refunds considered on a case by case basis.
 
 #### Substitutions:
 
 If you are unable to attend, you may substitute another attendee in lieu of cancellation. To substitute an attendee, sign back into your registration, click the “Register/Modify”, and select “Transfer Registration” on your confirmation page.
 :::
-:::
+::::::

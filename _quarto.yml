@@ -11,21 +11,19 @@ website:
       - href: Register.qmd
         text: Register
       - href: Abstracts.qmd
-        text: Abstracts
+        text: Submit
       - href: Program.qmd
         text: Program
       - href: workshops.qmd
         text: Workshops
       - href: Attend.qmd
         text: Code of Conduct
-      - href: Competition.qmd
-        text: Competition
-      - href: Contact.qmd
-        text: Contact us
-      - href: Events.qmd
-        text: Past Events
       - href: committees.qmd
         text: Committees
+      - href: Events.qmd
+        text: Past Events
+      - href: Contact.qmd
+        text: Contact us
       
 
 format:
