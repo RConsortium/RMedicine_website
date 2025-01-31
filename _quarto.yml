@@ -15,7 +15,7 @@ website:
       - href: Program.qmd
         text: Program
       - href: workshops.qmd
-        text: Workshops
+        text: Workshops and Demos
       - href: Attend.qmd
         text: Code of Conduct
       - href: committees.qmd

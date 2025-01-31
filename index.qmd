@@ -20,7 +20,7 @@ The R/Medicine conference provides a forum for sharing R based tools and approac
 
 **Reinventing medicine with AI**
 
-![](images/Z-Obermeyer-mucem-scaled-square.jpg)
+![](images/Z-Obermeyer-mucem-scaled-square.jpg){style="border-radius: 50%"}
 
 #### Abstract
 
@@ -41,7 +41,7 @@ Ziad Obermeyer is Associate Professor and Blue Cross of California Distinguished
 
 **Title TBD**
 
-![](images/erin.jpg)
+![](images/erin.jpg){style="border-radius: 50%"}
 
 <details>
   <summary>Biography</summary>
