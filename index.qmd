@@ -43,6 +43,10 @@ Ziad Obermeyer is Associate Professor and Blue Cross of California Distinguished
 
 ![](images/erin.jpg){style="border-radius: 50%"}
 
+#### Abstract
+
+TBD
+
 <details>
   <summary>Biography</summary>
 Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s helping build an automated testing platform for statistical testing of AI applications. She is also the founder of DataScientific, Inc., an AI Advisory and Consulting firm specializing in the development and implementation of cutting-edge AI solutions. Previously, she was the Chief Machine Learning Scientist at H2O.ai, and founder of Women in Machine Learning and Data Science (WiMLDS) and co-founder of R-Ladies Global. Erin received her Ph.D. in Biostatistics from University of California, Berkeley and has a B.S. and M.A. in Mathematics.

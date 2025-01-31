@@ -22,9 +22,11 @@ If you said yes to any of those questions, then you need Personal R Administrati
 ::: {.column width="45%"}
 ### David Aja and Shannon Pileggi
 
-![](images/david-aja.jpg){style="border-radius: 50%; width: 75%"} ![](images/Shannon_small-square.jpg){style="border-radius: 50%; width: 75%"}
+![](images/david-aja.jpg){style="border-radius: 50%; width: 75%"} 
 
 E. David Aja is a Software Engineer at Posit. Before joining Posit, he worked as a data scientist in the public sector.
+
+![](images/Shannon_small-square.jpg){style="border-radius: 50%; width: 75%"}
 
 [Shannon Pileggi](https://www.pipinghotdata.com/) (she/her) is a Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium, a frequent blogger, and a member of the R-Ladies Global leadership team. She enjoys automating data wrangling and data outputs, and making both data insights and learning new material digestible.
 :::
@@ -128,9 +130,11 @@ A pesar de los abundantes recursos disponibles para aprender R, la mayoría de e
 ::: {.column width="45%"}
 ### Catalina Canizares-Escobar and Francisco Cardozo
 
-![](images/catalina-square.jpeg){style="border-radius: 50%; width: 75%"} ![](images/francisco-square.jpeg){style="border-radius: 50%; width: 75%"}
+![](images/catalina-square.jpeg){style="border-radius: 50%; width: 75%"} 
 
 [Catalina Cañizares](https://global.fiu.edu/world-centers/world-center-colombia/fulbrighters/catalina-canizares-escobar.html) es una científica de datos apasionada y candidata Ph.D. en trabajo social. Ella se dedidca al uso de datos para obtener información sobre los trastornos emocionales. Ha estado profundizando en el análisis de datos, especialmente con R y su enfoque es hacer que los datos sean comprensibles y útiles. Se especializo en limpiar y fusionar datos, y le encanta explorar datos con herramientas como tidyverse, table1, gtsummary y skimr, entre otras. También se interesa utilizar modelos de Machine Learning, con el paquete tidymodels, para comprender mejor los trastornos emocionales.
+
+![](images/francisco-square.jpeg){style="border-radius: 50%; width: 75%"}
 
 [Francisco Cardozo](https://focardozom.github.io/) es un candidato a PhD en Ciencias de las Prevención y Salud Comunitaria, se especializa en aplicar técnicas cuantitativas para evaluar la eficacia de programas de prevención, centrándose en entender la dinámica de cómo y para quién estos programas son más efectivos. Está dedicado a desarrollar mediciones y análisis que informen decisiones sobre cómo operar los programas. Francisco siente pasión por traducir hallazgos científicos en aplicaciones prácticas.
 
