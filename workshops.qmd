@@ -1,4 +1,6 @@
-## Workshops
+# Workshops
+
+---
 
 ## Personal R Administration
 
@@ -20,7 +22,7 @@ If you said yes to any of those questions, then you need Personal R Administrati
 ::: {.column width="45%"}
 ### David Aja and Shannon Pileggi
 
-![](images/david-aja.jpg) ![](images/Shannon_small.jpg)
+![](images/david-aja.jpg){style="border-radius: 50%; width: 75%"} ![](images/Shannon_small-square.jpg){style="border-radius: 50%; width: 75%"}
 
 E. David Aja is a Software Engineer at Posit. Before joining Posit, he worked as a data scientist in the public sector.
 
@@ -44,7 +46,7 @@ This session provides a comprehensive introduction to teal programming, starting
 ::: {.column width="45%"}
 ### Dony Unardi
 
-![](images/dony.png)
+![](images/dony.png){style="border-radius: 50%; width: 75%"}
 
 Dony Unardi is a Principal Data Scientist at Genentech, and the Engineering Team Lead in the development effort of an open-source R product called teal, a Shiny-based R package focused on interactive and reproducible data analysis and visualization in clinical trials.
 :::
@@ -72,7 +74,7 @@ This workshop is for you if you
 ::: {.column width="45%"}
 ### Hannah Frick
 
-![](images/frick.jpeg)
+![](images/frick.jpeg){style="border-radius: 50%; width: 75%"}
 
 Hannah Frick is a software engineer on the tidymodels team at Posit. She holds a PhD in statistics and has worked in interdisciplinary research and data science consultancy. She is a co-founder of R-Ladies Global.
 :::
@@ -94,7 +96,7 @@ TBD
 ::: {.column width="45%"}
 ### Cara Thompson
 
-![](images/profile%20pictures-7660.jpg)
+![](images/profile pictures-7660.jpg){style="border-radius: 50%; width: 75%"}
 
 Cara is a data visualisation consultant with an academic background, specialising in helping research teams and data-driven organisations turn their data insights into to clear and compelling visualisations.
 
@@ -104,19 +106,19 @@ She lives in Edinburgh, Scotland, with her husband and two young daughters. Cara
 :::
 ::::::
 
-## Enhancing Scientific Equity: A Spanish Introduction to Using R for Biostatistical and Data Science Programming
-
 ## Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español.
+
+<!-- ## Enhancing Scientific Equity: A Spanish Introduction to Using R for Biostatistical and Data Science Programming -->
 
 :::::: columns
 ::: {.column width="45%"}
-### Description
-
-Despite the abundant resources available for learning R, most of these materials are primarily accessible to English speakers. This language barrier significantly restricts access for individuals who do not speak English proficiently. As a result, Spanish-speaking communities often face considerable challenges in accessing software training opportunities. This disparity leads to inequities in the distribution and utilization of scientific technologies, which is particularly concerning given the increasing importance of digital skills nowadays. To mitigate these challenges and promote inclusivity, we propose conducting a programming workshop in Spanish during the conference. This initiative aims to bridge the gap by providing Spanish-speaking participants with equal opportunities to engage with and benefit from technological advancements. By doing so, we not only enhance individual capabilities but also contribute to a more equitable distribution of educational resources in the scientific community. This workshop will equip attendees with basic skills in R. Our primary objective is to familiarize participants with RStudio and its key features for generating reproducible reports. We will guide attendees through the process of creating and managing projects in RStudio and introduce them to creating reproducible manuscripts using Quarto documents. The workshop will utilize a publicly available dataset from the CDC, which contains information on drug use and suicidal ideation among adolescents, as a practical example of using R for academic research in public health. We will explain how to use functions such as filter, mutate, summarize, and select from the tidyverse suite of packages. We will conclude by demonstrating how to use ggplot2 to create visualizations in R. By the end of the workshop, participants will have created a, reproducible document in HTML format, detailing the data cleaning steps and analysis of a significant, contemporary social issue. This presentation aims to close the gap in programming literacy among Spanish-speaking researchers and promote methods for reproducible scientific inquiry.
-
 ### Descripción
 
 A pesar de los abundantes recursos disponibles para aprender R, la mayoría de estos materiales son accesibles principalmente para angloparlantes. Esta barrera del idioma restringe significativamente el acceso de personas que no hablan inglés con fluidez. Como resultado, las comunidades de habla hispana a menudo enfrentan desafíos considerables para acceder a oportunidades de capacitación en software. Esta disparidad conduce a desigualdades en la distribución y utilización de las tecnologías científicas, lo que es particularmente preocupante dada la creciente importancia de las habilidades digitales en la actualidad. Para mitigar estos desafíos y promover la inclusión, proponemos realizar un taller de programación en español durante la conferencia. Esta iniciativa tiene como objetivo cerrar la brecha brindando a los participantes de habla hispana igualdad de oportunidades para interactuar y beneficiarse de los avances tecnológicos. Al hacerlo, no sólo mejoramos las capacidades individuales sino que también contribuimos a una distribución más equitativa de los recursos educativos en la comunidad científica. Este taller equipará a los asistentes con habilidades básicas en R. Nuestro objetivo principal es familiarizar a los participantes con RStudio y sus características clave para generar informes reproducibles. Guiaremos a los asistentes a través del proceso de creación y gestión de proyectos en RStudio y les presentaremos la creación de manuscritos reproducibles utilizando documentos Quarto. El taller utilizará un conjunto de datos disponible públicamente de los CDC, que contiene información sobre el uso de drogas y la ideación suicida entre adolescentes, como un ejemplo práctico del uso de R para la investigación académica en salud pública. Explicaremos cómo utilizar funciones como filtrar, mutar, resumir y seleccionar del conjunto de paquetes tidyverse. Concluiremos demostrando cómo usar ggplot2 para crear visualizaciones en R. Al final del taller, los participantes habrán creado un documento reproducible en formato HTML, detallando los pasos de limpieza de datos y el análisis de un problema social contemporáneo importante. Esta presentación tiene como objetivo cerrar la brecha en la alfabetización en programación entre los investigadores de habla hispana y promover métodos para la investigación científica reproducible.
+
+<!-- ### Description -->
+
+<!-- Despite the abundant resources available for learning R, most of these materials are primarily accessible to English speakers. This language barrier significantly restricts access for individuals who do not speak English proficiently. As a result, Spanish-speaking communities often face considerable challenges in accessing software training opportunities. This disparity leads to inequities in the distribution and utilization of scientific technologies, which is particularly concerning given the increasing importance of digital skills nowadays. To mitigate these challenges and promote inclusivity, we propose conducting a programming workshop in Spanish during the conference. This initiative aims to bridge the gap by providing Spanish-speaking participants with equal opportunities to engage with and benefit from technological advancements. By doing so, we not only enhance individual capabilities but also contribute to a more equitable distribution of educational resources in the scientific community. This workshop will equip attendees with basic skills in R. Our primary objective is to familiarize participants with RStudio and its key features for generating reproducible reports. We will guide attendees through the process of creating and managing projects in RStudio and introduce them to creating reproducible manuscripts using Quarto documents. The workshop will utilize a publicly available dataset from the CDC, which contains information on drug use and suicidal ideation among adolescents, as a practical example of using R for academic research in public health. We will explain how to use functions such as filter, mutate, summarize, and select from the tidyverse suite of packages. We will conclude by demonstrating how to use ggplot2 to create visualizations in R. By the end of the workshop, participants will have created a, reproducible document in HTML format, detailing the data cleaning steps and analysis of a significant, contemporary social issue. This presentation aims to close the gap in programming literacy among Spanish-speaking researchers and promote methods for reproducible scientific inquiry. -->
 :::
 
 ::: {.column width="10%"}
@@ -126,14 +128,74 @@ A pesar de los abundantes recursos disponibles para aprender R, la mayoría de e
 ::: {.column width="45%"}
 ### Catalina Canizares-Escobar and Francisco Cardozo
 
-![](images/catalina.jpeg) ![](images/francisco.jpeg)
-
-[Catalina Cañizares](https://global.fiu.edu/world-centers/world-center-colombia/fulbrighters/catalina-canizares-escobar.html) is a passionate data scientist and a Ph.D. candidate in Social Welfare, dedicated to using data to gain insights into emotional disorders. She has been delving deep into data analysis, especially with R. Her focus? Making data understandable and useful. She specializes in cleaning and merging data, and loves exploring data with tools like tidyverse, table1, gtsummary, and skimr, among others. She is also interested in using Machine Learning models, with the tidymodels package, to better understand emotional disorders. Plus, She is all about keeping things clear and reproducible by using tools such as Quarto.
-
-[Francisco Cardozo](https://focardozom.github.io/) is a PhD canidate in prevention science and community health, he specializes in applying quantitative techniques to evaluate the efficacy of prevention programs, focusing on understanding the dynamics of how and for whom these programs are most effective. He is dedicated to developing precise measurements and analyses that inform decisions about program operations. Francisco is passionate about translating resource science into practical, real-world applications.
+![](images/catalina-square.jpeg){style="border-radius: 50%; width: 75%"} ![](images/francisco-square.jpeg){style="border-radius: 50%; width: 75%"}
 
 [Catalina Cañizares](https://global.fiu.edu/world-centers/world-center-colombia/fulbrighters/catalina-canizares-escobar.html) es una científica de datos apasionada y candidata Ph.D. en trabajo social. Ella se dedidca al uso de datos para obtener información sobre los trastornos emocionales. Ha estado profundizando en el análisis de datos, especialmente con R y su enfoque es hacer que los datos sean comprensibles y útiles. Se especializo en limpiar y fusionar datos, y le encanta explorar datos con herramientas como tidyverse, table1, gtsummary y skimr, entre otras. También se interesa utilizar modelos de Machine Learning, con el paquete tidymodels, para comprender mejor los trastornos emocionales.
 
 [Francisco Cardozo](https://focardozom.github.io/) es un candidato a PhD en Ciencias de las Prevención y Salud Comunitaria, se especializa en aplicar técnicas cuantitativas para evaluar la eficacia de programas de prevención, centrándose en entender la dinámica de cómo y para quién estos programas son más efectivos. Está dedicado a desarrollar mediciones y análisis que informen decisiones sobre cómo operar los programas. Francisco siente pasión por traducir hallazgos científicos en aplicaciones prácticas.
+
+<!-- [Catalina Cañizares](https://global.fiu.edu/world-centers/world-center-colombia/fulbrighters/catalina-canizares-escobar.html) is a passionate data scientist and a Ph.D. candidate in Social Welfare, dedicated to using data to gain insights into emotional disorders. She has been delving deep into data analysis, especially with R. Her focus? Making data understandable and useful. She specializes in cleaning and merging data, and loves exploring data with tools like tidyverse, table1, gtsummary, and skimr, among others. She is also interested in using Machine Learning models, with the tidymodels package, to better understand emotional disorders. Plus, She is all about keeping things clear and reproducible by using tools such as Quarto. -->
+
+<!-- [Francisco Cardozo](https://focardozom.github.io/) is a PhD canidate in prevention science and community health, he specializes in applying quantitative techniques to evaluate the efficacy of prevention programs, focusing on understanding the dynamics of how and for whom these programs are most effective. He is dedicated to developing precise measurements and analyses that inform decisions about program operations. Francisco is passionate about translating resource science into practical, real-world applications. -->
+:::
+::::::
+
+## Demystifying LLMs with Ellmer
+
+:::::: columns
+::: {.column width="45%"}
+### Description
+
+Today's best LLMs are incredibly powerful--but you're only scratching the surface of their capabilities if your use is limited to ChatGPT or Copilot. Accessing LLMs programmatically opens up a whole new world of possibilities, letting you integrate LLMs into your own apps, scripts, and workflows. In this workshop, we'll cover:
+
+* A practical introduction to LLM APIs
+* Configuring R to access LLMs via the ellmer package
+* Customizing LLM behavior using system prompts and tool calling
+* Creating Shiny apps with integrated chatbots
+* Using LLMs for natural language processing
+
+Attendees will leave the workshop armed with ready-to-run examples, and the confidence and inspiration to run their own experiments with LLMs.
+
+Attendees should be familiar with the basics of R and have a working R installation.
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Joe Cheng
+
+<!-- ![](images/frick.jpeg){style="border-radius: 50%; width: 75%"} -->
+
+Joe Cheng is the CTO of Posit, PBC. He's the original creator of the Shiny web framework and co-creator of ellmer.
+:::
+::::::
+
+---
+
+# Demos
+
+---
+
+## Quarto Dashboards: from zero to publish in one hour
+
+:::::: columns
+::: {.column width="45%"}
+### Description
+
+You already analyze and summarize your data with R and Quarto. What’s next? You can share your insights or allow others to make their own conclusions in eye-catching dashboards and straight-forward to author, design, and deploy Quarto Dashboards. With Quarto Dashboards, you can create elegant and production-ready dashboards using a variety of components, including static graphics, interactive widgets, tabular data, value boxes, text annotations, and more. Additionally, with intelligent resizing of components, your Quarto Dashboards look great on devices of all sizes. And importantly, you can author Quarto Dashboards without leaving the comfort of your “home” – in plain text markdown with any text editor. In this one-hour demo we will build and publish a Quarto Dashboard -- you can code-along or sit back and enjoy the show!
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Mine Çetinkaya-Rundel
+
+![](images/mine-square.jpg){style="border-radius: 50%; width: 75%"}
+
+Mine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks – latest is the 2nd edition of Introduction to Modern Statistics. She is also a co-author on R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as a Waller and Hogg award winner for teaching excellence. In 2024, she was elected as Vice President of the International Association for Statistical Education (IASE).
 :::
 ::::::
