@@ -2,7 +2,7 @@
 title: "Committees for R/Medicine 2025"
 ---
 
-::: columns
+:::::: columns
 ::: {.column width="45%"}
 ## Organizing Committee
 
@@ -34,7 +34,7 @@ title: "Committees for R/Medicine 2025"
 
 -   Daniel Sjoberg, Genentech
 
--   Chris Beeley, National Health Service
+-   Claire Welsh, National Health Service
 
 -   Kalyani Chandupatla, Amgen
 :::
@@ -46,8 +46,12 @@ title: "Committees for R/Medicine 2025"
 ::: {.column width="45%"}
 ## Program Committee
 
-TBD
-
-
+-   **Chair: Daniel Sjoberg, Genentech**
+-   Peter Higgins, University of Michigan
+-   Steven Schwager, Cornell University
+-   Michael Kane, MD Anderson
+-   Daniel Chen, The University of BC & Posit
+-   Ben Gerber, UMass
+-   Beth Atkinson, Mayo Clinic
 :::
-:::
+::::::

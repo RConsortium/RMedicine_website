@@ -130,7 +130,7 @@ A pesar de los abundantes recursos disponibles para aprender R, la mayoría de e
 ::: {.column width="45%"}
 ### Catalina Canizares-Escobar and Francisco Cardozo
 
-![](images/catalina-square.jpeg){style="border-radius: 50%; width: 75%"} 
+![](images/catalina-square.jpeg){style="border-radius: 50%"} 
 
 [Catalina Cañizares](https://global.fiu.edu/world-centers/world-center-colombia/fulbrighters/catalina-canizares-escobar.html) es una científica de datos apasionada y candidata Ph.D. en trabajo social. Ella se dedidca al uso de datos para obtener información sobre los trastornos emocionales. Ha estado profundizando en el análisis de datos, especialmente con R y su enfoque es hacer que los datos sean comprensibles y útiles. Se especializo en limpiar y fusionar datos, y le encanta explorar datos con herramientas como tidyverse, table1, gtsummary y skimr, entre otras. También se interesa utilizar modelos de Machine Learning, con el paquete tidymodels, para comprender mejor los trastornos emocionales.
 
@@ -173,6 +173,39 @@ Attendees should be familiar with the basics of R and have a working R installat
 <!-- ![](images/frick.jpeg){style="border-radius: 50%; width: 75%"} -->
 
 Joe Cheng is the CTO of Posit, PBC. He's the original creator of the Shiny web framework and co-creator of ellmer.
+:::
+::::::
+
+## R package development with GitHub Pages and `pkgdown`
+
+:::::: columns
+::: {.column width="45%"}
+### Description
+
+Creating clear, professional documentation is key to making your R package useful to other people, but building a documentation website can be tricky. The `pkgdown` package makes this process much easier, but deploying via GitHub Pages can present its own set of challenges, especially if you want a highly customized website.
+
+In this workshop, we’ll build a simple R package together, and use GitHub Actions and GitHub Pages to create a `pkgdown` documentation website for the package. By the end of this workshop, you’ll have:
+
+* 🌎 Your package available on GitHub for others to install
+* 📄 A polished `pkgdown` website for your package, deployed via GitHub Pages
+* 🎨 An understanding of how to customize the trickier components of `pkgdown` websites
+
+Workshop participants should have experience using Git, but don’t need prior experience with GitHub Actions or pkgdown.
+
+*Note that this workshop requires access to an OpenAI/Anthropic API key. Participants have the option to obtain their own (credit card required, will incur small fee during workshop (<<1USD) but will retain long-term access) or to provide their email in advance to receive one from the workshop host*
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Melissa Van Bussel
+
+![](images/Melissa_VanBussel_2025-square.jpg){style="border-radius: 50%; width: 75%"}
+
+Melissa Van Bussel is a Senior Data Analyst at Statistics Canada, where she develops and delivers training about open-source languages and tools. She also helps run a large R and Python User Group at Statistics Canada. Outside of work, she creates [educational videos on YouTube (@ggnot2)](https://youtube.com/c/ggnot2) about R and data science, and is an organizer for [R-Ladies Ottawa](https://meetup.com/rladies-ottawa). Melissa is an [Accredited Associate Statistician](https://ssc.ca/en/accreditation), and received her M. Sc. in Statistics from Carleton University and has a B. Sc. H. in Mathematics and Computing Systems from Trent University.
 :::
 ::::::
 

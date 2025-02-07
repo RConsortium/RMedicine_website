@@ -1,15 +1,23 @@
 ## Call for Proposals
 
-### Abstract submission opening soon!
+### Submission is now open!
+
+<button class="btn btn-primary"
+style = "background-color: #009473"
+onclick="window.location.href='https://forms.gle/1YsqbFR2KRD6RL8c7'"> 
+
+  **SUBMIT HERE**
+
+</button>
 
 We are seeking abstracts for:
 
 -   **Lightning talks** (10 min, Thursday June 12 or Friday June 13) Must pre-record and be live on chat to answer questions
 -   **Regular talks** (20 min, Thursday June 12 or Friday June 13) Must pre-record and be live on chat to answer questions
 -   **Demos** (1 hour demo of an approach or a package, Tuesday June 10 or Wednesday June 11) Done live, preferably interactive
--   **Workshops** (2-3 hours on a topic, Tuesday June 10 or Wednesday June 11) Usually with a website and a repo, participants can choose to code along, include 5-10 min breaks each hour.
+-   **Workshops** (2-3 hours on a topic, Tuesday June 10 or Wednesday June 11) Detailed instruction on a topic, usually with a website and a repo, participants can choose to code along, include 5-10 min breaks each hour.
 
-An abstract proposal should describe a presentation of methodology, a study or project, or an example or case study relevant to one (or more) of our fields of interest, with R-based tools having a substantial role in the work.  The content of the presentation should be of interest to the R/Medicine community.
+An abstract proposal should describe a presentation of methodology, a study or project, or an example or case study relevant to one (or more) of our fields of interest, with R-based tools having a substantial role in the work. The content of the presentation should be of interest to the R/Medicine community.
 
 ### Dates to Remember
 
