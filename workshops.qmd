@@ -161,6 +161,8 @@ Today's best LLMs are incredibly powerful--but you're only scratching the surfac
 Attendees will leave the workshop armed with ready-to-run examples, and the confidence and inspiration to run their own experiments with LLMs.
 
 Attendees should be familiar with the basics of R and have a working R installation.
+
+*Note that this workshop requires access to an OpenAI/Anthropic API key. Participants have the option to obtain their own (credit card required, will incur small fee during workshop (<<1USD) but will retain long-term access) or to provide their email in advance to receive one from the workshop host*
 :::
 
 ::: {.column width="10%"}
@@ -191,8 +193,6 @@ In this workshop, we’ll build a simple R package together, and use GitHub Acti
 * 🎨 An understanding of how to customize the trickier components of `pkgdown` websites
 
 Workshop participants should have experience using Git, but don’t need prior experience with GitHub Actions or pkgdown.
-
-*Note that this workshop requires access to an OpenAI/Anthropic API key. Participants have the option to obtain their own (credit card required, will incur small fee during workshop (<<1USD) but will retain long-term access) or to provide their email in advance to receive one from the workshop host*
 
 :::
 
