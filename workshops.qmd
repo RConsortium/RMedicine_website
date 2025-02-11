@@ -209,6 +209,32 @@ Melissa Van Bussel is a Senior Data Analyst at Statistics Canada, where she deve
 :::
 ::::::
 
+## Rix: reproducible data science environments with Nix
+
+:::::: columns
+::: {.column width="45%"}
+### Description
+
+Reproducibility is a critical aspect of modern research, ensuring that results can be consistently replicated and verified by others. In this workshop, Bruno Rodrigues will introduce participants to Nix, a package manager that focuses on reproducible builds. Unlike other solutions, Nix takes care of all the layers of reproducibility by ensuring that not only R packages are correctly versioned, but also R itself, as well as any other system-level dependency. With Nix, it is essentially possible to replace containerization tools such as Docker, and Nix can be used on any operating system, as well as on CI/CD platforms. To make Nix more accessible to beginners, Bruno wrote an R package called {rix}, which he will cover with hands-on exercices.
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Bruno Rodrigues
+
+![](images/ICu8CoUH_400x400.jpg){style="border-radius: 50%; width: 75%"}
+
+Bruno Rodrigues is a statistician at Luxembourg’s Ministry of Research and Higher Education. He has also worked as a senior data scientist and managed the data science team at PwC Luxembourg, following a period as a research assistant at STATEC Research.
+
+Bruno is keenly interested in reproducibility and works on developing tools and writing tutorials that help others improve their research practices. He is the author of Building Reproducible Analytical Pipelines with R and contributes to the R ecosystem for Nix, a package manager focused on reproducible builds.
+
+:::
+::::::
+
 ---
 
 # Demos
