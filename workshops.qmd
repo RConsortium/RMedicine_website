@@ -82,13 +82,24 @@ Hannah Frick is a software engineer on the tidymodels team at Posit. She holds a
 :::
 ::::::
 
-## Title TBD
+## "Visualise, Optimise, Parameterise!" - Writing dataviz code that your future self will thank you for
 
 :::::: columns
 ::: {.column width="45%"}
 ### Description
 
-TBD
+You've collected the initial data, explored the patterns and settled on a few graphs you'll want to create now and in the future as you revisit the dataset from different angles and with new data as it comes in. How can you make sure that the graphs will be as memorable as possible, while also making life easier for your future self? 
+
+In this code-along workshop, we'll work together on our datasets to:
+
+- Settle on the right types of graphs and find colours, fonts and additional styling which complement our storytelling
+- Apply these colours, fonts and additional styling to the graphs by creating reusable functions and vectors, avoiding all the copy-pasting we'd end up doing otherwise
+- Add annotations straight from the data to highlight patterns and points of interest
+- Make the graphs interactive (because why not?)
+- Adapt our code to create a function with parameters, which will allow us to apply the same plotting function to any number of future datasets, with a few extra options. 
+
+To get the most out of our workshop, I encourage you to bring a long a dataset and a basic graph (built with ggplot) that you've been working on for it. That should allow you to leave the workshop having made good progress towards a finished publishable product! If you don't have a dataset you can use, don't worry, I'll provide one. 
+
 :::
 
 ::: {.column width="10%"}
