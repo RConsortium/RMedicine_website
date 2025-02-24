@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.41">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-48ffa3e5b9d089919c6712c39e5b00f2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5027bf1c1f92ac6615724d89c8213d6a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5c67a7444eebc356e54fdce0a63e8750.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#personal-r-administration" id="toc-personal-r-administration" class="nav-link" data-scroll-target="#personal-r-administration">Personal R Administration</a></li>
   <li><a href="#teal-mastery-from-pre-built-modules-to-custom-module-creation" id="toc-teal-mastery-from-pre-built-modules-to-custom-module-creation" class="nav-link" data-scroll-target="#teal-mastery-from-pre-built-modules-to-custom-module-creation">teal Mastery: From Pre-built Modules to Custom Module Creation</a></li>
   <li><a href="#survival-analysis-with-tidymodels" id="toc-survival-analysis-with-tidymodels" class="nav-link" data-scroll-target="#survival-analysis-with-tidymodels">Survival analysis with tidymodels</a></li>
-  <li><a href="#title-tbd" id="toc-title-tbd" class="nav-link" data-scroll-target="#title-tbd">Title TBD</a></li>
+  <li><a href="#visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for" id="toc-visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for" class="nav-link" data-scroll-target="#visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for">“Visualise, Optimise, Parameterise!” - Writing dataviz code that your future self will thank you for</a></li>
   <li><a href="#promover-la-equidad-científica-una-introducción-al-uso-de-r-para-la-programación-en-bioestadística-y-ciencia-de-datos-en-español." id="toc-promover-la-equidad-científica-una-introducción-al-uso-de-r-para-la-programación-en-bioestadística-y-ciencia-de-datos-en-español." class="nav-link" data-scroll-target="#promover-la-equidad-científica-una-introducción-al-uso-de-r-para-la-programación-en-bioestadística-y-ciencia-de-datos-en-español.">Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español.</a></li>
   <li><a href="#demystifying-llms-with-ellmer" id="toc-demystifying-llms-with-ellmer" class="nav-link" data-scroll-target="#demystifying-llms-with-ellmer">Demystifying LLMs with Ellmer</a></li>
   <li><a href="#r-package-development-with-github-pages-and-pkgdown" id="toc-r-package-development-with-github-pages-and-pkgdown" class="nav-link" data-scroll-target="#r-package-development-with-github-pages-and-pkgdown">R package development with GitHub Pages and <code>pkgdown</code></a></li>
@@ -237,13 +237,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="title-tbd" class="level2">
-<h2 class="anchored" data-anchor-id="title-tbd">Title TBD</h2>
+<section id="visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for" class="level2">
+<h2 class="anchored" data-anchor-id="visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for">“Visualise, Optimise, Parameterise!” - Writing dataviz code that your future self will thank you for</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
 <section id="description-3" class="level3">
 <h3 class="anchored" data-anchor-id="description-3">Description</h3>
-<p>TBD</p>
+<p>You’ve collected the initial data, explored the patterns and settled on a few graphs you’ll want to create now and in the future as you revisit the dataset from different angles and with new data as it comes in. How can you make sure that the graphs will be as memorable as possible, while also making life easier for your future self?</p>
+<p>In this code-along workshop, we’ll work together on our datasets to:</p>
+<ul>
+<li>Settle on the right types of graphs and find colours, fonts and additional styling which complement our storytelling</li>
+<li>Apply these colours, fonts and additional styling to the graphs by creating reusable functions and vectors, avoiding all the copy-pasting we’d end up doing otherwise</li>
+<li>Add annotations straight from the data to highlight patterns and points of interest</li>
+<li>Make the graphs interactive (because why not?)</li>
+<li>Adapt our code to create a function with parameters, which will allow us to apply the same plotting function to any number of future datasets, with a few extra options.</li>
+</ul>
+<p>To get the most out of our workshop, I encourage you to bring a long a dataset and a basic graph (built with ggplot) that you’ve been working on for it. That should allow you to leave the workshop having made good progress towards a finished publishable product! If you don’t have a dataset you can use, don’t worry, I’ll provide one.</p>
 </section>
 </div><div class="column" style="width:10%;">
 <!-- empty column to create gap -->
