@@ -12,6 +12,8 @@ website:
         text: Register
       - href: Abstracts.qmd
         text: Submit
+      - href: Competition.qmd
+        text: Competition
       - href: Program.qmd
         text: Program
       - href: workshops.qmd
