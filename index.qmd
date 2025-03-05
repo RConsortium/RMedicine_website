@@ -19,7 +19,7 @@ The R/Medicine conference provides a forum for sharing R based tools and approac
 ### Ziad Obermeyer
 
 **Reinventing medicine with AI**
-
+<br/><br/>
 
 ![](images/Z-Obermeyer-mucem-scaled-square.jpg){style="border-radius: 50%"}
 
