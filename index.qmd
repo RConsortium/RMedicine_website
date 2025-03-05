@@ -20,6 +20,7 @@ The R/Medicine conference provides a forum for sharing R based tools and approac
 
 **Reinventing medicine with AI**
 
+
 ![](images/Z-Obermeyer-mucem-scaled-square.jpg){style="border-radius: 50%"}
 
 #### Abstract
@@ -39,13 +40,16 @@ Ziad Obermeyer is Associate Professor and Blue Cross of California Distinguished
 ::: {.column width="45%"}
 ### Erin LeDell
 
-**Title TBD**
+**Model Evaluation: From Machine Learning to Generative AI**
 
 ![](images/erin.jpg){style="border-radius: 50%"}
 
 #### Abstract
 
-TBD
+As AI systems grow more complex, the methodologies used to evaluate them must evolve accordingly. Traditional machine learning models are largely deterministic — given the same input, they produce the same output. In contrast, large language models (LLMs) and other generative AI systems introduce a degree of non-determinism, meaning their outputs can vary even when given identical inputs. This shift challenges conventional evaluation metrics and requires new approaches to assessing model performance, reliability, and trustworthiness.
+
+This talk explores the transition from deterministic ML evaluation to the complexities of generative AI assessment. We’ll examine why accuracy-based metrics fall short, how new frameworks address coherence, consistency, and bias, and the challenges of reproducibility in probabilistic AI systems. Finally, we’ll look at how to test AI models in real-world situations, identify where they might go wrong, and make sure they’re safe, reliable, and work as expected. Attendees will gain a clearer understanding of how AI evaluation is changing and practical ways to assess next-generation models.
+
 
 <details>
   <summary>Biography</summary>

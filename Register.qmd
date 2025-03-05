@@ -8,9 +8,9 @@ The following table lists the registration fees for three categories of attendee
 
 | Category              | Early Bird | Regular |
 |-----------------------|:----------:|:-------:|
-| Students              |    \$10    |  \$25   |
-| Academic / Non-profit |    \$30    |  \$45   |
-| Industry              |    \$40    |  \$60   |
+| Students              |    \$15    |  \$30   |
+| Academic / Non-profit |    \$35    |  \$50   |
+| Industry              |    \$45    |  \$70   |
 
 ## **Scholarships: Diversity & Need-Based**
 
