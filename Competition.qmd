@@ -1,3 +1,73 @@
 ## Competition
 
-### TBD
+### How Are Vaccination Rates and Case Rates changing for Measles in 2025?
+
+The R/Medicine planning committee welcomes your participation in the virtual R/Medicine data challenge. Participants will have from now until May 21st, 2025 to work on submissions for the challenge. There will be 2 prizes: One \$200 prize for the Student Division, and One \$200 prize for the Pro Division. The quality of analyses/Quarto docs, as well as tables and visualizations will be considered.
+
+Changing attitudes towards vaccination in the US have significantly lowered childhood measles vaccination rates, as uptake of the recommended two doses of MMR vaccine before entering school has frequently fallen below the 95% recommended for community immunity. This has been followed in 2025 by a US measles outbreak.
+
+### The R/Medicine Data Challenge
+
+In this data challenge, you will analyze MMR vacccination rates over time and by geographical area, AND measles case rates and complications.
+
+We ask that all analyses be done and submitted as Quarto documents. Participants can submit as an individual or as part of a team (but not both). The maximum team size is 3. Your goal will be to tell a data story about what is happening with measles immunity and outcomes in the US and the world in 2025.
+
+We encourage you to use any and all of the public datasets available at: <https://github.com/fbranda/measles>. We encourage you to explore any of the csv files at the top level, as well as those in the measles/USA/data/ folder. Note that a lot of the contemporaneous files are updated each week, so be sure to use the latest data in your final submission.
+
+As this is an ongoing concern, datasets are being collected and updated in real time, ad we encourage you to document trends, use interactive formats like ggplotly and shiny-live, the scrollytelling extension to quarto, and to consider forecasting the future with tools like the {forecast} and (tidyverts} packages. One good reference for forecasting from Rob Hyndman can be found [here](https://otexts.com/fpp3/).
+
+### Other Data Sources
+
+In addition to the provided datasets on this Github site, you may request to use additional publicly available data (i.e. from `Our World in Data` or other relevant websites, as the US measles outbreak is evolving) in your submission by submitting a request (with the dataset) by May 1st, 2024 at 5:00PM EST. If approved, the dataset will be made available to all participants, and all participants will be informed of these datasets.
+
+You will be evaluated by judges based on the relevance, completeness, and quality of your submission.
+
+### Judging
+
+Judges include:
+
+Raymond Balise, PhD, University of Miami
+
+Peter Higgins, MD, PhD, MSc, University of Michigan
+
+Bryan P. Mayfield, PharmD, MS, Precision Analytical
+
+**Example Topics**
+
+-   What is the growth rate of measles cases in the US vs Europe?
+
+-   Are there particular counties or states at risk due to low vaccination rates?
+
+-   How are vaccination rates changing over time?
+
+-   What is your projection for the number of measles cases (and complications) in 2026?
+
+### Guidelines
+
+**When:** Now - May 21st, 2024
+
+**Where:** The R/Medicine data challenge is entirely virtual, with information and rules of the challenge available on this website. Updates will be posted on this website.
+
+**Who you are:** We welcome any participants over age 18, especially undergraduate students, graduate students, and early professional data scientists and biostatisticians. Analysts based in academic institutions, government statistical offices, think tanks, policy labs, and community organizations are encouraged to participate.
+
+**What topics you can explore:** Participants can analyze the linked measles data sets in tandem with with any other related publicly available data submitted for approval before May 1st, 2024.
+
+**Submissions and evaluation:** Participants will conduct their analyses and submit a short project narrative that describes the research question, analytic approach, and key findings. The resulting quarto document should be posted publicly to the web, and the website provided. We encourage participants to find creative ways to incorporate tables, visualizations, and other aspects of data storytelling to create a compelling narrative. In addition to their completed analysis, participants will be asked to submit documentation describing each step of their process. The documentation should be detailed enough as to make the project fully replicable. The narrative, methods, organization, and documentation of each participant's project will be evaluated for relevance, completeness, and quality. More information on evaluation will be added to the FAQs section at the bottom of this page.
+
+### Prize Information
+
+|                                                    |             |
+|----------------------------------------------------|-------------|
+| **Selection**                                      | **Prize**   |
+| Best Overall Analysis/Quarto Doc, Student Division | \$200 Prize |
+| Best Overall Analysis/Quarto Doc, Pro Division     | \$200 Prize |
+
+Winners will be **REQUIRED** to present their project at the R/Medicine conference (can be prerecorded) on Friday afternoon (US Eastern Time) in our closing session for the prizewinners on June 13, 2024. If you can not present on this date (virtually, as this is a virtual meeting), you can not win the prize.
+
+**FAQs about Data**
+
+(TBD)
+
+**Submit:**
+
+[Fill out this form](https://docs.google.com/forms/d/14eRHDwQ5vBAKB8UXNzsOYfXm0t9OMeZnaRRYaJequPI/viewform?edit_requested=true)
