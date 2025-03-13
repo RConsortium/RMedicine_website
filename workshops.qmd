@@ -183,7 +183,7 @@ Attendees should be familiar with the basics of R and have a working R installat
 ::: {.column width="45%"}
 ### Joe Cheng
 
-<!-- ![](images/frick.jpeg){style="border-radius: 50%; width: 75%"} -->
+![](images/Joe_Cheng-square.jpg){style="border-radius: 50%; width: 75%"}
 
 Joe Cheng is the CTO of Posit, PBC. He's the original creator of the Shiny web framework and co-creator of ellmer.
 :::

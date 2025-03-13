@@ -1,6 +1,15 @@
 ## Registration
 
-### Registration opening soon!
+### Registration is now open!
+
+<button class="btn btn-primary"
+style = "background-color: #009473"
+onclick="window.location.href='https://events.zoom.us/ev/Ary4n0gHYgxRCElrRRk-VtYMY7U1RqFT6ceYf8FmTErQlMuI9H7A~ArHKCkWO_DutzLw_AdvOKPtA6RVDz12I4PBqXncSsqdpum5kFyRtEovYWA'"> 
+
+  **REGISTER HERE**
+
+</button>
+
 
 ### Registration Pricing
 
@@ -12,13 +21,11 @@ The following table lists the registration fees for three categories of attendee
 | Academic / Non-profit |    \$35    |  \$50   |
 | Industry              |    \$45    |  \$70   |
 
-## **Scholarships: Diversity & Need-Based**
+### Scholarships: Diversity & Need-Based
 
 A limited number of complimentary registrations are available to enable community members to attend when they would otherwise be unable due to a lack of funding. We place an emphasis on funding applicants who are from historically underrepresented or untapped groups, from low GDP countries, and/or those of lower socioeconomic status.
 
 Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. Submit [here](https://docs.google.com/forms/d/e/1FAIpQLSdGQ_QqQdOmAvuT_1oLMC_LFVgWeq3NBJ013tVJizklv4bm5g/viewform?usp=header).
-
-## Additional Information
 
 :::::: columns
 ::: {.column width="45%"}
