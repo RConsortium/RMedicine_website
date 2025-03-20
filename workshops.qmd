@@ -2,6 +2,30 @@
 
 ---
 
+## Introduction to R for Clinical Data
+
+:::::: columns
+::: {.column width="45%"}
+### Description
+
+A gentle introduction to R and data science for healthcare professionals and clinical researchers.
+
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Stephan Kadauke
+
+![](images/kadauke_stephan.jpeg){style="border-radius: 50%; width: 75%"} 
+
+[Stephan Kadauke](https://www.chop.edu/doctors/kadauke-stephan) is the Assistant Director of the Cell and Gene Therapy Laboratory at Children's Hospital of Philadelphia. He received his MD degree and a PhD in Cell and Molecular Biology from the University of Pennsylvania, and did his residency in Clinical Pathology at Massachusetts General Hospital, before Fellowship in Transfusion Medicine at Harvard. At CHOP, he is responsible for the development and implementation of new technologies including CAR-T therapy in the Cell and Gene Therapy Laboratory.
+:::
+::::::
+
+
 ## Personal R Administration
 
 :::::: columns

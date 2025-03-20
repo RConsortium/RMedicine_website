@@ -12,7 +12,7 @@ onclick="window.location.href='https://forms.gle/BPuNthzTCMbu78Cv8'">
 
 ### How Are Vaccination Rates and Case Rates changing for Measles in 2025?
 
-The R/Medicine planning committee welcomes your participation in the virtual R/Medicine data challenge. Participants will have from now until Tuesday, May 2oth, 2025 to work on submissions for the challenge. There will be 2 prizes: One \$200 prize for the Student Division, and One \$200 prize for the Professional Division, as well as a guaranteed spot for each division to present the findings at the 2025 R/Medicine conference. The quality of analyses/Quarto docs, as well as tables and visualizations will be considered.
+The R/Medicine planning committee welcomes your participation in the virtual R/Medicine data challenge. Participants will have from now until Tuesday, May 20th, 2025 to work on submissions for the challenge. There will be 2 prizes: One \$200 prize for the Student Division, and One \$200 prize for the Professional Division, as well as a guaranteed spot for each division to present the findings at the 2025 R/Medicine conference. The quality of analyses/Quarto docs, as well as tables and visualizations will be considered.
 
 Changing attitudes towards vaccination in the US have significantly lowered childhood measles vaccination rates, as uptake of the recommended two doses of MMR vaccine before entering school has frequently fallen below the 95% recommended for community immunity.
 
