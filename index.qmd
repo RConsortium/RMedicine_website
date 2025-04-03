@@ -63,7 +63,16 @@ Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s hel
 
 <br>
 
-[![](images/R-con.png){fig-alt="R Consortium" fig-align="center" max-height="150" width="90%"}](https://www.r-consortium.org/)
+[![](images/R-con.png){fig-alt="R Consortium" width="50%" fig-align="left"}](https://www.r-consortium.org/)
+
+ <!-- max-height="150" width="70%" -->
+
+## SPONSORED BY
+
+[![](images/genentech.png){fig-alt="Genentech" width="50%" fig-align="left"}](https://www.gene.com/)
+
+
+
 
 ## MAILING LIST
 
