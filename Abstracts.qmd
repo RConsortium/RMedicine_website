@@ -1,6 +1,6 @@
 ## Call for Proposals
 
-### Submission is now open!
+### Submission deadline extended!!
 
 <button class="btn btn-primary"
 style = "background-color: #009473"
@@ -23,7 +23,7 @@ An abstract proposal should describe a presentation of methodology, a study or p
 
 ### Dates to Remember
 
-**CFP Closes:** Friday, April 11th at 11:59 PM EDT
+**CFP Closes:** Friday, April 18th at 11:59 PM ET ~~Friday, April 11th at 11:59 PM ET~~
 
 **CFP Notifications:** Friday, April 25th
 
