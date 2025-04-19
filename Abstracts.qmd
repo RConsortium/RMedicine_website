@@ -1,14 +1,14 @@
 ## Call for Proposals
 
-### Submission deadline extended!!
+### Submissions are now closed
 
-<button class="btn btn-primary"
-style = "background-color: #009473"
-onclick="window.location.href='https://forms.gle/1YsqbFR2KRD6RL8c7'"> 
+<!-- <button class="btn btn-primary" -->
+<!-- style = "background-color: #009473" -->
+<!-- onclick="window.location.href='https://forms.gle/1YsqbFR2KRD6RL8c7'">  -->
 
-  **SUBMIT ABSTRACT**
+<!--   **SUBMIT ABSTRACT** -->
 
-</button>
+<!-- </button> -->
 
 ### Details
 
