@@ -1,8 +1,6 @@
 ---
-title: "Speaker Information"
+title: "Speaker guide"
 ---
-
-# VIRTUAL SPEAKER GUIDE
 
 ## Welcome!
 
@@ -11,8 +9,6 @@ This page is intended for folks who have had their abstract accepted for a light
 ## Deadlines
 
 -   **Pre-Recording Video Submission Due Date** (mandatory for lightning talks, recommended for regular talks with only one speaker): Monday, June 2
-
--   **Speaker Training** (for all who will present live): TBD
 
 -   **Event Dates:** Monday, June 9 -- Friday, June 13
 
@@ -26,29 +22,91 @@ All lightning talks are ten (10) minutes in total (including Q&A).
 
 All regular talks are twenty (20) minutes in total (including Q&A).
 
+*Please ensure your pre-recorded talk does not go over the allotted time*
+
 ## Platform & Specifications
 
-We will be using the virtual platform Zoom that will allow speakers to deliver content live or by pre-recorded talk, and join the chat live (and drop links into the chat) for Q&A during the session.
-
-Workshops and demos are best delivered live, though it can help to have a co-presenter monitoring the chat for questions.
-
-For the main meeting on Thursday and Friday, it is best to have a presenter or co-presenter available for the live chat. This is one of the best features of R/Medicine, as the whole community gets to discuss the topic with the speaker during the talk without being rude. It really helps to have a co-presenter running the live chat, or to pre-record your talk so that you can participate in the live chat.
-
-It is often helpful to prepare for the live chat by assembling a document with any links, references, etc. that you can copy and paste into the chat when appropriate.
+We will be using the virtual platform Zoom Events that will allow pre-recorded talks to play while speakers join the chat live (and drop links into the chat) for Q&A during the session.
 
 ## Pre-recording Information & Tools
 
-All regular talk and lightning talk speakers may pre-record their talk, which will be played through the event platform. **Speakers who will give a lightning talk must submit a pre-recorded talk.**
+All regular talk and lightning talk speakers must pre-record their talk, which will be played through the event platform. 
 
-Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. **Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo.** Email this recording to us at info\@r-consortium.org by midnight EDT on June 2.
+Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. **Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo.** Email this recording to us at r-medicine-conf@r-consortium.org by midnight EDT on June 2.
 
 Please feel free to [reach out](mailto:r-medicine-conf@r-consortium.org) with any questions.
 
-## Live Q&A
+## Prepare Your Slides
+ 
+- Remember that people can either listen to you speak ***or*** read your slides, they can ***not*** do both at once.
 
-As with physical events, live interaction is essential to the success of virtual events and we are asking every presenter, whether presenting live or via pre-recorded session, to join for live chat with attendees during their session, within the platform. This will provide added value to the audience and create more of an 'event' experience.
+- Keep your slides visually minimal
 
-If you are concerned about your timezone and how that could impact the live Q&A portion of your session, we will do our best to reschedule your session slot to a time that is convenient for you. Reach out to us if needed at [r-medicine-conf](mailto:r-medicine-conf@r-consortium.org)\@r-consortium.org
+    - Your slides should support your message, not distract from what you are saying.
+
+- Use color to highlight key points and/or key words.
+
+- Set your base font size to be somewhat large (16 or 18 point).
+
+- Avoid showing Blue on Black.
+
+- Use high contrast colors between your slide background and text https://webaim.org/resources/contrastchecker/
+
+- Make sure all your slides are color blind safe.  Take a screenshot and paste the image here: https://www.color-blindness.com/coblis-color-blindness-simulator/. Be sure to check all the different forms of color vision weakness including  Monochromacy/Achromatopsia.
+
+ 
+### Configure your CodeEditor/IDE
+
+- Set the font on your code editor to be large enough that you can read the text from a few feet away.
+
+- If you use the RStudio or Positron IDE you can make everything larger with `cmd +` on Mac or `ctrl +` on Windows.
+
+- If you work on a large display, take a screen shot showing your code and view it on a 13 inch laptop or tablet.
+ 
+
+### Showing Code In Your IDE
+
+- Remember that most IDEs can collapse code blocks. 
+
+    - Consider hiding material that you have not talked about yet.
+
+    - If a code block does setup, show it and collapse it.
+
+
+### Showing Code In Slides          
+
+- Consider highlighting key points as you are taking about them.
+
+- If you are working in Quarto you can fold/show your code using code chunk options like this:
+
+
+```{{r}}
+
+#| code-fold: true
+
+#| code-summary: "Show the code"
+
+ 
+
+# code to show goes here
+
+```
+
+
+- Showing code with line numbers makes it easier for people to ask questions.
+
+- If you are making slide with Quarto you can draw attention to lines of code with a couple of techniques.  Consider these options:
+
+    + https://quarto.org/docs/blog/posts/2023-03-13-code-annotation/
+
+    + https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations/
+    
+### Slide templates
+
+R/Medicine slide templates are available for:
+
+- **Quarto**. Install the R package from this Github repo:
+- **Powerpoint**. Download the template [here](https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=sharing&ouid=109461157699922412522&rtpof=true&sd=true).
 
 ## Technical Tips for Virtual Presentations
 
@@ -102,11 +160,15 @@ From: <https://www.greatspeech.co/video-presentations/>
 
 -   Do not touch the microphone while unmuted
 
+-   Send your video to a friend prior to submission to check the sound and video quality
+
 ### Dress Code
 
 There is no dress code for presentations, and we encourage you to be comfortable. That said, you must be aware that the [Code of Conduct](https://r-medicine-2021.netlify.app/code-of-conduct/) applies to this space, both in terms of what you show on camera and what you say. We ask that you be tasteful and considerate in choosing your clothing and surroundings. Keep in mind that we are a global community. Please refrain from wearing shirts with global brand logos that are not your own. Solid colors (not white) also work best instead of prints.
 
 ## Live Q&A
+
+For the main meeting on Thursday and Friday, it is required to have a presenter or co-presenter available for the live chat while the pre-recorded talk plays. This is one of the best features of R/Medicine, as the whole community gets to discuss the topic with the speaker during the talk without being rude. It is often helpful to prepare for the live chat by assembling a document with any links, references, etc. that you can copy and paste into the chat when appropriate. This includes links to slides or GitHub repos, as appropriate.
 
 -   **Learn the Content**: Familiarity with the content allows a speaker to focus on presenting, rather than trying to remember the points to make. To minimize worry about forgetting elements of the presentation, include notes in your presentation file and have a prepared e-document of your links, script, or talking points that you can paste into the chat.
 
@@ -132,9 +194,7 @@ The Linux Foundation, in collaboration with the National Center for Women in Tec
 
 Please read and abide by our code of conduct, which can be found [here](https://r-medicine-2021.netlify.app/code-of-conduct/). We ask that speakers especially review this code of conduct and are inclusive in the **words and images** used during their presentation.
 
-## Additional Resources
-
-![](data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjMuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA2MCAzNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjAgMzQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDQ4NDhmO30KPC9zdHlsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzMCwzNCAzNCwzMCA2MCw0IDU2LjEsMCAzMCwyNi4xIDQsMCAwLDQgMjYuMSwzMCAiLz4KPC9zdmc+Cg==){alt=""}
+## Links to additional resources
 
 [**Best Gear for Online Meetings**](https://www.cnet.com/how-to/best-gear-for-online-meetings-webcams-lights-mics-tripods-and-more/) -- Webcams, lights, mics, tripods and more
 
@@ -146,6 +206,10 @@ Please read and abide by our code of conduct, which can be found [here](https://
 
 [**Checklist for Speakers**](https://www.blueskyelearn.com/for-presenters-a-virtual-event-checklist/) -- this article provides checklists applicable for speakers that are live streaming.
 
-## Contact Us
+[**R-Ladies video tips**](https://rladies.org/blog/2025-02-03-submit_posit_conf/)
 
-If you have any other platform, speaker, or schedule-related questions, please contact us at [r-medicine-conf\@r-consortium.org](mailto:r-medicine-conf@r-consortium.org).
+[**Your Perfect Tech Talk**](https://www.youtube.com/watch?v=AzVr_nsKoZs)
+
+[**A general MIT lecture on How to Speak**](https://www.youtube.com/watch?v=Unzc731iCUY)
+
+

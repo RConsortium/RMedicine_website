@@ -8,6 +8,4 @@ format:
     echo: false
 ---
 
-**Speakers: Please see additional instructions and deadlines in the [speaker guide](speaker_info.qmd).**
-
 ### TBD
