@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/Attend.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/Contact.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/Competition.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
+    <loc>https://RConsortium.github.io/RMedicine_website/Events.html</loc>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
   </url>
   <url>
     <loc>https://RConsortium.github.io/RMedicine_website/Register.html</loc>
-    <lastmod>2025-04-19T11:18:23.381Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/Events.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/index.html</loc>
-    <lastmod>2025-04-19T11:18:23.454Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/speaker_info.html</loc>
-    <lastmod>2025-04-19T11:18:23.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/Program.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/LICENSE.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/RMedicine_website/committees.html</loc>
-    <lastmod>2025-04-19T11:18:23.381Z</lastmod>
+    <lastmod>2025-04-24T18:19:38.675Z</lastmod>
   </url>
   <url>
     <loc>https://RConsortium.github.io/RMedicine_website/workshops.html</loc>
-    <lastmod>2025-04-19T11:18:23.456Z</lastmod>
+    <lastmod>2025-04-24T18:19:38.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/Program.html</loc>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/speaker_info.html</loc>
+    <lastmod>2025-04-24T18:19:38.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/Contact.html</loc>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/LICENSE.html</loc>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/committees.html</loc>
+    <lastmod>2025-04-24T18:19:38.675Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/Attend.html</loc>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/index.html</loc>
+    <lastmod>2025-04-24T18:19:38.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/RMedicine_website/Competition.html</loc>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
   </url>
   <url>
     <loc>https://RConsortium.github.io/RMedicine_website/Abstracts.html</loc>
-    <lastmod>2025-04-19T11:18:23.377Z</lastmod>
+    <lastmod>2025-04-24T18:19:38.671Z</lastmod>
   </url>
 </urlset>
