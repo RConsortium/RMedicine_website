@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Speaker Information – R/Medicine 2025</title>
+<title>Speaker guide – R/Medicine 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -105,6 +139,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Competition</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link active" href="./speaker_info.html" aria-current="page"> 
+<span class="menu-text">Speaker guide</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./Program.html"> 
 <span class="menu-text">Program</span></a>
   </li>  
@@ -144,14 +182,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#virtual-speaker-guide" id="toc-virtual-speaker-guide" class="nav-link active" data-scroll-target="#virtual-speaker-guide">VIRTUAL SPEAKER GUIDE</a>
-  <ul class="collapse">
-  <li><a href="#welcome" id="toc-welcome" class="nav-link" data-scroll-target="#welcome">Welcome!</a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome!</a></li>
   <li><a href="#deadlines" id="toc-deadlines" class="nav-link" data-scroll-target="#deadlines">Deadlines</a></li>
   <li><a href="#schedule-and-timing" id="toc-schedule-and-timing" class="nav-link" data-scroll-target="#schedule-and-timing">Schedule and Timing</a></li>
   <li><a href="#platform-specifications" id="toc-platform-specifications" class="nav-link" data-scroll-target="#platform-specifications">Platform &amp; Specifications</a></li>
   <li><a href="#pre-recording-information-tools" id="toc-pre-recording-information-tools" class="nav-link" data-scroll-target="#pre-recording-information-tools">Pre-recording Information &amp; Tools</a></li>
-  <li><a href="#live-qa" id="toc-live-qa" class="nav-link" data-scroll-target="#live-qa">Live Q&amp;A</a></li>
+  <li><a href="#prepare-your-slides" id="toc-prepare-your-slides" class="nav-link" data-scroll-target="#prepare-your-slides">Prepare Your Slides</a>
+  <ul class="collapse">
+  <li><a href="#configure-your-codeeditoride" id="toc-configure-your-codeeditoride" class="nav-link" data-scroll-target="#configure-your-codeeditoride">Configure your CodeEditor/IDE</a></li>
+  <li><a href="#showing-code-in-your-ide" id="toc-showing-code-in-your-ide" class="nav-link" data-scroll-target="#showing-code-in-your-ide">Showing Code In Your IDE</a></li>
+  <li><a href="#showing-code-in-slides" id="toc-showing-code-in-slides" class="nav-link" data-scroll-target="#showing-code-in-slides">Showing Code In Slides</a></li>
+  <li><a href="#slide-templates" id="toc-slide-templates" class="nav-link" data-scroll-target="#slide-templates">Slide templates</a></li>
+  </ul></li>
   <li><a href="#technical-tips-for-virtual-presentations" id="toc-technical-tips-for-virtual-presentations" class="nav-link" data-scroll-target="#technical-tips-for-virtual-presentations">Technical Tips for Virtual Presentations</a></li>
   <li><a href="#lighting-webcam-and-microphone-best-practices" id="toc-lighting-webcam-and-microphone-best-practices" class="nav-link" data-scroll-target="#lighting-webcam-and-microphone-best-practices">Lighting, Webcam and Microphone Best Practices</a>
   <ul class="collapse">
@@ -160,12 +202,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#best-practices-for-microphones" id="toc-best-practices-for-microphones" class="nav-link" data-scroll-target="#best-practices-for-microphones">Best Practices for Microphones</a></li>
   <li><a href="#dress-code" id="toc-dress-code" class="nav-link" data-scroll-target="#dress-code">Dress Code</a></li>
   </ul></li>
-  <li><a href="#live-qa-1" id="toc-live-qa-1" class="nav-link" data-scroll-target="#live-qa-1">Live Q&amp;A</a></li>
+  <li><a href="#live-qa" id="toc-live-qa" class="nav-link" data-scroll-target="#live-qa">Live Q&amp;A</a></li>
   <li><a href="#inclusive-speaker-orientation-online-course" id="toc-inclusive-speaker-orientation-online-course" class="nav-link" data-scroll-target="#inclusive-speaker-orientation-online-course">Inclusive Speaker Orientation Online Course</a></li>
   <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
-  <li><a href="#contact-us" id="toc-contact-us" class="nav-link" data-scroll-target="#contact-us">Contact Us</a></li>
-  </ul></li>
+  <li><a href="#links-to-additional-resources" id="toc-links-to-additional-resources" class="nav-link" data-scroll-target="#links-to-additional-resources">Links to additional resources</a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Speaker Information</h1>
+<h1 class="title">Speaker guide</h1>
 </div>
 
 
@@ -191,8 +231,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="virtual-speaker-guide" class="level1">
-<h1>VIRTUAL SPEAKER GUIDE</h1>
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
 <p>This page is intended for folks who have had their abstract accepted for a lightning talk or regular talk at R/Medicine 2025. Congratulations! We are excited to welcome you as a presenter. As a reminder, the event will take place virtually on Thursday and Friday, June 13-14, on Eastern Daylight Time. Please click through the tabs on this page to access information.</p>
@@ -201,7 +239,6 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="deadlines">Deadlines</h2>
 <ul>
 <li><p><strong>Pre-Recording Video Submission Due Date</strong> (mandatory for lightning talks, recommended for regular talks with only one speaker): Monday, June 2</p></li>
-<li><p><strong>Speaker Training</strong> (for all who will present live): TBD</p></li>
 <li><p><strong>Event Dates:</strong> Monday, June 9 – Friday, June 13</p></li>
 <li><p><strong>Timezone:</strong> Eastern Daylight Time</p></li>
 </ul>
@@ -211,24 +248,84 @@ ul.task-list li input[type="checkbox"] {
 <p>The schedule has been posted on the R/Medicine web site.</p>
 <p>All lightning talks are ten (10) minutes in total (including Q&amp;A).</p>
 <p>All regular talks are twenty (20) minutes in total (including Q&amp;A).</p>
+<p><em>Please ensure your pre-recorded talk does not go over the allotted time</em></p>
 </section>
 <section id="platform-specifications" class="level2">
 <h2 class="anchored" data-anchor-id="platform-specifications">Platform &amp; Specifications</h2>
-<p>We will be using the virtual platform Zoom that will allow speakers to deliver content live or by pre-recorded talk, and join the chat live (and drop links into the chat) for Q&amp;A during the session.</p>
-<p>Workshops and demos are best delivered live, though it can help to have a co-presenter monitoring the chat for questions.</p>
-<p>For the main meeting on Thursday and Friday, it is best to have a presenter or co-presenter available for the live chat. This is one of the best features of R/Medicine, as the whole community gets to discuss the topic with the speaker during the talk without being rude. It really helps to have a co-presenter running the live chat, or to pre-record your talk so that you can participate in the live chat.</p>
-<p>It is often helpful to prepare for the live chat by assembling a document with any links, references, etc. that you can copy and paste into the chat when appropriate.</p>
+<p>We will be using the virtual platform Zoom Events that will allow pre-recorded talks to play while speakers join the chat live (and drop links into the chat) for Q&amp;A during the session.</p>
 </section>
 <section id="pre-recording-information-tools" class="level2">
 <h2 class="anchored" data-anchor-id="pre-recording-information-tools">Pre-recording Information &amp; Tools</h2>
-<p>All regular talk and lightning talk speakers may pre-record their talk, which will be played through the event platform. <strong>Speakers who will give a lightning talk must submit a pre-recorded talk.</strong></p>
-<p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. <strong>Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo.</strong> Email this recording to us at info@r-consortium.org by midnight EDT on June 2.</p>
+<p>All regular talk and lightning talk speakers must pre-record their talk, which will be played through the event platform.</p>
+<p>Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. <strong>Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo.</strong> Email this recording to us at r-medicine-conf@r-consortium.org by midnight EDT on June 2.</p>
 <p>Please feel free to <a href="mailto:r-medicine-conf@r-consortium.org">reach out</a> with any questions.</p>
 </section>
-<section id="live-qa" class="level2">
-<h2 class="anchored" data-anchor-id="live-qa">Live Q&amp;A</h2>
-<p>As with physical events, live interaction is essential to the success of virtual events and we are asking every presenter, whether presenting live or via pre-recorded session, to join for live chat with attendees during their session, within the platform. This will provide added value to the audience and create more of an ‘event’ experience.</p>
-<p>If you are concerned about your timezone and how that could impact the live Q&amp;A portion of your session, we will do our best to reschedule your session slot to a time that is convenient for you. Reach out to us if needed at <a href="mailto:r-medicine-conf@r-consortium.org">r-medicine-conf</a>@r-consortium.org</p>
+<section id="prepare-your-slides" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-your-slides">Prepare Your Slides</h2>
+<ul>
+<li><p>Remember that people can either listen to you speak <strong><em>or</em></strong> read your slides, they can <strong><em>not</em></strong> do both at once.</p></li>
+<li><p>Keep your slides visually minimal</p>
+<ul>
+<li>Your slides should support your message, not distract from what you are saying.</li>
+</ul></li>
+<li><p>Use color to highlight key points and/or key words.</p></li>
+<li><p>Set your base font size to be somewhat large (16 or 18 point).</p></li>
+<li><p>Avoid showing Blue on Black.</p></li>
+<li><p>Use high contrast colors between your slide background and text https://webaim.org/resources/contrastchecker/</p></li>
+<li><p>Make sure all your slides are color blind safe. Take a screenshot and paste the image here: https://www.color-blindness.com/coblis-color-blindness-simulator/. Be sure to check all the different forms of color vision weakness including Monochromacy/Achromatopsia.</p></li>
+</ul>
+<section id="configure-your-codeeditoride" class="level3">
+<h3 class="anchored" data-anchor-id="configure-your-codeeditoride">Configure your CodeEditor/IDE</h3>
+<ul>
+<li><p>Set the font on your code editor to be large enough that you can read the text from a few feet away.</p></li>
+<li><p>If you use the RStudio or Positron IDE you can make everything larger with <code>cmd +</code> on Mac or <code>ctrl +</code> on Windows.</p></li>
+<li><p>If you work on a large display, take a screen shot showing your code and view it on a 13 inch laptop or tablet.</p></li>
+</ul>
+</section>
+<section id="showing-code-in-your-ide" class="level3">
+<h3 class="anchored" data-anchor-id="showing-code-in-your-ide">Showing Code In Your IDE</h3>
+<ul>
+<li><p>Remember that most IDEs can collapse code blocks.</p>
+<ul>
+<li><p>Consider hiding material that you have not talked about yet.</p></li>
+<li><p>If a code block does setup, show it and collapse it.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="showing-code-in-slides" class="level3">
+<h3 class="anchored" data-anchor-id="showing-code-in-slides">Showing Code In Slides</h3>
+<ul>
+<li><p>Consider highlighting key points as you are taking about them.</p></li>
+<li><p>If you are working in Quarto you can fold/show your code using code chunk options like this:</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| code-fold: true</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">#| code-summary: "Show the code"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in"> </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in"># code to show goes here</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Showing code with line numbers makes it easier for people to ask questions.</p></li>
+<li><p>If you are making slide with Quarto you can draw attention to lines of code with a couple of techniques. Consider these options:</p>
+<ul>
+<li><p>https://quarto.org/docs/blog/posts/2023-03-13-code-annotation/</p></li>
+<li><p>https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations/</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="slide-templates" class="level3">
+<h3 class="anchored" data-anchor-id="slide-templates">Slide templates</h3>
+<p>R/Medicine slide templates are available for:</p>
+<ul>
+<li><strong>Quarto</strong>. Install the R package from this Github repo:</li>
+<li><strong>Powerpoint</strong>. Download the template <a href="https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=sharing&amp;ouid=109461157699922412522&amp;rtpof=true&amp;sd=true">here</a>.</li>
+</ul>
+</section>
 </section>
 <section id="technical-tips-for-virtual-presentations" class="level2">
 <h2 class="anchored" data-anchor-id="technical-tips-for-virtual-presentations">Technical Tips for Virtual Presentations</h2>
@@ -271,6 +368,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Test audio levels in advance.</p></li>
 <li><p>Manage noise by turning off fans, phones, or speakers and keep ambient noise to a minimum.</p></li>
 <li><p>Do not touch the microphone while unmuted</p></li>
+<li><p>Send your video to a friend prior to submission to check the sound and video quality</p></li>
 </ul>
 </section>
 <section id="dress-code" class="level3">
@@ -278,8 +376,9 @@ ul.task-list li input[type="checkbox"] {
 <p>There is no dress code for presentations, and we encourage you to be comfortable. That said, you must be aware that the <a href="https://r-medicine-2021.netlify.app/code-of-conduct/">Code of Conduct</a> applies to this space, both in terms of what you show on camera and what you say. We ask that you be tasteful and considerate in choosing your clothing and surroundings. Keep in mind that we are a global community. Please refrain from wearing shirts with global brand logos that are not your own. Solid colors (not white) also work best instead of prints.</p>
 </section>
 </section>
-<section id="live-qa-1" class="level2">
-<h2 class="anchored" data-anchor-id="live-qa-1">Live Q&amp;A</h2>
+<section id="live-qa" class="level2">
+<h2 class="anchored" data-anchor-id="live-qa">Live Q&amp;A</h2>
+<p>For the main meeting on Thursday and Friday, it is required to have a presenter or co-presenter available for the live chat while the pre-recorded talk plays. This is one of the best features of R/Medicine, as the whole community gets to discuss the topic with the speaker during the talk without being rude. It is often helpful to prepare for the live chat by assembling a document with any links, references, etc. that you can copy and paste into the chat when appropriate. This includes links to slides or GitHub repos, as appropriate.</p>
 <ul>
 <li><p><strong>Learn the Content</strong>: Familiarity with the content allows a speaker to focus on presenting, rather than trying to remember the points to make. To minimize worry about forgetting elements of the presentation, include notes in your presentation file and have a prepared e-document of your links, script, or talking points that you can paste into the chat.</p></li>
 <li><p><strong>Practice Makes Perfect</strong>: Speakers should practice their content delivery in the environment in which they will deliver it, such as in front of a computer. Presenting alone to a computer can be awkward at first. To make speakers more comfortable, ask colleagues, roommates, or family to sit in front so they can present to familiar faces.</p></li>
@@ -299,21 +398,18 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
 <p>Please read and abide by our code of conduct, which can be found <a href="https://r-medicine-2021.netlify.app/code-of-conduct/">here</a>. We ask that speakers especially review this code of conduct and are inclusive in the <strong>words and images</strong> used during their presentation.</p>
 </section>
-<section id="additional-resources" class="level2">
-<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjMuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA2MCAzNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjAgMzQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDQ4NDhmO30KPC9zdHlsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzMCwzNCAzNCwzMCA2MCw0IDU2LjEsMCAzMCwyNi4xIDQsMCAwLDQgMjYuMSwzMCAiLz4KPC9zdmc+Cg==" class="img-fluid" alt=""></p>
+<section id="links-to-additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="links-to-additional-resources">Links to additional resources</h2>
 <p><a href="https://www.cnet.com/how-to/best-gear-for-online-meetings-webcams-lights-mics-tripods-and-more/"><strong>Best Gear for Online Meetings</strong></a> – Webcams, lights, mics, tripods and more</p>
 <p><a href="https://www.greatspeech.co/video-presentations/#.XtFN_y_Mx-U"><strong>19 Video Presentation Tips</strong></a> to help you give a great presentation (even if you hate the way you look on camera)</p>
 <p><a href="https://pantheon.io/blog/tips-for-virtual-presentations"><strong>9 Tips for Giving Engaging Virtual Presentations</strong></a> – This article gives 9 tips and within each tip has folks from the tech world giving their advice in a fun/relatable way.</p>
 <p><a href="https://magneticspeaking.com/9-important-tips-for-virtual-presentations/"><strong>PACE Acronym for Virtual Presentations</strong></a></p>
 <p><a href="https://www.blueskyelearn.com/for-presenters-a-virtual-event-checklist/"><strong>Checklist for Speakers</strong></a> – this article provides checklists applicable for speakers that are live streaming.</p>
-</section>
-<section id="contact-us" class="level2">
-<h2 class="anchored" data-anchor-id="contact-us">Contact Us</h2>
-<p>If you have any other platform, speaker, or schedule-related questions, please contact us at <a href="mailto:r-medicine-conf@r-consortium.org">r-medicine-conf@r-consortium.org</a>.</p>
+<p><a href="https://rladies.org/blog/2025-02-03-submit_posit_conf/"><strong>R-Ladies video tips</strong></a></p>
+<p><a href="https://www.youtube.com/watch?v=AzVr_nsKoZs"><strong>Your Perfect Tech Talk</strong></a></p>
+<p><a href="https://www.youtube.com/watch?v=Unzc731iCUY"><strong>A general MIT lecture on How to Speak</strong></a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

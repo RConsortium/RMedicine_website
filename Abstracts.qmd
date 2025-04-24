@@ -3,7 +3,9 @@
 ### Submissions are now closed
 
 <!-- <button class="btn btn-primary" -->
+
 <!-- style = "background-color: #009473" -->
+
 <!-- onclick="window.location.href='https://forms.gle/1YsqbFR2KRD6RL8c7'">  -->
 
 <!--   **SUBMIT ABSTRACT** -->
@@ -64,13 +66,3 @@ Remember the questions above when writing your proposal, and think of ways to ma
 **First Time Submitting? Don't Feel Intimidated**
 
 Linux Foundation events are an excellent place for getting to know the community and sharing your ideas and the work you are doing. We strongly encourage first-time speakers to submit talks for our events. If you aren't sure about your abstract, reach out to us and we will be happy to provide advice on your proposal.
-
-**How To Give a Great Tech Talk**
-
-If your talk is accepted, we want to help you give the best presentation possible. To do this, we have listed two videos on how to give a great tech talk:
-
-Your Perfect Tech Talk:<https://www.youtube.com/watch?v=AzVr_nsKoZs>
-
-A general MIT lecture on How to Speak:<https://www.youtube.com/watch?v=Unzc731iCUY>
-
-
