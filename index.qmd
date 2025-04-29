@@ -2,7 +2,7 @@
 title: "R/Medicine 2025"
 ---
 
-![](images/Main.png)
+![](images/Main-UPDATED.png)
 
 ::: r-stack
 ## **AN R CONSORTIUM VIRTUAL CONFERENCE**
@@ -18,18 +18,20 @@ The R/Medicine conference provides a forum for sharing R based tools and approac
 ::: {.column width="45%"}
 ### Ziad Obermeyer
 
-**Reinventing medicine with AI**
-<br/><br/>
+**Reinventing medicine with AI** <br/><br/>
 
 ![](images/Z-Obermeyer-mucem-scaled-square.jpg){style="border-radius: 50%"}
 
 #### Abstract
 
-Many medical breakthroughs start with an empirical observation: a curious, unexplained pattern seen in real patients. Underlying mechanisms, unknown at first, are later mapped out in careful experiments. This “bedside to bench” pathway for discovery is less and less common —both because low-hanging fruit has been picked, and because doctors today have little time for observation. I’ll give a few examples of how artificial intelligence can help reboot this pathway: AI is a powerful engine for generating novel empirical observations in real-world data, many of them invisible to the human eye. Translating facts ‘discovered’ by AI  into (i) improvements in clinical care and (ii) scientific discoveries are at the core of a new science of medicine, powered by data and computation. 
+Many medical breakthroughs start with an empirical observation: a curious, unexplained pattern seen in real patients. Underlying mechanisms, unknown at first, are later mapped out in careful experiments. This “bedside to bench” pathway for discovery is less and less common —both because low-hanging fruit has been picked, and because doctors today have little time for observation. I’ll give a few examples of how artificial intelligence can help reboot this pathway: AI is a powerful engine for generating novel empirical observations in real-world data, many of them invisible to the human eye. Translating facts ‘discovered’ by AI into (i) improvements in clinical care and (ii) scientific discoveries are at the core of a new science of medicine, powered by data and computation.
 
 <details>
-  <summary>Biography</summary>
+
+<summary>Biography</summary>
+
 Ziad Obermeyer is Associate Professor and Blue Cross of California Distinguished Professor at UC Berkeley. He teaches at School of Public Health and was a founding member of the Berkeley–UCSF joint program in Computational Precision Health. His research uses machine learning to help doctors make better decisions, and help researchers make new discoveries by ‘seeing’ the world the way algorithms do. His work on algorithmic racial bias has been highly influential in shaping how health care organizations and policy makers hold AI accountable, from work with state Attorneys-General to testimony before the Senate Finance Committee. He is a cofounder of Nightingale Open Science and Dandelion Health, a Chan–Zuckerberg Biohub Investigator, and a Research Associate at the National Bureau of Economic Research. He was named one of the 100 most influential people in AI by TIME Magazine. Previously, he was Assistant Professor at Harvard Medical School, and he continues to practice emergency medicine in underserved communities.
+
 </details>
 :::
 
@@ -50,12 +52,13 @@ As AI systems grow more complex, the methodologies used to evaluate them must ev
 
 This talk explores the transition from deterministic ML evaluation to the complexities of generative AI assessment. We’ll examine why accuracy-based metrics fall short, how new frameworks address coherence, consistency, and bias, and the challenges of reproducibility in probabilistic AI systems. Finally, we’ll look at how to test AI models in real-world situations, identify where they might go wrong, and make sure they’re safe, reliable, and work as expected. Attendees will gain a clearer understanding of how AI evaluation is changing and practical ways to assess next-generation models.
 
-
 <details>
-  <summary>Biography</summary>
-Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s helping build an automated testing platform for statistical testing of AI applications. She is also the founder of DataScientific, Inc., an AI Advisory and Consulting firm specializing in the development and implementation of cutting-edge AI solutions. Previously, she was the Chief Machine Learning Scientist at H2O.ai, and founder of Women in Machine Learning and Data Science (WiMLDS) and co-founder of R-Ladies Global. Erin received her Ph.D. in Biostatistics from University of California, Berkeley and has a B.S. and M.A. in Mathematics.
-</details>
 
+<summary>Biography</summary>
+
+Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s helping build an automated testing platform for statistical testing of AI applications. She is also the founder of DataScientific, Inc., an AI Advisory and Consulting firm specializing in the development and implementation of cutting-edge AI solutions. Previously, she was the Chief Machine Learning Scientist at H2O.ai, and founder of Women in Machine Learning and Data Science (WiMLDS) and co-founder of R-Ladies Global. Erin received her Ph.D. in Biostatistics from University of California, Berkeley and has a B.S. and M.A. in Mathematics.
+
+</details>
 :::
 :::
 
@@ -65,14 +68,11 @@ Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s hel
 
 [![](images/R-con.png){fig-alt="R Consortium" width="50%" fig-align="left"}](https://www.r-consortium.org/)
 
- <!-- max-height="150" width="70%" -->
+<!-- max-height="150" width="70%" -->
 
 ## SPONSORED BY
 
 [![](images/genentech.png){fig-alt="Genentech" width="50%" fig-align="left"}](https://www.gene.com/)
-
-
-
 
 ## MAILING LIST
 
@@ -83,9 +83,11 @@ Join our mailing list to hear all the latest about events, news and more
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
 ```
+
 ```{=html}
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 ```
+
 ```{=html}
 <script>
   hbspt.forms.create({
@@ -96,6 +98,7 @@ Join our mailing list to hear all the latest about events, news and more
 });
 </script>
 ```
+
 ## HELP EDIT THIS WEBSITE
 
 This entire website was made using Quarto and R.
