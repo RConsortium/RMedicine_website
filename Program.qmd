@@ -6,6 +6,509 @@ format:
   html:
     code-fold: false
     echo: false
+    warning: false
+    message: false
 ---
 
-### TBD
+### Full program coming May 9th!
+
+## All times EDT
+
+```{r}
+library(lubridate)
+library(gt)
+```
+
+
+```{r, day1}
+# Day 1
+schedule_day_1 <-
+  dplyr::tribble(
+    ~start_time, 
+    ~end_time, 
+    ~t_type, 
+    ~t_title, 
+    ~t_speakers, 
+    ~t_speaker_titles, 
+    ~t_companies,
+    
+    "2025-06-09 10:00", 
+    "2025-06-09 11:00", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-09 10:00", 
+    "2025-06-09 11:00", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-09 11:00", 
+    "2025-06-09 14:00", 
+    "Workshop", 
+    "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español", 
+    "Catalina Canizares-Escobar, Francisco Cardozo", 
+    "PhD students", 
+    "Florida International University",
+    
+    "2025-06-09 11:00", 
+    "2025-06-09 14:00", 
+    "Workshop", 
+    "Introduction to R for Clinical Data", 
+    "Stephan Kadauke", 
+    "Assistant Director of the Cell and Gene Therapy Laboratory", 
+    "Children's Hospital of Philadelphia",
+    
+    "2025-06-09 14:00", 
+    "2025-06-09 14:30",
+    "Break", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-09 14:30", 
+    "2025-06-09 17:30", 
+    "Workshop/Demos", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-09 14:30", 
+    "2025-06-09 17:30", 
+    "Workshop/Demos", 
+    NA, 
+    NA, 
+    NA, 
+    NA
+  ) |>
+  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+```
+
+```{r}
+
+# Create a table for the day of events
+gt(schedule_day_1) |>
+  tab_header(
+    title = md("<br>Workshop/Demo Day 1<br>Monday, June 9, 2025<br><br>")) |> # <- insert the date
+  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+  fmt_duration(
+    columns = duration,
+    input_units = "minutes",
+    output_units = c("hours", "minutes")
+  ) |>
+  cols_move(columns = duration, after = end_time) |>
+  cols_merge(
+    columns = c(t_type, t_title, t_speakers, t_speaker_titles, t_companies),
+    pattern = md("{1}<br><< {2}<br>{3}<br>{4}>><<, {5}>>")
+  ) |>
+  cols_label(
+    start_time ~ "Start Time",
+    end_time ~ "End Time",
+    duration ~ "Duration",
+    t_type ~ ""
+  ) |>
+  cols_align(align = "center") |>
+  cols_width(
+    c(start_time, end_time, duration) ~ px(90),
+    everything() ~ px(600)
+  ) |>
+  opt_align_table_header(align = "left") |>
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "gray85"
+  ) |>
+  tab_style(
+    locations = cells_body(rows = t_type == "Break"),
+    style = cell_fill(color = "bisque")
+  )
+```
+
+
+```{r, day2}
+# Day 2
+schedule_day_2 <-
+  dplyr::tribble(
+    ~start_time, 
+    ~end_time, 
+    ~t_type, 
+    ~t_title, 
+    ~t_speakers, 
+    ~t_speaker_titles, 
+    ~t_companies,
+    
+    "2025-06-10 10:00", 
+    "2025-06-10 11:00", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-10 10:00", 
+    "2025-06-10 11:00", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-10 11:00", 
+    "2025-06-10 14:00", 
+    "Workshop", 
+    "Survival analysis with tidymodels", 
+    "Hannah Frick", 
+    "Software engineer", 
+    "Posit",
+    
+    "2025-06-10 11:00", 
+    "2025-06-10 14:00", 
+    "Workshop/Demos", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-10 14:00", 
+    "2025-06-10 14:30",
+    "Break", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-10 14:30", 
+    "2025-06-10 17:30", 
+    "Workshop", 
+    "'Visualise, Optimise, Parameterise!' - Writing dataviz code that your future self will thank you for", 
+    "Cara Thompson", 
+    "Data visualization consultant", 
+    NA,
+    
+    "2025-06-10 14:30", 
+    "2025-06-10 15:30", 
+    "Demo", 
+    "Quarto Dashboards: from zero to publish in one hour", 
+    "Mine Çetinkaya-Rundel", 
+    "Professor of the Practice", 
+    "Duke University",
+    
+    "2025-06-10 15:30", 
+    "2025-06-10 16:30", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-10 16:30", 
+    "2025-06-10 17:30", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA
+  ) |>
+  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+```
+
+```{r}
+
+# Create a table for the day of events
+gt(schedule_day_2) |>
+  tab_header(title = md("<br>Workshop/Demo Day 2<br>Tuesday, June 10, 2025<br><br>")) |> # <- insert the date
+  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+  fmt_duration(
+    columns = duration,
+    input_units = "minutes",
+    output_units = c("hours", "minutes")
+  ) |>
+  cols_move(columns = duration, after = end_time) |>
+  cols_merge(
+    columns = c(t_type, t_title, t_speakers, t_speaker_titles, t_companies),
+    pattern = md("{1}<br><< {2}<br>{3}<br>{4}>><<, {5}>>")
+  ) |>
+  cols_label(
+    start_time ~ "Start Time",
+    end_time ~ "End Time",
+    duration ~ "Duration",
+    t_type ~ ""
+  ) |>
+  cols_align(align = "center") |>
+  cols_width(
+    c(start_time, end_time, duration) ~ px(90),
+    everything() ~ px(600)
+  ) |>
+  opt_align_table_header(align = "left") |>
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "gray85"
+  ) |>
+  tab_style(
+    locations = cells_body(rows = t_type == "Break"),
+    style = cell_fill(color = "bisque")
+  )
+
+```
+
+```{r, day3}
+# Day 3
+schedule_day_3 <-
+  dplyr::tribble(
+    ~start_time, 
+    ~end_time, 
+    ~t_type, 
+    ~t_title, 
+    ~t_speakers, 
+    ~t_speaker_titles, 
+    ~t_companies,
+    
+    "2025-06-11 10:00", 
+    "2025-06-11 11:00", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-11 10:00", 
+    "2025-06-11 11:00", 
+    "Demo", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-11 11:00", 
+    "2025-06-11 14:00", 
+    "Workshop", 
+    "Rix: reproducible data science environments with Nix", 
+    "Bruno Rodrigues", 
+    "Statistician", 
+    " Luxembourg’s Ministry of Research and Higher Education",
+    
+    "2025-06-11 11:00", 
+    "2025-06-11 14:00", 
+    "Workshop", 
+    "Personal R Administration", 
+    "David Aja, Shannon Pileggi", 
+    "Software Engineer at Posit", 
+    "Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium",
+    
+    "2025-06-10 14:00", 
+    "2025-06-10 14:30",
+    "Break", 
+    NA, 
+    NA, 
+    NA, 
+    NA,
+    
+    "2025-06-10 14:30", 
+    "2025-06-10 17:30", 
+    "Workshop", 
+    "Demystifying LLMs with Ellmer", 
+    "Joe Cheng", 
+    "CTO", 
+    "Posit",
+    
+    "2025-06-10 14:30", 
+    "2025-06-10 17:30", 
+    "Workshop", 
+    "teal Mastery: From Pre-built Modules to Custom Module Creation", 
+    "Dony Unardi", 
+    "Principal Data Scientist", 
+    "Genentech"
+  ) |>
+  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+```
+
+```{r}
+
+# Create a table for the day of events
+gt(schedule_day_3) |>
+  tab_header(title = md("<br>Workshop/Demo Day 3<br>Wednesday, June 11, 2025<br><br>")) |> # <- insert the date
+  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+  fmt_duration(
+    columns = duration,
+    input_units = "minutes",
+    output_units = c("hours", "minutes")
+  ) |>
+  cols_move(columns = duration, after = end_time) |>
+  cols_merge(
+    columns = c(t_type, t_title, t_speakers, t_speaker_titles, t_companies),
+    pattern = md("{1}<br><< {2}<br>{3}<br>{4}>><<, {5}>>")
+  ) |>
+  cols_label(
+    start_time ~ "Start Time",
+    end_time ~ "End Time",
+    duration ~ "Duration",
+    t_type ~ ""
+  ) |>
+  cols_align(align = "center") |>
+  cols_width(
+    c(start_time, end_time, duration) ~ px(90),
+    everything() ~ px(600)
+  ) |>
+  opt_align_table_header(align = "left") |>
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "gray85"
+  ) |>
+  tab_style(
+    locations = cells_body(rows = t_type == "Break"),
+    style = cell_fill(color = "bisque")
+  )
+
+```
+
+```{r, day4}
+# Day 4
+schedule_day_4 <-
+  dplyr::tribble(
+    ~start_time, 
+    ~end_time, 
+    ~t_type, 
+    ~t_title, 
+    ~t_speakers, 
+    ~t_companies,
+    
+    "2025-06-12 11:00", 
+    "2025-06-12 11:15", 
+    "Opening Remarks", 
+    NA, 
+    "Emily Zabor", 
+    "Cleveland Clinic", 
+    
+    "2025-06-12 11:15", 
+    "2025-06-12 12:15", 
+    "Keynote", 
+    "Reinventing medicine with AI", 
+    "Ziad Obermeyer", 
+    "UC Berkeley",
+    
+    "2025-06-12 12:15", 
+    "2025-06-12 17:30", 
+    "Regular and Lightning talks, Details coming soon", 
+    NA, 
+    NA, 
+    NA
+  ) |>
+  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+```
+
+```{r}
+# Create a table for the day of events
+gt(schedule_day_4) |>
+  tab_header(title = md("<br>Meeting Day 1<br>Thursday, June 12, 2025<br><br>")) |> # <- insert the date
+  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+  fmt_duration(
+    columns = duration,
+    input_units = "minutes",
+    output_units = c("hours", "minutes")
+  ) |>
+  cols_move(columns = duration, after = end_time) |>
+  cols_merge(
+    columns = c(t_type, t_title, t_speakers, t_companies),
+    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+  ) |>
+  cols_label(
+    start_time ~ "Start Time",
+    end_time ~ "End Time",
+    duration ~ "Duration",
+    t_type ~ ""
+  ) |>
+  cols_align(align = "center") |>
+  cols_width(
+    c(start_time, end_time, duration) ~ px(90),
+    everything() ~ px(600)
+  ) |>
+  opt_align_table_header(align = "left") |>
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "gray85"
+  ) |>
+  tab_style(
+    locations = cells_body(rows = t_type == "Break"),
+    style = cell_fill(color = "bisque")
+  )
+
+```
+
+```{r, day5}
+# Day 5
+schedule_day_5 <-
+  dplyr::tribble(
+    ~start_time, 
+    ~end_time, 
+    ~t_type, 
+    ~t_title, 
+    ~t_speakers, 
+    ~t_companies,
+    
+    "2025-06-13 11:00", 
+    "2025-06-13 11:15", 
+    "Opening Remarks", 
+    NA, 
+    "Emily Zabor", 
+    "Cleveland Clinic", 
+    
+    "2025-06-13 11:15", 
+    "2025-06-13 12:15", 
+    "Keynote", 
+    "Model Evaluation: From Machine Learning to Generative AI", 
+    "Erin LeDell", 
+    "Distributional Inc",
+    
+    "2025-06-13 12:15", 
+    "2025-06-13 17:30", 
+    "Regular and Lightning talks, Details coming soon", 
+    NA, 
+    NA, 
+    NA
+  ) |>
+  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+```
+
+```{r}
+# Create a table for the day of events
+gt(schedule_day_5) |>
+  tab_header(title = md("<br>Meeting Day 2<br>Friday, June 13, 2025<br><br>")) |> # <- insert the date
+  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+  fmt_duration(
+    columns = duration,
+    input_units = "minutes",
+    output_units = c("hours", "minutes")
+  ) |>
+  cols_move(columns = duration, after = end_time) |>
+  cols_merge(
+    columns = c(t_type, t_title, t_speakers, t_companies),
+    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+  ) |>
+  cols_label(
+    start_time ~ "Start Time",
+    end_time ~ "End Time",
+    duration ~ "Duration",
+    t_type ~ ""
+  ) |>
+  cols_align(align = "center") |>
+  cols_width(
+    c(start_time, end_time, duration) ~ px(90),
+    everything() ~ px(600)
+  ) |>
+  opt_align_table_header(align = "left") |>
+  tab_options(
+    heading.background.color = "lightblue",
+    column_labels.background.color = "gray85"
+  ) |>
+  tab_style(
+    locations = cells_body(rows = t_type == "Break"),
+    style = cell_fill(color = "bisque")
+  )
+
+```
