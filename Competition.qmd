@@ -24,6 +24,8 @@ We ask that all analyses be done and submitted as Quarto documents. Participants
 
 We encourage you to use any and all of the public datasets available at: <https://github.com/fbranda/measles>. We encourage you to explore any of the csv files at the top level, as well as those in the `measles/USA/data/` folder. Note that a lot of the contemporaneous files are updated each week, so be sure to use the latest data in your final submission.
 
+A special thank you to **Francesco Branda, Adjunct professor of the Unit of Medical Statistics and Molecular Epidemiology at Campus Bio-Medico University of Rome**, for creating and maintaining this valuable repository of measles data.
+
 As this is an ongoing concern, datasets are being collected and updated in real time, ad we encourage you to document trends, use interactive formats like ggplotly and shiny-live, and to consider forecasting the future with tools like the {forecast} and {tidyverts} packages. One good reference for forecasting from Rob Hyndman can be found [here](https://otexts.com/fpp3/).
 
 In addition to the provided datasets on this Github site, you may request to use additional publicly available data in your submission by submitting a request (with the dataset) by April 29th, 2025 at 5:00PM ET. If approved, the dataset will be made available to all participants.

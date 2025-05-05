@@ -92,7 +92,6 @@ schedule_day_1 <-
 ```
 
 ```{r}
-
 # Create a table for the day of events
 gt(schedule_day_1) |>
   tab_header(
@@ -122,7 +121,8 @@ gt(schedule_day_1) |>
   opt_align_table_header(align = "left") |>
   tab_options(
     heading.background.color = "lightblue",
-    column_labels.background.color = "gray85"
+    column_labels.background.color = "gray85",
+    table.width = pct(100)
   ) |>
   tab_style(
     locations = cells_body(rows = t_type == "Break"),
@@ -219,7 +219,6 @@ schedule_day_2 <-
 ```
 
 ```{r}
-
 # Create a table for the day of events
 gt(schedule_day_2) |>
   tab_header(title = md("<br>Workshop/Demo Day 2<br>Tuesday, June 10, 2025<br><br>")) |> # <- insert the date
@@ -248,13 +247,13 @@ gt(schedule_day_2) |>
   opt_align_table_header(align = "left") |>
   tab_options(
     heading.background.color = "lightblue",
-    column_labels.background.color = "gray85"
+    column_labels.background.color = "gray85",
+    table.width = pct(100)
   ) |>
   tab_style(
     locations = cells_body(rows = t_type == "Break"),
     style = cell_fill(color = "bisque")
   )
-
 ```
 
 ```{r, day3}
@@ -329,7 +328,6 @@ schedule_day_3 <-
 ```
 
 ```{r}
-
 # Create a table for the day of events
 gt(schedule_day_3) |>
   tab_header(title = md("<br>Workshop/Demo Day 3<br>Wednesday, June 11, 2025<br><br>")) |> # <- insert the date
@@ -358,7 +356,8 @@ gt(schedule_day_3) |>
   opt_align_table_header(align = "left") |>
   tab_options(
     heading.background.color = "lightblue",
-    column_labels.background.color = "gray85"
+    column_labels.background.color = "gray85",
+    table.width = pct(100)
   ) |>
   tab_style(
     locations = cells_body(rows = t_type == "Break"),
@@ -431,13 +430,13 @@ gt(schedule_day_4) |>
   opt_align_table_header(align = "left") |>
   tab_options(
     heading.background.color = "lightblue",
-    column_labels.background.color = "gray85"
+    column_labels.background.color = "gray85",
+    table.width = pct(100)
   ) |>
   tab_style(
     locations = cells_body(rows = t_type == "Break"),
     style = cell_fill(color = "bisque")
   )
-
 ```
 
 ```{r, day5}
@@ -504,7 +503,8 @@ gt(schedule_day_5) |>
   opt_align_table_header(align = "left") |>
   tab_options(
     heading.background.color = "lightblue",
-    column_labels.background.color = "gray85"
+    column_labels.background.color = "gray85",
+    table.width = pct(100)
   ) |>
   tab_style(
     locations = cells_body(rows = t_type == "Break"),
