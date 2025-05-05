@@ -297,3 +297,31 @@ You already analyze and summarize your data with R and Quarto. What’s next? Yo
 Mine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks – latest is the 2nd edition of Introduction to Modern Statistics. She is also a co-author on R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as a Waller and Hogg award winner for teaching excellence. In 2024, she was elected as Vice President of the International Association for Statistical Education (IASE).
 :::
 ::::::
+
+---
+
+# Panels
+
+---
+
+## Supporting R learners on the job during interesting times: A panel of R educators
+
+:::::: columns
+::: {.column width="45%"}
+### Description
+
+Join R Educators Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, and Joy Payton as they discuss the challenges of supporting and mentoring R learners outside of the traditional university classroom.  Whether you mentor physician fellows, onboard research assistants, are the “go-to” person in your department for informal help and training, provide learning and development courses in your workplace, participate in user groups, write blog posts, or work issue queues on GitHub, there’s a place for you to participate in R education.  Panelists will share their perspectives working with diverse populations of R learners, share lessons learned and favorite resources, and answer questions about best practices for capacity building.  This panel discussion will benefit from your insight and questions, so come prepared for a lively interaction aimed at cross-pollination and building a network of engaged educators!
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Ray Balise
+### Silvia Caneló
+### Meghan Harris
+### Ted Laderas
+### Joy Payton
+:::
+::::::
