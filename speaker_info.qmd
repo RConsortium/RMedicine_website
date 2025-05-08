@@ -99,8 +99,8 @@ Please feel free to [reach out](mailto:r-medicine-conf@r-consortium.org) with an
 
 R/Medicine slide templates are available for:
 
-- **Quarto**. Install the R package from this Github repo:
-- **Powerpoint**. Download the template [here](https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=sharing&ouid=109461157699922412522&rtpof=true&sd=true).
+- **Powerpoint**. Download the template [here](https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=drive_link&ouid=109461157699922412522&rtpof=true&sd=true).
+- **Quarto**. Coming soon.
 
 ## Technical Tips for Virtual Presentations
 
