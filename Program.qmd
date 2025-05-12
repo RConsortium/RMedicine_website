@@ -28,32 +28,28 @@ schedule_day_1 <-
     ~end_time, 
     ~t_type, 
     ~t_title, 
-    ~t_speakers, 
-    ~t_speaker_titles, 
+    ~t_speakers,  
     ~t_companies,
     
     "2025-06-09 10:00", 
     "2025-06-09 11:00", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}", 
+    "Eric Nantz", 
+    "Eli Lilly",
     
     "2025-06-09 10:00", 
     "2025-06-09 11:00", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model ", 
+    "Nuria Mercade-Besora & Edward Burn", 
+    "University of Oxford",
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
     "Workshop", 
     "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español", 
-    "Catalina Canizares-Escobar, Francisco Cardozo", 
-    "PhD students", 
+    "Catalina Canizares-Escobar & Francisco Cardozo", 
     "Florida International University",
     
     "2025-06-09 11:00", 
@@ -61,7 +57,6 @@ schedule_day_1 <-
     "Workshop", 
     "Introduction to R for Clinical Data", 
     "Stephan Kadauke", 
-    "Assistant Director of the Cell and Gene Therapy Laboratory", 
     "Children's Hospital of Philadelphia",
     
     "2025-06-09 14:00", 
@@ -69,24 +64,35 @@ schedule_day_1 <-
     "Break", 
     NA, 
     NA, 
-    NA, 
     NA,
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
-    "Workshop/Demos", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "Workshop", 
+    "R package development with GitHub Pages and pkgdown", 
+    "Melissa Van Bussel", 
+    "Statistics Canada",
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
-    "Workshop/Demos", 
-    NA, 
-    NA, 
-    NA, 
-    NA
+    "Workshop", 
+    "The power of {targets} package for reproducible data science", 
+    "Rahul Sangole", 
+    "Apple",
+    
+    "2025-06-09 17:30", 
+    "2025-06-09 18:30", 
+    "Demo", 
+    "REDCapSync and RosyREDCap: two development R packages using the REDCap API for standardized data pipelines and exploratory data analysis", 
+    "Brandon Rose", 
+    "University of Miami/Jackson Memorial Hospital",
+    
+    "2025-06-09 17:30", 
+    "2025-06-09 18:30", 
+    "Demo", 
+    "Biomarker Identification by Means of Frequent Itemset Mining and Contrast Set Mining", 
+    "Paul Kowalczyk", 
+    "HAcKerS LaB"
   ) |>
   dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
 ```
@@ -104,8 +110,8 @@ gt(schedule_day_1) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_speaker_titles, t_companies),
-    pattern = md("{1}<br><< {2}<br>{3}<br>{4}>><<, {5}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies),
+    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -140,45 +146,39 @@ schedule_day_2 <-
     ~t_type, 
     ~t_title, 
     ~t_speakers, 
-    ~t_speaker_titles, 
     ~t_companies,
     
     "2025-06-10 10:00", 
     "2025-06-10 11:00", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis", 
+    "Mahip Acharya", 
+    "University of Arkansas for Medical Sciences",
     
     "2025-06-10 10:00", 
     "2025-06-10 11:00", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "Visualising data for patients: create accessible charts", 
+    "Rita Giordano", 
+    "Visual data Studio",
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
     "Workshop", 
     "Survival analysis with tidymodels", 
     "Hannah Frick", 
-    "Software engineer", 
     "Posit",
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
-    "Workshop/Demos", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "Workshop", 
+    "First Steps with SQL in R: Making Data Talk", 
+    "Chris Battiston", 
+    "Women's College Hospital",
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
     "Break", 
-    NA, 
     NA, 
     NA, 
     NA,
@@ -188,7 +188,6 @@ schedule_day_2 <-
     "Workshop", 
     "'Visualise, Optimise, Parameterise!' - Writing dataviz code that your future self will thank you for", 
     "Cara Thompson", 
-    "Data visualization consultant", 
     NA,
     
     "2025-06-10 14:30", 
@@ -196,24 +195,21 @@ schedule_day_2 <-
     "Demo", 
     "Quarto Dashboards: from zero to publish in one hour", 
     "Mine Çetinkaya-Rundel", 
-    "Professor of the Practice", 
     "Duke University",
     
     "2025-06-10 15:30", 
     "2025-06-10 16:30", 
-    "Demo", 
-    NA, 
-    NA, 
-    NA, 
+    "Panel", 
+    "Supporting R learners on the job during interesting times: A panel of R educators", 
+    "Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, Joy Payton", 
     NA,
     
     "2025-06-10 16:30", 
     "2025-06-10 17:30", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA
+    "R You Compliant? Validating Packages for Regulatory Readiness", 
+    "Chris Battiston", 
+    "Women's College Hospital"
   ) |>
   dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
 ```
@@ -230,8 +226,8 @@ gt(schedule_day_2) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_speaker_titles, t_companies),
-    pattern = md("{1}<br><< {2}<br>{3}<br>{4}>><<, {5}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies),
+    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -265,45 +261,39 @@ schedule_day_3 <-
     ~t_type, 
     ~t_title, 
     ~t_speakers, 
-    ~t_speaker_titles, 
     ~t_companies,
     
     "2025-06-11 10:00", 
     "2025-06-11 11:00", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "Application of attention mechanism to improve performance of surveyed llm/mllm used across R/Medicine", 
+    "Robert Devine",
+    "Johnson & Johnson Companies",
     
     "2025-06-11 10:00", 
     "2025-06-11 11:00", 
     "Demo", 
-    NA, 
-    NA, 
-    NA, 
-    NA,
+    "Co-occurrence analysis and knowledge graphs for suicide risk prediction", 
+    "Thomas Charlon", 
+    "Harvard Medical School",
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
     "Workshop", 
     "Rix: reproducible data science environments with Nix", 
     "Bruno Rodrigues", 
-    "Statistician", 
-    " Luxembourg’s Ministry of Research and Higher Education",
+    "Luxembourg’s Ministry of Research and Higher Education",
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
     "Workshop", 
     "Personal R Administration", 
-    "David Aja, Shannon Pileggi", 
-    "Software Engineer at Posit", 
-    "Lead Data Scientist at The Prostate Cancer Clinical Trials Consortium",
+    "David Aja, Posit;", 
+    "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium",
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
     "Break", 
-    NA, 
     NA, 
     NA, 
     NA,
@@ -313,7 +303,6 @@ schedule_day_3 <-
     "Workshop", 
     "Demystifying LLMs with Ellmer", 
     "Joe Cheng", 
-    "CTO", 
     "Posit",
     
     "2025-06-10 14:30", 
@@ -321,7 +310,6 @@ schedule_day_3 <-
     "Workshop", 
     "teal Mastery: From Pre-built Modules to Custom Module Creation", 
     "Dony Unardi", 
-    "Principal Data Scientist", 
     "Genentech"
   ) |>
   dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
@@ -339,8 +327,8 @@ gt(schedule_day_3) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_speaker_titles, t_companies),
-    pattern = md("{1}<br><< {2}<br>{3}<br>{4}>><<, {5}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies),
+    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -687,13 +675,6 @@ schedule_day_5 <-
     "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity' R-package", 
     "Dwight Barry and Nicole Chicoine", 
     "University of Massachusetts Chan Medical School",
-    
-    "2025-06-13 16:22", 
-    "2025-06-13 16:32", 
-    "Lightning Talk", 
-    "Advanced Distance Metrics for High-Dimensional Clustering: introducing 'distanceHD' R-package", 
-    "Jung Ae Lee", 
-    "Seattle Children's Hospital",
     
     "2025-06-13 16:34", 
     "2025-06-13 16:44", 
