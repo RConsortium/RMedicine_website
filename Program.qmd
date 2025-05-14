@@ -658,9 +658,9 @@ schedule_day_5 <-
     "2025-06-13 16:10", 
     "2025-06-13 16:20", 
     "Lightning Talk", 
-    "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity' R-package", 
+    "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity", 
     "Dwight Barry and Nicole Chicoine", 
-    "University of Massachusetts Chan Medical School",
+    "Seattle Children’s Hospital",
     
     "2025-06-13 16:22", 
     "2025-06-13 16:32", 
