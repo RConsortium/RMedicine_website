@@ -197,7 +197,7 @@ Attendees will leave the workshop armed with ready-to-run examples, and the conf
 
 Attendees should be familiar with the basics of R and have a working R installation.
 
-*Note that this workshop requires access to an OpenAI/Anthropic API key. Participants have the option to obtain their own (credit card required, will incur small fee during workshop (<<1USD) but will retain long-term access) or to provide their email in advance to receive one from the workshop host*
+*Note that this workshop requires access to an OpenAI/Anthropic API key. Participants will need to indicate interest in this workshop in advance to receive one from the workshop host*
 :::
 
 ::: {.column width="10%"}
