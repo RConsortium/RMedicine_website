@@ -10,9 +10,11 @@ format:
     message: false
 ---
 
-### Full program coming May 9th!
+* All times EDT
 
-## All times EDT
+* The conference runs in two parallel tracks for the first three days of workshops, demos, and panels
+
+* The talks on the final two days run in a single track
 
 ```{r}
 library(lubridate)
@@ -26,6 +28,7 @@ schedule_day_1 <-
   dplyr::tribble(
     ~start_time, 
     ~end_time, 
+    ~track,
     ~t_type, 
     ~t_title, 
     ~t_speakers,  
@@ -33,6 +36,7 @@ schedule_day_1 <-
     
     "2025-06-09 10:00", 
     "2025-06-09 11:00", 
+    "A",
     "Demo", 
     "In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}", 
     "Eric Nantz", 
@@ -40,6 +44,7 @@ schedule_day_1 <-
     
     "2025-06-09 10:00", 
     "2025-06-09 11:00", 
+    "B",
     "Demo", 
     "A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model ", 
     "Nuria Mercade-Besora & Edward Burn", 
@@ -47,6 +52,7 @@ schedule_day_1 <-
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
+    "A",
     "Workshop", 
     "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español", 
     "Catalina Canizares-Escobar & Francisco Cardozo", 
@@ -54,6 +60,7 @@ schedule_day_1 <-
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
+    "B",
     "Workshop", 
     "Introduction to R for Clinical Data", 
     "Stephan Kadauke", 
@@ -61,6 +68,7 @@ schedule_day_1 <-
     
     "2025-06-09 14:00", 
     "2025-06-09 14:30",
+    "",
     "Break", 
     NA, 
     NA, 
@@ -68,6 +76,7 @@ schedule_day_1 <-
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
+    "A",
     "Workshop", 
     "R package development with GitHub Pages and pkgdown", 
     "Melissa Van Bussel", 
@@ -75,6 +84,7 @@ schedule_day_1 <-
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
+    "B",
     "Workshop", 
     "The power of {targets} package for reproducible data science", 
     "Rahul Sangole", 
@@ -82,6 +92,7 @@ schedule_day_1 <-
     
     "2025-06-09 17:30", 
     "2025-06-09 18:30", 
+    "A",
     "Demo", 
     "REDCapSync and RosyREDCap: two development R packages using the REDCap API for standardized data pipelines and exploratory data analysis", 
     "Brandon Rose", 
@@ -89,6 +100,7 @@ schedule_day_1 <-
     
     "2025-06-09 17:30", 
     "2025-06-09 18:30", 
+    "B",
     "Demo", 
     "Biomarker Identification by Means of Frequent Itemset Mining and Contrast Set Mining", 
     "Paul Kowalczyk", 
@@ -117,11 +129,12 @@ gt(schedule_day_1) |>
     start_time ~ "Start Time",
     end_time ~ "End Time",
     duration ~ "Duration",
+    track ~ "Track",
     t_type ~ ""
   ) |>
   cols_align(align = "center") |>
   cols_width(
-    c(start_time, end_time, duration) ~ px(90),
+    c(start_time, end_time, duration, track) ~ px(90),
     everything() ~ px(600)
   ) |>
   opt_align_table_header(align = "left") |>
@@ -143,6 +156,7 @@ schedule_day_2 <-
   dplyr::tribble(
     ~start_time, 
     ~end_time, 
+    ~track,
     ~t_type, 
     ~t_title, 
     ~t_speakers, 
@@ -150,6 +164,7 @@ schedule_day_2 <-
     
     "2025-06-10 10:00", 
     "2025-06-10 11:00", 
+    "A",
     "Demo", 
     "Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis", 
     "Mahip Acharya", 
@@ -157,6 +172,7 @@ schedule_day_2 <-
     
     "2025-06-10 10:00", 
     "2025-06-10 11:00", 
+    "B",
     "Demo", 
     "Visualising data for patients: create accessible charts", 
     "Rita Giordano", 
@@ -164,6 +180,7 @@ schedule_day_2 <-
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
+    "A",
     "Workshop", 
     "Survival analysis with tidymodels", 
     "Hannah Frick", 
@@ -171,6 +188,7 @@ schedule_day_2 <-
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
+    "B",
     "Workshop", 
     "First Steps with SQL in R: Making Data Talk", 
     "Chris Battiston", 
@@ -178,6 +196,7 @@ schedule_day_2 <-
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
+    "",
     "Break", 
     NA, 
     NA, 
@@ -185,6 +204,7 @@ schedule_day_2 <-
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
+    "A",
     "Workshop", 
     "'Visualise, Optimise, Parameterise!' - Writing dataviz code that your future self will thank you for", 
     "Cara Thompson", 
@@ -192,6 +212,7 @@ schedule_day_2 <-
     
     "2025-06-10 14:30", 
     "2025-06-10 15:30", 
+    "B",
     "Demo", 
     "Quarto Dashboards: from zero to publish in one hour", 
     "Mine Çetinkaya-Rundel", 
@@ -199,6 +220,7 @@ schedule_day_2 <-
     
     "2025-06-10 15:30", 
     "2025-06-10 16:30", 
+    "B",
     "Panel", 
     "Supporting R learners on the job during interesting times: A panel of R educators", 
     "Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, Joy Payton", 
@@ -206,6 +228,7 @@ schedule_day_2 <-
     
     "2025-06-10 16:30", 
     "2025-06-10 17:30", 
+    "B",
     "Demo", 
     "R You Compliant? Validating Packages for Regulatory Readiness", 
     "Chris Battiston", 
@@ -233,11 +256,12 @@ gt(schedule_day_2) |>
     start_time ~ "Start Time",
     end_time ~ "End Time",
     duration ~ "Duration",
+    track ~ "Track",
     t_type ~ ""
   ) |>
   cols_align(align = "center") |>
   cols_width(
-    c(start_time, end_time, duration) ~ px(90),
+    c(start_time, end_time, duration, track) ~ px(90),
     everything() ~ px(600)
   ) |>
   opt_align_table_header(align = "left") |>
@@ -258,6 +282,7 @@ schedule_day_3 <-
   dplyr::tribble(
     ~start_time, 
     ~end_time, 
+    ~track,
     ~t_type, 
     ~t_title, 
     ~t_speakers, 
@@ -265,6 +290,7 @@ schedule_day_3 <-
     
     "2025-06-11 10:00", 
     "2025-06-11 11:00", 
+    "A",
     "Demo", 
     "Application of attention mechanism to improve performance of surveyed llm/mllm used across R/Medicine", 
     "Robert Devine",
@@ -272,6 +298,7 @@ schedule_day_3 <-
     
     "2025-06-11 10:00", 
     "2025-06-11 11:00", 
+    "B",
     "Demo", 
     "Co-occurrence analysis and knowledge graphs for suicide risk prediction", 
     "Thomas Charlon", 
@@ -279,6 +306,7 @@ schedule_day_3 <-
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
+    "A",
     "Workshop", 
     "Rix: reproducible data science environments with Nix", 
     "Bruno Rodrigues", 
@@ -286,6 +314,7 @@ schedule_day_3 <-
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
+    "B",
     "Workshop", 
     "Personal R Administration", 
     "David Aja, Posit;", 
@@ -293,6 +322,7 @@ schedule_day_3 <-
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
+    "",
     "Break", 
     NA, 
     NA, 
@@ -300,6 +330,7 @@ schedule_day_3 <-
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
+    "A",
     "Workshop", 
     "Demystifying LLMs with Ellmer", 
     "Joe Cheng", 
@@ -307,6 +338,7 @@ schedule_day_3 <-
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
+    "B",
     "Workshop", 
     "teal Mastery: From Pre-built Modules to Custom Module Creation", 
     "Dony Unardi", 
@@ -334,11 +366,12 @@ gt(schedule_day_3) |>
     start_time ~ "Start Time",
     end_time ~ "End Time",
     duration ~ "Duration",
+    track ~ "Track",
     t_type ~ ""
   ) |>
   cols_align(align = "center") |>
   cols_width(
-    c(start_time, end_time, duration) ~ px(90),
+    c(start_time, end_time, duration, track) ~ px(90),
     everything() ~ px(600)
   ) |>
   opt_align_table_header(align = "left") |>
@@ -351,7 +384,6 @@ gt(schedule_day_3) |>
     locations = cells_body(rows = t_type == "Break"),
     style = cell_fill(color = "bisque")
   )
-
 ```
 
 ```{r, day4}

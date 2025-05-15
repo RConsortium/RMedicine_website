@@ -15,8 +15,6 @@ title: "Committees for R/Medicine 2025"
 -   Beth Atkinson, Mayo Clinic
 -   Michael Kane, MD Anderson
 -   Daniel Chen, The University of BC & Posit
--   Jaclyn Janis, Posit
--   Bryan Mayfield, Precision Analytical Inc
 -   Andey Nunes-Brewster, Oregon Health Authority
 -   Ben Gerber, UMass
 -   Daniel Sjoberg, Genentech
@@ -40,3 +38,18 @@ title: "Committees for R/Medicine 2025"
 -   Beth Atkinson, Mayo Clinic
 :::
 ::::::
+
+<br>
+
+## Past chairs
+
+Michael Kane, MD Anderson. Organizing committee and Program committee chair: 2018, 2019
+
+Stephan Kadauke, Children's Hospital of Philadelphia. Organizing committee chair: 2020, 2021, 2022
+
+Beth Atkinson, Mayo Clinic. Program committee chair: 2020
+
+Steven Schwager, Cornell University. Program committee chair: 2021, 2022, 2023, 2024
+
+Peter Higgins, University of Michigan. Organizing committee chair: 2023, 2024
+
