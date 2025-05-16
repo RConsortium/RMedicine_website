@@ -216,7 +216,7 @@ schedule_day_2 <-
     "Demo", 
     "Quarto Dashboards: from zero to publish in one hour", 
     "Mine Çetinkaya-Rundel", 
-    "Duke University",
+    "Duke University + Posit PBC",
     
     "2025-06-10 15:30", 
     "2025-06-10 16:30", 
