@@ -10,17 +10,17 @@ format:
     message: false
 ---
 
-* All times EDT
+-   All times EDT
 
-* The conference runs in two parallel tracks for the first three days of workshops, demos, and panels
+-   The conference runs in two parallel tracks for the first three days
+    of workshops, demos, and panels
 
-* The talks on the final two days run in a single track
+-   The talks on the final two days run in a single track
 
 ```{r}
 library(lubridate)
 library(gt)
 ```
-
 
 ```{r, day1}
 # Day 1
@@ -33,6 +33,7 @@ schedule_day_1 <-
     ~t_title, 
     ~t_speakers,  
     ~t_companies,
+    ~url_link,
     
     "2025-06-09 10:00", 
     "2025-06-09 11:00", 
@@ -41,6 +42,7 @@ schedule_day_1 <-
     "In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}", 
     "Eric Nantz", 
     "Eli Lilly",
+    "abstracts.html#in-the-nix-of-time",
     
     "2025-06-09 10:00", 
     "2025-06-09 11:00", 
@@ -49,6 +51,7 @@ schedule_day_1 <-
     "A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model ", 
     "Nuria Mercade-Besora & Edward Burn", 
     "University of Oxford",
+    "abstracts.html#the-cohortconstructor-package",
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
@@ -57,6 +60,7 @@ schedule_day_1 <-
     "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español", 
     "Catalina Canizares-Escobar & Francisco Cardozo", 
     "Florida International University",
+    "",
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
@@ -65,14 +69,16 @@ schedule_day_1 <-
     "Introduction to R for Clinical Data", 
     "Stephan Kadauke", 
     "Children's Hospital of Philadelphia",
+    "",
     
     "2025-06-09 14:00", 
     "2025-06-09 14:30",
     "",
     "Break", 
-    NA, 
-    NA, 
-    NA,
+    "",
+    "",
+    "",
+    "",
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
@@ -81,6 +87,7 @@ schedule_day_1 <-
     "R package development with GitHub Pages and pkgdown", 
     "Melissa Van Bussel", 
     "Statistics Canada",
+    "",
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
@@ -89,6 +96,7 @@ schedule_day_1 <-
     "The power of {targets} package for reproducible data science", 
     "Rahul Sangole", 
     "Apple",
+    "abstracts.html#the-power-of-targets-package",
     
     "2025-06-09 17:30", 
     "2025-06-09 18:30", 
@@ -97,6 +105,7 @@ schedule_day_1 <-
     "REDCapSync and RosyREDCap: two development R packages using the REDCap API for standardized data pipelines and exploratory data analysis", 
     "Brandon Rose", 
     "University of Miami/Jackson Memorial Hospital",
+    "abstracts.html#redcapsync-and-rosyredcap",
     
     "2025-06-09 17:30", 
     "2025-06-09 18:30", 
@@ -104,9 +113,13 @@ schedule_day_1 <-
     "Demo", 
     "Biomarker Identification by Means of Frequent Itemset Mining and Contrast Set Mining", 
     "Paul Kowalczyk", 
-    "HAcKerS LaB"
+    "HAcKerS LaB",
+    "abstracts.html#biomarker-identification"
   ) |>
-  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+  dplyr::mutate(
+    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
+    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
+  )
 ```
 
 ```{r}
@@ -122,8 +135,8 @@ gt(schedule_day_1) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies),
-    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -149,7 +162,6 @@ gt(schedule_day_1) |>
   )
 ```
 
-
 ```{r, day2}
 # Day 2
 schedule_day_2 <-
@@ -161,6 +173,7 @@ schedule_day_2 <-
     ~t_title, 
     ~t_speakers, 
     ~t_companies,
+    ~url_link,
     
     "2025-06-10 10:00", 
     "2025-06-10 11:00", 
@@ -169,6 +182,7 @@ schedule_day_2 <-
     "Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis", 
     "Mahip Acharya", 
     "University of Arkansas for Medical Sciences",
+    "abstracts.html#using-r-shiny-to-automate",
     
     "2025-06-10 10:00", 
     "2025-06-10 11:00", 
@@ -177,6 +191,7 @@ schedule_day_2 <-
     "Visualising data for patients: create accessible charts", 
     "Rita Giordano", 
     "Visual data Studio",
+    "abstracts.html#visualising-data-for-patients",
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
@@ -185,6 +200,7 @@ schedule_day_2 <-
     "Survival analysis with tidymodels", 
     "Hannah Frick", 
     "Posit",
+    "",
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
@@ -193,14 +209,16 @@ schedule_day_2 <-
     "First Steps with SQL in R: Making Data Talk", 
     "Chris Battiston", 
     "Women's College Hospital",
+    "abstracts.html#first-steps-with-sql",
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
-    "",
+    "", 
     "Break", 
-    NA, 
-    NA, 
-    NA,
+    "", 
+    "",
+    "",
+    "",
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
@@ -208,7 +226,8 @@ schedule_day_2 <-
     "Workshop", 
     "'Visualise, Optimise, Parameterise!' - Writing dataviz code that your future self will thank you for", 
     "Cara Thompson", 
-    NA,
+    "",
+    "",
     
     "2025-06-10 14:30", 
     "2025-06-10 15:30", 
@@ -217,6 +236,7 @@ schedule_day_2 <-
     "Quarto Dashboards: from zero to publish in one hour", 
     "Mine Çetinkaya-Rundel", 
     "Duke University + Posit PBC",
+    "",
     
     "2025-06-10 15:30", 
     "2025-06-10 16:30", 
@@ -224,7 +244,8 @@ schedule_day_2 <-
     "Panel", 
     "Supporting R learners on the job during interesting times: A panel of R educators", 
     "Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, Joy Payton", 
-    NA,
+    "",
+    "",
     
     "2025-06-10 16:30", 
     "2025-06-10 17:30", 
@@ -232,9 +253,13 @@ schedule_day_2 <-
     "Demo", 
     "R You Compliant? Validating Packages for Regulatory Readiness", 
     "Chris Battiston", 
-    "Women's College Hospital"
+    "Women's College Hospital",
+    "abstracts.html#r-you-compliant"
   ) |>
-  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+  dplyr::mutate(
+    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
+    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
+  )
 ```
 
 ```{r}
@@ -249,8 +274,8 @@ gt(schedule_day_2) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies),
-    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -287,6 +312,7 @@ schedule_day_3 <-
     ~t_title, 
     ~t_speakers, 
     ~t_companies,
+    ~url_link,
     
     "2025-06-11 10:00", 
     "2025-06-11 11:00", 
@@ -295,6 +321,7 @@ schedule_day_3 <-
     "Application of attention mechanism to improve performance of surveyed llm/mllm used across R/Medicine", 
     "Robert Devine",
     "Johnson & Johnson Companies",
+    "abstracts.html#application-of-attention-mechanism",
     
     "2025-06-11 10:00", 
     "2025-06-11 11:00", 
@@ -303,6 +330,7 @@ schedule_day_3 <-
     "Co-occurrence analysis and knowledge graphs for suicide risk prediction", 
     "Thomas Charlon", 
     "Harvard Medical School",
+    "abstracts.html#co-occurrence-analysis-and-knowledge-graphs",
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
@@ -311,6 +339,7 @@ schedule_day_3 <-
     "Rix: reproducible data science environments with Nix", 
     "Bruno Rodrigues", 
     "Luxembourg’s Ministry of Research and Higher Education",
+    "",
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
@@ -319,14 +348,16 @@ schedule_day_3 <-
     "Personal R Administration", 
     "David Aja, Posit;", 
     "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium",
+    "",
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
-    "",
+    "", 
     "Break", 
-    NA, 
-    NA, 
-    NA,
+    "", 
+    "",
+    "",
+    "",
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
@@ -335,6 +366,7 @@ schedule_day_3 <-
     "Demystifying LLMs with Ellmer", 
     "Joe Cheng", 
     "Posit",
+    "",
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
@@ -342,9 +374,13 @@ schedule_day_3 <-
     "Workshop", 
     "teal Mastery: From Pre-built Modules to Custom Module Creation", 
     "Dony Unardi", 
-    "Genentech"
+    "Genentech",
+    ""
   ) |>
-  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+  dplyr::mutate(
+    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
+    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
+  )
 ```
 
 ```{r}
@@ -359,8 +395,8 @@ gt(schedule_day_3) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies),
-    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -396,13 +432,15 @@ schedule_day_4 <-
     ~t_title, 
     ~t_speakers, 
     ~t_companies,
+    ~url_link,
     
     "2025-06-12 11:00", 
     "2025-06-12 11:15", 
     "Opening Remarks", 
-    NA, 
+    "", 
     "Emily Zabor", 
     "Cleveland Clinic", 
+    "",
     
     "2025-06-12 11:15", 
     "2025-06-12 12:15", 
@@ -410,6 +448,7 @@ schedule_day_4 <-
     "Reinventing medicine with AI", 
     "Ziad Obermeyer", 
     "UC Berkeley",
+    "",
     
     "2025-06-12 12:17", 
     "2025-06-12 12:37", 
@@ -417,6 +456,7 @@ schedule_day_4 <-
     "Retrospective clinical data harmonisation reporting using R and Quarto", 
     "Jeremy Selva", 
     "National Heart Centre Singapore",
+    "abstracts.html#retrospective-clinical-date-harmonisation-reporting",
     
     "2025-06-12 12:39", 
     "2025-06-12 12:59", 
@@ -424,6 +464,7 @@ schedule_day_4 <-
     "Unlocking Statistical Consistency Across Platforms: The CAMIS Project", 
     "Christina Fillmore and Lyn Taylor", 
     "Parexel",
+    "abstracts.html#unlocking-statistical-consistency",
     
     "2025-06-12 13:01", 
     "2025-06-12 13:21", 
@@ -431,6 +472,7 @@ schedule_day_4 <-
     "Supercharging Statistical Analysis with ARDs and the {cards} R Package", 
     "Becca Krouse and Davide Garolini", 
     "GSK/Roche",
+    "abstracts.html#cards-package",
     
     "2025-06-12 13:23", 
     "2025-06-12 13:43", 
@@ -438,6 +480,7 @@ schedule_day_4 <-
     "Validating Shiny Apps in Regulated Environments", 
     "Pedro Silva", 
     "Jumping Rivers",
+    "abstracts.html#validating-shiny-apps",
     
     "2025-06-12 13:45", 
     "2025-06-12 13:55", 
@@ -445,13 +488,15 @@ schedule_day_4 <-
     "Improving Reproducibility of Medical Research with Controlled Vocabularies", 
     "Jonathan Pearce", 
     "Analysis Group",
+    "abstracts.html#controlled-vocabularies",
     
     "2025-06-12 13:57", 
     "2025-06-12 14:12", 
     "Break", 
-    NA, 
-    NA, 
-    NA,
+    "",
+    "",
+    "",
+    "",
     
     "2025-06-12 14:12", 
     "2025-06-12 14:32", 
@@ -459,6 +504,7 @@ schedule_day_4 <-
     "Mix, Pour, Share: The rUM Cocktail for Biomedical Project Packaging", 
     "Kyle Grealis and Raymond Balise", 
     "University of Miami",
+    "abstracts.html#rum-cocktail",
     
     "2025-06-12 14:34", 
     "2025-06-12 14:54", 
@@ -466,6 +512,7 @@ schedule_day_4 <-
     "Refactor or Preserve?  Challenging the 'If It Ain’t Broken, Don’t Fix It' Mindset  in Shiny App Lifecycle", 
     "Dror Berel", 
     "Independent consultant",
+    "abstracts.html#refactor-or-preserve",
     
     "2025-06-12 14:56", 
     "2025-06-12 15:16", 
@@ -473,6 +520,7 @@ schedule_day_4 <-
     "No More Copy-Paste: Automating Patient Inquiry Tracking in Pharma with Shiny", 
     "Tanya Cashorali", 
     "TCB Analytics",
+    "abstracts.html#no-more-copy-paste",
     
     "2025-06-12 15:18", 
     "2025-06-12 15:28", 
@@ -480,6 +528,7 @@ schedule_day_4 <-
     "Preprocessing Electronic Health Records for Analysis-Ready Data in an Asthma Cohort", 
     "Kimberly Lactaoen", 
     "University of Pennsylvania",
+    "abstracts.html#preprocessing-ehr-asthma",
     
     "2025-06-12 15:30", 
     "2025-06-12 15:50", 
@@ -487,6 +536,7 @@ schedule_day_4 <-
     "RHealth – A Deep Learning Toolkit for Healthcare Predictive Modeling", 
     "Junyi Gao", 
     "University of Edinburgh",
+    "abstracts.html#rhealth-toolkit",
     
     "2025-06-12 15:52", 
     "2025-06-12 16:12", 
@@ -494,29 +544,36 @@ schedule_day_4 <-
     "Dengue Forecasting Addressing the Interrupted Effect from COVID-19 Cases", 
     "Thiyanga Talagala", 
     "University of Sri Jayewardeneoura",
+    "abstracts.html#dengue-forecasting",
     
     "2025-06-12 16:14", 
     "2025-06-12 16:24", 
     "Lightning Talk", 
     "Competition winner", 
     "TBD", 
-    NA,
+    "",
+    "",
     
     "2025-06-12 16:26", 
     "2025-06-12 16:36", 
     "Lightning Talk", 
     "Competition winner", 
     "TBD", 
-    NA,
+    "",
+    "",
     
     "2025-06-12 16:38", 
     "2025-06-12 16:43", 
     "Closing remarks", 
-    NA, 
+    "", 
     "Peter Higgins", 
-    "University of Michigan"
+    "University of Michigan",
+    ""
   ) |>
-  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+  dplyr::mutate(
+    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
+    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
+  )
 ```
 
 ```{r}
@@ -531,8 +588,8 @@ gt(schedule_day_4) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies),
-    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -567,13 +624,15 @@ schedule_day_5 <-
     ~t_title, 
     ~t_speakers, 
     ~t_companies,
+    ~url_link,
     
     "2025-06-13 11:00", 
     "2025-06-13 11:15", 
     "Opening Remarks", 
-    NA, 
+    "", 
     "Emily Zabor", 
     "Cleveland Clinic", 
+    "",
     
     "2025-06-13 11:15", 
     "2025-06-13 12:15", 
@@ -581,6 +640,7 @@ schedule_day_5 <-
     "Model Evaluation: From Machine Learning to Generative AI", 
     "Erin LeDell", 
     "Distributional Inc",
+    "",
     
     "2025-06-13 12:17", 
     "2025-06-13 12:27", 
@@ -588,6 +648,7 @@ schedule_day_5 <-
     "riskcalc.org: A Repository of Risk Calculators for Medical Decision Making",
     "Alex Zajichek", 
     "Cleveland Clinic",
+    "abstracts.html#riskcalc-org-repository",
     
     "2025-06-13 12:29", 
     "2025-06-13 12:49", 
@@ -595,6 +656,7 @@ schedule_day_5 <-
     "nonprobsvy -- An R package for modern methods for non-probability survey", 
     "Maciej Beręsewicz", 
     "Poznań University of Economics and Business / Statistical Office in Poznań (Poland)",
+    "abstracts.html#nonprobsvy-package",
     
     "2025-06-13 12:51", 
     "2025-06-13 13:01", 
@@ -602,6 +664,7 @@ schedule_day_5 <-
     "rainbowR: A community for LGBTQ+ folks who code in R", 
     "Ella Kaye", 
     "University of Warwick",
+    "abstracts.html#rainbowr-community",
     
     "2025-06-13 13:03", 
     "2025-06-13 13:23", 
@@ -609,6 +672,7 @@ schedule_day_5 <-
     "An Accelerometry Biomarker Framework with Application in  Vigilance in UK Biobank Data", 
     "Michael Kane", 
     "MD Anderson Cancer Center",
+    "abstracts.html#accelerometry-biomarker-framework",
     
     "2025-06-13 13:25", 
     "2025-06-13 13:35", 
@@ -616,6 +680,7 @@ schedule_day_5 <-
     "pretestcad: An R package to calculate PreTest Probability (PTP) scores for obstructive Coronary Artery Disease (CAD)", 
     "Jeremy Selva", 
     "National Heart Centre Singapore",
+    "abstracts.html#pretestcad-package",
     
     "2025-06-13 13:37", 
     "2025-06-13 13:47", 
@@ -623,6 +688,7 @@ schedule_day_5 <-
     "AOUSDOHtools: An R Package for Social Determinants of Health Survey data in the All of Us Research Program", 
     "Zhirui Deng", 
     "University of Pittsburgh, School of Nursing",
+    "abstracts.html#aousdohtools-package",
     
     "2025-06-13 13:49", 
     "2025-06-13 14:09", 
@@ -630,6 +696,7 @@ schedule_day_5 <-
     "MIIPW: An R package for Generalized Estimating Equations with missing data integration using a combination of mean score and inverse probability weighted approaches and multiple imputation", 
     "Bhrigu Rajbongshi", 
     "Indian Institute of Technology(Indian School of Mines) Dhanbad",
+    "abstracts.html#miipw-package",
     
     "2025-06-13 14:11", 
     "2025-06-13 14:31", 
@@ -637,6 +704,7 @@ schedule_day_5 <-
     "kidney.epi R Package for Facilitating Research in Diabetes, Kidney, Heart, and Other Diseases", 
     "Boris Bikbov", 
     "Scientific-Tools.Org",
+    "abstracts.html#kidney-epi-package",
     
     "2025-06-13 14:33", 
     "2025-06-13 14:43", 
@@ -644,13 +712,15 @@ schedule_day_5 <-
     "Examining Factors Associated with Depressive Severity Among Cancer Survivors: An Analysis of the National Health Interview Survey", 
     "Andre Williams", 
     "Florida Atlantic University",
+    "abstracts.html#examining-factors-nhis",
     
     "2025-06-13 14:45", 
     "2025-06-13 15:00", 
     "Break", 
-    NA, 
-    NA, 
-    NA,
+    "",
+    "",
+    "",
+    "",
     
     "2025-06-13 15:00", 
     "2025-06-13 15:20", 
@@ -658,6 +728,7 @@ schedule_day_5 <-
     "{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows", 
     "Dylan Pieper", 
     "University of Pittsburgh",
+    "abstracts.html#redquack-package",
     
     "2025-06-13 15:22", 
     "2025-06-13 15:32", 
@@ -665,6 +736,7 @@ schedule_day_5 <-
     "Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina", 
     "Ariana Bardauil and Dacio Martinez", 
     "Ministry of health - Buenos Aires City Government",
+    "abstracts.html#optimizing-public-healthcare",
     
     "2025-06-13 15:34", 
     "2025-06-13 15:44", 
@@ -672,6 +744,7 @@ schedule_day_5 <-
     "Swimmer Plots with ggswim", 
     "Richard Hanna", 
     "Children's Hospital of Philadelphia",
+    "abstracts.html#swimmer-plots",
     
     "2025-06-13 15:46", 
     "2025-06-13 15:56", 
@@ -679,6 +752,7 @@ schedule_day_5 <-
     "What to Do When Shiny Packages Don't Fully Support Your Idea", 
     "Anastasiia Kostiv", 
     "ESQlabs",
+    "abstracts.html#what-to-do-when-shiny-packages",
     
     "2025-06-13 15:58", 
     "2025-06-13 16:08", 
@@ -686,6 +760,7 @@ schedule_day_5 <-
     "Bootstrap inference made easy: p-values and confidence intervals in one line of code", 
     "Måns Thulin", 
     "Thulin Consulting AB",
+    "abstracts.html#bootstrap-inference-made-easy",
     
     "2025-06-13 16:10", 
     "2025-06-13 16:20", 
@@ -693,6 +768,7 @@ schedule_day_5 <-
     "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity", 
     "Dwight Barry and Nicole Chicoine", 
     "Seattle Children’s Hospital",
+    "abstracts.html#ethical-considerations",
     
     "2025-06-13 16:22", 
     "2025-06-13 16:32", 
@@ -700,6 +776,7 @@ schedule_day_5 <-
     "Advanced Distance Metrics for High-Dimensional Clustering: introducing 'distanceHD' R-package", 
     "Jung Ae Lee", 
     "University of Massachusetts Chan Medical School",
+    "abstracts.html#advanced-distance-metrics",
     
     "2025-06-13 16:34", 
     "2025-06-13 16:54", 
@@ -707,15 +784,20 @@ schedule_day_5 <-
     "Unified Deep Learning Survival Analysis for Competing Risk Modeling with Functional Covariates and Missing Data Imputation", 
     "Yan Zou", 
     "Cleveland Clinic",
+    "abstracts.html#unified-deep-learning-survival",
     
     "2025-06-13 16:56", 
     "2025-06-13 17:01", 
     "Closing Remarks", 
-    NA, 
+    "", 
     "Michael Kane", 
-    "MD Anderson Cancer Center"
+    "MD Anderson Cancer Center",
+    ""
   ) |>
-  dplyr::mutate(duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins"))
+  dplyr::mutate(
+    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
+    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
+  )
 ```
 
 ```{r}
@@ -730,8 +812,8 @@ gt(schedule_day_5) |>
   ) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies),
-    pattern = md("<<{1}<br>>><<{2}<br>>><<{3}>><<, {4}>>")
+    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -754,5 +836,4 @@ gt(schedule_day_5) |>
     locations = cells_body(rows = t_type == "Break"),
     style = cell_fill(color = "bisque")
   )
-
 ```
