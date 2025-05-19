@@ -20,6 +20,11 @@ format:
 ```{r}
 library(lubridate)
 library(gt)
+
+# Create HTML pattern for talk links:
+link_style <- "color:black; font-weight:500; text-decoration:underline;"
+hover_effect <- "onmouseover='this.style.fontStyle=\"none\"' onmouseout='this.style.fontStyle=\"normal\"'"  # change fontStyle to "italic" for italic on hover
+html_pattern <- glue::glue("<div>{{1}}<br><a href='{{5}}' style='{link_style}' {hover_effect}>{{2}}</a><br>{{3}} {{4}}</div>")
 ```
 
 ```{r, day1}
@@ -60,7 +65,7 @@ schedule_day_1 <-
     "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español", 
     "Catalina Canizares-Escobar & Francisco Cardozo", 
     "Florida International University",
-    "",
+    "workshops.html#promover-la-equidad-científica-una-introducción-al-uso-de-r-para-la-programación-en-bioestadística-y-ciencia-de-datos-en-español.",
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
@@ -69,7 +74,7 @@ schedule_day_1 <-
     "Introduction to R for Clinical Data", 
     "Stephan Kadauke", 
     "Children's Hospital of Philadelphia",
-    "",
+    "workshops.html#introduction-to-r-for-clinical-data",
     
     "2025-06-09 14:00", 
     "2025-06-09 14:30",
@@ -87,7 +92,7 @@ schedule_day_1 <-
     "R package development with GitHub Pages and pkgdown", 
     "Melissa Van Bussel", 
     "Statistics Canada",
-    "",
+    "workshops.html#r-package-development-with-github-pages-and-pkgdown",
     
     "2025-06-09 14:30", 
     "2025-06-09 17:30", 
@@ -136,7 +141,7 @@ gt(schedule_day_1) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
     columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
+    pattern = html(html_pattern)
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -200,7 +205,7 @@ schedule_day_2 <-
     "Survival analysis with tidymodels", 
     "Hannah Frick", 
     "Posit",
-    "",
+    "workshops.html#survival-analysis-with-tidymodels",
     
     "2025-06-10 11:00", 
     "2025-06-10 14:00", 
@@ -227,7 +232,7 @@ schedule_day_2 <-
     "'Visualise, Optimise, Parameterise!' - Writing dataviz code that your future self will thank you for", 
     "Cara Thompson", 
     "",
-    "",
+    "workshops.html#visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for",
     
     "2025-06-10 14:30", 
     "2025-06-10 15:30", 
@@ -236,7 +241,7 @@ schedule_day_2 <-
     "Quarto Dashboards: from zero to publish in one hour", 
     "Mine Çetinkaya-Rundel", 
     "Duke University + Posit PBC",
-    "",
+    "workshops.html#quarto-dashboards-from-zero-to-publish-in-one-hour",
     
     "2025-06-10 15:30", 
     "2025-06-10 16:30", 
@@ -245,7 +250,7 @@ schedule_day_2 <-
     "Supporting R learners on the job during interesting times: A panel of R educators", 
     "Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, Joy Payton", 
     "",
-    "",
+    "workshops.html#supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators",
     
     "2025-06-10 16:30", 
     "2025-06-10 17:30", 
@@ -275,7 +280,7 @@ gt(schedule_day_2) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
     columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
+    pattern = html(html_pattern)
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -339,7 +344,7 @@ schedule_day_3 <-
     "Rix: reproducible data science environments with Nix", 
     "Bruno Rodrigues", 
     "Luxembourg’s Ministry of Research and Higher Education",
-    "",
+    "workshops.html#rix-reproducible-data-science-environments-with-nix",
     
     "2025-06-11 11:00", 
     "2025-06-11 14:00", 
@@ -348,7 +353,7 @@ schedule_day_3 <-
     "Personal R Administration", 
     "David Aja, Posit;", 
     "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium",
-    "",
+    "workshops.html#personal-r-administration",
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
@@ -366,7 +371,7 @@ schedule_day_3 <-
     "Demystifying LLMs with Ellmer", 
     "Joe Cheng", 
     "Posit",
-    "",
+    "workshops.html#demystifying-llms-with-ellmer",
     
     "2025-06-10 14:30", 
     "2025-06-10 17:30", 
@@ -375,7 +380,7 @@ schedule_day_3 <-
     "teal Mastery: From Pre-built Modules to Custom Module Creation", 
     "Dony Unardi", 
     "Genentech",
-    ""
+    "workshops.html#teal-mastery-from-pre-built-modules-to-custom-module-creation"
   ) |>
   dplyr::mutate(
     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
@@ -396,7 +401,7 @@ gt(schedule_day_3) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
     columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
+    pattern = html(html_pattern)
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -589,7 +594,7 @@ gt(schedule_day_4) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
     columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
+    pattern = html(html_pattern)
   ) |>
   cols_label(
     start_time ~ "Start Time",
@@ -813,7 +818,7 @@ gt(schedule_day_5) |>
   cols_move(columns = duration, after = end_time) |>
   cols_merge(
     columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html("<div>{1}<br><a href='{5}' style='color:black; text-decoration:none;'>{2}</a><br>{3} {4}</div>")
+    pattern = html(html_pattern)
   ) |>
   cols_label(
     start_time ~ "Start Time",
