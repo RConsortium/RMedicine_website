@@ -10,7 +10,7 @@ website:
         text: Home
       - href: Register.qmd
         text: Register
-      - href: Abstracts.qmd
+      - href: Submit.qmd
         text: Submit
       - href: Competition.qmd
         text: Competition
