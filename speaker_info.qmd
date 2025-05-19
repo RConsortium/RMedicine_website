@@ -30,55 +30,51 @@ We will be using the virtual platform Zoom Events that will allow pre-recorded t
 
 ## Pre-recording Information & Tools
 
-All regular talk and lightning talk speakers must pre-record their talk, which will be played through the event platform. 
+All regular talk and lightning talk speakers must pre-record their talk, which will be played through the event platform.
 
-Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. **Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo.** Email this recording to us at r-medicine-conf@r-consortium.org by midnight EDT on June 2.
+Some suggested tools to use for recording are Quicktime, Zoom, a screen recorder, or something similar. The recording should show your slides or screen and optionally yourself, using a picture in picture style format. **Please share the actual video file, in MP4 format, not a link to a streaming service such as YouTube or Vimeo. The file should be named as "WeekdayOfTalk-Firstname-Lastname.mp4, for example "Thursday-Jane-Doe.mp4" for a talk by Jane Doe that will take place on Thursday.** Email this recording to us at jesse\@storychangesculture.org by midnight EDT on June 2. If your file is too large to email, you can upload it [here](https://docs.google.com/forms/d/e/1FAIpQLSc6VJB7dBT0M69LpG71qaD1i8k9XwbbKDUShZXd88sNpo9Rvg/viewform?usp=sharing&ouid=105203521223356605996).
 
 Please feel free to [reach out](mailto:r-medicine-conf@r-consortium.org) with any questions.
 
 ## Prepare Your Slides
- 
-- Remember that people can either listen to you speak ***or*** read your slides, they can ***not*** do both at once.
 
-- Keep your slides visually minimal
+-   Remember that people can either listen to you speak ***or*** read your slides, they can ***not*** do both at once.
 
-    - Your slides should support your message, not distract from what you are saying.
+-   Keep your slides visually minimal
 
-- Use color to highlight key points and/or key words.
+    -   Your slides should support your message, not distract from what you are saying.
 
-- Set your base font size to be somewhat large (16 or 18 point).
+-   Use color to highlight key points and/or key words.
 
-- Avoid showing Blue on Black.
+-   Set your base font size to be somewhat large (16 or 18 point).
 
-- Use high contrast colors between your slide background and text [contrastchecker](https://webaim.org/resources/contrastchecker/)
+-   Avoid showing Blue on Black.
 
-- Make sure all your slides are color blind safe.  Take a screenshot and paste the image here: [color-blindness-simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/). Be sure to check all the different forms of color vision weakness including  Monochromacy/Achromatopsia.
+-   Use high contrast colors between your slide background and text [contrastchecker](https://webaim.org/resources/contrastchecker/)
 
- 
+-   Make sure all your slides are color blind safe. Take a screenshot and paste the image here: [color-blindness-simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/). Be sure to check all the different forms of color vision weakness including Monochromacy/Achromatopsia.
+
 ### Configure your CodeEditor/IDE
 
-- Set the font on your code editor to be large enough that you can read the text from a few feet away.
+-   Set the font on your code editor to be large enough that you can read the text from a few feet away.
 
-- If you use the RStudio or Positron IDE you can make everything larger with `cmd +` on Mac or `ctrl +` on Windows.
+-   If you use the RStudio or Positron IDE you can make everything larger with `cmd +` on Mac or `ctrl +` on Windows.
 
-- If you work on a large display, take a screen shot showing your code and view it on a 13 inch laptop or tablet.
- 
+-   If you work on a large display, take a screen shot showing your code and view it on a 13 inch laptop or tablet.
 
 ### Showing Code In Your IDE
 
-- Remember that most IDEs can collapse code blocks. 
+-   Remember that most IDEs can collapse code blocks.
 
-    - Consider hiding material that you have not talked about yet.
+    -   Consider hiding material that you have not talked about yet.
 
-    - If a code block does setup, show it and collapse it.
+    -   If a code block does setup, show it and collapse it.
 
+### Showing Code In Slides
 
-### Showing Code In Slides          
+-   Consider highlighting key points as you are taking about them.
 
-- Consider highlighting key points as you are taking about them.
-
-- If you are working in Quarto you can fold/show your code using code chunk options like this:
-
+-   If you are working in Quarto you can fold/show your code using code chunk options like this:
 
 ```{{r}}
 #| code-fold: true
@@ -87,66 +83,65 @@ Please feel free to [reach out](mailto:r-medicine-conf@r-consortium.org) with an
 # code to show goes here
 ```
 
-- Showing code with line numbers makes it easier for people to ask questions.
+-   Showing code with line numbers makes it easier for people to ask questions.
 
-- If you are making slide with Quarto you can draw attention to lines of code with a couple of techniques.  Consider these options: 
+-   If you are making slide with Quarto you can draw attention to lines of code with a couple of techniques. Consider these options:
 
-    + [Code Annotation](https://quarto.org/docs/blog/posts/2023-03-13-code-annotation/)
+    -   [Code Annotation](https://quarto.org/docs/blog/posts/2023-03-13-code-annotation/)
 
-    + [Code line highlighting](https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations/)
-    
+    -   [Code line highlighting](https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations/)
+
 ### Slide templates
 
 R/Medicine slide templates are available for:
 
-- **Powerpoint**. Download the template [here](https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=drive_link&ouid=109461157699922412522&rtpof=true&sd=true).
-- **Quarto**. See details below.
+-   **Powerpoint**. Download the template [here](https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=drive_link&ouid=109461157699922412522&rtpof=true&sd=true).
+-   **Quarto**. See details below.
 
 #### Creating RMed Slides in Quarto
 
 To prepare your RevealJS presentation for R/Medicine 2025 using our prebuilt template, follow this outline.
 
-1. Install the {rUM} package from their `dev` branch:
+1.  Install the {rUM} package from their `dev` branch:
 
-```r
+``` r
 remotes::install_github("RaymondBalise/rUM@dev")
 ```
 
-2. Initialize a new slide project that includes the RMed templates. Be sure to include
-`template = "rmed2025"`. A `slides` directory will be created in your current path as
-defined by `here::here()` unless you use the `path = ` argument. This demonstration
-will create the directory evaluated by `here::here()`:
+2.  Initialize a new slide project that includes the RMed templates. Be sure to include `template = "rmed2025"`. A `slides` directory will be created in your current path as defined by `here::here()` unless you use the `path =` argument. This demonstration will create the directory evaluated by `here::here()`:
 
 For example, this code will make a slides folder in your working directory:
 
-```r
+``` r
 # rUM::write_slides("<your presentation name>", template = "rmed2025")
 rUM::write_slides("rmed2025_demo", template = "rmed2025")
 ```
 
 If you are on Mac and want to have a slides folder added to your desktop you can do this:
 
-```r
+``` r
 rUM::write_slides("rmed2025_demo", path = "~/Desktop/", template = "rmed2025")
 ```
 
+3.  The `slides` directory will include:
 
-3. The `slides` directory will include:
-  * `<project>.qmd` (The demonstration created `rmed2025_demo.qmd`)
-  * `slides.scss` for presentation styling
-  * `rstudio_default-light.theme` that will render your code examples (i.e., syntax highlighting) as displayed in RStudio's light theme
-  * `img` directory containing template background, hex logo, and `.ico` file to add styling to your browser's tab once the presentation is rendered.
-    - NOTE: `clean_title_page.html` includes JavaScript that modifies elements on the title page only. We recommend against modifying this file.
+-   `<project>.qmd` (The demonstration created `rmed2025_demo.qmd`)
+-   `slides.scss` for presentation styling
+-   `rstudio_default-light.theme` that will render your code examples (i.e., syntax highlighting) as displayed in RStudio's light theme
+-   `img` directory containing template background, hex logo, and `.ico` file to add styling to your browser's tab once the presentation is rendered.
+    -   NOTE: `clean_title_page.html` includes JavaScript that modifies elements on the title page only. We recommend against modifying this file.
 
-4. Render the document using either the RStudio "Knit" or Positron "Preview" GUI buttons, Ctrl+Shift+K (CMD+Shift+K for macOS), or use the terminal command:
-```bash
+4.  Render the document using either the RStudio "Knit" or Positron "Preview" GUI buttons, Ctrl+Shift+K (CMD+Shift+K for macOS), or use the terminal command:
+
+``` bash
 quarto preview slides/<project>.qmd --no-browser
 ```
+
 We recommend you modify the following values in the presentation YAML:
 
-- Title, subtitle, & author details
-- `footer`: complete the URL to the project repository for a working HTML hyperlink
-  * Alter the text (`[Slides are here]`) for a more custom hyperlink at the slide bottom
+-   Title, subtitle, & author details
+-   `footer`: complete the URL to the project repository for a working HTML hyperlink
+    -   Alter the text (`[Slides are here]`) for a more custom hyperlink at the slide bottom
 
 ## Technical Tips for Virtual Presentations
 
@@ -251,5 +246,3 @@ Please read and abide by our code of conduct, which can be found [here](https://
 [**Your Perfect Tech Talk**](https://www.youtube.com/watch?v=AzVr_nsKoZs)
 
 [**A general MIT lecture on How to Speak**](https://www.youtube.com/watch?v=Unzc731iCUY)
-
-
