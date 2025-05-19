@@ -80,6 +80,8 @@ In this workshop, we’ll build a simple R package together, and use GitHub Acti
 
 Workshop participants should have experience using Git, but don’t need prior experience with GitHub Actions or pkgdown.
 
+Please see the pre-workshop setup steps [here](<files/R package development with GitHub Pages and pkgdown.pdf>).
+
 :::
 
 ::: {.column width="10%"}

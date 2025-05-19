@@ -17,6 +17,8 @@ format:
 
 -   The talks on the final two days run in a single track
 
+-   Click the titles below to see additional details of each session
+
 ```{r}
 library(lubridate)
 library(gt)
