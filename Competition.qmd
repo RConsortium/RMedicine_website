@@ -1,14 +1,18 @@
 ## Competition
 
-### Submit now to participate!
+### Submissions are now closed
 
-<button class="btn btn-primary"
-style = "background-color: #009473"
-onclick="window.location.href='https://forms.gle/BPuNthzTCMbu78Cv8'"> 
+<!-- ### Submit now to participate! -->
 
-  **SUBMIT TO COMPETITION**
+<!-- <button class="btn btn-primary" -->
+<!-- style = "background-color: #009473" -->
+<!-- onclick="window.location.href='https://forms.gle/BPuNthzTCMbu78Cv8'">  -->
 
-</button>
+<!--   **SUBMIT TO COMPETITION** -->
+
+<!-- </button> -->
+
+
 
 ### How Are Vaccination Rates and Case Rates changing for Measles in 2025?
 
