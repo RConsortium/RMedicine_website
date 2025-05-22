@@ -36,7 +36,7 @@ format:
     css: styles.css
     toc: true
     default-image-extension: svg
-editor: visual
+editor: source
 
 execute:
   freeze: auto
