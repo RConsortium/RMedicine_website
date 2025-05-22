@@ -8,6 +8,10 @@
 
 </button>
 
+<br>
+
+*Note that Zoom Events excludes some countries from processing event payments, though attendance is still permitted. If you are registering from country where payment is blocked (see the list at Zoom Events [here](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063856)) please email r-medicine\@r-consortium.org to request a manual registration. All are welcome at R/Medicine!*
+
 ### Registration Pricing
 
 The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. Early Bird pricing ends **April 10, 2025**.
@@ -22,7 +26,7 @@ The following table lists the registration fees for three categories of attendee
 
 A limited number of complimentary registrations are available to enable community members to attend when they would otherwise be unable due to a lack of funding. We place an emphasis on funding applicants who are from historically underrepresented or untapped groups, from low GDP countries, and/or those of lower socioeconomic status.
 
-Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. Submissions are now closed.
+Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. **Submissions are now closed.**
 
 <!-- Submit [here](https://docs.google.com/forms/d/e/1FAIpQLSdGQ_QqQdOmAvuT_1oLMC_LFVgWeq3NBJ013tVJizklv4bm5g/viewform?usp=header). -->
 
