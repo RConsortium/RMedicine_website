@@ -1,6 +1,32 @@
 ## Competition
 
-### Submissions are now closed
+### Congratulations to our winners!
+
+#### Student category: Iko Musa
+
+**University: University of Jos, Jos, Plateau State, Nigeria, Department of Community Medicine, MSc Field Epidemiology**
+
+![](images/iko_musa_square.jpg){style="border-radius: 50%" width="45%"} 
+
+
+
+#### Professional category: Harrison Plate & Shonushka Sawant
+
+**RSC Statistical Consulting, Statisticians**
+
+::: columns
+::: {.column width="50%"}
+![](images/harrison-square.png){style="border-radius: 50%" width="90%"} 
+
+:::
+
+::: {.column width="50%"}
+![](images/shonushka.jpg){style="border-radius: 50%" width="90%"} 
+:::
+:::
+
+
+
 
 <!-- ### Submit now to participate! -->
 

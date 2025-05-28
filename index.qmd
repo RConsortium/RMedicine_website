@@ -72,7 +72,25 @@ Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s hel
 
 ## SPONSORED BY
 
-[![](images/genentech.png){fig-alt="Genentech" width="50%" fig-align="left"}](https://www.gene.com/)
+
+
+::: columns
+::: {.column width="45%"}
+### Gold sponsor
+
+[![](images/genentech.png){fig-alt="Genentech" fig-align="left" width="80%"}](https://www.gene.com/)
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Silver sponsor
+
+[![](images/posit.png){fig-alt="Posit" fig-align="left" width="80%"}](https://posit.co/)
+:::
+:::
 
 ## MAILING LIST
 
