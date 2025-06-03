@@ -164,8 +164,10 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#demos" id="toc-demos" class="nav-link" data-scroll-target="#demos">Demos</a>
   <ul class="collapse">
+  <li><a href="#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model" id="toc-a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model" class="nav-link" data-scroll-target="#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model">A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model</a></li>
   <li><a href="#visualising-data-for-patients-create-accessible-charts" id="toc-visualising-data-for-patients-create-accessible-charts" class="nav-link" data-scroll-target="#visualising-data-for-patients-create-accessible-charts">Visualising data for patients: create accessible charts</a></li>
   <li><a href="#quarto-dashboards-from-zero-to-publish-in-one-hour" id="toc-quarto-dashboards-from-zero-to-publish-in-one-hour" class="nav-link" data-scroll-target="#quarto-dashboards-from-zero-to-publish-in-one-hour">Quarto Dashboards: from zero to publish in one hour</a></li>
+  <li><a href="#first-steps-with-sql-in-r-making-data-talk-1" id="toc-first-steps-with-sql-in-r-making-data-talk-1" class="nav-link" data-scroll-target="#first-steps-with-sql-in-r-making-data-talk-1">First Steps with SQL in R: Making Data Talk</a></li>
   </ul></li>
   <li><a href="#panels" id="toc-panels" class="nav-link" data-scroll-target="#panels">Panels</a>
   <ul class="collapse">
@@ -447,12 +449,31 @@ ul.task-list li input[type="checkbox"] {
 <section id="demos" class="level1">
 <h1>Demos</h1>
 <hr>
-<section id="visualising-data-for-patients-create-accessible-charts" class="level2">
-<h2 class="anchored" data-anchor-id="visualising-data-for-patients-create-accessible-charts">Visualising data for patients: create accessible charts</h2>
+<section id="a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model" class="level2">
+<h2 class="anchored" data-anchor-id="a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model">A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
 <section id="description-9" class="level3">
 <h3 class="anchored" data-anchor-id="description-9">Description</h3>
+<p>In this demo, we’ll introduce CohortConstructor, an R package that helps you build and manage patient cohorts using real-world health data mapped to the OMOP Common Data Model. The package makes it easier to apply both common and complex inclusion criteria, combine cohorts, update cohort entry and exit dates, and track groups of patients based on age, diagnoses, or time periods—all without writing complicated code. It also keeps track of the clinical codes used and the operations performed, making cohort work more transparent and reproducible. We’ll walk through the framework the package is built on, the typical workflow for creating cohorts, and the full set of cohort-curation tools included. Everything will be shown using examples you can also run locally on your own computer. This session is designed for anyone working with healthcare data in R—no OMOP expertise required. You can find the full abstract, setup instructions, and demo slides on the <a href="https://github.com/oxford-pharmacoepi/RMedicine2025">GitHub page</a>.</p>
+</section>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<section id="nuria-mercade-besora-and-edward-burn" class="level3">
+<h3 class="anchored" data-anchor-id="nuria-mercade-besora-and-edward-burn">Nuria Mercade-Besora and Edward Burn</h3>
+<p>Ed is a Senior Researcher in Epidemiology and Health Economics at the University of Oxford. Their research is focused on using routinely collected health care data to inform medical decision making. The foundation for much of this is the use of the OMOP Common Data Model to transform disparate sources of health care data into a standard format. Ed has led the development of various R packages that work with data standardised into this format, including packages created in collaboration with the European Medicines Agency for the Data Analysis and Real-World Interrogation Network (DARWIN) EU® initiative.</p>
+<p>Nuria is a PhD student in Clinical Epidemiology and Medical Statistics at the University of Oxford. Their research interest is on investigating and applying methods to use real-world healthcare data to answer clinical causal questions. In addition, Nuria works part-time as a research assistant, contributing to the development of R packages for the analysis of data mapped to the OMOP Common Data Model, and to research studies conducted in collaboration with the European Medicines Agency for the DARWIN EU® initiative, in the role of data scientist.</p>
+</section>
+</div>
+</div>
+</section>
+<section id="visualising-data-for-patients-create-accessible-charts" class="level2">
+<h2 class="anchored" data-anchor-id="visualising-data-for-patients-create-accessible-charts">Visualising data for patients: create accessible charts</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<section id="description-10" class="level3">
+<h3 class="anchored" data-anchor-id="description-10">Description</h3>
 <p>Visualising data for patients or other stakeholders may be difficult. Generally, our audience does not have a scientific or medical background, so our duty is to present data in a way that is understandable for them. To create clear and accessible charts, there are several factors to consider, such as decluttering, accessibility of the colour palette, and fonts. During this demo, we will see how to create accessible and clear charts in R. Attendees will learn how to create a new palette in R that is colourblind-friendly, and also how to create an autism-friendly palette. We will check if the colours in the chart are colourblind friendly in R using colourblind, and we will see how to transform a brand palette into a colourblind friendly palette. Moreover, we will look for fonts that have high readability and see how to include them in our R code.</p>
 </section>
 </div><div class="column" style="width:10%;">
@@ -470,8 +491,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="quarto-dashboards-from-zero-to-publish-in-one-hour">Quarto Dashboards: from zero to publish in one hour</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
-<section id="description-10" class="level3">
-<h3 class="anchored" data-anchor-id="description-10">Description</h3>
+<section id="description-11" class="level3">
+<h3 class="anchored" data-anchor-id="description-11">Description</h3>
 <p>You already analyze and summarize your data with R and Quarto. What’s next? You can share your insights or allow others to make their own conclusions in eye-catching dashboards and straight-forward to author, design, and deploy Quarto Dashboards. With Quarto Dashboards, you can create elegant and production-ready dashboards using a variety of components, including static graphics, interactive widgets, tabular data, value boxes, text annotations, and more. Additionally, with intelligent resizing of components, your Quarto Dashboards look great on devices of all sizes. And importantly, you can author Quarto Dashboards without leaving the comfort of your “home” – in plain text markdown with any text editor. In this one-hour demo we will build and publish a Quarto Dashboard – you can code-along or sit back and enjoy the show!</p>
 </section>
 </div><div class="column" style="width:10%;">
@@ -481,6 +502,42 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="mine-çetinkaya-rundel">Mine Çetinkaya-Rundel</h3>
 <p><img src="images/mine-square.jpg" class="img-fluid" style="border-radius: 50%; width: 75%"></p>
 <p>Mine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks – latest is the 2nd edition of Introduction to Modern Statistics. She is also a co-author on R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as a Waller and Hogg award winner for teaching excellence. In 2024, she was elected as Vice President of the International Association for Statistical Education (IASE).</p>
+</section>
+</div>
+</div>
+</section>
+<section id="first-steps-with-sql-in-r-making-data-talk-1" class="level2">
+<h2 class="anchored" data-anchor-id="first-steps-with-sql-in-r-making-data-talk-1">First Steps with SQL in R: Making Data Talk</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<section id="description-12" class="level3">
+<h3 class="anchored" data-anchor-id="description-12">Description</h3>
+<p>Curious about SQL but not ready to dive into full-blown databases or external connections? This hands-on, beginner-friendly workshop is the perfect starting point. Using the lightweight and intuitive {sqldf} package in R, you’ll learn how to write SQL queries directly on your existing R data frames—no database setup required. SQL (Structured Query Language) is a powerful tool for querying and transforming structured data, and it’s widely used in clinical research, data science, and industry analytics. In this 3-hour introductory session, we’ll bridge the gap between R and SQL in the most approachable way possible—by working with the data frames you already use in R.</p>
+<p>We’ll cover:</p>
+<ul>
+<li>What SQL is and why it’s useful alongside R</li>
+<li>The basics of SQL syntax: SELECT, FROM, WHERE, ORDER BY, GROUP BY, and JOIN</li>
+<li>How to use the {sqldf} package to run SQL queries on R data frames</li>
+<li>Comparing SQL and dplyr for common data tasks</li>
+<li>Writing readable, reusable SQL queries inside R scripts</li>
+</ul>
+<p>This session is geared toward R users with little to no SQL experience. You’ll learn through guided examples and live coding, with time to practice writing your own queries. There’s no need for databases or complicated setup—just bring your laptop with R and {sqldf} installed, and we’ll take it from there.</p>
+<p>By the end of the workshop, you’ll be able to:</p>
+<ul>
+<li>Write SQL queries to filter, sort, group, and join data frames</li>
+<li>Use {sqldf} to integrate SQL smoothly into your R scripts</li>
+<li>Decide when SQL might be more effective than tidyverse functions (and vice versa)</li>
+<li>Gain confidence in querying data more efficiently—even with large or complex datasets</li>
+</ul>
+<p>This workshop is especially helpful for analysts, students, and researchers who want to become more versatile in handling data but prefer to stay within the comfort of the R environment. It’s also a great stepping stone for those who may later work with external databases (e.g., REDCap, EDC systems, or clinical trial platforms). Come explore the power of SQL in a simple, approachable way—and learn to make your data talk.</p>
+</section>
+</div><div class="column" style="width:10%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<section id="chris-battiston-1" class="level3">
+<h3 class="anchored" data-anchor-id="chris-battiston-1">Chris Battiston</h3>
+<p><img src="images/Chris-Battiston.jpg" class="img-fluid" style="border-radius: 50%; width: 75%"></p>
+<p>Chris is responsible for the REDCap (Research Electronic Data Capture) platforms at Women’s College Hospital in Toronto, Canada. His work includes everything from maintaining the system (ensuring regulatory compliance) and building REDCap projects for clinical trials, to supporting teams with complex data management questions. The studies he supports range from complex longitudinal projects with tens of thousands of participants to one-time surveys. Chris prides himself at simplifying and explaining how complex ideas or features might work best for a specific project. His thoughtful work ensures that the EDI principles that Women’s is known for shine through in our surveys. Chris is a fan of a huge variety of music – from heavy metal to opera, and that he has been meditating for at least an hour every day since he was 16.</p>
 </section>
 </div>
 </div>
@@ -494,8 +551,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators">Supporting R learners on the job during interesting times: A panel of R educators</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
-<section id="description-11" class="level3">
-<h3 class="anchored" data-anchor-id="description-11">Description</h3>
+<section id="description-13" class="level3">
+<h3 class="anchored" data-anchor-id="description-13">Description</h3>
 <p>Join R Educators Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, and Joy Payton as they discuss the challenges of supporting and mentoring R learners outside of the traditional university classroom. Whether you mentor physician fellows, onboard research assistants, are the “go-to” person in your department for informal help and training, provide learning and development courses in your workplace, participate in user groups, write blog posts, or work issue queues on GitHub, there’s a place for you to participate in R education. Panelists will share their perspectives working with diverse populations of R learners, share lessons learned and favorite resources, and answer questions about best practices for capacity building. This panel discussion will benefit from your insight and questions, so come prepared for a lively interaction aimed at cross-pollination and building a network of engaged educators!</p>
 </section>
 </div><div class="column" style="width:10%;">
