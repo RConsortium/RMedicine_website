@@ -216,7 +216,7 @@ schedule_day_2 <-
     "First Steps with SQL in R: Making Data Talk", 
     "Chris Battiston", 
     "Women's College Hospital",
-    "abstracts.html#first-steps-with-sql",
+    "workshops.html#first-steps-with-sql-in-r-making-data-talk",
     
     "2025-06-10 14:00", 
     "2025-06-10 14:30",
@@ -261,7 +261,7 @@ schedule_day_2 <-
     "R You Compliant? Validating Packages for Regulatory Readiness", 
     "Chris Battiston", 
     "Women's College Hospital",
-    "workshops.html#r-you-compliant--validating-packages-for-regulatory-readiness"
+    "workshops.html#r-you-compliant-validating-packages-for-regulatory-readiness"
   ) |>
   dplyr::mutate(
     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
