@@ -58,7 +58,7 @@ schedule_day_1 <-
     "A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model ", 
     "Nuria Mercade-Besora & Edward Burn", 
     "University of Oxford",
-    "abstracts.html#the-cohortconstructor-package",
+    "workshops.html#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model",
     
     "2025-06-09 11:00", 
     "2025-06-09 14:00", 
@@ -261,7 +261,7 @@ schedule_day_2 <-
     "R You Compliant? Validating Packages for Regulatory Readiness", 
     "Chris Battiston", 
     "Women's College Hospital",
-    "abstracts.html#r-you-compliant"
+    "workshops.html#r-you-compliant--validating-packages-for-regulatory-readiness"
   ) |>
   dplyr::mutate(
     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
