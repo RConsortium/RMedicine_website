@@ -166,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model" id="toc-a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model" class="nav-link" data-scroll-target="#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model">A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model</a></li>
   <li><a href="#visualising-data-for-patients-create-accessible-charts" id="toc-visualising-data-for-patients-create-accessible-charts" class="nav-link" data-scroll-target="#visualising-data-for-patients-create-accessible-charts">Visualising data for patients: create accessible charts</a></li>
   <li><a href="#quarto-dashboards-from-zero-to-publish-in-one-hour" id="toc-quarto-dashboards-from-zero-to-publish-in-one-hour" class="nav-link" data-scroll-target="#quarto-dashboards-from-zero-to-publish-in-one-hour">Quarto Dashboards: from zero to publish in one hour</a></li>
-  <li><a href="#first-steps-with-sql-in-r-making-data-talk-1" id="toc-first-steps-with-sql-in-r-making-data-talk-1" class="nav-link" data-scroll-target="#first-steps-with-sql-in-r-making-data-talk-1">First Steps with SQL in R: Making Data Talk</a></li>
+  <li><a href="#r-you-compliant-validating-packages-for-regulatory-readiness" id="toc-r-you-compliant-validating-packages-for-regulatory-readiness" class="nav-link" data-scroll-target="#r-you-compliant-validating-packages-for-regulatory-readiness">R You Compliant? Validating Packages for Regulatory Readiness</a></li>
   </ul></li>
   <li><a href="#panels" id="toc-panels" class="nav-link" data-scroll-target="#panels">Panels</a>
   <ul class="collapse">
@@ -505,30 +505,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="first-steps-with-sql-in-r-making-data-talk-1" class="level2">
-<h2 class="anchored" data-anchor-id="first-steps-with-sql-in-r-making-data-talk-1">First Steps with SQL in R: Making Data Talk</h2>
+<section id="r-you-compliant-validating-packages-for-regulatory-readiness" class="level2">
+<h2 class="anchored" data-anchor-id="r-you-compliant-validating-packages-for-regulatory-readiness">R You Compliant? Validating Packages for Regulatory Readiness</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
 <section id="description-12" class="level3">
 <h3 class="anchored" data-anchor-id="description-12">Description</h3>
-<p>Curious about SQL but not ready to dive into full-blown databases or external connections? This hands-on, beginner-friendly workshop is the perfect starting point. Using the lightweight and intuitive {sqldf} package in R, you’ll learn how to write SQL queries directly on your existing R data frames—no database setup required. SQL (Structured Query Language) is a powerful tool for querying and transforming structured data, and it’s widely used in clinical research, data science, and industry analytics. In this 3-hour introductory session, we’ll bridge the gap between R and SQL in the most approachable way possible—by working with the data frames you already use in R.</p>
-<p>We’ll cover:</p>
-<ul>
-<li>What SQL is and why it’s useful alongside R</li>
-<li>The basics of SQL syntax: SELECT, FROM, WHERE, ORDER BY, GROUP BY, and JOIN</li>
-<li>How to use the {sqldf} package to run SQL queries on R data frames</li>
-<li>Comparing SQL and dplyr for common data tasks</li>
-<li>Writing readable, reusable SQL queries inside R scripts</li>
-</ul>
-<p>This session is geared toward R users with little to no SQL experience. You’ll learn through guided examples and live coding, with time to practice writing your own queries. There’s no need for databases or complicated setup—just bring your laptop with R and {sqldf} installed, and we’ll take it from there.</p>
-<p>By the end of the workshop, you’ll be able to:</p>
-<ul>
-<li>Write SQL queries to filter, sort, group, and join data frames</li>
-<li>Use {sqldf} to integrate SQL smoothly into your R scripts</li>
-<li>Decide when SQL might be more effective than tidyverse functions (and vice versa)</li>
-<li>Gain confidence in querying data more efficiently—even with large or complex datasets</li>
-</ul>
-<p>This workshop is especially helpful for analysts, students, and researchers who want to become more versatile in handling data but prefer to stay within the comfort of the R environment. It’s also a great stepping stone for those who may later work with external databases (e.g., REDCap, EDC systems, or clinical trial platforms). Come explore the power of SQL in a simple, approachable way—and learn to make your data talk.</p>
+<p>As R continues to gain momentum in clinical research, regulatory agencies are paying closer attention to how it’s used in regulated environments. Whether supporting statistical analysis, data visualization, or automation pipelines, R packages must meet stringent validation requirements to be considered fit for use in clinical trials and other regulated activities. But what does validation actually mean in this context—and how can researchers, data scientists, and system administrators ensure their R-based tools hold up under scrutiny? This talk will walk through practical strategies for validating R packages in alignment with regulatory expectations, including those from FDA, EMA, and under ICH guidelines such as E6(R3), E9, and M10. We’ll explore the intersection of open-source software and GxP compliance, unpacking the nuances of how to assess, document, and justify the use of community-developed or custom-built R packages. Attendees will learn: • What regulators expect when R is used in a clinical or GxP-regulated environment. • How to categorize R packages based on risk and intended use. • Validation approaches for both CRAN packages and internally developed tools. • How to document package selection, qualification, and performance testing. • Best practices for ongoing change control, version tracking, and reproducibility. • Real-world examples of validation frameworks and testing workflows using tools like {testthat}, {renv}, and {devtools}. Whether you’re part of a small academic research team or a large sponsor organization, this session offers practical guidance for creating defensible validation packages that support transparency, reproducibility, and regulatory compliance. We’ll also touch on tools and templates that can help streamline validation documentation and collaborate with Quality Assurance teams more effectively. By the end of this talk, you’ll walk away with a clearer understanding of what it takes to “make R compliant,” how to integrate validation into your development workflows, and how to future-proof your R environment in a regulated research setting. Because in clinical research, compliance isn’t just a checkbox—it’s part of building trust in our data, our methods, and ultimately, the science we support.</p>
 </section>
 </div><div class="column" style="width:10%;">
 <!-- empty column to create gap -->
