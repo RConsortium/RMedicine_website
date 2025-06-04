@@ -29,6 +29,8 @@ hover_effect <- "onmouseover='this.style.fontStyle=\"none\"' onmouseout='this.st
 html_pattern <- glue::glue("<div>{{1}}<br><a href='{{5}}' style='{link_style}' {hover_effect}>{{2}}</a><br>{{3}} {{4}}</div>")
 ```
 
+<!-- # Workshop/Demo Day 1 {.hidden} -->
+
 ```{r, day1}
 # Day 1
 schedule_day_1 <-
@@ -103,7 +105,7 @@ schedule_day_1 <-
     "The power of {targets} package for reproducible data science", 
     "Rahul Sangole", 
     "Apple",
-    "abstracts.html#the-power-of-targets-package",
+    "workshops.html#the-power-of-targets-package-for-reproducible-data-science",
     
     "2025-06-09 17:30", 
     "2025-06-09 18:30", 
@@ -168,6 +170,8 @@ gt(schedule_day_1) |>
     style = cell_fill(color = "bisque")
   )
 ```
+
+<!-- # Workshop/Demo Day 2 {.hidden} -->
 
 ```{r, day2}
 # Day 2
@@ -308,6 +312,8 @@ gt(schedule_day_2) |>
   )
 ```
 
+<!-- # Workshop/Demo Day 3 {.hidden} -->
+
 ```{r, day3}
 # Day 3
 schedule_day_3 <-
@@ -428,6 +434,8 @@ gt(schedule_day_3) |>
     style = cell_fill(color = "bisque")
   )
 ```
+
+<!-- # Meeting Day 1 {.hidden} -->
 
 ```{r, day4}
 # Day 4
@@ -620,6 +628,8 @@ gt(schedule_day_4) |>
     style = cell_fill(color = "bisque")
   )
 ```
+
+<!-- # Meeting Day 2 {.hidden} -->
 
 ```{r, day5}
 # Day 5
