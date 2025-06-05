@@ -564,7 +564,7 @@ schedule_day_4 <-
     "2025-06-12 16:14", 
     "2025-06-12 16:24", 
     "Lightning Talk", 
-    "Professional ompetition winner", 
+    "Professional competition winner", 
     "Harrison Plate & Shonushka Sawant",
     "RSC Statistical Consulting",
     "Competition.html#congratulations-to-our-winners",
