@@ -76,7 +76,7 @@ schedule_day_1 <-
     "B",
     "Workshop", 
     "Introduction to R for Clinical Data", 
-    "Stephan Kadauke", 
+    "Stephan Kadauke and Rich Hanna", 
     "Children's Hospital of Philadelphia",
     "workshops.html#introduction-to-r-for-clinical-data",
     
