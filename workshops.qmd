@@ -55,11 +55,16 @@ A gentle introduction to R and data science for healthcare professionals and cli
 :::
 
 ::: {.column width="45%"}
-### Stephan Kadauke
+### Stephan Kadauke and Rich Hanna
 
 ![](images/kadauke_stephan.jpeg){style="border-radius: 50%; width: 75%"} 
 
-[Stephan Kadauke](https://www.chop.edu/doctors/kadauke-stephan) is the Assistant Director of the Cell and Gene Therapy Laboratory at Children's Hospital of Philadelphia. He received his MD degree and a PhD in Cell and Molecular Biology from the University of Pennsylvania, and did his residency in Clinical Pathology at Massachusetts General Hospital, before Fellowship in Transfusion Medicine at Harvard. At CHOP, he is responsible for the development and implementation of new technologies including CAR-T therapy in the Cell and Gene Therapy Laboratory.
+[Stephan Kadauke](https://www.chop.edu/doctors/kadauke-stephan) is the Associate Director of the Cell Based Therapy Laboratory in the Department of Pathology at the Children’s Hospital of Philadelphia, and the Medical Director of the Cell and Gene Therapy Informatics Team. He leads efforts to build and deploy predictive models and other data products to improve the care of children receiving bone marrow transplants and other cell therapies. Stephan developed a curriculum in Reproducible Clinical Data Analysis tailored for physicians and other healthcare professionals. He is passionate about using data to improve the care of children.
+
+![](images/rich-hanna.jpg){style="border-radius: 50%; width: 75%"}
+
+Rich Hanna is a Data Scientist with the Cell and Gene Therapy Informatics Team at the Children’s Hospital of Philadelphia. He develops software tools and data-driven solutions to support cell therapy research and enhance patient care in pediatric medicine. Rich has a background in biomedical and mechanical engineering and specializes in automating clinical research workflows through advanced analytics and machine learning. He is passionate about leveraging data science to streamline healthcare operations and improve patient outcomes.
+
 :::
 ::::::
 
