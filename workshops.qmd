@@ -115,6 +115,8 @@ Combined with tools like {renv} and docker, this approach eliminates the it work
 
 This workshop is designed for data scientists and analysts who are looking to enhance their ability to manage and scale up their analytical pipelines. By the end of the session, attendees will have a deeper understanding of the targets package, it’s capabilities and how to apply this package to their workflows, from exploration, to model building, to plotting and report generation.
 
+Attendees should follow the pre-workshop setup instructions found [here](https://tinyurl.com/r-targets-setup).
+
 :::
 
 ::: {.column width="10%"}
