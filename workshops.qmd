@@ -48,6 +48,11 @@ A pesar de los abundantes recursos disponibles para aprender R, la mayoría de e
 
 A gentle introduction to R and data science for healthcare professionals and clinical researchers.
 
+Course GitHub repo: [https://github.com/skadauke/intro-to-r-for-clinical-data-rmed2025](https://github.com/skadauke/intro-to-r-for-clinical-data-rmed2025)
+
+Course website: [https://stephan-kadauke.quarto.pub/intro-to-r-for-clinical-data-rmed2025/](https://stephan-kadauke.quarto.pub/intro-to-r-for-clinical-data-rmed2025/)
+
+
 :::
 
 ::: {.column width="10%"}
