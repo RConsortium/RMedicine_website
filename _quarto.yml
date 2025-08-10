@@ -4,6 +4,7 @@ project:
 
 website:
   title: "R/Medicine 2026"
+  favicon: images/favicon.ico
   navbar:
     left:
       - href: index.qmd
