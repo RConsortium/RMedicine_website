@@ -1,8 +1,8 @@
 ---
-title: "R/Medicine 2025"
+title: "R/Medicine 2026"
 ---
 
-![](images/Main-UPDATED.png)
+![](images/RMed26-main-website-image.png)
 
 ::: r-stack
 ## **AN R CONSORTIUM VIRTUAL CONFERENCE**
@@ -10,57 +10,11 @@ title: "R/Medicine 2025"
 
 ## WHY ATTEND
 
-The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and gain insights from health data. Conference workshops and demos provide a way to learn and develop your R skills, and to try out new R packages and tools. Conference talks share new packages, and successes in analyzing health, laboratory, and clinical data with R and Shiny, and an opportunity to interact with speakers in the chat during their pre-recorded talks.
-
-## KEYNOTE ADDRESSES
-
-::: columns
-::: {.column width="45%"}
-### Ziad Obermeyer
-
-**Reinventing medicine with AI** <br/><br/>
-
-![](images/Z-Obermeyer-mucem-scaled-square.jpg){style="border-radius: 50%"}
-
-#### Abstract
-
-Many medical breakthroughs start with an empirical observation: a curious, unexplained pattern seen in real patients. Underlying mechanisms, unknown at first, are later mapped out in careful experiments. This “bedside to bench” pathway for discovery is less and less common —both because low-hanging fruit has been picked, and because doctors today have little time for observation. I’ll give a few examples of how artificial intelligence can help reboot this pathway: AI is a powerful engine for generating novel empirical observations in real-world data, many of them invisible to the human eye. Translating facts ‘discovered’ by AI into (i) improvements in clinical care and (ii) scientific discoveries are at the core of a new science of medicine, powered by data and computation.
-
-<details>
-
-<summary>Biography</summary>
-
-Ziad Obermeyer is Associate Professor and Blue Cross of California Distinguished Professor at UC Berkeley. He teaches at School of Public Health and was a founding member of the Berkeley–UCSF joint program in Computational Precision Health. His research uses machine learning to help doctors make better decisions, and help researchers make new discoveries by ‘seeing’ the world the way algorithms do. His work on algorithmic racial bias has been highly influential in shaping how health care organizations and policy makers hold AI accountable, from work with state Attorneys-General to testimony before the Senate Finance Committee. He is a cofounder of Nightingale Open Science and Dandelion Health, a Chan–Zuckerberg Biohub Investigator, and a Research Associate at the National Bureau of Economic Research. He was named one of the 100 most influential people in AI by TIME Magazine. Previously, he was Assistant Professor at Harvard Medical School, and he continues to practice emergency medicine in underserved communities.
-
-</details>
-:::
-
-::: {.column width="10%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="45%"}
-### Erin LeDell
-
-**Model Evaluation: From Machine Learning to Generative AI**
-
-![](images/erin.jpg){style="border-radius: 50%"}
-
-#### Abstract
-
-As AI systems grow more complex, the methodologies used to evaluate them must evolve accordingly. Traditional machine learning models are largely deterministic — given the same input, they produce the same output. In contrast, large language models (LLMs) and other generative AI systems introduce a degree of non-determinism, meaning their outputs can vary even when given identical inputs. This shift challenges conventional evaluation metrics and requires new approaches to assessing model performance, reliability, and trustworthiness.
-
-This talk explores the transition from deterministic ML evaluation to the complexities of generative AI assessment. We’ll examine why accuracy-based metrics fall short, how new frameworks address coherence, consistency, and bias, and the challenges of reproducibility in probabilistic AI systems. Finally, we’ll look at how to test AI models in real-world situations, identify where they might go wrong, and make sure they’re safe, reliable, and work as expected. Attendees will gain a clearer understanding of how AI evaluation is changing and practical ways to assess next-generation models.
-
-<details>
-
-<summary>Biography</summary>
-
-Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s helping build an automated testing platform for statistical testing of AI applications. She is also the founder of DataScientific, Inc., an AI Advisory and Consulting firm specializing in the development and implementation of cutting-edge AI solutions. Previously, she was the Chief Machine Learning Scientist at H2O.ai, and founder of Women in Machine Learning and Data Science (WiMLDS) and co-founder of R-Ladies Global. Erin received her Ph.D. in Biostatistics from University of California, Berkeley and has a B.S. and M.A. in Mathematics.
-
-</details>
-:::
-:::
+The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and 
+gain insights from health data. Conference workshops and demos provide a way to learn and develop your 
+R skills, and to try out new R packages and tools. Conference talks share new packages, and successes 
+in analyzing health, laboratory, and clinical data with R and Shiny, and an opportunity to interact 
+with speakers in the chat during their pre-recorded talks.
 
 ## BROUGHT TO YOU BY
 
@@ -69,28 +23,6 @@ Dr. Erin LeDell is the Chief Scientist at Distributional, Inc. where she’s hel
 [![](images/R-con.png){fig-alt="R Consortium" width="50%" fig-align="left"}](https://www.r-consortium.org/)
 
 <!-- max-height="150" width="70%" -->
-
-## SPONSORED BY
-
-
-
-::: columns
-::: {.column width="45%"}
-### Gold sponsor
-
-[![](images/genentech.png){fig-alt="Genentech" fig-align="left" width="80%"}](https://www.gene.com/)
-:::
-
-::: {.column width="10%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="45%"}
-### Silver sponsor
-
-[![](images/posit.png){fig-alt="Posit" fig-align="left" width="80%"}](https://posit.co/)
-:::
-:::
 
 ## MAILING LIST
 

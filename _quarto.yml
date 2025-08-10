@@ -3,27 +3,27 @@ project:
   output-dir: docs
 
 website:
-  title: "R/Medicine 2025"
+  title: "R/Medicine 2026"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: Register.qmd
-        text: Register
-      - href: Submit.qmd
-        text: Submit
-      - href: Competition.qmd
-        text: Competition
-      - href: speaker_info.qmd
-        text: Speaker guide
-      - href: Program.qmd
-        text: Program
-      - href: workshops.qmd
-        text: Workshops, Demos, Panels
+      # - href: Register.qmd
+      #   text: Register
+      # - href: Submit.qmd
+      #   text: Submit
+      # - href: Competition.qmd
+      #   text: Competition
+      # - href: speaker_info.qmd
+      #   text: Speaker guide
+      # - href: Program.qmd
+      #  text: Program
+      # - href: workshops.qmd
+      #   text: Workshops, Demos, Panels
       - href: Attend.qmd
         text: Code of Conduct
-      - href: committees.qmd
-        text: Committees
+      # - href: committees.qmd
+      #   text: Committees
       - href: Events.qmd
         text: Past Events
       - href: Contact.qmd
