@@ -8,7 +8,6 @@ title: "Committees for R/Medicine 2025"
 
 -   **Chair: Emily Zabor, Cleveland Clinic**
 -   Terry Christiani, The R Consortium
--   Peter Higgins, University of Michigan
 -   Joy Payton
 -   Steven Schwager, Cornell University
 -   Ray Balise, University of Miami
@@ -18,7 +17,12 @@ title: "Committees for R/Medicine 2025"
 -   Andey Nunes-Brewster, Oregon Health Authority
 -   Ben Gerber, UMass
 -   Daniel Sjoberg, Genentech
--   Claire Welsh, National Health Service
+-   Richard Hanna, Children's Hospital of Philadelphia
+-   Henry Ugorji, Oregon Health Authority
+-   Brandon Rose, University of Texas Southwestern Medical Center
+-   Catalina Canizares-Escobar, New York University
+-   Francisco Cardozo Macias, University of Miami
+-   Andie Hendrick, Oregon Health Authority
 :::
 
 ::: {.column width="10%"}
@@ -28,13 +32,15 @@ title: "Committees for R/Medicine 2025"
 ::: {.column width="45%"}
 ## Program Committee
 
--   **Chair: Daniel Sjoberg, Genentech**
--   Peter Higgins, University of Michigan
--   Steven Schwager, Cornell University
--   Michael Kane, MD Anderson
--   Daniel Chen, The University of BC & Posit
--   Ben Gerber, UMass
--   Beth Atkinson, Mayo Clinic
+TBD
+
+<!-- -   **Chair: Daniel Sjoberg, Genentech** -->
+<!-- -   Peter Higgins, University of Michigan -->
+<!-- -   Steven Schwager, Cornell University -->
+<!-- -   Michael Kane, MD Anderson -->
+<!-- -   Daniel Chen, The University of BC & Posit -->
+<!-- -   Ben Gerber, UMass -->
+<!-- -   Beth Atkinson, Mayo Clinic -->
 :::
 ::::::
 
