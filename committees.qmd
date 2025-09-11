@@ -8,7 +8,6 @@ title: "Committees for R/Medicine 2025"
 
 -   **Chair: Emily Zabor, Cleveland Clinic**
 -   Terry Christiani, The R Consortium
--   Joy Payton
 -   Steven Schwager, Cornell University
 -   Ray Balise, University of Miami
 -   Beth Atkinson, Mayo Clinic
