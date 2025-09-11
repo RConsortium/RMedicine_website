@@ -1,5 +1,5 @@
 ---
-title: "Committees for R/Medicine 2025"
+title: "Committees for R/Medicine 2026"
 ---
 
 :::::: columns
@@ -56,4 +56,5 @@ Beth Atkinson, Mayo Clinic. Program committee chair: 2020
 Steven Schwager, Cornell University. Program committee chair: 2021, 2022, 2023, 2024
 
 Peter Higgins, University of Michigan. Organizing committee chair: 2023, 2024
+
 

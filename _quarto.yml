@@ -23,8 +23,8 @@ website:
       #   text: Workshops, Demos, Panels
       - href: Attend.qmd
         text: Code of Conduct
-      - href: Committees.qmd
-        text: Committees
+      # - href: Committees.qmd
+      #   text: Committees
       - href: Events.qmd
         text: Past Events
       - href: Contact.qmd
