@@ -14,7 +14,7 @@ title: "Committees for R/Medicine 2026"
 -   Michael Kane, MD Anderson
 -   Daniel Chen, The University of BC & Posit
 -   Andey Nunes-Brewster, Oregon Health Authority
--   Ben Gerber, UMass
+-   Ben Gerber, UMass Chan
 -   Daniel Sjoberg, Genentech
 -   Richard Hanna, Children's Hospital of Philadelphia
 -   Henry Ugorji, Oregon Health Authority
