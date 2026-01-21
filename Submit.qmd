@@ -39,7 +39,7 @@ All accepted speakers will be required to pre-record their talk and submit the v
 
 <!-- style = "background-color: #009473" -->
 
-<!-- onclick="window.location.href='https://forms.gle/1YsqbFR2KRD6RL8c7'">  -->
+<!-- onclick="window.location.href='https://forms.gle/Txm3fRPbcnUJBCrQA'">  -->
 
 <!--   **SUBMIT ABSTRACT** -->
 
