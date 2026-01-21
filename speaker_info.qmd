@@ -4,19 +4,15 @@ title: "Speaker guide"
 
 ## Welcome!
 
-This page is intended for folks who have had their abstract accepted for a lightning talk or regular talk at R/Medicine 2025. Congratulations! We are excited to welcome you as a presenter. As a reminder, the event will take place virtually on Thursday and Friday, June 13-14, on Eastern Daylight Time. Please click through the tabs on this page to access information.
+This page is intended for folks who have had their abstract accepted for a lightning talk or regular talk at R/Medicine 2025. Congratulations! We are excited to welcome you as a presenter. 
 
-## Deadlines
-
--   **Pre-Recording Video Submission Due Date** (mandatory for lightning talks, recommended for regular talks with only one speaker): Monday, June 2
-
--   **Event Dates:** Monday, June 9 -- Friday, June 13
-
--   **Timezone:** Eastern Daylight Time
+Please click through the tabs on this page to access information.
 
 ## Schedule and Timing
 
 The schedule has been posted on the R/Medicine web site.
+
+**All program times are in eastern time**
 
 -   All lightning talks are ten (10) minutes in total (including Q&A).
 
@@ -221,13 +217,10 @@ For the main meeting on Thursday and Friday, it is required to have a presenter 
 
 From: <https://www.inxpo.com/assets/pdfs/litepapers/How-To-Be-An-Engaging-Speaker.pdf>
 
-## Inclusive Speaker Orientation Online Course
-
-The Linux Foundation, in collaboration with the National Center for Women in Technology (NCWIT), has created an [online course](https://training.linuxfoundation.org/content/inclusive-speaker-orientation) designed to teach the viewer about inclusion, diversity, and unconscious bias. We highly recommend all of our speakers, [watch the course](https://training.linuxfoundation.org/content/inclusive-speaker-orientation) to learn tips/tools to use when speaking to encourage inclusivity in presentations and messaging.
 
 ## Code of Conduct
 
-Please read and abide by our code of conduct, which can be found [here](https://r-medicine-2021.netlify.app/code-of-conduct/). We ask that speakers especially review this code of conduct and are inclusive in the **words and images** used during their presentation.
+Please read and abide by our [Code of Conduct](Attend.qmd). We ask that speakers especially review this code of conduct and are inclusive in the **words and images** used during their presentation.
 
 ## Links to additional resources
 

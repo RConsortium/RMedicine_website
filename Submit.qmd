@@ -1,6 +1,39 @@
 ## Call for Proposals
 
-### Submissions are now closed
+### Submissions opening soon!
+
+
+### Dates to Remember
+
+**CFP Closes:** Friday, March 6th at 11:59 PM ET 
+
+**CFP Notifications:** Friday, March 20th
+
+**Schedule Announcement:** Friday, April 3rd
+
+**Pre-Recorded Video Submission:** Monday, April 27th
+
+
+### Submit a lightning or regular talk
+
+-   **Lightning talks** (10 min, Thursday May 7th or Friday May 8th) 
+-   **Regular talks** (20 min, Thursday May 7th or Friday May 8th) 
+
+An abstract proposal should describe a presentation of methodology, a study or project, or an example or case study relevant to one (or more) of our fields of interest, with R-based tools having a substantial role in the work. The content of the presentation should be of interest to the R/Medicine community. 
+
+Avoid sales or marketing pitches and discussion of unlicensed or potentially closed-source technologies in your proposal. Talks of this nature are almost always rejected because they diminish the integrity of our events and are rarely well-received by conference attendees.
+
+We do not intend to provide strict instructions on how to prepare your proposal; however, we hope you will review the following guidelines to help you prepare the best submission possible. To get started, here are three questions you should consider before submitting your proposal:
+
+1.  What are you hoping to get from your presentation?
+
+2.  What do you expect the audience to gain from your presentation?
+
+3.  How will your presentation help better the R Medicine ecosystem?
+
+Remember the questions above when writing your proposal, and think of ways to make it interesting for attendees as you share your experiences, educate the community about a method or an issue, or generate interest in a project.
+
+All accepted speakers will be required to pre-record their talk and submit the video by Monday, April 27th.
 
 <!-- <button class="btn btn-primary" -->
 
@@ -12,57 +45,29 @@
 
 <!-- </button> -->
 
-### Details
 
-We are seeking abstracts for:
+### Submit a demo or workshop
 
--   **Lightning talks** (10 min, Thursday June 12 or Friday June 13) Must pre-record and be live on chat to answer questions
--   **Regular talks** (20 min, Thursday June 12 or Friday June 13) Must pre-record and be live on chat to answer questions
--   **Demos** (1 hour demo of an approach or a package, Tuesday June 10 or Wednesday June 11) Done live, preferably interactive
--   **Workshops** (2-3 hours on a topic, Tuesday June 10 or Wednesday June 11) Detailed instruction on a topic, usually with a website and a repo, participants can choose to code along, include 5-10 min breaks each hour.
+-   **Demos** (1 hour demo of an approach or a package, Monday May 4th) Done live, preferably interactive
+-   **Workshops** (2-3 hours on a topic, Monday May 4th) Detailed instruction on a topic, usually with a website and a repo, participants can choose to code along, include 5-10 min breaks each hour.
 
-An abstract proposal should describe a presentation of methodology, a study or project, or an example or case study relevant to one (or more) of our fields of interest, with R-based tools having a substantial role in the work. The content of the presentation should be of interest to the R/Medicine community.
+Timeslots for workshops and demos are limited, and all will take place on Monday, May 4th. Submissions will require a detailed outline of the planned content, as well as an outline of the "run of show" indicating how much time will be spent on instruction, live coding, interactive demo, participant activity, breaks, etc, and in what order, covering the duration of the session. Workshops and demos should be well planned out in advance, and any live demonstration should be thoroughly vetted in advance as well as immediately prior to the session to ensure a seamless experience. Thought must be given to style or presentation, including screen size, font size, colors, and other accessibility issues.
 
-### Dates to Remember
-
-**CFP Closes:** Friday, April 18th at 11:59 PM ET ~~Friday, April 11th at 11:59 PM ET~~
-
-**CFP Notifications:** Friday, April 25th
-
-**Schedule Announcement:** Friday, May 9th
-
-**Pre-Recorded Video Submission:** Monday, June 2nd
 
 ### The Chat
 
 R/Medicine has a strong tradition of **active** discussion in a virtual chat **during** virtual presentations, and this discussion is much better if the presenter or a co-presenter is **active** in the chat, sharing relevant links and answering questions during the presentation. If you have relevant links in your presentation, put them in a document ahead of time so that you can easily drop them into the chat when appropriate. If you have a co-presenter, decide who will present and who will chat (or take turns at a natural switching point).
 
-*Panel submissions* must include the names of all participants in the initial submission in order to be considered. The Linux Foundation does not accept submissions with all-male panels, in an effort to increase speaker diversity.
 
-*Complimentary Passes* For Speakers: One complimentary pass for the event will be provided for the accepted primary speaker and a co-speaker. For panel sessions, each panelist will receive a complimentary pass.
+### Complimentary Passes For Speakers
 
-**Avoid** sales or marketing pitches and discussion of unlicensed or potentially closed-source technologies in your proposal. Talks of this nature are almost always rejected because they diminish the integrity of our events and are rarely well-received by conference attendees.
-
-All accepted speakers are required to submit their prerecorded presentation videos by Monday, June 2nd, prior to the event.
+One complimentary pass for the event will be provided for the accepted primary speaker and a co-speaker. 
 
 ### Important Notes
 
-All speakers are required to adhere to our [Code of Conduct](Attend.qmd). We also highly recommend that speakers take our online [Inclusive Speaker Orientation Course](https://training.linuxfoundation.org/linux-courses/open-source-compliance-courses/inclusive-speaker-orientation).
+All speakers are required to adhere to our [Code of Conduct](Attend.qmd). 
 
-**Preparing to Submit Your Proposal**
 
-We do not intend to provide strict instructions on how to prepare your proposal; however, we hope you will review the following guidelines to help you prepare the best submission possible. To get started, here are three questions you should consider before submitting your proposal:
+### First Time Submitting? Don't Feel Intimidated
 
-1.  What are you hoping to get from your presentation?
-
-2.  What do you expect the audience to gain from your presentation?
-
-3.  How will your presentation help better the R Medicine ecosystem?
-
-There are many ways to give a presentation about projects and technologies without focusing on company-specific efforts.
-
-Remember the questions above when writing your proposal, and think of ways to make it interesting for attendees as you share your experiences, educate the community about a method or an issue, or generate interest in a project.
-
-**First Time Submitting? Don't Feel Intimidated**
-
-Linux Foundation events are an excellent place for getting to know the community and sharing your ideas and the work you are doing. We strongly encourage first-time speakers to submit talks for our events. If you aren't sure about your abstract, reach out to us and we will be happy to provide advice on your proposal.
+We strongly encourage first-time speakers to submit talks for R/Medicine. We offer an inclusive environment for all levels of presenters, from beginner to expert. If you aren't sure about your abstract, reach out to us and we will be happy to provide advice on your proposal or review it in advance: rmedicine.conference@gmail.com.
