@@ -1,20 +1,20 @@
 ## Registration
 
-### Registration is now open!
+### Registration coming soon!
 
-<button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href=&#39;https://events.zoom.us/ev/Ary4n0gHYgxRCElrRRk-VtYMY7U1RqFT6ceYf8FmTErQlMuI9H7A~ArHKCkWO_DutzLw_AdvOKPtA6RVDz12I4PBqXncSsqdpum5kFyRtEovYWA&#39;">
+<!-- <button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href=&#39;https://events.zoom.us/ev/Ary4n0gHYgxRCElrRRk-VtYMY7U1RqFT6ceYf8FmTErQlMuI9H7A~ArHKCkWO_DutzLw_AdvOKPtA6RVDz12I4PBqXncSsqdpum5kFyRtEovYWA&#39;"> -->
 
-**REGISTER HERE**
+<!-- **REGISTER HERE** -->
 
-</button>
+<!-- </button> -->
 
-<br>
+<!-- <br> -->
 
-*Note that Zoom Events excludes some countries from processing event payments, though attendance is still permitted. If you are registering from country where payment is blocked (see the list at Zoom Events [here](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063856)) please email r-medicine\@r-consortium.org to request a manual registration. All are welcome at R/Medicine!*
+<!-- *Note that Zoom Events excludes some countries from processing event payments, though attendance is still permitted. If you are registering from country where payment is blocked (see the list at Zoom Events [here](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063856)) please email r-medicine\@r-consortium.org to request a manual registration. All are welcome at R/Medicine!* -->
 
 ### Registration Pricing
 
-The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. Early Bird pricing ends **April 10, 2025**.
+The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. Early Bird pricing ends **Friday, March 6, 2026**.
 
 | Category              | Early Bird | Regular |
 |-----------------------|:----------:|:-------:|
@@ -26,40 +26,10 @@ The following table lists the registration fees for three categories of attendee
 
 A limited number of complimentary registrations are available to enable community members to attend when they would otherwise be unable due to a lack of funding. We place an emphasis on funding applicants who are from historically underrepresented or untapped groups, from low GDP countries, and/or those of lower socioeconomic status.
 
-Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. **Submissions are now closed.**
+Tell us why you need one of the limited number of complimentary registrations. Limit 500 characters. 
 
 <!-- Submit [here](https://docs.google.com/forms/d/e/1FAIpQLSdGQ_QqQdOmAvuT_1oLMC_LFVgWeq3NBJ013tVJizklv4bm5g/viewform?usp=header). -->
 
-**Scholarship application deadline:** Friday, May 2nd
+**Scholarship application deadline:** Friday, April 3rd, 2026
 
-**Scholarship award notification:** Monday, May 5th
-
-:::::: columns
-::: {.column width="45%"}
-### Invoices & Certificates of Attendance
-
-#### Registration Invoices
-
-Invoice receipts are downloadable from the confirmation email you received after registering under the Payment Receipt Information section. If the downloadable invoice receipt does not meet your needs or you need to have your confirmation email resent, please submit your request here. Please include any additional customization you need for your invoice receipt in the request.
-
-#### Certificates of Attendance:
-
-To request a Certificate of Attendance, please submit a request here. Please Note: We verify attendance through the registration system, and Certificate of Attendance letters are sent out after the event is completed.
-:::
-
-::: {.column width="10%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="45%"}
-### Refund Policy
-
-#### Cancellations:
-
-If you must cancel for any reason, please sign back into your registration, click the “Register/Modify” button and select “Unregister.” If you need further assistance, email registration\@linuxfoundation.org. Refunds considered on a case by case basis.
-
-#### Substitutions:
-
-If you are unable to attend, you may substitute another attendee in lieu of cancellation. To substitute an attendee, sign back into your registration, click the “Register/Modify”, and select “Transfer Registration” on your confirmation page.
-:::
-::::::
+**Scholarship award notification:** Friday, April 10th, 2026

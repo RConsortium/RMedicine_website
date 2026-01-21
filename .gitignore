@@ -14,3 +14,4 @@ package.json
 /_site/
 _site/
 .sass-cache/
+**/*.quarto_ipynb
