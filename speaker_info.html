@@ -223,7 +223,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
-<p>This page is intended for folks who have had their abstract accepted for a lightning talk or regular talk at R/Medicine 2025. Congratulations! We are excited to welcome you as a presenter.</p>
+<p>This page is intended for folks who have had their abstract accepted for a lightning talk or regular talk at R/Medicine. Congratulations! We are excited to welcome you as a presenter.</p>
 <p>Please click through the tabs on this page to access information.</p>
 </section>
 <section id="schedule-and-timing" class="level2">
@@ -303,29 +303,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="slide-templates">Slide templates</h3>
 <p>R/Medicine slide templates are available for:</p>
 <ul>
-<li><strong>Powerpoint</strong>. Download the template <a href="https://docs.google.com/presentation/d/1147BW-lYMz1Re5vspoOONiuh2iK-GOx-/edit?usp=drive_link&amp;ouid=109461157699922412522&amp;rtpof=true&amp;sd=true">here</a>.</li>
+<li><strong>Powerpoint</strong>. Download the template <a href="https://docs.google.com/presentation/d/1yTwE2O9HuQWD5zJBklH0e-MlQNDmBAH_/edit?usp=sharing&amp;ouid=109461157699922412522&amp;rtpof=true&amp;sd=true">here</a>.</li>
 <li><strong>Quarto</strong>. See details below.</li>
 </ul>
 <section id="creating-rmed-slides-in-quarto" class="level4">
 <h4 class="anchored" data-anchor-id="creating-rmed-slides-in-quarto">Creating RMed Slides in Quarto</h4>
-<p>To prepare your RevealJS presentation for R/Medicine 2025 using our prebuilt template, follow this outline.</p>
+<p>To prepare your RevealJS presentation for R/Medicine using our prebuilt template, follow this outline.</p>
 <ol type="1">
-<li>Install the {rUM} package from their <code>dev</code> branch:</li>
+<li>Install the {rUM} package from CRAN:</li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"RaymondBalise/rUM@dev"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_cran</span>(<span class="st">"rUM"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
-<li>Initialize a new slide project that includes the RMed templates. Be sure to include <code>template = "rmed2025"</code>. A <code>slides</code> directory will be created in your current path as defined by <code>here::here()</code> unless you use the <code>path =</code> argument. This demonstration will create the directory evaluated by <code>here::here()</code>:</li>
+<li>Initialize a new slide project that includes the RMed templates. Be sure to include <code>template = "rmed"</code>. A <code>slides</code> directory will be created in your current path as defined by <code>here::here()</code> unless you use the <code>path =</code> argument. This demonstration will create the directory evaluated by <code>here::here()</code>:</li>
 </ol>
-<p>For example, this code will make a slides folder in your working directory:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># rUM::write_slides("&lt;your presentation name&gt;", template = "rmed2025")</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>rUM<span class="sc">::</span><span class="fu">write_slides</span>(<span class="st">"rmed2025_demo"</span>, <span class="at">template =</span> <span class="st">"rmed2025"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If you are on Mac and want to have a slides folder added to your desktop you can do this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rUM<span class="sc">::</span><span class="fu">write_slides</span>(<span class="st">"rmed2025_demo"</span>, <span class="at">path =</span> <span class="st">"~/Desktop/"</span>, <span class="at">template =</span> <span class="st">"rmed2025"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For example, this code will make a slides folder on your Desktop:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>rUM<span class="sc">::</span><span class="fu">write_slides</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"bestest_talk_ever"</span>, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">"~/Desktop"</span>, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">new_folder =</span> <span class="st">"the_bestest_talk"</span>, </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">example =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">template =</span> <span class="st">"rmed"</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="3" type="1">
 <li>The <code>slides</code> directory will include:</li>
 </ol>
 <ul>
-<li><code>&lt;project&gt;.qmd</code> (The demonstration created <code>rmed2025_demo.qmd</code>)</li>
+<li><code>&lt;project&gt;.qmd</code></li>
 <li><code>slides.scss</code> for presentation styling</li>
 <li><code>rstudio_default-light.theme</code> that will render your code examples (i.e., syntax highlighting) as displayed in RStudio’s light theme</li>
 <li><code>img</code> directory containing template background, hex logo, and <code>.ico</code> file to add styling to your browser’s tab once the presentation is rendered.
@@ -336,7 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="4" type="1">
 <li>Render the document using either the RStudio “Knit” or Positron “Preview” GUI buttons, Ctrl+Shift+K (CMD+Shift+K for macOS), or use the terminal command:</li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview slides/<span class="op">&lt;</span>project<span class="op">&gt;</span>.qmd <span class="at">--no-browser</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview slides/<span class="op">&lt;</span>project<span class="op">&gt;</span>.qmd <span class="at">--no-browser</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>We recommend you modify the following values in the presentation YAML:</p>
 <ul>
 <li>Title, subtitle, &amp; author details</li>
