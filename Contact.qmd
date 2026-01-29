@@ -1,17 +1,19 @@
 ## Contact the R/Medicine Team
 
-### Code of Conduct
+All inquiries can be sent to [rmedicine.conference@gmail.com](mailto:rmedicine.conference@gmail.com).
 
-If you have general questions about the code of conduct, please write to conduct\@r-consortium.org
+<!-- ### Code of Conduct -->
 
-### The Conference
+<!-- If you have general questions about the code of conduct, please write to conduct\@r-consortium.org -->
 
-If you have general questions about the conference please write to r-medicine-conf\@r-consortium.org
+<!-- ### The Conference -->
 
-### Sponsorships
+<!-- If you have general questions about the conference please write to r-medicine-conf\@r-consortium.org -->
 
-If you would like to know about sponsorship opportunities, please write to sponsorship\@r-consortium.org
+<!-- ### Sponsorships -->
 
-### General Queries
+<!-- If you would like to know about sponsorship opportunities, please write to sponsorship\@r-consortium.org -->
 
-For all other questions not covered by the topics above, please write to admin\@r-consortium.org
+<!-- ### General Queries -->
+
+<!-- For all other questions not covered by the topics above, please write to admin\@r-consortium.org -->
