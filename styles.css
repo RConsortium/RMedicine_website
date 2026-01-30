@@ -1,5 +1,211 @@
-/* CSS */
+/*-- scss:rules --*/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* --- Workshop Section Headings (for TOC navigation) --- */
+
+/* Style h2 headings that precede workshop cards */
+h2[id] {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* First h2 after h1 doesn't need as much top margin */
+h1 + h2[id] {
+  margin-top: 1.5rem;
+}
+
+/* --- Custom Card Component (Two-Panel Design) --- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Wider cards for side-by-side layout */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.workshop-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 200px;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+}
+
+.workshop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Left Panel - Colored */
+.card-left {
+  background-color: #26c8a2; /* Light teal tint */
+  background: linear-gradient(135deg, #26c8a2 0%, #0a9674 100%);
+  flex: 0 0 140px; /* Fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* This centers the content vertically */
+  padding: 20px 10px;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.03);
+  position: relative;
+}
+
+/* Speaker Images in Left Panel */
+.speaker-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap between images */
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;    /* Push to middle */
+  margin-bottom: auto; /* Push to middle */
+}
+
+.speaker-imgs img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 0; /* Removing default margins if any */
+}
+
+/* Badge (optional, top of left panel) */
+.card-badge-top {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #000000; /* Changed to black as requested */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px; /* Space between badge and images */
+  opacity: 0.8;
+  position: absolute; /* Take out of flow to let images center perfectly */
+  top: 15px;
+}
+
+/* Right Panel - White */
+.card-right {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; /* For footer positioning if needed */
+}
+
+/* Card title styling (if using h3 inside cards) */
+.card-right h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+  border-bottom: none;
+}
+
+.workshop-speakers-name {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #009473; /* Brand Primary */
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.workshop-speakers-name a {
+  color: #009473; /* Keep brand color */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.workshop-speakers-name a:hover {
+  color: #006850; /* Darker on hover */
+  text-decoration: underline;
+}
+
+.workshop-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.workshop-links {
+  margin-top: auto; /* Push to bottom */
+  font-size: 0.85rem;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+  text-align: right;
+  color: #888;
+}
+
+.workshop-links a {
+  color: #009473;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.workshop-links a:hover {
+  color: #006850;
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .workshop-card {
+    flex-direction: column;
+  }
+  
+  .card-left {
+    flex-direction: row; /* Horizontal layout for mobile header */
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 15px;
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center vertically */
+    gap: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-right: none;
+  }
+
+  .speaker-imgs {
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .speaker-imgs img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .card-badge-top {
+    position: static; /* Reset absolute positioning */
+    margin-bottom: 0;
+    margin-right: auto; /* Push to left */
+    top: auto;
+    color: #000000; /* Ensure it's black on mobile too */
+  }
+}
+
+/* --- Existing Styles --- */
 
 .listing-links {
   margin-top: 10px;
