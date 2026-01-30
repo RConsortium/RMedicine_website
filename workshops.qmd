@@ -1,9 +1,9 @@
 
 # Workshops
 
-::: {.card-grid}
+## R101: Introduction to R for Clinical Data {#r101}
 
-::: {.workshop-card #workshop-1}
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -13,18 +13,23 @@ WORKSHOP
 ![](images/w1-2-kadauke-stephan.jpeg)
 :::
 :::
+
 ::: {.card-right}
-### R101: Introduction to R for Clinical Data
 ::: {.workshop-speakers-name}
-Richard Hanna & Stephan Kadauke
+[Richard Hanna](INFO HERE){target="_blank"} & [Stephan Kadauke](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 A gentle introduction to R and data science for healthcare professionals and clinical researchers.
 :::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
 :::
 :::
 
-::: {.workshop-card #workshop-2}
+## Promover la Equidad Científica {#equidad}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -34,18 +39,23 @@ WORKSHOP
 ![](images/w2-2-francisco-cardozo.jpeg)
 :::
 :::
+
 ::: {.card-right}
-### Promover la Equidad Científica
 ::: {.workshop-speakers-name}
-Catalina Cañizares & Francisco Cardozo
+[Catalina Cañizares](INFO HERE){target="_blank"} & [Francisco Cardozo](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 A pesar de los abundantes recursos disponibles para aprender R, la mayoría de estos materiales son accesibles principalmente en inglés. Esta barrera del idioma restringe significativamente el acceso de personas que prefieren estudiar R en español.
 :::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
 :::
 :::
 
-::: {.workshop-card #workshop-3}
+## Mastering Clinical Data Summaries with {gtsummary} and AI {#gtsummary}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -55,21 +65,27 @@ WORKSHOP
 ![](images/w3-2-shannon-pileggi.jpg)
 :::
 :::
+
 ::: {.card-right}
-### Mastering Clinical Data Summaries: A Hands-on Workshop with {gtsummary} and AI
 ::: {.workshop-speakers-name}
-Daniel D. Sjoberg & Shannon Pileggi
+[Daniel D. Sjoberg](INFO HERE){target="_blank"} & [Shannon Pileggi](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
-As the pharmaceutical field increasingly adopts open-source approaches to clinical trial reporting, this seminar highlights the {gtsummary} R package and its integration with the Analysis Results Dataset (ARD) framework as a key advance toward standardized, machine-readable reporting. Participants will learn how to generate ARDs with the {cards} package, create publication-ready tables with {gtsummary}, and see how this ecosystem supports efficient quality control and the use of Large Language Models for code generation and result summarization.
+As the pharmaceutical field moves to open-source solutions for reporting on clinical trials, assessing and vetting the options available becomes increasingly important. The {gtsummary} R package is the most widely used tool in the R ecosystem for creating publication-ready summary tables. Its recent integration with the Analysis Results Dataset (ARD) framework represents a major advance for clinical trial reporting. ARDs, which standardize statistical outputs in a machine-readable format, can be robustly generated using the open-source {cards} package developed by Roche, GSK, Novartis, Eli Lilly, Pfizer, and Clymb.
+
+In this seminar, attendees will learn about ARDs and how can fit into the larger CDISC-proposed Analysis Results Standard, get hands-on experience using {cards} to build ARDs for both simple and complex statistical summaries, create summary tables using the {gtsummary} package, and learn how utilizing these packages together also makes programmatic quality control of TLGs a simple task.
+
+Lastly, we will review how this ecosystem naturally lends itself to Large Language Models (LLMs). Because {gtsummary} is so widely adopted, LLMs can generate complex {gtsummary} code without additional training. Additionally, LLMs can readily interpret our structured ARDs to assist medical writers summarizing both simple and sophisticated trial results.
 :::
 ::: {.workshop-links}
-[Course GitHub repo](INFO HERE) | [Course website](INFO HERE)
+[Workshop GitHub repo](INFO HERE)
 :::
 :::
 :::
 
-::: {.workshop-card #workshop-4}
+## Building Accessible, On-Brand Documents with Quarto {#quarto-docs}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -78,21 +94,23 @@ WORKSHOP
 ![](images/w4-charlotte-wickham.jpg)
 :::
 :::
+
 ::: {.card-right}
-### Building Accessible, On-Brand Documents with Quarto
 ::: {.workshop-speakers-name}
-Charlotte Wickham
+[Charlotte Wickham](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 Come see practical strategies for producing Quarto documents that meet organizational standards for both design and accessibility. You’ll learn how to implement consistent organizational branding using brand.yml, plus customization techniques for cases where you need more control. You’ll also learn about recent accessibility improvements for both PDF and HTML outputs.
 :::
 ::: {.workshop-links}
-[Pre-workshop setup](INFO HERE)
+[Workshop GitHub repo](INFO HERE)
 :::
 :::
 :::
 
-::: {.workshop-card #workshop-5}
+## R and RedCap Panel Discussion {#redcap}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 PANEL
@@ -101,10 +119,10 @@ PANEL
 ![](images/test-img.png)
 :::
 :::
+
 ::: {.card-right}
-### R and RedCap panel discussion 
 ::: {.workshop-speakers-name}
-Ray, Brandon, Rich, others 
+[Ray](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, [Rich](INFO HERE){target="_blank"}, others
 :::
 ::: {.workshop-desc}
 INFO HERE
@@ -115,7 +133,9 @@ INFO HERE
 :::
 :::
 
-::: {.workshop-card #workshop-6}
+## Ctrialsgov R Package {#ctrialsgov}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -124,38 +144,54 @@ WORKSHOP
 ![](images/test-img.png)
 :::
 :::
+
 ::: {.card-right}
-### Ctrialsgov R package
 ::: {.workshop-speakers-name}
-Mike Kane
+[Mike Kane](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 INFO HERE
 :::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
 :::
 :::
 
-::: {.workshop-card #workshop-7}
+## Working with Larger than Memory Data in R {#big-data}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
 :::
 ::: {.speaker-imgs}
-![](images/test-img.png)
+![](images/w7-francois-michonneau.jpeg)
 :::
 :::
+
 ::: {.card-right}
-### A Practical Guide to Working with Larger than Memory Data in R
 ::: {.workshop-speakers-name}
-François Michonneau
+[François Michonneau](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
-This hands-on workshop shows R users how to analyze large data efficiently using modern open-source tools while staying within familiar tidyverse workflows. Participants will learn when to move beyond in-memory data frames and how to use DuckDB, Apache Arrow, and duckplyr to work with large CSV and Parquet files, perform joins and aggregations, and accelerate existing dplyr code with minimal changes. Through practical examples, the workshop provides decision frameworks for choosing the right tool based on data size and performance needs, equipping attendees with reproducible strategies to confidently handle larger-than-memory datasets in their own work.
+As datasets continue to grow in size and complexity, R users increasingly encounter data that exceeds their system's memory capacity. This hands-on workshop provides practical strategies for efficiently analyzing larger-than-memory datasets using modern open source tools, with a focus on DuckDB and Apache Arrow—all while maintaining familiar tidyverse workflows.
+
+Participants will learn when and why to move beyond traditional in-memory data frames, and how to choose the right tool for their specific data challenges. Through a combination of presentation and hands-on exercises, we'll explore how DuckDB enables SQL-based analytics on large datasets without loading them entirely into memory, and how Arrow provides a high-performance columnar data format for efficient data interchange and processing. We'll also introduce duckplyr, which brings DuckDB's performance optimizations directly to your existing dplyr code with minimal syntax changes.
+
+The workshop covers essential workflows including reading and querying large CSV and Parquet files, performing aggregations and joins on data that won't fit in RAM, and leveraging duckplyr to accelerate familiar tidyverse operations on larger datasets. Participants will gain practical experience through real-world examples and learn decision frameworks for selecting appropriate tools based on data size, query patterns, and performance requirements—all without abandoning the tidyverse syntax they already know.
+
+Attendees should have basic familiarity with R and the tidyverse. By the end of this 3-hour session, participants will be equipped with reproducible techniques to confidently tackle larger datasets in their own research and data analysis workflows.
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
 :::
 :::
 :::
 
-::: {.workshop-card #workshop-8}
+## ggplot2 for Data Visualisation: Creativity, Clarity, Accessibility {#ggplot2}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -164,19 +200,24 @@ WORKSHOP
 ![](images/w8-cara-thompson.jpg)
 :::
 :::
+
 ::: {.card-right}
-### Creativity, clarity and accessibility: making the most of ggplot2 for data visualisation with R
 ::: {.workshop-speakers-name}
-Cara Thompson
+[Cara Thompson](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 This workshop is designed for ggplot users who know how to make basic graphs, but want to make them look better and save themselves precious time by building reuseable components. We'll explore how to choose the right graphs for different aspects of our data story and how to apply a consistent style across them. In doing so, we will focus on making design choices which are accessible, and on making the most of new ggplot2 features. Because getting from a static graph to an interactive one is much easier than most people realise, we'll finish by exploring how to link two or more interactive graphs together to allow users to explore different aspects of a data story.
-This is a code-along workshop, so bring your own data and graphs, and we'll make something fun together.
+This is a code-along workshop, so bring your own data and graphs, and we'll make something fun together!
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
 :::
 :::
 :::
 
-::: {.workshop-card #workshop-9}
+## LLMs for Data Analysis in R {#llms}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -185,18 +226,23 @@ WORKSHOP
 ![](images/w9-sara-altman.png)
 :::
 :::
+
 ::: {.card-right}
-### LLMs for Data Analysis in R
 ::: {.workshop-speakers-name}
-Sara Altman
+[Sara Altman](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
-LLMs are transforming how we write code, build tools, and analyze data. This workshop will introduce participants to programming with LLM APIs in R using ellmer, an open-source package that makes it easy to work with LLMs from R. We’ll cover the basics of calling LLMs from R, system prompt design, tool calling, and evaluation, and show how to use LLM-powered tools to support common data analysis tasks like exploratory data analysis. Participants will leave with example scripts they can adapt to their own data analysis projects.
+LLMs are transforming how we write code, build tools, and analyze data. This workshop will introduce participants to programming with LLM APIs in R using ellmer, an open-source package that makes it easy to work with LLMs from R. We'll cover the basics of calling LLMs from R, system prompt design, tool calling, and evaluation, and show how to use LLM-powered tools to support common data analysis tasks like exploratory data analysis. Participants will leave with example scripts they can adapt to their own data analysis projects.
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
 :::
 :::
 :::
 
-::: {.workshop-card #workshop-10}
+## R Packages for Personal Use with GitHub {#r-packages}
+
+::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
 WORKSHOP
@@ -205,130 +251,16 @@ WORKSHOP
 ![](images/test-img.png)
 :::
 :::
+
 ::: {.card-right}
-### Package for personal use, including GitHub
 ::: {.workshop-speakers-name}
-Daniel Chen
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-:::
-:::
-:::
-
-# Demos
-
-::: {.card-grid}
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-DEMO    
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-::: {.card-right}
-### Demo name here
-::: {.workshop-speakers-name}
-NAME HERE & NAME HERE
+[Daniel Chen](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 INFO HERE
 :::
 ::: {.workshop-links}
-[GitHub page](INFO HERE)
+[Workshop GitHub repo](INFO HERE)
 :::
 :::
-:::
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-DEMO
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-::: {.card-right}
-### Demo name here
-::: {.workshop-speakers-name}
-NAME HERE & NAME HERE
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-:::
-:::
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-DEMO
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-::: {.card-right}
-### Demo name here
-::: {.workshop-speakers-name}
-NAME HERE & NAME HERE
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-:::
-:::
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-DEMO 3
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-::: {.card-right}
-### Workshop name here
-::: {.workshop-speakers-name}
-NAME HERE & NAME HERE
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-:::
-:::
-
-:::
-
-
-# Panels
-
-::: {.card-grid}
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-PANEL 1
-:::
-::: {.speaker-imgs}
-<!-- No individual images for panel yet, or maybe a generic icon -->
-:::
-:::
-::: {.card-right}
-### Panel name here
-::: {.workshop-speakers-name}
-NAME HERE & NAME HERE
-:::
-::: {.workshop-desc}
-info here.
-:::
-:::
-:::
-
 :::
