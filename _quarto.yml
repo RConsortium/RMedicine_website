@@ -19,6 +19,8 @@ website:
         text: Speaker guide
       # - href: Program.qmd
       #  text: Program
+      - href: keynotes26.qmd
+        text: Keynotes
       - href: workshops.qmd
         text: Workshops
       - href: Attend.qmd
