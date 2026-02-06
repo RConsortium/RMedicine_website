@@ -11,7 +11,7 @@ title: "Committees for R/Medicine 2026"
 -   Steven Schwager, Cornell University
 -   Ray Balise, University of Miami
 -   Beth Atkinson, Mayo Clinic
--   Michael Kane, MD Anderson
+-   Michael Kane, MD Anderson Cancer Center
 -   Daniel Chen, The University of BC & Posit
 -   Andey Nunes-Brewster, Oregon Health Authority
 -   Ben Gerber, UMass Chan
@@ -34,12 +34,12 @@ title: "Committees for R/Medicine 2026"
 TBD
 
 <!-- -   **Chair: Daniel Sjoberg, Genentech** -->
-<!-- -   Peter Higgins, University of Michigan -->
-<!-- -   Steven Schwager, Cornell University -->
+-   Steven Schwager, Cornell University
 <!-- -   Michael Kane, MD Anderson -->
 <!-- -   Daniel Chen, The University of BC & Posit -->
-<!-- -   Ben Gerber, UMass -->
-<!-- -   Beth Atkinson, Mayo Clinic -->
+-   Ben Gerber, UMass
+-   Beth Atkinson, Mayo Clinic
+-   Ray Balise, University of Miami
 :::
 ::::::
 

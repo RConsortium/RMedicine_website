@@ -1,7 +1,5 @@
 ---
 title: "R/Medicine Schedule"
-# author: "Rich Iannone"
-# date: "5/10/2024"
 format: 
   html:
     code-fold: false
@@ -29,149 +27,149 @@ hover_effect <- "onmouseover='this.style.fontStyle=\"none\"' onmouseout='this.st
 html_pattern <- glue::glue("<div>{{1}}<br><a href='{{5}}' style='{link_style}' {hover_effect}>{{2}}</a><br>{{3}} {{4}}</div>")
 ```
 
-<!-- # Workshop/Demo Day 1 {.hidden} -->
+<!-- <!-- # Workshop/Demo Day 1 {.hidden} --> 
 
-```{r, day1}
-# Day 1
-schedule_day_1 <-
-  dplyr::tribble(
-    ~start_time, 
-    ~end_time, 
-    ~track,
-    ~t_type, 
-    ~t_title, 
-    ~t_speakers,  
-    ~t_companies,
-    ~url_link,
-    
-    "2025-06-09 10:00", 
-    "2025-06-09 11:00", 
-    "A",
-    "Demo", 
-    "In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}", 
-    "Eric Nantz", 
-    "Eli Lilly",
-    "abstracts.html#in-the-nix-of-time",
-    
-    "2025-06-09 10:00", 
-    "2025-06-09 11:00", 
-    "B",
-    "Demo", 
-    "A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model ", 
-    "Nuria Mercade-Besora & Edward Burn", 
-    "University of Oxford",
-    "workshops.html#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model",
-    
-    "2025-06-09 11:00", 
-    "2025-06-09 14:00", 
-    "A",
-    "Workshop", 
-    "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español", 
-    "Catalina Canizares-Escobar & Francisco Cardozo", 
-    "Florida International University",
-    "workshops.html#promover-la-equidad-científica-una-introducción-al-uso-de-r-para-la-programación-en-bioestadística-y-ciencia-de-datos-en-español.",
-    
-    "2025-06-09 11:00", 
-    "2025-06-09 14:00", 
-    "B",
-    "Workshop", 
-    "Introduction to R for Clinical Data", 
-    "Stephan Kadauke and Rich Hanna", 
-    "Children's Hospital of Philadelphia",
-    "workshops.html#introduction-to-r-for-clinical-data",
-    
-    "2025-06-09 14:00", 
-    "2025-06-09 14:30",
-    "",
-    "Break", 
-    "",
-    "",
-    "",
-    "",
-    
-    "2025-06-09 14:30", 
-    "2025-06-09 17:30", 
-    "A",
-    "Workshop", 
-    "R package development with GitHub Pages and pkgdown", 
-    "Melissa Van Bussel", 
-    "Statistics Canada",
-    "workshops.html#r-package-development-with-github-pages-and-pkgdown",
-    
-    "2025-06-09 14:30", 
-    "2025-06-09 17:30", 
-    "B",
-    "Workshop", 
-    "The power of {targets} package for reproducible data science", 
-    "Rahul Sangole", 
-    "Apple",
-    "workshops.html#the-power-of-targets-package-for-reproducible-data-science",
-    
-    "2025-06-09 17:30", 
-    "2025-06-09 18:30", 
-    "A",
-    "Demo", 
-    "REDCapSync and RosyREDCap: two development R packages using the REDCap API for standardized data pipelines and exploratory data analysis", 
-    "Brandon Rose", 
-    "University of Miami/Jackson Memorial Hospital",
-    "abstracts.html#redcapsync-and-rosyredcap",
-    
-    "2025-06-09 17:30", 
-    "2025-06-09 18:30", 
-    "B",
-    "Demo", 
-    "Biomarker Identification by Means of Frequent Itemset Mining and Contrast Set Mining", 
-    "Paul Kowalczyk", 
-    "HAcKerS LaB",
-    "abstracts.html#biomarker-identification"
-  ) |>
-  dplyr::mutate(
-    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
-    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
-  )
-```
+<!-- ```{r, day1} -->
+<!-- # Day 1 -->
+<!-- schedule_day_1 <- -->
+<!--   dplyr::tribble( -->
+<!--     ~start_time,  -->
+<!--     ~end_time,  -->
+<!--     ~track, -->
+<!--     ~t_type,  -->
+<!--     ~t_title,  -->
+<!--     ~t_speakers,   -->
+<!--     ~t_companies, -->
+<!--     ~url_link, -->
 
-```{r}
-# Create a table for the day of events
-gt(schedule_day_1) |>
-  tab_header(
-    title = md("<br>Workshop/Demo Day 1<br>Monday, June 9, 2025<br><br>")) |> # <- insert the date
-  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
-  fmt_duration(
-    columns = duration,
-    input_units = "minutes",
-    output_units = c("hours", "minutes")
-  ) |>
-  cols_move(columns = duration, after = end_time) |>
-  cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html(html_pattern)
-  ) |>
-  cols_label(
-    start_time ~ "Start Time",
-    end_time ~ "End Time",
-    duration ~ "Duration",
-    track ~ "Track",
-    t_type ~ ""
-  ) |>
-  cols_align(align = "center") |>
-  cols_width(
-    c(start_time, end_time, duration, track) ~ px(90),
-    everything() ~ px(600)
-  ) |>
-  opt_align_table_header(align = "left") |>
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "gray85",
-    table.width = pct(100)
-  ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
-```
+<!--     "2025-06-09 10:00",  -->
+<!--     "2025-06-09 11:00",  -->
+<!--     "A", -->
+<!--     "Demo",  -->
+<!--     "In the Nix of Time: Creating a reproducible analytical environment with Nix and {rix}",  -->
+<!--     "Eric Nantz",  -->
+<!--     "Eli Lilly", -->
+<!--     "abstracts.html#in-the-nix-of-time", -->
 
-<!-- # Workshop/Demo Day 2 {.hidden} -->
+<!--     "2025-06-09 10:00",  -->
+<!--     "2025-06-09 11:00",  -->
+<!--     "B", -->
+<!--     "Demo",  -->
+<!--     "A framework for cohort building in R: the CohortConstructor package for data mapped to the OMOP Common Data Model ",  -->
+<!--     "Nuria Mercade-Besora & Edward Burn",  -->
+<!--     "University of Oxford", -->
+<!--     "workshops.html#a-framework-for-cohort-building-in-r-the-cohortconstructor-package-for-data-mapped-to-the-omop-common-data-model", -->
+
+<!--     "2025-06-09 11:00",  -->
+<!--     "2025-06-09 14:00",  -->
+<!--     "A", -->
+<!--     "Workshop",  -->
+<!--     "Promover la Equidad Científica: Una Introducción al uso de R para la programación en Bioestadística y Ciencia de Datos, en Español",  -->
+<!--     "Catalina Canizares-Escobar & Francisco Cardozo",  -->
+<!--     "Florida International University", -->
+<!--     "workshops.html#promover-la-equidad-científica-una-introducción-al-uso-de-r-para-la-programación-en-bioestadística-y-ciencia-de-datos-en-español.", -->
+
+<!--     "2025-06-09 11:00",  -->
+<!--     "2025-06-09 14:00",  -->
+<!--     "B", -->
+<!--     "Workshop",  -->
+<!--     "Introduction to R for Clinical Data",  -->
+<!--     "Stephan Kadauke and Rich Hanna",  -->
+<!--     "Children's Hospital of Philadelphia", -->
+<!--     "workshops.html#introduction-to-r-for-clinical-data", -->
+
+<!--     "2025-06-09 14:00",  -->
+<!--     "2025-06-09 14:30", -->
+<!--     "", -->
+<!--     "Break",  -->
+<!--     "", -->
+<!--     "", -->
+<!--     "", -->
+<!--     "", -->
+
+<!--     "2025-06-09 14:30",  -->
+<!--     "2025-06-09 17:30",  -->
+<!--     "A", -->
+<!--     "Workshop",  -->
+<!--     "R package development with GitHub Pages and pkgdown",  -->
+<!--     "Melissa Van Bussel",  -->
+<!--     "Statistics Canada", -->
+<!--     "workshops.html#r-package-development-with-github-pages-and-pkgdown", -->
+
+<!--     "2025-06-09 14:30",  -->
+<!--     "2025-06-09 17:30",  -->
+<!--     "B", -->
+<!--     "Workshop",  -->
+<!--     "The power of {targets} package for reproducible data science",  -->
+<!--     "Rahul Sangole",  -->
+<!--     "Apple", -->
+<!--     "workshops.html#the-power-of-targets-package-for-reproducible-data-science", -->
+
+<!--     "2025-06-09 17:30",  -->
+<!--     "2025-06-09 18:30",  -->
+<!--     "A", -->
+<!--     "Demo",  -->
+<!--     "REDCapSync and RosyREDCap: two development R packages using the REDCap API for standardized data pipelines and exploratory data analysis",  -->
+<!--     "Brandon Rose",  -->
+<!--     "University of Miami/Jackson Memorial Hospital", -->
+<!--     "abstracts.html#redcapsync-and-rosyredcap", -->
+
+<!--     "2025-06-09 17:30",  -->
+<!--     "2025-06-09 18:30",  -->
+<!--     "B", -->
+<!--     "Demo",  -->
+<!--     "Biomarker Identification by Means of Frequent Itemset Mining and Contrast Set Mining",  -->
+<!--     "Paul Kowalczyk",  -->
+<!--     "HAcKerS LaB", -->
+<!--     "abstracts.html#biomarker-identification" -->
+<!--   ) |> -->
+<!--   dplyr::mutate( -->
+<!--     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers), -->
+<!--     duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins") -->
+<!--   ) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- # Create a table for the day of events -->
+<!-- gt(schedule_day_1) |> -->
+<!--   tab_header( -->
+<!--     title = md("<br>Workshop/Demo Day 1<br>Monday, June 9, 2025<br><br>")) |> # <- insert the date -->
+<!--   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |> -->
+<!--   fmt_duration( -->
+<!--     columns = duration, -->
+<!--     input_units = "minutes", -->
+<!--     output_units = c("hours", "minutes") -->
+<!--   ) |> -->
+<!--   cols_move(columns = duration, after = end_time) |> -->
+<!--   cols_merge( -->
+<!--     columns = c(t_type, t_title, t_speakers, t_companies, url_link), -->
+<!--     pattern = html(html_pattern) -->
+<!--   ) |> -->
+<!--   cols_label( -->
+<!--     start_time ~ "Start Time", -->
+<!--     end_time ~ "End Time", -->
+<!--     duration ~ "Duration", -->
+<!--     track ~ "Track", -->
+<!--     t_type ~ "" -->
+<!--   ) |> -->
+<!--   cols_align(align = "center") |> -->
+<!--   cols_width( -->
+<!--     c(start_time, end_time, duration, track) ~ px(90), -->
+<!--     everything() ~ px(600) -->
+<!--   ) |> -->
+<!--   opt_align_table_header(align = "left") |> -->
+<!--   tab_options( -->
+<!--     heading.background.color = "lightblue", -->
+<!--     column_labels.background.color = "gray85", -->
+<!--     table.width = pct(100) -->
+<!--   ) |> -->
+<!--   tab_style( -->
+<!--     locations = cells_body(rows = t_type == "Break"), -->
+<!--     style = cell_fill(color = "bisque") -->
+<!--   ) -->
+<!-- ``` -->
+
+# Workshop/Demo Day 2
 
 ```{r, day2}
 # Day 2
@@ -186,44 +184,26 @@ schedule_day_2 <-
     ~t_companies,
     ~url_link,
     
-    "2025-06-10 10:00", 
-    "2025-06-10 11:00", 
+    "2026-05-05 11:00", 
+    "2026-05-05 14:00", 
     "A",
-    "Demo", 
-    "Using R shiny to perform and automate decision-analytic modeling for cost-effectiveness analysis", 
-    "Mahip Acharya", 
-    "University of Arkansas for Medical Sciences",
-    "abstracts.html#using-r-shiny-to-automate",
+    "Workshop",  
+    "Introduction to R for Clinical Data",  
+    "Stephan Kadauke and Rich Hanna",  
+    "Children's Hospital of Philadelphia", 
+    "workshops.html#r101", 
     
-    "2025-06-10 10:00", 
-    "2025-06-10 11:00", 
+    "2026-05-05 11:00", 
+    "2026-05-05 14:00", 
     "B",
-    "Demo", 
-    "Visualising data for patients: create accessible charts", 
-    "Rita Giordano", 
-    "Visual data Studio",
-    "abstracts.html#visualising-data-for-patients",
+    "Workshop",  
+    "Promover la Equidad Científica: Introducción a R", 
+    "Catalina Canizares-Escobar, New York University;",  
+    "Francisco Cardozo, University of Miami", 
+    "workshops.html#equidad", 
     
-    "2025-06-10 11:00", 
-    "2025-06-10 14:00", 
-    "A",
-    "Workshop", 
-    "Survival analysis with tidymodels", 
-    "Hannah Frick", 
-    "Posit",
-    "workshops.html#survival-analysis-with-tidymodels",
-    
-    "2025-06-10 11:00", 
-    "2025-06-10 14:00", 
-    "B",
-    "Workshop", 
-    "First Steps with SQL in R: Making Data Talk", 
-    "Chris Battiston", 
-    "Women's College Hospital",
-    "workshops.html#first-steps-with-sql-in-r-making-data-talk",
-    
-    "2025-06-10 14:00", 
-    "2025-06-10 14:30",
+    "2026-05-05 14:00", 
+    "2026-05-05 14:30",
     "", 
     "Break", 
     "", 
@@ -231,41 +211,41 @@ schedule_day_2 <-
     "",
     "",
     
-    "2025-06-10 14:30", 
-    "2025-06-10 17:30", 
+    "2026-05-05 14:30", 
+    "2026-05-05 17:30", 
     "A",
     "Workshop", 
-    "'Visualise, Optimise, Parameterise!' - Writing dataviz code that your future self will thank you for", 
-    "Cara Thompson", 
-    "",
-    "workshops.html#visualise-optimise-parameterise---writing-dataviz-code-that-your-future-self-will-thank-you-for",
+    "Mastering Clinical Data Summaries with {gtsummary} and AI", 
+    "Daniel D. Sjoberg, Genentech;", 
+    "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium",
+    "workshops.html#gtsummary",
     
-    "2025-06-10 14:30", 
-    "2025-06-10 15:30", 
+    "2026-05-05 14:30", 
+    "2026-05-05 15:30", 
     "B",
     "Demo", 
-    "Quarto Dashboards: from zero to publish in one hour", 
-    "Mine Çetinkaya-Rundel", 
-    "Duke University + Posit PBC",
-    "workshops.html#quarto-dashboards-from-zero-to-publish-in-one-hour",
+    "Building Accessible, On-Brand Documents with Quarto", 
+    "Charlotte Wickham", 
+    "Posit",
+    "workshops.html#quarto-docs",
     
-    "2025-06-10 15:30", 
-    "2025-06-10 16:30", 
+    "2026-05-05 15:30", 
+    "2026-05-05 16:30", 
     "B",
     "Panel", 
-    "Supporting R learners on the job during interesting times: A panel of R educators", 
-    "Ray Balise, Silvia Canelón, Meghan Harris, Ted Laderas, Joy Payton", 
+    "R and RedCap Panel Discussion", 
+    "Raymond Balise, Brandon Rose, Rich Hanna, and others", 
     "",
-    "workshops.html#supporting-r-learners-on-the-job-during-interesting-times-a-panel-of-r-educators",
+    "workshops.html#redcap",
     
-    "2025-06-10 16:30", 
-    "2025-06-10 17:30", 
+    "2026-05-05 16:30", 
+    "2026-05-05 17:30", 
     "B",
     "Demo", 
-    "R You Compliant? Validating Packages for Regulatory Readiness", 
-    "Chris Battiston", 
-    "Women's College Hospital",
-    "workshops.html#r-you-compliant-validating-packages-for-regulatory-readiness"
+    "Ctrialsgov R Package", 
+    "Michael Kane", 
+    "MD Anderson Cancer Center",
+    "workshops.html#ctrialsgov"
   ) |>
   dplyr::mutate(
     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
@@ -276,7 +256,7 @@ schedule_day_2 <-
 ```{r}
 # Create a table for the day of events
 gt(schedule_day_2) |>
-  tab_header(title = md("<br>Workshop/Demo Day 2<br>Tuesday, June 10, 2025<br><br>")) |> # <- insert the date
+  tab_header(title = md("<br>Tuesday, May 5, 2026<br><br>")) |> # <- insert the date
   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
   fmt_duration(
     columns = duration,
@@ -312,7 +292,7 @@ gt(schedule_day_2) |>
   )
 ```
 
-<!-- # Workshop/Demo Day 3 {.hidden} -->
+# Workshop/Demo Day 3 
 
 ```{r, day3}
 # Day 3
@@ -327,44 +307,26 @@ schedule_day_3 <-
     ~t_companies,
     ~url_link,
     
-    "2025-06-11 10:00", 
-    "2025-06-11 11:00", 
-    "A",
-    "Demo", 
-    "Application of attention mechanism to improve performance of surveyed llm/mllm used across R/Medicine", 
-    "Robert Devine",
-    "Johnson & Johnson Companies",
-    "abstracts.html#application-of-attention-mechanism",
-    
-    "2025-06-11 10:00", 
-    "2025-06-11 11:00", 
-    "B",
-    "Demo", 
-    "Co-occurrence analysis and knowledge graphs for suicide risk prediction", 
-    "Thomas Charlon", 
-    "Harvard Medical School",
-    "abstracts.html#co-occurrence-analysis-and-knowledge-graphs",
-    
-    "2025-06-11 11:00", 
-    "2025-06-11 14:00", 
+    "2026-05-06 11:00", 
+    "2026-05-06 14:00", 
     "A",
     "Workshop", 
-    "Rix: reproducible data science environments with Nix", 
-    "Bruno Rodrigues", 
-    "Luxembourg’s Ministry of Research and Higher Education",
-    "workshops.html#rix-reproducible-data-science-environments-with-nix",
+    "Working with Larger than Memory Data in R", 
+    "François Michonneau", 
+    "Posit",
+    "workshops.html#big-data",
     
-    "2025-06-11 11:00", 
-    "2025-06-11 14:00", 
+    "2026-05-06 11:00", 
+    "2026-05-06 14:00", 
     "B",
     "Workshop", 
-    "Personal R Administration", 
-    "David Aja, Posit;", 
-    "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium",
-    "workshops.html#personal-r-administration",
+    "ggplot2 for Data Visualisation: Creativity, Clarity, Accessibility", 
+    "Cara Thompson", 
+    "",
+    "workshops.html#ggplot2",
     
-    "2025-06-10 14:00", 
-    "2025-06-10 14:30",
+    "2026-05-05 14:00", 
+    "2026-05-05 14:30",
     "", 
     "Break", 
     "", 
@@ -372,23 +334,23 @@ schedule_day_3 <-
     "",
     "",
     
-    "2025-06-10 14:30", 
-    "2025-06-10 17:30", 
+    "2026-05-05 14:30", 
+    "2026-05-05 17:30", 
     "A",
     "Workshop", 
-    "Demystifying LLMs with Ellmer", 
-    "Joe Cheng", 
+    "LLMs for Data Analysis in R", 
+    "Sara Altman", 
     "Posit",
-    "workshops.html#demystifying-llms-with-ellmer",
+    "workshops.html#llms",
     
-    "2025-06-10 14:30", 
-    "2025-06-10 17:30", 
+    "2026-05-05 14:30", 
+    "2026-05-05 17:30", 
     "B",
     "Workshop", 
-    "teal Mastery: From Pre-built Modules to Custom Module Creation", 
-    "Dony Unardi", 
-    "Genentech",
-    "workshops.html#teal-mastery-from-pre-built-modules-to-custom-module-creation"
+    "R Packages for Personal Use with GitHub", 
+    "Daniel Chen", 
+    "The University of BC & Posit",
+    "workshops.html#r-packages"
   ) |>
   dplyr::mutate(
     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
@@ -399,7 +361,7 @@ schedule_day_3 <-
 ```{r}
 # Create a table for the day of events
 gt(schedule_day_3) |>
-  tab_header(title = md("<br>Workshop/Demo Day 3<br>Wednesday, June 11, 2025<br><br>")) |> # <- insert the date
+  tab_header(title = md("<br>Wednesday, May 6, 2026<br><br>")) |> # <- insert the date
   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
   fmt_duration(
     columns = duration,
@@ -435,422 +397,422 @@ gt(schedule_day_3) |>
   )
 ```
 
-<!-- # Meeting Day 1 {.hidden} -->
+<!-- <!-- # Meeting Day 1 {.hidden} --> 
 
-```{r, day4}
-# Day 4
-schedule_day_4 <-
-  dplyr::tribble(
-    ~start_time, 
-    ~end_time, 
-    ~t_type, 
-    ~t_title, 
-    ~t_speakers, 
-    ~t_companies,
-    ~url_link,
-    
-    "2025-06-12 11:00", 
-    "2025-06-12 11:15", 
-    "Opening Remarks", 
-    "", 
-    "Emily Zabor", 
-    "Cleveland Clinic", 
-    "",
-    
-    "2025-06-12 11:15", 
-    "2025-06-12 12:15", 
-    "Keynote", 
-    "Reinventing medicine with AI", 
-    "Ziad Obermeyer", 
-    "UC Berkeley",
-    "index.html#keynote-addresses",
-    
-    "2025-06-12 12:17", 
-    "2025-06-12 12:37", 
-    "Regular Talk", 
-    "Retrospective clinical data harmonisation reporting using R and Quarto", 
-    "Jeremy Selva", 
-    "National Heart Centre Singapore",
-    "abstracts.html#retrospective-clinical-date-harmonisation-reporting",
-    
-    "2025-06-12 12:39", 
-    "2025-06-12 12:59", 
-    "Regular Talk", 
-    "Unlocking Statistical Consistency Across Platforms: The CAMIS Project", 
-    "Christina Fillmore and Lyn Taylor", 
-    "Parexel",
-    "abstracts.html#unlocking-statistical-consistency",
-    
-    "2025-06-12 13:01", 
-    "2025-06-12 13:21", 
-    "Regular Talk", 
-    "Supercharging Statistical Analysis with ARDs and the {cards} R Package", 
-    "Becca Krouse and Davide Garolini", 
-    "GSK/Roche",
-    "abstracts.html#cards-package",
-    
-    "2025-06-12 13:23", 
-    "2025-06-12 13:43", 
-    "Regular Talk", 
-    "Validating Shiny Apps in Regulated Environments", 
-    "Pedro Silva", 
-    "Jumping Rivers",
-    "abstracts.html#validating-shiny-apps",
-    
-    "2025-06-12 13:45", 
-    "2025-06-12 13:55", 
-    "Lightning Talk", 
-    "Improving Reproducibility of Medical Research with Controlled Vocabularies", 
-    "Jonathan Pearce", 
-    "Analysis Group",
-    "abstracts.html#controlled-vocabularies",
-    
-    "2025-06-12 13:57", 
-    "2025-06-12 14:12", 
-    "Break", 
-    "",
-    "",
-    "",
-    "",
-    
-    "2025-06-12 14:12", 
-    "2025-06-12 14:32", 
-    "Regular Talk", 
-    "Mix, Pour, Share: The rUM Cocktail for Biomedical Project Packaging", 
-    "Kyle Grealis and Raymond Balise", 
-    "University of Miami",
-    "abstracts.html#rum-cocktail",
-    
-    "2025-06-12 14:34", 
-    "2025-06-12 14:54", 
-    "Regular Talk", 
-    "Refactor or Preserve?  Challenging the 'If It Ain’t Broken, Don’t Fix It' Mindset  in Shiny App Lifecycle", 
-    "Dror Berel", 
-    "Independent consultant",
-    "abstracts.html#refactor-or-preserve",
-    
-    "2025-06-12 14:56", 
-    "2025-06-12 15:16", 
-    "Regular Talk", 
-    "No More Copy-Paste: Automating Patient Inquiry Tracking in Pharma with Shiny", 
-    "Tanya Cashorali", 
-    "TCB Analytics",
-    "abstracts.html#no-more-copy-paste",
-    
-    "2025-06-12 15:18", 
-    "2025-06-12 15:28", 
-    "Lightning Talk", 
-    "Preprocessing Electronic Health Records for Analysis-Ready Data in an Asthma Cohort", 
-    "Kimberly Lactaoen", 
-    "University of Pennsylvania",
-    "abstracts.html#preprocessing-ehr-asthma",
-    
-    "2025-06-12 15:30", 
-    "2025-06-12 15:50", 
-    "Regular Talk", 
-    "RHealth – A Deep Learning Toolkit for Healthcare Predictive Modeling", 
-    "Junyi Gao", 
-    "University of Edinburgh",
-    "abstracts.html#rhealth-toolkit",
-    
-    "2025-06-12 15:52", 
-    "2025-06-12 16:12", 
-    "Regular Talk", 
-    "Dengue Forecasting Addressing the Interrupted Effect from COVID-19 Cases", 
-    "Thiyanga Talagala", 
-    "University of Sri Jayewardeneoura",
-    "abstracts.html#dengue-forecasting",
-    
-    "2025-06-12 16:14", 
-    "2025-06-12 16:24", 
-    "Lightning Talk", 
-    "Professional competition winner", 
-    "Harrison Plate & Shonushka Sawant",
-    "RSC Statistical Consulting",
-    "Competition.html#congratulations-to-our-winners",
-    
-    "2025-06-12 16:26", 
-    "2025-06-12 16:36", 
-    "Lightning Talk", 
-    "Student competition winner", 
-    "Iko Musa", 
-    "University of Jos, Nigeria",
-    "Competition.html#congratulations-to-our-winners",
-    
-    "2025-06-12 16:38", 
-    "2025-06-12 16:43", 
-    "Closing remarks", 
-    "", 
-    "Peter Higgins", 
-    "University of Michigan",
-    ""
-  ) |>
-  dplyr::mutate(
-    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
-    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
-  )
-```
+<!-- ```{r, day4} -->
+<!-- # Day 4 -->
+<!-- schedule_day_4 <- -->
+<!--   dplyr::tribble( -->
+<!--     ~start_time,  -->
+<!--     ~end_time,  -->
+<!--     ~t_type,  -->
+<!--     ~t_title,  -->
+<!--     ~t_speakers,  -->
+<!--     ~t_companies, -->
+<!--     ~url_link, -->
 
-```{r}
-# Create a table for the day of events
-gt(schedule_day_4) |>
-  tab_header(title = md("<br>Meeting Day 1<br>Thursday, June 12, 2025<br><br>")) |> # <- insert the date
-  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
-  fmt_duration(
-    columns = duration,
-    input_units = "minutes",
-    output_units = c("hours", "minutes")
-  ) |>
-  cols_move(columns = duration, after = end_time) |>
-  cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html(html_pattern)
-  ) |>
-  cols_label(
-    start_time ~ "Start Time",
-    end_time ~ "End Time",
-    duration ~ "Duration",
-    t_type ~ ""
-  ) |>
-  cols_align(align = "center") |>
-  cols_width(
-    c(start_time, end_time, duration) ~ px(90),
-    everything() ~ px(600)
-  ) |>
-  opt_align_table_header(align = "left") |>
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "gray85",
-    table.width = pct(100)
-  ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
-```
+<!--     "2025-06-12 11:00",  -->
+<!--     "2025-06-12 11:15",  -->
+<!--     "Opening Remarks",  -->
+<!--     "",  -->
+<!--     "Emily Zabor",  -->
+<!--     "Cleveland Clinic",  -->
+<!--     "", -->
 
-<!-- # Meeting Day 2 {.hidden} -->
+<!--     "2025-06-12 11:15",  -->
+<!--     "2025-06-12 12:15",  -->
+<!--     "Keynote",  -->
+<!--     "Reinventing medicine with AI",  -->
+<!--     "Ziad Obermeyer",  -->
+<!--     "UC Berkeley", -->
+<!--     "index.html#keynote-addresses", -->
 
-```{r, day5}
-# Day 5
-schedule_day_5 <-
-  dplyr::tribble(
-    ~start_time, 
-    ~end_time, 
-    ~t_type, 
-    ~t_title, 
-    ~t_speakers, 
-    ~t_companies,
-    ~url_link,
-    
-    "2025-06-13 11:00", 
-    "2025-06-13 11:15", 
-    "Opening Remarks", 
-    "", 
-    "Emily Zabor", 
-    "Cleveland Clinic", 
-    "",
-    
-    "2025-06-13 11:15", 
-    "2025-06-13 12:15", 
-    "Keynote", 
-    "Model Evaluation: From Machine Learning to Generative AI", 
-    "Erin LeDell", 
-    "Distributional Inc",
-    "index.html#keynote-addresses",
-    
-    "2025-06-13 12:17", 
-    "2025-06-13 12:27", 
-    "Lightning Talk", 
-    "riskcalc.org: A Repository of Risk Calculators for Medical Decision Making",
-    "Alex Zajichek", 
-    "Cleveland Clinic",
-    "abstracts.html#riskcalc-org-repository",
-    
-    "2025-06-13 12:29", 
-    "2025-06-13 12:49", 
-    "Regular Talk", 
-    "nonprobsvy -- An R package for modern methods for non-probability survey", 
-    "Maciej Beręsewicz", 
-    "Poznań University of Economics and Business / Statistical Office in Poznań (Poland)",
-    "abstracts.html#nonprobsvy-package",
-    
-    "2025-06-13 12:51", 
-    "2025-06-13 13:01", 
-    "Lightning Talk", 
-    "rainbowR: A community for LGBTQ+ folks who code in R", 
-    "Ella Kaye", 
-    "University of Warwick",
-    "abstracts.html#rainbowr-community",
-    
-    "2025-06-13 13:03", 
-    "2025-06-13 13:23", 
-    "Regular Talk", 
-    "An Accelerometry Biomarker Framework with Application in  Vigilance in UK Biobank Data", 
-    "Michael Kane", 
-    "MD Anderson Cancer Center",
-    "abstracts.html#accelerometry-biomarker-framework",
-    
-    "2025-06-13 13:25", 
-    "2025-06-13 13:35", 
-    "Lightning Talk", 
-    "pretestcad: An R package to calculate PreTest Probability (PTP) scores for obstructive Coronary Artery Disease (CAD)", 
-    "Jeremy Selva", 
-    "National Heart Centre Singapore",
-    "abstracts.html#pretestcad-package",
-    
-    "2025-06-13 13:37", 
-    "2025-06-13 13:47", 
-    "Lightning Talk", 
-    "AOUSDOHtools: An R Package for Social Determinants of Health Survey data in the All of Us Research Program", 
-    "Zhirui Deng", 
-    "University of Pittsburgh, School of Nursing",
-    "abstracts.html#aousdohtools-package",
-    
-    "2025-06-13 13:49", 
-    "2025-06-13 14:09", 
-    "Regular Talk", 
-    "MIIPW: An R package for Generalized Estimating Equations with missing data integration using a combination of mean score and inverse probability weighted approaches and multiple imputation", 
-    "Bhrigu Rajbongshi", 
-    "Indian Institute of Technology(Indian School of Mines) Dhanbad",
-    "abstracts.html#miipw-package",
-    
-    "2025-06-13 14:11", 
-    "2025-06-13 14:31", 
-    "Regular Talk", 
-    "kidney.epi R Package for Facilitating Research in Diabetes, Kidney, Heart, and Other Diseases", 
-    "Boris Bikbov", 
-    "Scientific-Tools.Org",
-    "abstracts.html#kidney-epi-package",
-    
-    "2025-06-13 14:33", 
-    "2025-06-13 14:43", 
-    "Lightning Talk", 
-    "Examining Factors Associated with Depressive Severity Among Cancer Survivors: An Analysis of the National Health Interview Survey", 
-    "Andre Williams", 
-    "Florida Atlantic University",
-    "abstracts.html#examining-factors-nhis",
-    
-    "2025-06-13 14:45", 
-    "2025-06-13 15:00", 
-    "Break", 
-    "",
-    "",
-    "",
-    "",
-    
-    "2025-06-13 15:00", 
-    "2025-06-13 15:20", 
-    "Regular Talk", 
-    "{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows", 
-    "Dylan Pieper", 
-    "University of Pittsburgh",
-    "abstracts.html#redquack-package",
-    
-    "2025-06-13 15:22", 
-    "2025-06-13 15:32", 
-    "Lightning Talk", 
-    "Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina", 
-    "Ariana Bardauil and Dacio Martinez", 
-    "Ministry of health - Buenos Aires City Government",
-    "abstracts.html#optimizing-public-healthcare",
-    
-    "2025-06-13 15:34", 
-    "2025-06-13 15:44", 
-    "Lightning Talk", 
-    "Swimmer Plots with ggswim", 
-    "Richard Hanna", 
-    "Children's Hospital of Philadelphia",
-    "abstracts.html#swimmer-plots",
-    
-    "2025-06-13 15:46", 
-    "2025-06-13 15:56", 
-    "Lightning Talk", 
-    "What to Do When Shiny Packages Don't Fully Support Your Idea", 
-    "Anastasiia Kostiv", 
-    "ESQlabs",
-    "abstracts.html#what-to-do-when-shiny-packages",
-    
-    "2025-06-13 15:58", 
-    "2025-06-13 16:08", 
-    "Lightning Talk", 
-    "Bootstrap inference made easy: p-values and confidence intervals in one line of code", 
-    "Måns Thulin", 
-    "Thulin Consulting AB",
-    "abstracts.html#bootstrap-inference-made-easy",
-    
-    "2025-06-13 16:10", 
-    "2025-06-13 16:20", 
-    "Lightning Talk", 
-    "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity", 
-    "Dwight Barry and Nicole Chicoine", 
-    "Seattle Children’s Hospital",
-    "abstracts.html#ethical-considerations",
-    
-    "2025-06-13 16:22", 
-    "2025-06-13 16:32", 
-    "Lightning Talk", 
-    "Advanced Distance Metrics for High-Dimensional Clustering: introducing 'distanceHD' R-package", 
-    "Jung Ae Lee", 
-    "University of Massachusetts Chan Medical School",
-    "abstracts.html#advanced-distance-metrics",
-    
-    "2025-06-13 16:34", 
-    "2025-06-13 16:54", 
-    "Regular Talk", 
-    "Unified Deep Learning Survival Analysis for Competing Risk Modeling with Functional Covariates and Missing Data Imputation", 
-    "Yan Zou", 
-    "Cleveland Clinic",
-    "abstracts.html#unified-deep-learning-survival",
-    
-    "2025-06-13 16:56", 
-    "2025-06-13 17:01", 
-    "Closing Remarks", 
-    "", 
-    "Michael Kane", 
-    "MD Anderson Cancer Center",
-    ""
-  ) |>
-  dplyr::mutate(
-    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
-    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
-  )
-```
+<!--     "2025-06-12 12:17",  -->
+<!--     "2025-06-12 12:37",  -->
+<!--     "Regular Talk",  -->
+<!--     "Retrospective clinical data harmonisation reporting using R and Quarto",  -->
+<!--     "Jeremy Selva",  -->
+<!--     "National Heart Centre Singapore", -->
+<!--     "abstracts.html#retrospective-clinical-date-harmonisation-reporting", -->
 
-```{r}
-# Create a table for the day of events
-gt(schedule_day_5) |>
-  tab_header(title = md("<br>Meeting Day 2<br>Friday, June 13, 2025<br><br>")) |> # <- insert the date
-  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
-  fmt_duration(
-    columns = duration,
-    input_units = "minutes",
-    output_units = c("hours", "minutes")
-  ) |>
-  cols_move(columns = duration, after = end_time) |>
-  cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html(html_pattern)
-  ) |>
-  cols_label(
-    start_time ~ "Start Time",
-    end_time ~ "End Time",
-    duration ~ "Duration",
-    t_type ~ ""
-  ) |>
-  cols_align(align = "center") |>
-  cols_width(
-    c(start_time, end_time, duration) ~ px(90),
-    everything() ~ px(600)
-  ) |>
-  opt_align_table_header(align = "left") |>
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "gray85",
-    table.width = pct(100)
-  ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
-```
+<!--     "2025-06-12 12:39",  -->
+<!--     "2025-06-12 12:59",  -->
+<!--     "Regular Talk",  -->
+<!--     "Unlocking Statistical Consistency Across Platforms: The CAMIS Project",  -->
+<!--     "Christina Fillmore and Lyn Taylor",  -->
+<!--     "Parexel", -->
+<!--     "abstracts.html#unlocking-statistical-consistency", -->
+
+<!--     "2025-06-12 13:01",  -->
+<!--     "2025-06-12 13:21",  -->
+<!--     "Regular Talk",  -->
+<!--     "Supercharging Statistical Analysis with ARDs and the {cards} R Package",  -->
+<!--     "Becca Krouse and Davide Garolini",  -->
+<!--     "GSK/Roche", -->
+<!--     "abstracts.html#cards-package", -->
+
+<!--     "2025-06-12 13:23",  -->
+<!--     "2025-06-12 13:43",  -->
+<!--     "Regular Talk",  -->
+<!--     "Validating Shiny Apps in Regulated Environments",  -->
+<!--     "Pedro Silva",  -->
+<!--     "Jumping Rivers", -->
+<!--     "abstracts.html#validating-shiny-apps", -->
+
+<!--     "2025-06-12 13:45",  -->
+<!--     "2025-06-12 13:55",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Improving Reproducibility of Medical Research with Controlled Vocabularies",  -->
+<!--     "Jonathan Pearce",  -->
+<!--     "Analysis Group", -->
+<!--     "abstracts.html#controlled-vocabularies", -->
+
+<!--     "2025-06-12 13:57",  -->
+<!--     "2025-06-12 14:12",  -->
+<!--     "Break",  -->
+<!--     "", -->
+<!--     "", -->
+<!--     "", -->
+<!--     "", -->
+
+<!--     "2025-06-12 14:12",  -->
+<!--     "2025-06-12 14:32",  -->
+<!--     "Regular Talk",  -->
+<!--     "Mix, Pour, Share: The rUM Cocktail for Biomedical Project Packaging",  -->
+<!--     "Kyle Grealis and Raymond Balise",  -->
+<!--     "University of Miami", -->
+<!--     "abstracts.html#rum-cocktail", -->
+
+<!--     "2025-06-12 14:34",  -->
+<!--     "2025-06-12 14:54",  -->
+<!--     "Regular Talk",  -->
+<!--     "Refactor or Preserve?  Challenging the 'If It Ain’t Broken, Don’t Fix It' Mindset  in Shiny App Lifecycle",  -->
+<!--     "Dror Berel",  -->
+<!--     "Independent consultant", -->
+<!--     "abstracts.html#refactor-or-preserve", -->
+
+<!--     "2025-06-12 14:56",  -->
+<!--     "2025-06-12 15:16",  -->
+<!--     "Regular Talk",  -->
+<!--     "No More Copy-Paste: Automating Patient Inquiry Tracking in Pharma with Shiny",  -->
+<!--     "Tanya Cashorali",  -->
+<!--     "TCB Analytics", -->
+<!--     "abstracts.html#no-more-copy-paste", -->
+
+<!--     "2025-06-12 15:18",  -->
+<!--     "2025-06-12 15:28",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Preprocessing Electronic Health Records for Analysis-Ready Data in an Asthma Cohort",  -->
+<!--     "Kimberly Lactaoen",  -->
+<!--     "University of Pennsylvania", -->
+<!--     "abstracts.html#preprocessing-ehr-asthma", -->
+
+<!--     "2025-06-12 15:30",  -->
+<!--     "2025-06-12 15:50",  -->
+<!--     "Regular Talk",  -->
+<!--     "RHealth – A Deep Learning Toolkit for Healthcare Predictive Modeling",  -->
+<!--     "Junyi Gao",  -->
+<!--     "University of Edinburgh", -->
+<!--     "abstracts.html#rhealth-toolkit", -->
+
+<!--     "2025-06-12 15:52",  -->
+<!--     "2025-06-12 16:12",  -->
+<!--     "Regular Talk",  -->
+<!--     "Dengue Forecasting Addressing the Interrupted Effect from COVID-19 Cases",  -->
+<!--     "Thiyanga Talagala",  -->
+<!--     "University of Sri Jayewardeneoura", -->
+<!--     "abstracts.html#dengue-forecasting", -->
+
+<!--     "2025-06-12 16:14",  -->
+<!--     "2025-06-12 16:24",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Professional competition winner",  -->
+<!--     "Harrison Plate & Shonushka Sawant", -->
+<!--     "RSC Statistical Consulting", -->
+<!--     "Competition.html#congratulations-to-our-winners", -->
+
+<!--     "2025-06-12 16:26",  -->
+<!--     "2025-06-12 16:36",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Student competition winner",  -->
+<!--     "Iko Musa",  -->
+<!--     "University of Jos, Nigeria", -->
+<!--     "Competition.html#congratulations-to-our-winners", -->
+
+<!--     "2025-06-12 16:38",  -->
+<!--     "2025-06-12 16:43",  -->
+<!--     "Closing remarks",  -->
+<!--     "",  -->
+<!--     "Peter Higgins",  -->
+<!--     "University of Michigan", -->
+<!--     "" -->
+<!--   ) |> -->
+<!--   dplyr::mutate( -->
+<!--     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers), -->
+<!--     duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins") -->
+<!--   ) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- # Create a table for the day of events -->
+<!-- gt(schedule_day_4) |> -->
+<!--   tab_header(title = md("<br>Meeting Day 1<br>Thursday, June 12, 2025<br><br>")) |> # <- insert the date -->
+<!--   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |> -->
+<!--   fmt_duration( -->
+<!--     columns = duration, -->
+<!--     input_units = "minutes", -->
+<!--     output_units = c("hours", "minutes") -->
+<!--   ) |> -->
+<!--   cols_move(columns = duration, after = end_time) |> -->
+<!--   cols_merge( -->
+<!--     columns = c(t_type, t_title, t_speakers, t_companies, url_link), -->
+<!--     pattern = html(html_pattern) -->
+<!--   ) |> -->
+<!--   cols_label( -->
+<!--     start_time ~ "Start Time", -->
+<!--     end_time ~ "End Time", -->
+<!--     duration ~ "Duration", -->
+<!--     t_type ~ "" -->
+<!--   ) |> -->
+<!--   cols_align(align = "center") |> -->
+<!--   cols_width( -->
+<!--     c(start_time, end_time, duration) ~ px(90), -->
+<!--     everything() ~ px(600) -->
+<!--   ) |> -->
+<!--   opt_align_table_header(align = "left") |> -->
+<!--   tab_options( -->
+<!--     heading.background.color = "lightblue", -->
+<!--     column_labels.background.color = "gray85", -->
+<!--     table.width = pct(100) -->
+<!--   ) |> -->
+<!--   tab_style( -->
+<!--     locations = cells_body(rows = t_type == "Break"), -->
+<!--     style = cell_fill(color = "bisque") -->
+<!--   ) -->
+<!-- ``` -->
+
+<!-- <!-- # Meeting Day 2 {.hidden} --> 
+
+<!-- ```{r, day5} -->
+<!-- # Day 5 -->
+<!-- schedule_day_5 <- -->
+<!--   dplyr::tribble( -->
+<!--     ~start_time,  -->
+<!--     ~end_time,  -->
+<!--     ~t_type,  -->
+<!--     ~t_title,  -->
+<!--     ~t_speakers,  -->
+<!--     ~t_companies, -->
+<!--     ~url_link, -->
+
+<!--     "2025-06-13 11:00",  -->
+<!--     "2025-06-13 11:15",  -->
+<!--     "Opening Remarks",  -->
+<!--     "",  -->
+<!--     "Emily Zabor",  -->
+<!--     "Cleveland Clinic",  -->
+<!--     "", -->
+
+<!--     "2025-06-13 11:15",  -->
+<!--     "2025-06-13 12:15",  -->
+<!--     "Keynote",  -->
+<!--     "Model Evaluation: From Machine Learning to Generative AI",  -->
+<!--     "Erin LeDell",  -->
+<!--     "Distributional Inc", -->
+<!--     "index.html#keynote-addresses", -->
+
+<!--     "2025-06-13 12:17",  -->
+<!--     "2025-06-13 12:27",  -->
+<!--     "Lightning Talk",  -->
+<!--     "riskcalc.org: A Repository of Risk Calculators for Medical Decision Making", -->
+<!--     "Alex Zajichek",  -->
+<!--     "Cleveland Clinic", -->
+<!--     "abstracts.html#riskcalc-org-repository", -->
+
+<!--     "2025-06-13 12:29",  -->
+<!--     "2025-06-13 12:49",  -->
+<!--     "Regular Talk",  -->
+<!--     "nonprobsvy -- An R package for modern methods for non-probability survey",  -->
+<!--     "Maciej Beręsewicz",  -->
+<!--     "Poznań University of Economics and Business / Statistical Office in Poznań (Poland)", -->
+<!--     "abstracts.html#nonprobsvy-package", -->
+
+<!--     "2025-06-13 12:51",  -->
+<!--     "2025-06-13 13:01",  -->
+<!--     "Lightning Talk",  -->
+<!--     "rainbowR: A community for LGBTQ+ folks who code in R",  -->
+<!--     "Ella Kaye",  -->
+<!--     "University of Warwick", -->
+<!--     "abstracts.html#rainbowr-community", -->
+
+<!--     "2025-06-13 13:03",  -->
+<!--     "2025-06-13 13:23",  -->
+<!--     "Regular Talk",  -->
+<!--     "An Accelerometry Biomarker Framework with Application in  Vigilance in UK Biobank Data",  -->
+<!--     "Michael Kane",  -->
+<!--     "MD Anderson Cancer Center", -->
+<!--     "abstracts.html#accelerometry-biomarker-framework", -->
+
+<!--     "2025-06-13 13:25",  -->
+<!--     "2025-06-13 13:35",  -->
+<!--     "Lightning Talk",  -->
+<!--     "pretestcad: An R package to calculate PreTest Probability (PTP) scores for obstructive Coronary Artery Disease (CAD)",  -->
+<!--     "Jeremy Selva",  -->
+<!--     "National Heart Centre Singapore", -->
+<!--     "abstracts.html#pretestcad-package", -->
+
+<!--     "2025-06-13 13:37",  -->
+<!--     "2025-06-13 13:47",  -->
+<!--     "Lightning Talk",  -->
+<!--     "AOUSDOHtools: An R Package for Social Determinants of Health Survey data in the All of Us Research Program",  -->
+<!--     "Zhirui Deng",  -->
+<!--     "University of Pittsburgh, School of Nursing", -->
+<!--     "abstracts.html#aousdohtools-package", -->
+
+<!--     "2025-06-13 13:49",  -->
+<!--     "2025-06-13 14:09",  -->
+<!--     "Regular Talk",  -->
+<!--     "MIIPW: An R package for Generalized Estimating Equations with missing data integration using a combination of mean score and inverse probability weighted approaches and multiple imputation",  -->
+<!--     "Bhrigu Rajbongshi",  -->
+<!--     "Indian Institute of Technology(Indian School of Mines) Dhanbad", -->
+<!--     "abstracts.html#miipw-package", -->
+
+<!--     "2025-06-13 14:11",  -->
+<!--     "2025-06-13 14:31",  -->
+<!--     "Regular Talk",  -->
+<!--     "kidney.epi R Package for Facilitating Research in Diabetes, Kidney, Heart, and Other Diseases",  -->
+<!--     "Boris Bikbov",  -->
+<!--     "Scientific-Tools.Org", -->
+<!--     "abstracts.html#kidney-epi-package", -->
+
+<!--     "2025-06-13 14:33",  -->
+<!--     "2025-06-13 14:43",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Examining Factors Associated with Depressive Severity Among Cancer Survivors: An Analysis of the National Health Interview Survey",  -->
+<!--     "Andre Williams",  -->
+<!--     "Florida Atlantic University", -->
+<!--     "abstracts.html#examining-factors-nhis", -->
+
+<!--     "2025-06-13 14:45",  -->
+<!--     "2025-06-13 15:00",  -->
+<!--     "Break",  -->
+<!--     "", -->
+<!--     "", -->
+<!--     "", -->
+<!--     "", -->
+
+<!--     "2025-06-13 15:00",  -->
+<!--     "2025-06-13 15:20",  -->
+<!--     "Regular Talk",  -->
+<!--     "{redquack}: An R Package for Memory Efficient REDCap-to-DuckDB Workflows",  -->
+<!--     "Dylan Pieper",  -->
+<!--     "University of Pittsburgh", -->
+<!--     "abstracts.html#redquack-package", -->
+
+<!--     "2025-06-13 15:22",  -->
+<!--     "2025-06-13 15:32",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Optimizing Public Healthcare Cost Recovery with R: A Use Case from Argentina",  -->
+<!--     "Ariana Bardauil and Dacio Martinez",  -->
+<!--     "Ministry of health - Buenos Aires City Government", -->
+<!--     "abstracts.html#optimizing-public-healthcare", -->
+
+<!--     "2025-06-13 15:34",  -->
+<!--     "2025-06-13 15:44",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Swimmer Plots with ggswim",  -->
+<!--     "Richard Hanna",  -->
+<!--     "Children's Hospital of Philadelphia", -->
+<!--     "abstracts.html#swimmer-plots", -->
+
+<!--     "2025-06-13 15:46",  -->
+<!--     "2025-06-13 15:56",  -->
+<!--     "Lightning Talk",  -->
+<!--     "What to Do When Shiny Packages Don't Fully Support Your Idea",  -->
+<!--     "Anastasiia Kostiv",  -->
+<!--     "ESQlabs", -->
+<!--     "abstracts.html#what-to-do-when-shiny-packages", -->
+
+<!--     "2025-06-13 15:58",  -->
+<!--     "2025-06-13 16:08",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Bootstrap inference made easy: p-values and confidence intervals in one line of code",  -->
+<!--     "Måns Thulin",  -->
+<!--     "Thulin Consulting AB", -->
+<!--     "abstracts.html#bootstrap-inference-made-easy", -->
+
+<!--     "2025-06-13 16:10",  -->
+<!--     "2025-06-13 16:20",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Ethical Considerations of Contrasts in Statistical Modeling of Medical Equity",  -->
+<!--     "Dwight Barry and Nicole Chicoine",  -->
+<!--     "Seattle Children’s Hospital", -->
+<!--     "abstracts.html#ethical-considerations", -->
+
+<!--     "2025-06-13 16:22",  -->
+<!--     "2025-06-13 16:32",  -->
+<!--     "Lightning Talk",  -->
+<!--     "Advanced Distance Metrics for High-Dimensional Clustering: introducing 'distanceHD' R-package",  -->
+<!--     "Jung Ae Lee",  -->
+<!--     "University of Massachusetts Chan Medical School", -->
+<!--     "abstracts.html#advanced-distance-metrics", -->
+
+<!--     "2025-06-13 16:34",  -->
+<!--     "2025-06-13 16:54",  -->
+<!--     "Regular Talk",  -->
+<!--     "Unified Deep Learning Survival Analysis for Competing Risk Modeling with Functional Covariates and Missing Data Imputation",  -->
+<!--     "Yan Zou",  -->
+<!--     "Cleveland Clinic", -->
+<!--     "abstracts.html#unified-deep-learning-survival", -->
+
+<!--     "2025-06-13 16:56",  -->
+<!--     "2025-06-13 17:01",  -->
+<!--     "Closing Remarks",  -->
+<!--     "",  -->
+<!--     "Michael Kane",  -->
+<!--     "MD Anderson Cancer Center", -->
+<!--     "" -->
+<!--   ) |> -->
+<!--   dplyr::mutate( -->
+<!--     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers), -->
+<!--     duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins") -->
+<!--   ) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- # Create a table for the day of events -->
+<!-- gt(schedule_day_5) |> -->
+<!--   tab_header(title = md("<br>Meeting Day 2<br>Friday, June 13, 2025<br><br>")) |> # <- insert the date -->
+<!--   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |> -->
+<!--   fmt_duration( -->
+<!--     columns = duration, -->
+<!--     input_units = "minutes", -->
+<!--     output_units = c("hours", "minutes") -->
+<!--   ) |> -->
+<!--   cols_move(columns = duration, after = end_time) |> -->
+<!--   cols_merge( -->
+<!--     columns = c(t_type, t_title, t_speakers, t_companies, url_link), -->
+<!--     pattern = html(html_pattern) -->
+<!--   ) |> -->
+<!--   cols_label( -->
+<!--     start_time ~ "Start Time", -->
+<!--     end_time ~ "End Time", -->
+<!--     duration ~ "Duration", -->
+<!--     t_type ~ "" -->
+<!--   ) |> -->
+<!--   cols_align(align = "center") |> -->
+<!--   cols_width( -->
+<!--     c(start_time, end_time, duration) ~ px(90), -->
+<!--     everything() ~ px(600) -->
+<!--   ) |> -->
+<!--   opt_align_table_header(align = "left") |> -->
+<!--   tab_options( -->
+<!--     heading.background.color = "lightblue", -->
+<!--     column_labels.background.color = "gray85", -->
+<!--     table.width = pct(100) -->
+<!--   ) |> -->
+<!--   tab_style( -->
+<!--     locations = cells_body(rows = t_type == "Break"), -->
+<!--     style = cell_fill(color = "bisque") -->
+<!--   ) -->
+<!-- ``` -->
