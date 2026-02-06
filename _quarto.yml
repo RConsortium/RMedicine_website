@@ -13,12 +13,12 @@ website:
         text: Register
       - href: Submit.qmd
         text: Submit
+      - href: Program.qmd
+        text: Program
       # - href: Competition.qmd
       #   text: Competition
       - href: speaker_info.qmd
         text: Speaker guide
-      # - href: Program.qmd
-      #  text: Program
       # - href: keynotes26.qmd
       #   text: Keynotes
       - href: workshops.qmd
