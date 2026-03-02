@@ -239,16 +239,3 @@ LLMs are transforming how we write code, build tools, and analyze data. This wor
 :::
 :::
 :::
-
-## R Packages for Personal Use with GitHub {#r-packages}
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-WORKSHOP
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-:::
