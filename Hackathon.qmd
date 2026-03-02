@@ -1,0 +1,119 @@
+
+## About the Hackathon
+
+We are excited to host a **Pharmaverse Hackathon** as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the [pharmaverse](https://pharmaverse.org/){target="_blank"} ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.
+
+Whether you're new to open source or a seasoned contributor, there's a track for you.
+
+::: {.callout-important}
+## Registration Required
+R/Medicine 2026 conference registration is required to participate in the hackathon. [Register here](Register.html).
+:::
+
+## Schedule
+
+| Event | Date | Time (ET) |
+|-------|------|-----------|
+| **Daniel Chen's Workshop** | Wednesday, April 8th | 11:00 AM -- 1:00 PM |
+| **Hackathon Kickoff** | Thursday, April 16th | 11:00 AM -- 12:00 PM |
+| **Hackathon** | Thursday, April 23rd | 11:00 AM -- 3:00 PM |
+
+*All times are in Eastern Time (ET).*
+
+## Tracks
+
+The hackathon follows two tracks to accommodate different experience levels:
+
+### Track A: Good First Issues
+
+Ideal for **newcomers** to open-source contribution. You'll work on beginner-friendly issues that help you get comfortable with the contribution workflow, forking repos, creating branches, opening pull requests, and more.
+
+### Track B: Feature-Level Issues
+
+For **advanced contributors** ready to tackle more substantial work. Participants in this track will work in pairs or mini-teams on feature-level issues that require deeper understanding of package architecture and R programming.
+
+## Recommended Preparation
+
+To get the most out of the hackathon, we strongly recommend attending the following workshop offered during R/Medicine 2026:
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+WORKSHOP
+:::
+::: {.speaker-imgs}
+![](images/test-img.png)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+Daniel Chen
+:::
+::: {.workshop-desc}
+**R Packages for Personal Use with GitHub** (Wednesday, April 8th, 11:00 AM -- 1:00 PM ET). Learn how to create R packages and host them on GitHub. This workshop provides excellent preparation for the hackathon by familiarizing you with R package structure, development workflows, and GitHub-based collaboration.
+:::
+::: {.workshop-links}
+[See full workshop details](workshops.html#r-packages)
+:::
+:::
+:::
+
+Additionally, review the recording of **Dony Unardi's** workshop from R/Medicine 2025 on the [teal package](https://insightsengineering.github.io/teal/latest-tag/){target="_blank"}: *"https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/"*, which covers one of the key pharmaverse packages.
+
+## Prerequisites for Participants
+
+To ensure a smooth and productive hackathon experience, please complete the following setup **before** the event.
+
+### Technical Setup
+
+- **R & IDE**: Install a working version of R and your preferred IDE (RStudio, VSCode, or Positron). Consider [Posit Cloud](https://posit.cloud/){target="_blank"} as a free option.
+- **Git & GitHub**:
+    - Ensure you can log into [GitHub](https://github.com){target="_blank"}
+    - Set up your GitHub account with appropriate tokens for pushing and pulling (e.g., personal access tokens or SSH keys)
+    - If you use multiple git instances (e.g., an internal GitHub), configure git with your username and email:
+
+      ```bash
+      git config --global user.name "Your Name"
+      git config --global user.email "your@email.com"
+      ```
+
+### R Familiarity
+
+- **Track A** (Good First Issues): Participants with any level of R knowledge are welcome.
+- **Track B** (Feature-Level Issues): Participants should be comfortable with:
+    - How R packages are structured
+    - Functional programming in R and relevant testing methods
+    - Working collaboratively in pairs or small teams
+
+### Git Familiarity
+
+Working knowledge of git workflows is expected:
+
+- Know how to **fork and clone** a repository
+- Be able to **create branches**, commit changes, and push updates
+- Understand how to **open a pull request** (PR)
+
+Helpful resources:
+
+- [Git tutorials 1](TBD){target="_blank"}
+- [Git usage guide from an established pharmaverse package](https://pharmaverse.github.io/admiral/CONTRIBUTING.html){target="_blank"}
+
+### Environment & Access
+
+- Confirm you can **clone and run** the target package locally
+- Resolve any required **proxy or access restrictions** ahead of time
+- Install all **package dependencies** listed in the onboarding materials
+
+## At Kickoff
+
+During the kickoff session, you will:
+
+1. **Read through** the `CONTRIBUTING.md` and coding standards for your chosen package
+2. **Review** the list of identified issues and features
+3. **Join** the communication channel (Slack/Teams) and introduce yourself
+4. **Pick an issue** and start contributing!
+
+## Questions?
+
+If you have questions about the hackathon, reach out to us via our [Contact page](Contact.html).

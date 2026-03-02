@@ -248,7 +248,6 @@ Come see practical strategies for producing Quarto documents that meet organizat
 :::
 :::
 
-
 ## Ctrialsgov R Package {#ctrialsgov}
 
 ::: {.workshop-card}

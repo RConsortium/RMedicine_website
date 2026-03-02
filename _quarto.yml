@@ -23,6 +23,8 @@ website:
       #   text: Keynotes
       - href: workshops.qmd
         text: Workshops
+      - href: Hackathon.qmd
+        text: Hackathon
       - href: Attend.qmd
         text: Code of Conduct
       - href: Committees.qmd
