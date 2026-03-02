@@ -251,16 +251,3 @@ WORKSHOP
 ![](images/test-img.png)
 :::
 :::
-
-::: {.card-right}
-::: {.workshop-speakers-name}
-[Daniel Chen](INFO HERE){target="_blank"}
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
-:::
-:::
-:::
