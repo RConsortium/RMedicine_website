@@ -1,0 +1,79 @@
+
+# Keynote Speakers
+
+## Software Sustainability and Community Management {#yanina-bellini}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+KEYNOTE
+:::
+::: {.speaker-imgs}
+![](images/k11-yanina-bellini.jpeg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Yanina Bellini](https://yabellini.netlify.app){target="_blank"}
+:::
+::: {.workshop-desc}
+Sustainable software depends as much on people and practices as it does on code. In this talk, I'll draw on my experience leading and supporting R communities to show how intentional community management contributes to long-term software sustainability. Using concrete examples, I'll highlight how communities of practice help distribute maintenance, grow skills, and support inclusive, resilient software ecosystems across research and open source.
+:::
+::: {.workshop-links}
+[Personal website](https://yabellini.netlify.app){target="_blank"}
+:::
+:::
+:::
+
+## Voices in the Code: A Story about People, Their Values, and the Algorithm They Made {#david-robinson}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+KEYNOTE
+:::
+::: {.speaker-imgs}
+![](images/k12-david-robinson.jpeg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[David Robinson](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Today policymakers and scholars are seeking better ways to share the moral decisionmaking within high stakes software — exploring ideas like public participation, transparency, forecasting, and algorithmic audits. But there are few real examples of those techniques in use. In Voices in the Code, scholar David G. Robinson tells the story of how one community built a life-and-death algorithm in a relatively inclusive, accountable way. Between 2004 and 2014, a diverse group of patients, surgeons, clinicians, data scientists, public officials and advocates collaborated and compromised to build a new transplant matching algorithm – a system to offer donated kidneys to particular patients from the U.S. national waiting list.
+:::
+::: {.workshop-links}
+[Personal website](INFO HERE){target="_blank"}
+:::
+:::
+:::
+
+## The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics {#peter-gruber}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+KEYNOTE
+:::
+::: {.speaker-imgs}
+![](images/k13-peter-gruber.jpeg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Peter Gruber](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Peter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008. 
+
+Dr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis.
+:::
+::: {.workshop-links}
+[Personal website](INFO HERE){target="_blank"}
+:::
+:::
+:::

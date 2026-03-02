@@ -11,7 +11,7 @@ title: "Committees for R/Medicine 2026"
 -   Steven Schwager, Cornell University
 -   Ray Balise, University of Miami
 -   Beth Atkinson, Mayo Clinic
--   Michael Kane, MD Anderson
+-   Michael Kane, MD Anderson Cancer Center
 -   Daniel Chen, The University of BC & Posit
 -   Andey Nunes-Brewster, Oregon Health Authority
 -   Ben Gerber, UMass Chan
@@ -31,15 +31,13 @@ title: "Committees for R/Medicine 2026"
 ::: {.column width="45%"}
 ## Program Committee
 
-TBD
+-   Emily Zabor, Cleveland Clinic
+-   Steven Schwager, Cornell University
+-   Ben Gerber, UMass
+-   Beth Atkinson, Mayo Clinic
+-   Ray Balise, University of Miami
+-   Francisco Cardozo Macias, University of Miami
 
-<!-- -   **Chair: Daniel Sjoberg, Genentech** -->
-<!-- -   Peter Higgins, University of Michigan -->
-<!-- -   Steven Schwager, Cornell University -->
-<!-- -   Michael Kane, MD Anderson -->
-<!-- -   Daniel Chen, The University of BC & Posit -->
-<!-- -   Ben Gerber, UMass -->
-<!-- -   Beth Atkinson, Mayo Clinic -->
 :::
 ::::::
 
@@ -47,12 +45,22 @@ TBD
 
 ## Past chairs
 
-Michael Kane, MD Anderson. Organizing committee and Program committee chair: 2018, 2019
+Daniel Sjoberg, Genentech. Program committee chair: 2025
 
-Stephan Kadauke, Children's Hospital of Philadelphia. Organizing committee chair: 2020, 2021, 2022
-
-Beth Atkinson, Mayo Clinic. Program committee chair: 2020
+Peter Higgins, University of Michigan. Organizing committee chair: 2023, 2024
 
 Steven Schwager, Cornell University. Program committee chair: 2021, 2022, 2023, 2024
 
-Peter Higgins, University of Michigan. Organizing committee chair: 2023, 2024
+Beth Atkinson, Mayo Clinic. Program committee chair: 2020
+
+Stephan Kadauke, Children's Hospital of Philadelphia. Organizing committee chair: 2020, 2021, 2022
+
+Michael Kane, MD Anderson. Organizing committee and Program committee chair: 2018, 2019
+
+
+
+
+
+
+
+

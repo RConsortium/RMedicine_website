@@ -4,11 +4,7 @@ title: "R/Medicine 2026"
 
 ![](images/RMed26-main-website-image.png)
 
-::: r-stack
-## **AN R CONSORTIUM VIRTUAL CONFERENCE**
-:::
-
-## WHY ATTEND
+## Why attend
 
 The R/Medicine conference provides a forum for sharing R based tools and approaches used to analyze and 
 gain insights from health data. Conference workshops and demos provide a way to learn and develop your 
@@ -16,7 +12,98 @@ R skills, and to try out new R packages and tools. Conference talks share new pa
 in analyzing health, laboratory, and clinical data with R and Shiny, and an opportunity to interact 
 with speakers in the chat during their pre-recorded talks.
 
-## BROUGHT TO YOU BY
+See below for details on the three keynotes for 2026 - they are not to be missed!
+
+# Keynotes
+
+## Software Sustainability and Community Management {#yanina-bellini}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+KEYNOTE
+:::
+::: {.speaker-imgs}
+![](images/k11-yanina-bellini.jpeg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Yanina Bellini](https://yabellini.netlify.app){target="_blank"}
+:::
+::: {.workshop-desc}
+**Thursday May 7th, 11:15AM-12:15PM ET**
+<br>
+
+Sustainable software depends as much on people and practices as it does on code. In this talk, I'll draw on my experience leading and supporting R communities to show how intentional community management contributes to long-term software sustainability. Using concrete examples, I'll highlight how communities of practice help distribute maintenance, grow skills, and support inclusive, resilient software ecosystems across research and open source.
+:::
+::: {.workshop-links}
+<!-- [Personal website](https://yabellini.netlify.app){target="_blank"} -->
+:::
+:::
+:::
+
+## Voices in the Code: A Story about People, Their Values, and the Algorithm They Made {#david-robinson}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+KEYNOTE
+:::
+::: {.speaker-imgs}
+![](images/k12-david-robinson.jpeg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+David Robinson
+:::
+::: {.workshop-desc}
+**Thursday May 7th, 3:45-4:45PM ET**
+<br>
+
+Today policymakers and scholars are seeking better ways to share the moral decisionmaking within high stakes software — exploring ideas like public participation, transparency, forecasting, and algorithmic audits. But there are few real examples of those techniques in use. In Voices in the Code, scholar David G. Robinson tells the story of how one community built a life-and-death algorithm in a relatively inclusive, accountable way. Between 2004 and 2014, a diverse group of patients, surgeons, clinicians, data scientists, public officials and advocates collaborated and compromised to build a new transplant matching algorithm – a system to offer donated kidneys to particular patients from the U.S. national waiting list.
+:::
+::: {.workshop-links}
+<!-- [Personal website](INFO HERE){target="_blank"} -->
+:::
+:::
+:::
+
+## The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics {#peter-gruber}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+KEYNOTE
+:::
+::: {.speaker-imgs}
+![](images/k13-peter-gruber.jpeg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+Peter Gruber
+:::
+::: {.workshop-desc}
+**Friday May 8th, 11:15AM-12:15PM ET**
+<br>
+
+Peter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008. 
+
+Dr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis.
+:::
+::: {.workshop-links}
+<!-- [Personal website](INFO HERE){target="_blank"} -->
+:::
+:::
+:::
+
+
+## Brought to you by
 
 <br>
 
@@ -24,32 +111,8 @@ with speakers in the chat during their pre-recorded talks.
 
 <!-- max-height="150" width="70%" -->
 
-## MAILING LIST
 
-Join our mailing list to hear all the latest about events, news and more
-
-```{=html}
-<!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-```
-
-```{=html}
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-```
-
-```{=html}
-<script>
-  hbspt.forms.create({
-    region: "na1",
-    portalId: "8112310",
-    formId: "b41bf142-22db-4911-893a-52b856c8288f",
-    sfdcCampaignId: "7012M000001nUWFQA2"
-});
-</script>
-```
-
-## HELP EDIT THIS WEBSITE
+## Help edit this website
 
 This entire website was made using Quarto and R.
 

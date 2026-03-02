@@ -16,7 +16,7 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Richard Hanna](INFO HERE){target="_blank"} & [Stephan Kadauke](INFO HERE){target="_blank"}
+[Richard Hanna](INFO HERE){target="_blank"} & [Stephan Kadauke](https://www.linkedin.com/in/skadauke/){target="_blank"}
 :::
 ::: {.workshop-desc}
 A gentle introduction to R and data science for healthcare professionals and clinical researchers.
@@ -27,7 +27,7 @@ A gentle introduction to R and data science for healthcare professionals and cli
 :::
 :::
 
-## Promover la Equidad Científica {#equidad}
+## Promover la Equidad Científica: Introducción a R {#equidad}
 
 ::: {.workshop-card}
 ::: {.card-left}
@@ -42,10 +42,10 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Catalina Cañizares](INFO HERE){target="_blank"} & [Francisco Cardozo](INFO HERE){target="_blank"}
+[Catalina Cañizares](https://ccani007.github.io/ccani_website/){target="_blank"} & [Francisco Cardozo](https://focardozom.github.io/){target="_blank"}
 :::
 ::: {.workshop-desc}
-A pesar de los abundantes recursos disponibles para aprender R, la mayoría de estos materiales son accesibles principalmente en inglés. Esta barrera del idioma restringe significativamente el acceso de personas que prefieren estudiar R en español.
+Este taller ofrece una introducción práctica al uso de R para el análisis de datos en investigación médica y en salud. Está dirigido a profesionales de la salud, investigadores clínicos y estudiantes sin experiencia previa en programación. A lo largo del taller, los participantes aprenderán los conceptos básicos de R, cómo trabajar con bases de datos, realizar análisis descriptivos y generar resultados reproducibles.
 :::
 ::: {.workshop-links}
 [Workshop GitHub repo](INFO HERE)
@@ -68,7 +68,7 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Daniel D. Sjoberg](INFO HERE){target="_blank"} & [Shannon Pileggi](INFO HERE){target="_blank"}
+[Daniel D. Sjoberg](https://www.danieldsjoberg.com/){target="_blank"} & [Shannon Pileggi](https://www.pipinghotdata.com/){target="_blank"}
 :::
 ::: {.workshop-desc}
 As the pharmaceutical field moves to open-source solutions for reporting on clinical trials, assessing and vetting the options available becomes increasingly important. The {gtsummary} R package is the most widely used tool in the R ecosystem for creating publication-ready summary tables. Its recent integration with the Analysis Results Dataset (ARD) framework represents a major advance for clinical trial reporting. ARDs, which standardize statistical outputs in a machine-readable format, can be robustly generated using the open-source {cards} package developed by Roche, GSK, Novartis, Eli Lilly, Pfizer, and Clymb.
@@ -83,80 +83,7 @@ Lastly, we will review how this ecosystem naturally lends itself to Large Langua
 :::
 :::
 
-## Building Accessible, On-Brand Documents with Quarto {#quarto-docs}
 
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-WORKSHOP
-:::
-::: {.speaker-imgs}
-![](images/w4-charlotte-wickham.jpg)
-:::
-:::
-
-::: {.card-right}
-::: {.workshop-speakers-name}
-[Charlotte Wickham](INFO HERE){target="_blank"}
-:::
-::: {.workshop-desc}
-Come see practical strategies for producing Quarto documents that meet organizational standards for both design and accessibility. You’ll learn how to implement consistent organizational branding using brand.yml, plus customization techniques for cases where you need more control. You’ll also learn about recent accessibility improvements for both PDF and HTML outputs.
-:::
-::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
-:::
-:::
-:::
-
-## R and RedCap Panel Discussion {#redcap}
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-PANEL
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-
-::: {.card-right}
-::: {.workshop-speakers-name}
-[Ray](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, [Rich](INFO HERE){target="_blank"}, others
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-::: {.workshop-links}
-[Pre-workshop setup](info here.)
-:::
-:::
-:::
-
-## Ctrialsgov R Package {#ctrialsgov}
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-WORKSHOP
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-
-::: {.card-right}
-::: {.workshop-speakers-name}
-[Mike Kane](INFO HERE){target="_blank"}
-:::
-::: {.workshop-desc}
-INFO HERE
-:::
-::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
-:::
-:::
-:::
 
 ## Working with Larger than Memory Data in R {#big-data}
 
@@ -172,7 +99,7 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[François Michonneau](INFO HERE){target="_blank"}
+[François Michonneau](https://francoismichonneau.net/){target="_blank"}
 :::
 ::: {.workshop-desc}
 As datasets continue to grow in size and complexity, R users increasingly encounter data that exceeds their system's memory capacity. This hands-on workshop provides practical strategies for efficiently analyzing larger-than-memory datasets using modern open source tools, with a focus on DuckDB and Apache Arrow—all while maintaining familiar tidyverse workflows.
@@ -203,7 +130,7 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Cara Thompson](INFO HERE){target="_blank"}
+[Cara Thompson](https://www.cararthompson.com/){target="_blank"}
 :::
 ::: {.workshop-desc}
 This workshop is designed for ggplot users who know how to make basic graphs, but want to make them look better and save themselves precious time by building reuseable components. We'll explore how to choose the right graphs for different aspects of our data story and how to apply a consistent style across them. In doing so, we will focus on making design choices which are accessible, and on making the most of new ggplot2 features. Because getting from a static graph to an interactive one is much easier than most people realise, we'll finish by exploring how to link two or more interactive graphs together to allow users to explore different aspects of a data story.
@@ -229,10 +156,116 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Sara Altman](INFO HERE){target="_blank"}
+[Sara Altman](https://www.linkedin.com/in/sarakaltman/){target="_blank"}
 :::
 ::: {.workshop-desc}
 LLMs are transforming how we write code, build tools, and analyze data. This workshop will introduce participants to programming with LLM APIs in R using ellmer, an open-source package that makes it easy to work with LLMs from R. We'll cover the basics of calling LLMs from R, system prompt design, tool calling, and evaluation, and show how to use LLM-powered tools to support common data analysis tasks like exploratory data analysis. Participants will leave with example scripts they can adapt to their own data analysis projects.
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
+:::
+:::
+
+## R Packages for Personal Use with GitHub {#r-packages}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+WORKSHOP
+:::
+::: {.speaker-imgs}
+![](images/test-img.png)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Daniel Chen](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+COMING SOON
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
+:::
+:::
+
+
+
+# Panels
+
+## R and RedCap Panel Discussion {#redcap}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+PANEL
+:::
+::: {.speaker-imgs}
+![](images/test-img.png)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Raymond Balise](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, [Rich](INFO HERE){target="_blank"}, others
+:::
+::: {.workshop-desc}
+COMING SOON
+:::
+::: {.workshop-links}
+[Pre-workshop setup](info here.)
+:::
+:::
+:::
+
+# Demos
+
+## Building Accessible, On-Brand Documents with Quarto {#quarto-docs}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+WORKSHOP
+:::
+::: {.speaker-imgs}
+![](images/w4-charlotte-wickham.jpg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Charlotte Wickham](https://www.cwick.co.nz/){target="_blank"}
+:::
+::: {.workshop-desc}
+Come see practical strategies for producing Quarto documents that meet organizational standards for both design and accessibility. You’ll learn how to implement consistent organizational branding using brand.yml, plus customization techniques for cases where you need more control. You’ll also learn about recent accessibility improvements for both PDF and HTML outputs.
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
+:::
+:::
+
+## Ctrialsgov R Package {#ctrialsgov}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+WORKSHOP
+:::
+::: {.speaker-imgs}
+![](images/test-img.png)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Mike Kane](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+COMING SOON
 :::
 ::: {.workshop-links}
 [Workshop GitHub repo](INFO HERE)

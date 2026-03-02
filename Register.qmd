@@ -1,12 +1,12 @@
 ## Registration
 
-### Registration coming soon!
+### Registration now open!
 
-<!-- <button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href=&#39;https://events.zoom.us/ev/Ary4n0gHYgxRCElrRRk-VtYMY7U1RqFT6ceYf8FmTErQlMuI9H7A~ArHKCkWO_DutzLw_AdvOKPtA6RVDz12I4PBqXncSsqdpum5kFyRtEovYWA&#39;"> -->
+<button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href='https://events.zoom.us/ev/AgREbBib55cz4PPbRpOTR7XzT-zUrXaHOet-RwMsMk24X5bVUNyY~AsC-xAaNTK3SJonyxOzHRJiBVfSuSMvEirES70DnkxL6o8hdnu5mpfn79A'">
 
-<!-- **REGISTER HERE** -->
+**REGISTER HERE**
 
-<!-- </button> -->
+</button>
 
 ### Registration Pricing
 
