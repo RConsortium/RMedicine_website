@@ -95,21 +95,21 @@
     "href": "Hackathon.html",
     "title": "R/Medicine 2026",
     "section": "",
-    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\n\n\n\n\n\n\nImportantRegistration Required\n\n\n\nR/Medicine 2026 conference registration is required to participate in the hackathon. Register here."
+    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\n\n\n\n\n\n\nImportantRegistration Required\n\n\n\nR/Medicine 2026 conference registration is required to participate in the hackathon. Register here.\n\n\n\nSIGN UP FOR THE HACKATHON"
   },
   {
     "objectID": "Hackathon.html#about-the-hackathon",
     "href": "Hackathon.html#about-the-hackathon",
     "title": "R/Medicine 2026",
     "section": "",
-    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\n\n\n\n\n\n\nImportantRegistration Required\n\n\n\nR/Medicine 2026 conference registration is required to participate in the hackathon. Register here."
+    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\n\n\n\n\n\n\nImportantRegistration Required\n\n\n\nR/Medicine 2026 conference registration is required to participate in the hackathon. Register here.\n\n\n\nSIGN UP FOR THE HACKATHON"
   },
   {
     "objectID": "Hackathon.html#schedule",
     "href": "Hackathon.html#schedule",
     "title": "R/Medicine 2026",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\nEvent\nDate\nTime (ET)\n\n\n\n\nDaniel Chen’s Workshop\nWednesday, April 8th\n11:00 AM – 1:00 PM\n\n\nHackathon Kickoff\nThursday, April 16th\n11:00 AM – 12:00 PM\n\n\nHackathon\nThursday, April 23rd\n11:00 AM – 3:00 PM\n\n\n\nAll times are in Eastern Time (ET)."
+    "text": "Schedule\n\n\n\n\n\n\n\n\nEvent\nDate\nTime (ET)\n\n\n\n\nDaniel Chen’s Workshop\nWednesday, April 8th\n11:00 AM – 1:00 PM\n\n\nHackathon Kickoff\nThursday, April 16th\n11:00 AM – 12:00 PM\n\n\nHackathon\nThursday, April 23rd\n11:00 AM – 3:00 PM\n\n\n\nAll times are in Eastern Time (ET).\n\n\n\n\n\n\nTipFocus: the teal Package\n\n\n\nThis hackathon will focus specifically on the teal package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and two of the package’s developers will be present throughout the event to guide and support participants."
   },
   {
     "objectID": "Hackathon.html#tracks",
@@ -126,18 +126,11 @@
     "text": "Recommended Preparation\nTo get the most out of the hackathon, we strongly recommend attending the following workshop offered during R/Medicine 2026:\n\n\n\nWORKSHOP\n\n\n\n\n\n\n\nDaniel Chen\n\n\nR Packages for Personal Use with GitHub (Wednesday, April 8th, 11:00 AM – 1:00 PM ET). Learn how to create R packages and host them on GitHub. This workshop provides excellent preparation for the hackathon by familiarizing you with R package structure, development workflows, and GitHub-based collaboration.\n\n\nSee full workshop details\n\n\n\nAdditionally, review the recording of Dony Unardi’s workshop from R/Medicine 2025 on the teal package: “https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/”, which covers one of the key pharmaverse packages."
   },
   {
-    "objectID": "Hackathon.html#prerequisites-for-participants",
-    "href": "Hackathon.html#prerequisites-for-participants",
+    "objectID": "Hackathon.html#what-to-expect",
+    "href": "Hackathon.html#what-to-expect",
     "title": "R/Medicine 2026",
-    "section": "Prerequisites for Participants",
-    "text": "Prerequisites for Participants\nTo ensure a smooth and productive hackathon experience, please complete the following setup before the event.\n\nTechnical Setup\n\nR & IDE: Install a working version of R and your preferred IDE (RStudio, VSCode, or Positron). Consider Posit Cloud as a free option.\nGit & GitHub:\n\nEnsure you can log into GitHub\nSet up your GitHub account with appropriate tokens for pushing and pulling (e.g., personal access tokens or SSH keys)\nIf you use multiple git instances (e.g., an internal GitHub), configure git with your username and email:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your@email.com\"\n\n\n\n\nR Familiarity\n\nTrack A (Good First Issues): Participants with any level of R knowledge are welcome.\nTrack B (Feature-Level Issues): Participants should be comfortable with:\n\nHow R packages are structured\nFunctional programming in R and relevant testing methods\nWorking collaboratively in pairs or small teams\n\n\n\n\nGit Familiarity\nWorking knowledge of git workflows is expected:\n\nKnow how to fork and clone a repository\nBe able to create branches, commit changes, and push updates\nUnderstand how to open a pull request (PR)\n\nHelpful resources:\n\nGit tutorials 1\nGit usage guide from an established pharmaverse package\n\n\n\nEnvironment & Access\n\nConfirm you can clone and run the target package locally\nResolve any required proxy or access restrictions ahead of time\nInstall all package dependencies listed in the onboarding materials"
-  },
-  {
-    "objectID": "Hackathon.html#at-kickoff",
-    "href": "Hackathon.html#at-kickoff",
-    "title": "R/Medicine 2026",
-    "section": "At Kickoff",
-    "text": "At Kickoff\nDuring the kickoff session, you will:\n\nRead through the CONTRIBUTING.md and coding standards for your chosen package\nReview the list of identified issues and features\nJoin the communication channel (Slack/Teams) and introduce yourself\nPick an issue and start contributing!"
+    "section": "What to Expect",
+    "text": "What to Expect\nTechnical prerequisites, setup instructions, and onboarding materials will be shared during the Kickoff session on April 16th and through follow-up communication with registered participants."
   },
   {
     "objectID": "Hackathon.html#questions",

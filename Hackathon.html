@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -194,14 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#track-b-feature-level-issues" id="toc-track-b-feature-level-issues" class="nav-link" data-scroll-target="#track-b-feature-level-issues">Track B: Feature-Level Issues</a></li>
   </ul></li>
   <li><a href="#recommended-preparation" id="toc-recommended-preparation" class="nav-link" data-scroll-target="#recommended-preparation">Recommended Preparation</a></li>
-  <li><a href="#prerequisites-for-participants" id="toc-prerequisites-for-participants" class="nav-link" data-scroll-target="#prerequisites-for-participants">Prerequisites for Participants</a>
-  <ul class="collapse">
-  <li><a href="#technical-setup" id="toc-technical-setup" class="nav-link" data-scroll-target="#technical-setup">Technical Setup</a></li>
-  <li><a href="#r-familiarity" id="toc-r-familiarity" class="nav-link" data-scroll-target="#r-familiarity">R Familiarity</a></li>
-  <li><a href="#git-familiarity" id="toc-git-familiarity" class="nav-link" data-scroll-target="#git-familiarity">Git Familiarity</a></li>
-  <li><a href="#environment-access" id="toc-environment-access" class="nav-link" data-scroll-target="#environment-access">Environment &amp; Access</a></li>
-  </ul></li>
-  <li><a href="#at-kickoff" id="toc-at-kickoff" class="nav-link" data-scroll-target="#at-kickoff">At Kickoff</a></li>
+  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link" data-scroll-target="#what-to-expect">What to Expect</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
   </ul>
 </nav>
@@ -229,6 +187,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>R/Medicine 2026 conference registration is required to participate in the hackathon. <a href="Register.html">Register here</a>.</p>
 </div>
 </div>
+<button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href='https://forms.gle/9BMTU5jDxTpWhVuW6'">
+<p><strong>SIGN UP FOR THE HACKATHON</strong></p>
+</button>
 </section>
 <section id="schedule" class="level2">
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
@@ -264,6 +225,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p><em>All times are in Eastern Time (ET).</em></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Focus: the teal Package
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This hackathon will focus specifically on the <a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">teal</a> package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and <strong>two of the package’s developers will be present</strong> throughout the event to guide and support participants.</p>
+</div>
+</div>
 </section>
 <section id="tracks" class="level2">
 <h2 class="anchored" data-anchor-id="tracks">Tracks</h2>
@@ -303,67 +277,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Additionally, review the recording of <strong>Dony Unardi’s</strong> workshop from R/Medicine 2025 on the <a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">teal package</a>: <em>“https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/”</em>, which covers one of the key pharmaverse packages.</p>
 </section>
-<section id="prerequisites-for-participants" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites-for-participants">Prerequisites for Participants</h2>
-<p>To ensure a smooth and productive hackathon experience, please complete the following setup <strong>before</strong> the event.</p>
-<section id="technical-setup" class="level3">
-<h3 class="anchored" data-anchor-id="technical-setup">Technical Setup</h3>
-<ul>
-<li><strong>R &amp; IDE</strong>: Install a working version of R and your preferred IDE (RStudio, VSCode, or Positron). Consider <a href="https://posit.cloud/" target="_blank">Posit Cloud</a> as a free option.</li>
-<li><strong>Git &amp; GitHub</strong>:
-<ul>
-<li><p>Ensure you can log into <a href="https://github.com" target="_blank">GitHub</a></p></li>
-<li><p>Set up your GitHub account with appropriate tokens for pushing and pulling (e.g., personal access tokens or SSH keys)</p></li>
-<li><p>If you use multiple git instances (e.g., an internal GitHub), configure git with your username and email:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your@email.com"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-</ul></li>
-</ul>
-</section>
-<section id="r-familiarity" class="level3">
-<h3 class="anchored" data-anchor-id="r-familiarity">R Familiarity</h3>
-<ul>
-<li><strong>Track A</strong> (Good First Issues): Participants with any level of R knowledge are welcome.</li>
-<li><strong>Track B</strong> (Feature-Level Issues): Participants should be comfortable with:
-<ul>
-<li>How R packages are structured</li>
-<li>Functional programming in R and relevant testing methods</li>
-<li>Working collaboratively in pairs or small teams</li>
-</ul></li>
-</ul>
-</section>
-<section id="git-familiarity" class="level3">
-<h3 class="anchored" data-anchor-id="git-familiarity">Git Familiarity</h3>
-<p>Working knowledge of git workflows is expected:</p>
-<ul>
-<li>Know how to <strong>fork and clone</strong> a repository</li>
-<li>Be able to <strong>create branches</strong>, commit changes, and push updates</li>
-<li>Understand how to <strong>open a pull request</strong> (PR)</li>
-</ul>
-<p>Helpful resources:</p>
-<ul>
-<li><a href="TBD" target="_blank">Git tutorials 1</a></li>
-<li><a href="https://pharmaverse.github.io/admiral/CONTRIBUTING.html" target="_blank">Git usage guide from an established pharmaverse package</a></li>
-</ul>
-</section>
-<section id="environment-access" class="level3">
-<h3 class="anchored" data-anchor-id="environment-access">Environment &amp; Access</h3>
-<ul>
-<li>Confirm you can <strong>clone and run</strong> the target package locally</li>
-<li>Resolve any required <strong>proxy or access restrictions</strong> ahead of time</li>
-<li>Install all <strong>package dependencies</strong> listed in the onboarding materials</li>
-</ul>
-</section>
-</section>
-<section id="at-kickoff" class="level2">
-<h2 class="anchored" data-anchor-id="at-kickoff">At Kickoff</h2>
-<p>During the kickoff session, you will:</p>
-<ol type="1">
-<li><strong>Read through</strong> the <code>CONTRIBUTING.md</code> and coding standards for your chosen package</li>
-<li><strong>Review</strong> the list of identified issues and features</li>
-<li><strong>Join</strong> the communication channel (Slack/Teams) and introduce yourself</li>
-<li><strong>Pick an issue</strong> and start contributing!</li>
-</ol>
+<section id="what-to-expect" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-expect">What to Expect</h2>
+<p>Technical prerequisites, setup instructions, and onboarding materials will be shared during the <strong>Kickoff session</strong> on April 16th and through follow-up communication with registered participants.</p>
 </section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions?</h2>
