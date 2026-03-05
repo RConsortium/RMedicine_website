@@ -23,8 +23,10 @@ library(gt)
 
 # Create HTML pattern for talk links:
 link_style <- "color:black; font-weight:500; text-decoration:underline;"
-hover_effect <- "onmouseover='this.style.fontStyle=\"none\"' onmouseout='this.style.fontStyle=\"normal\"'"  # change fontStyle to "italic" for italic on hover
-html_pattern <- glue::glue("<div>{{1}}<br><a href='{{5}}' style='{link_style}' {hover_effect}>{{2}}</a><br>{{3}} {{4}}</div>")
+hover_effect <- "onmouseover='this.style.fontStyle=\"none\"' onmouseout='this.style.fontStyle=\"normal\"'" # change fontStyle to "italic" for italic on hover
+html_pattern <- glue::glue(
+    "<div>{{1}}<br><a href='{{5}}' style='{link_style}' {hover_effect}>{{2}}</a><br>{{3}} {{4}}</div>"
+)
 ```
 
 <!-- <!-- # Workshop/Demo Day 1 {.hidden} --> 
@@ -74,7 +76,7 @@ html_pattern <- glue::glue("<div>{{1}}<br><a href='{{5}}' style='{link_style}' {
 <!--     "B", -->
 <!--     "Workshop",  -->
 <!--     "Introduction to R for Clinical Data",  -->
-<!--     "Stephan Kadauke and Rich Hanna",  -->
+<!--     "Rich Hanna",  -->
 <!--     "Children's Hospital of Philadelphia", -->
 <!--     "workshops.html#introduction-to-r-for-clinical-data", -->
 
@@ -174,122 +176,122 @@ html_pattern <- glue::glue("<div>{{1}}<br><a href='{{5}}' style='{link_style}' {
 ```{r, day2}
 # Day 2
 schedule_day_2 <-
-  dplyr::tribble(
-    ~start_time, 
-    ~end_time, 
-    ~track,
-    ~t_type, 
-    ~t_title, 
-    ~t_speakers, 
-    ~t_companies,
-    ~url_link,
-    
-    "2026-05-05 11:00", 
-    "2026-05-05 14:00", 
-    "A",
-    "Workshop",  
-    "Introduction to R for Clinical Data",  
-    "Stephan Kadauke and Rich Hanna",  
-    "Children's Hospital of Philadelphia", 
-    "workshops.html#r101", 
-    
-    "2026-05-05 11:00", 
-    "2026-05-05 14:00", 
-    "B",
-    "Workshop",  
-    "Promover la Equidad Científica: Introducción a R", 
-    "Catalina Canizares-Escobar, New York University;",  
-    "Francisco Cardozo, University of Miami", 
-    "workshops.html#equidad", 
-    
-    "2026-05-05 14:00", 
-    "2026-05-05 14:30",
-    "", 
-    "Break", 
-    "", 
-    "",
-    "",
-    "",
-    
-    "2026-05-05 14:30", 
-    "2026-05-05 17:30", 
-    "A",
-    "Workshop", 
-    "Mastering Clinical Data Summaries with {gtsummary} and AI", 
-    "Daniel D. Sjoberg, Genentech;", 
-    "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium",
-    "workshops.html#gtsummary",
-    
-    "2026-05-05 14:30", 
-    "2026-05-05 15:30", 
-    "B",
-    "Demo", 
-    "Building Accessible, On-Brand Documents with Quarto", 
-    "Charlotte Wickham", 
-    "Posit",
-    "workshops.html#quarto-docs",
-    
-    "2026-05-05 15:30", 
-    "2026-05-05 16:30", 
-    "B",
-    "Panel", 
-    "R and RedCap Panel Discussion", 
-    "Raymond Balise, Brandon Rose, Rich Hanna, and others", 
-    "",
-    "workshops.html#redcap",
-    
-    "2026-05-05 16:30", 
-    "2026-05-05 17:30", 
-    "B",
-    "Demo", 
-    "Ctrialsgov R Package", 
-    "Michael Kane", 
-    "MD Anderson Cancer Center",
-    "workshops.html#ctrialsgov"
-  ) |>
-  dplyr::mutate(
-    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
-    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
-  )
+    dplyr::tribble(
+        ~start_time                                                       ,
+        ~end_time                                                         ,
+        ~track                                                            ,
+        ~t_type                                                           ,
+        ~t_title                                                          ,
+        ~t_speakers                                                       ,
+        ~t_companies                                                      ,
+        ~url_link                                                         ,
+        "2026-05-05 11:00"                                                ,
+        "2026-05-05 14:00"                                                ,
+        "A"                                                               ,
+        "Workshop"                                                        ,
+        "Introduction to R for Clinical Data"                             ,
+        "Rich Hanna"                                                      ,
+        "Children's Hospital of Philadelphia"                             ,
+        "workshops.html#r101"                                             ,
+        "2026-05-05 11:00"                                                ,
+        "2026-05-05 14:00"                                                ,
+        "B"                                                               ,
+        "Workshop"                                                        ,
+        "Promover la Equidad Científica: Introducción a R"                ,
+        "Catalina Cañizares-Escobar, New York University;"                ,
+        "Francisco Cardozo, University of Miami"                          ,
+        "workshops.html#equidad"                                          ,
+        "2026-05-05 14:00"                                                ,
+        "2026-05-05 14:30"                                                ,
+        ""                                                                ,
+        "Break"                                                           ,
+        ""                                                                ,
+        ""                                                                ,
+        ""                                                                ,
+        ""                                                                ,
+        "2026-05-05 14:30"                                                ,
+        "2026-05-05 17:30"                                                ,
+        "A"                                                               ,
+        "Workshop"                                                        ,
+        "Mastering Clinical Data Summaries with {gtsummary} and AI"       ,
+        "Daniel D. Sjoberg, Genentech;"                                   ,
+        "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium" ,
+        "workshops.html#gtsummary"                                        ,
+        "2026-05-05 14:30"                                                ,
+        "2026-05-05 15:30"                                                ,
+        "B"                                                               ,
+        "Demo"                                                            ,
+        "Building Accessible, On-Brand Documents with Quarto"             ,
+        "Charlotte Wickham"                                               ,
+        "Posit"                                                           ,
+        "workshops.html#quarto-docs"                                      ,
+        "2026-05-05 15:30"                                                ,
+        "2026-05-05 16:30"                                                ,
+        "B"                                                               ,
+        "Panel"                                                           ,
+        "R and RedCap Panel Discussion"                                   ,
+        "Raymond Balise, Brandon Rose, Rich Hanna, and others"            ,
+        ""                                                                ,
+        "workshops.html#redcap"                                           ,
+        "2026-05-05 16:30"                                                ,
+        "2026-05-05 17:30"                                                ,
+        "B"                                                               ,
+        "Demo"                                                            ,
+        "Ctrialsgov R Package"                                            ,
+        "Michael Kane"                                                    ,
+        "MD Anderson Cancer Center"                                       ,
+        "workshops.html#ctrialsgov"
+    ) |>
+    dplyr::mutate(
+        t_speakers = dplyr::if_else(
+            t_companies != "",
+            paste0(t_speakers, ","),
+            t_speakers
+        ),
+        duration = time_length(
+            ymd_hm(end_time) - ymd_hm(start_time),
+            unit = "mins"
+        )
+    )
 ```
 
 ```{r}
 # Create a table for the day of events
 gt(schedule_day_2) |>
-  tab_header(title = md("<br>Tuesday, May 5, 2026<br><br>")) |> # <- insert the date
-  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
-  fmt_duration(
-    columns = duration,
-    input_units = "minutes",
-    output_units = c("hours", "minutes")
-  ) |>
-  cols_move(columns = duration, after = end_time) |>
-  cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html(html_pattern)
-  ) |>
-  cols_label(
-    start_time ~ "Start Time",
-    end_time ~ "End Time",
-    duration ~ "Duration",
-    track ~ "Track",
-    t_type ~ ""
-  ) |>
-  cols_align(align = "center") |>
-  cols_width(
-    c(start_time, end_time, duration, track) ~ px(90),
-    everything() ~ px(600)
-  ) |>
-  opt_align_table_header(align = "left") |>
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "gray85",
-    table.width = pct(100)
-  ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
+    tab_header(title = md("<br>Tuesday, May 5, 2026<br><br>")) |> # <- insert the date
+    fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+    fmt_duration(
+        columns = duration,
+        input_units = "minutes",
+        output_units = c("hours", "minutes")
+    ) |>
+    cols_move(columns = duration, after = end_time) |>
+    cols_merge(
+        columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+        pattern = html(html_pattern)
+    ) |>
+    cols_label(
+        start_time ~ "Start Time",
+        end_time ~ "End Time",
+        duration ~ "Duration",
+        track ~ "Track",
+        t_type ~ ""
+    ) |>
+    cols_align(align = "center") |>
+    cols_width(
+        c(start_time, end_time, duration, track) ~ px(90),
+        everything() ~ px(600)
+    ) |>
+    opt_align_table_header(align = "left") |>
+    tab_options(
+        heading.background.color = "lightblue",
+        column_labels.background.color = "gray85",
+        table.width = pct(100)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Break"),
+        style = cell_fill(color = "bisque")
+    )
 ```
 
 # Workshop/Demo Day 3 
@@ -297,104 +299,106 @@ gt(schedule_day_2) |>
 ```{r, day3}
 # Day 3
 schedule_day_3 <-
-  dplyr::tribble(
-    ~start_time, 
-    ~end_time, 
-    ~track,
-    ~t_type, 
-    ~t_title, 
-    ~t_speakers, 
-    ~t_companies,
-    ~url_link,
-    
-    "2026-05-06 11:00", 
-    "2026-05-06 14:00", 
-    "A",
-    "Workshop", 
-    "Working with Larger than Memory Data in R", 
-    "François Michonneau", 
-    "Posit",
-    "workshops.html#big-data",
-    
-    "2026-05-06 11:00", 
-    "2026-05-06 14:00", 
-    "B",
-    "Workshop", 
-    "ggplot2 for Data Visualisation: Creativity, Clarity, Accessibility", 
-    "Cara Thompson", 
-    "",
-    "workshops.html#ggplot2",
-    
-    "2026-05-05 14:00", 
-    "2026-05-05 14:30",
-    "", 
-    "Break", 
-    "", 
-    "",
-    "",
-    "",
-    
-    "2026-05-05 14:30", 
-    "2026-05-05 17:30", 
-    "A",
-    "Workshop", 
-    "LLMs for Data Analysis in R", 
-    "Sara Altman", 
-    "Posit",
-    "workshops.html#llms",
-    
-    "2026-05-05 14:30", 
-    "2026-05-05 17:30", 
-    "B",
-    "Workshop", 
-    "TBD", 
-    "", 
-    "",
-    ""
-  ) |>
-  dplyr::mutate(
-    t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
-    duration = time_length(ymd_hm(end_time) - ymd_hm(start_time), unit = "mins")
-  )
+    dplyr::tribble(
+        ~start_time                                                          ,
+        ~end_time                                                            ,
+        ~track                                                               ,
+        ~t_type                                                              ,
+        ~t_title                                                             ,
+        ~t_speakers                                                          ,
+        ~t_companies                                                         ,
+        ~url_link                                                            ,
+        "2026-05-06 11:00"                                                   ,
+        "2026-05-06 14:00"                                                   ,
+        "A"                                                                  ,
+        "Workshop"                                                           ,
+        "Working with Larger than Memory Data in R"                          ,
+        "François Michonneau"                                                ,
+        "Posit"                                                              ,
+        "workshops.html#big-data"                                            ,
+        "2026-05-06 11:00"                                                   ,
+        "2026-05-06 14:00"                                                   ,
+        "B"                                                                  ,
+        "Workshop"                                                           ,
+        "ggplot2 for Data Visualisation: Creativity, Clarity, Accessibility" ,
+        "Cara Thompson"                                                      ,
+        ""                                                                   ,
+        "workshops.html#ggplot2"                                             ,
+        "2026-05-05 14:00"                                                   ,
+        "2026-05-05 14:30"                                                   ,
+        ""                                                                   ,
+        "Break"                                                              ,
+        ""                                                                   ,
+        ""                                                                   ,
+        ""                                                                   ,
+        ""                                                                   ,
+        "2026-05-05 14:30"                                                   ,
+        "2026-05-05 17:30"                                                   ,
+        "A"                                                                  ,
+        "Workshop"                                                           ,
+        "LLMs for Data Analysis in R"                                        ,
+        "Sara Altman"                                                        ,
+        "Posit"                                                              ,
+        "workshops.html#llms"                                                ,
+        "2026-05-05 14:30"                                                   ,
+        "2026-05-05 17:30"                                                   ,
+        "B"                                                                  ,
+        "Workshop"                                                           ,
+        "TBD"                                                                ,
+        ""                                                                   ,
+        ""                                                                   ,
+        ""
+    ) |>
+    dplyr::mutate(
+        t_speakers = dplyr::if_else(
+            t_companies != "",
+            paste0(t_speakers, ","),
+            t_speakers
+        ),
+        duration = time_length(
+            ymd_hm(end_time) - ymd_hm(start_time),
+            unit = "mins"
+        )
+    )
 ```
 
 ```{r}
 # Create a table for the day of events
 gt(schedule_day_3) |>
-  tab_header(title = md("<br>Wednesday, May 6, 2026<br><br>")) |> # <- insert the date
-  fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
-  fmt_duration(
-    columns = duration,
-    input_units = "minutes",
-    output_units = c("hours", "minutes")
-  ) |>
-  cols_move(columns = duration, after = end_time) |>
-  cols_merge(
-    columns = c(t_type, t_title, t_speakers, t_companies, url_link),
-    pattern = html(html_pattern)
-  ) |>
-  cols_label(
-    start_time ~ "Start Time",
-    end_time ~ "End Time",
-    duration ~ "Duration",
-    track ~ "Track",
-    t_type ~ ""
-  ) |>
-  cols_align(align = "center") |>
-  cols_width(
-    c(start_time, end_time, duration, track) ~ px(90),
-    everything() ~ px(600)
-  ) |>
-  opt_align_table_header(align = "left") |>
-  tab_options(
-    heading.background.color = "lightblue",
-    column_labels.background.color = "gray85",
-    table.width = pct(100)
-  ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
+    tab_header(title = md("<br>Wednesday, May 6, 2026<br><br>")) |> # <- insert the date
+    fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
+    fmt_duration(
+        columns = duration,
+        input_units = "minutes",
+        output_units = c("hours", "minutes")
+    ) |>
+    cols_move(columns = duration, after = end_time) |>
+    cols_merge(
+        columns = c(t_type, t_title, t_speakers, t_companies, url_link),
+        pattern = html(html_pattern)
+    ) |>
+    cols_label(
+        start_time ~ "Start Time",
+        end_time ~ "End Time",
+        duration ~ "Duration",
+        track ~ "Track",
+        t_type ~ ""
+    ) |>
+    cols_align(align = "center") |>
+    cols_width(
+        c(start_time, end_time, duration, track) ~ px(90),
+        everything() ~ px(600)
+    ) |>
+    opt_align_table_header(align = "left") |>
+    tab_options(
+        heading.background.color = "lightblue",
+        column_labels.background.color = "gray85",
+        table.width = pct(100)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Break"),
+        style = cell_fill(color = "bisque")
+    )
 ```
 
 <!-- <!-- # Meeting Day 1 {.hidden} --> 
