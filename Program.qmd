@@ -347,10 +347,10 @@ schedule_day_3 <-
     "2026-05-05 17:30", 
     "B",
     "Workshop", 
-    "R Packages for Personal Use with GitHub", 
-    "Daniel Chen", 
-    "The University of BC & Posit",
-    "workshops.html#r-packages"
+    "TBD", 
+    "", 
+    "",
+    ""
   ) |>
   dplyr::mutate(
     t_speakers = dplyr::if_else(t_companies != "", paste0(t_speakers, ","), t_speakers),
