@@ -9,7 +9,7 @@
 WORKSHOP
 :::
 ::: {.speaker-imgs}
-![](images/w1-1-rich-hanna.png)
+![](images/w1-1-rich-hanna.jpg)
 :::
 :::
 
@@ -205,8 +205,8 @@ COMING SOON
 PANEL
 :::
 ::: {.speaker-imgs}
-![](images/w7-1-raymond-balise.jpg)
-![](images/w1-1-rich-hanna.png)
+<!-- ![](images/w7-1-raymond-balise.jpg) -->
+![](images/w1-1-rich-hanna.jpg)
 :::
 :::
 
