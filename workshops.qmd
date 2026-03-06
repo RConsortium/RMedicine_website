@@ -9,17 +9,18 @@
 WORKSHOP
 :::
 ::: {.speaker-imgs}
-![](images/w1-1-rich-hanna.jpg)
-![](images/w1-2-kadauke-stephan.jpeg)
+![](images/w1-1-rich-hanna.png)
 :::
 :::
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Richard Hanna](INFO HERE){target="_blank"} & [Stephan Kadauke](https://www.linkedin.com/in/skadauke/){target="_blank"}
+[Richard Hanna](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 A gentle introduction to R and data science for healthcare professionals and clinical researchers.
+
+Rich is a Data Science Supervisor with the Cell and Gene Therapy Informatics Team at the Children’s Hospital of Philadelphia. With a background in biomedical and mechanical engineering, Rich specializes in automating clinical research workflows through advanced analytics and machine learning. His work is pivotal in supporting cell therapy research and enhancing patient care in pediatric medicine
 :::
 ::: {.workshop-links}
 [Workshop GitHub repo](INFO HERE)
@@ -204,13 +205,14 @@ COMING SOON
 PANEL
 :::
 ::: {.speaker-imgs}
-![](images/test-img.png)
+![](images/w7-1-raymond-balise.jpg)
+![](images/w1-1-rich-hanna.png)
 :::
 :::
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Raymond Balise](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, [Rich](INFO HERE){target="_blank"}, others
+[Raymond Balise](INFO HERE){target="_blank"}, [Richard Hanna](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, others
 :::
 ::: {.workshop-desc}
 COMING SOON
