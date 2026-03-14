@@ -1,18 +1,18 @@
 ## Call for Proposals
 
-### Submissions are now open!
+### Submissions are now closed
 
 Please read the details below regarding each submission type prior to completing the submission process.
 
-<button class="btn btn-primary"
+<!-- <button class="btn btn-primary" -->
 
-style = "background-color: #009473"
+<!-- style = "background-color: #009473" -->
 
-onclick="window.location.href='https://forms.gle/eb89ayLWWMb5oiyQ9'">
+<!-- onclick="window.location.href='https://forms.gle/eb89ayLWWMb5oiyQ9'"> -->
 
-  **SUBMIT ABSTRACT**
+<!--   **SUBMIT ABSTRACT** -->
 
-</button>
+<!-- </button> -->
 
 
 ### Dates to Remember
