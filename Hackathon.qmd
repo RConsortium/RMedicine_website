@@ -37,6 +37,42 @@ onclick="window.location.href='https://forms.gle/9BMTU5jDxTpWhVuW6'">
 This hackathon will focus specifically on the [teal](https://insightsengineering.github.io/teal/latest-tag/){target="_blank"} package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and **two of the package's developers will be present** throughout the event to guide and support participants.
 :::
 
+## Meet the Developers
+
+Two of the `teal` package developers will be present throughout the hackathon to guide and support participants.
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.speaker-imgs}
+![](images/hackathon_dony_26.png)
+:::
+:::
+::: {.card-right}
+::: {.workshop-speakers-name}
+Dony Unardi
+:::
+::: {.workshop-desc}
+Dony Unardi is a Principal Data Scientist and Engineering Team Lead at Roche/Genentech. He leads development of teal, an open-source R framework for interactive clinical trial data exploration. His work focuses on scalable analytical platforms, reproducible computing, and modern software engineering practices that enable data-driven clinical development.
+:::
+:::
+:::
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.speaker-imgs}
+![](images/test-img.png)
+:::
+:::
+::: {.card-right}
+::: {.workshop-speakers-name}
+Developer 2
+:::
+::: {.workshop-desc}
+Short bio coming soon
+:::
+:::
+:::
+
 ## Tracks
 
 The hackathon follows two tracks to accommodate different experience levels:
