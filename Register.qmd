@@ -10,13 +10,13 @@
 
 ### Registration Pricing
 
-The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. Early Bird pricing ends **Friday, March 6, 2026**.
+The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. 
 
-| Category              | Early Bird | Regular |
-|-----------------------|:----------:|:-------:|
-| Students              |    \$15    |  \$30   |
-| Academic / Non-profit |    \$35    |  \$50   |
-| Industry              |    \$45    |  \$70   |
+| Category              |  Price |
+|-----------------------|:-------:|
+| Students              |  \$30   |
+| Academic / Non-profit |  \$50   |
+| Industry              |  \$70   |
 
 ### Scholarships: Diversity & Need-Based
 
