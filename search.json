@@ -112,6 +112,13 @@
     "text": "Schedule\n\n\n\n\n\n\n\n\nEvent\nDate\nTime (ET)\n\n\n\n\nDaniel Chen’s Workshop\nWednesday, April 8th\n11:00 AM – 1:00 PM\n\n\nHackathon Kickoff\nThursday, April 16th\n11:00 AM – 12:00 PM\n\n\nHackathon\nThursday, April 23rd\n11:00 AM – 3:00 PM\n\n\n\nAll times are in Eastern Time (ET).\n\n\n\n\n\n\nTipFocus: the teal Package\n\n\n\nThis hackathon will focus specifically on the teal package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and two of the package’s developers will be present throughout the event to guide and support participants."
   },
   {
+    "objectID": "Hackathon.html#meet-the-developers",
+    "href": "Hackathon.html#meet-the-developers",
+    "title": "R/Medicine 2026",
+    "section": "Meet the Developers",
+    "text": "Meet the Developers\nTwo of the teal package developers will be present throughout the hackathon to guide and support participants.\n\n\n\n\n\n\n\n\nDony Unardi\n\n\nDony Unardi is a Principal Data Scientist and Engineering Team Lead at Roche/Genentech. He leads development of teal, an open-source R framework for interactive clinical trial data exploration. His work focuses on scalable analytical platforms, reproducible computing, and modern software engineering practices that enable data-driven clinical development.\n\n\n\n\n\n\n\n\n\n\n\nPeyman Eshghi\n\n\nPeyman Eshghi is a Senior Principal Technical Lead at Johnson & Johnson, with 20 years of experience in R and data science, dedicated to advancing R in regulated industries by promoting robust, reproducible tooling, community collaboration, and best practices in package development and visualization. Peyman specializes in interactive data visualization for pharma and co-leads the PHUSE working group on teal enhancements and cross‑industry adoption."
+  },
+  {
     "objectID": "Hackathon.html#tracks",
     "href": "Hackathon.html#tracks",
     "title": "R/Medicine 2026",
