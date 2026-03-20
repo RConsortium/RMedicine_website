@@ -95,7 +95,7 @@ To get the most out of the hackathon, we strongly recommend attending the follow
 WORKSHOP
 :::
 ::: {.speaker-imgs}
-![](images/test-img.png)
+![](images/hw-daniel.jpg)
 :::
 :::
 
@@ -104,10 +104,20 @@ WORKSHOP
 Daniel Chen
 :::
 ::: {.workshop-desc}
-**R Packages for Personal Use with GitHub** (Wednesday, April 8th, 11:00 AM -- 1:00 PM ET). Learn how to create R packages and host them on GitHub. This workshop provides excellent preparation for the hackathon by familiarizing you with R package structure, development workflows, and GitHub-based collaboration.
+**Contributing to open source packages with Git** 
+
+Wednesday, April 8th, 11:00 AM -- 1:00 PM ET
+
+Git is a foundational tool for version control in open source collaboration, but contributing to a project involves more than just the basics.
+
+In this workshop, you will get a brief introduction to Git fundamentals before diving into the workflows used in open source. Contributing as a non-collaborator adds an extra layer of complexity, your work needs to be reviewed, which means understanding pull requests, branching strategies, and working across forks.
+
+We will start with creating branches and pull requests within your own repositories, then extend these concepts to contributing to external projects using forks. Along the way, you will learn how tools like the {usethis} R package can simplify and streamline this process.
+
+By the end of the workshop, you will be able to fork a repository, make changes in a local branch, and submit a pull request to the original project for maintainer review.
 :::
 ::: {.workshop-links}
-[See full workshop details](workshops.html#r-packages)
+[Full workshop details coming soon]()
 :::
 :::
 :::
