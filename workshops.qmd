@@ -168,33 +168,6 @@ LLMs are transforming how we write code, build tools, and analyze data. This wor
 :::
 :::
 
-## R Packages for Personal Use with GitHub {#r-packages}
-
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-WORKSHOP
-:::
-::: {.speaker-imgs}
-![](images/test-img.png)
-:::
-:::
-
-::: {.card-right}
-::: {.workshop-speakers-name}
-[Daniel Chen](INFO HERE){target="_blank"}
-:::
-::: {.workshop-desc}
-COMING SOON
-:::
-::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
-:::
-:::
-:::
-
-
-
 # Panels
 
 ## R and RedCap Panel Discussion {#redcap}

@@ -95,7 +95,7 @@ To get the most out of the hackathon, we strongly recommend attending the follow
 WORKSHOP
 :::
 ::: {.speaker-imgs}
-![](images/hw-daniel.jpg)
+![](images/hackathon_daniel.jpeg)
 :::
 :::
 
@@ -104,7 +104,7 @@ WORKSHOP
 Daniel Chen
 :::
 ::: {.workshop-desc}
-**Contributing to open source packages with Git** 
+**Make your first R open source project contribution with Git, forks, and PRs** 
 
 Wednesday, April 8th, 11:00 AM -- 1:00 PM ET
 
