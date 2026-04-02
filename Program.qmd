@@ -308,7 +308,15 @@ gt(schedule_day_2) |>
     ) |>
     tab_style(
         locations = cells_body(rows = t_type == "Break"),
-        style = cell_fill(color = "bisque")
+        style = cell_fill(color = "darkseagreen2", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Questions"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Session Intro"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
     )
 ```
 
@@ -435,7 +443,15 @@ gt(schedule_day_3) |>
     ) |>
     tab_style(
         locations = cells_body(rows = t_type == "Break"),
-        style = cell_fill(color = "bisque")
+        style = cell_fill(color = "darkseagreen2", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Questions"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Session Intro"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
     )
 ```
 
@@ -504,182 +520,214 @@ schedule_day_4 <-
     
     "2026-05-07 13:02",
     "2026-05-07 13:07",
-    "Break",
+    "Questions",
     "",
     "",
     "",
     "",
     
     "2026-05-07 13:07",
-    "2026-05-07 13:09",
+    "2026-05-07 13:12",
+    "Break",
+    "",
+    "",
+    "",
+    "",
+    
+    "2026-05-07 13:12",
+    "2026-05-07 13:14",
     "Session Intro",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 13:09",
-    "2026-05-07 13:29",
+    "2026-05-07 13:14",
+    "2026-05-07 13:34",
     "Regular Talk",
     "NIH: Not Invented Here: balancing unique software needs vs out-of-box (almost) perfect generic solution. Teal “module-first” as a case study.",
     "Dror Berel",
     "Consultant",
     "",
     
-    "2026-05-07 13:29",
-    "2026-05-07 13:39",
+    "2026-05-07 13:34",
+    "2026-05-07 13:44",
     "Lightning Talk",
     "CougarStats: An Interactive R-Based Platform for Applied Health Data Science",
     "Ashok Krishnamurthy & Darren Law Yan Lun",
     "Mount Royal University",
     "",
     
-    "2026-05-07 13:39",
-    "2026-05-07 13:49",
+    "2026-05-07 13:44",
+    "2026-05-07 13:54",
     "Lightning Talk",
     "Toggling Between Traditional and Chat-Based Data Filters in Shiny",
     "Alex Zajichek",
     "Cleveland Clinic",
     "",
     
-    "2026-05-07 13:49",
     "2026-05-07 13:54",
+    "2026-05-07 13:59",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+    
+    "2026-05-07 13:59",
+    "2026-05-07 14:04",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 13:54",
-    "2026-05-07 13:56",
+    "2026-05-07 14:04",
+    "2026-05-07 14:06",
     "Session Intro",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 13:56",
-    "2026-05-07 14:16",
+    "2026-05-07 14:06",
+    "2026-05-07 14:26",
     "Regular Talk",
     "From Prompt to Proof: Governing LLM Intelligence in Pharma with Snowflake and Shiny",
     "Tanya Cashorali",
     "TCB Analytics",
     "",
     
-    "2026-05-07 14:16",
     "2026-05-07 14:26",
+    "2026-05-07 14:36",
     "Lightning Talk",
     "Report Agent: An LLM-Powered Framework for Automated Shell-to-Code Report Generation",
     "Lucie Zhang",
     "Genentech",
     "",
     
-    "2026-05-07 14:26",
     "2026-05-07 14:36",
+    "2026-05-07 14:46",
     "Lightning Talk",
     "AI-Assisted Authoring of an Open-Access Portuguese Biostatistics Book in Quarto and R",
     "Audrei Pavanello & Leonardo Pestillo de Oliveira",
     "Cesumar Institute of Science, Technology and Innovation",
     "",
     
-    "2026-05-07 14:36",
-    "2026-05-07 14:41",
+    "2026-05-07 14:46",
+    "2026-05-07 14:51",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+    
+    "2026-05-07 14:51",
+    "2026-05-07 14:56",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 14:41",
-    "2026-05-07 14:43",
+    "2026-05-07 14:56",
+    "2026-05-07 14:58",
     "Session Intro",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 14:43",
-    "2026-05-07 15:03",
+    "2026-05-07 14:58",
+    "2026-05-07 15:18",
     "Regular Talk",
     "Supercharging Reproducible Research in R with GitHub Actions",
     "Jonathan Pearce",
     "McGill University",
     "",
     
-    "2026-05-07 15:03",
-    "2026-05-07 15:23",
+    "2026-05-07 15:18",
+    "2026-05-07 15:38",
     "Regular Talk",
     "Care and Feeding of Your Biostats Team: Scaling best practices in a large hybrid SAS/R team",
     "John Ehrlinger",
     "Cleveland Clinic",
     "",
     
-    "2026-05-07 15:23",
-    "2026-05-07 15:28",
+    "2026-05-07 15:38",
+    "2026-05-07 15:43",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+    
+    "2026-05-07 15:43",
+    "2026-05-07 15:48",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 15:28",
-    "2026-05-07 15:30",
+    "2026-05-07 15:48",
+    "2026-05-07 15:50",
     "Session Intro",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 15:30",
-    "2026-05-07 16:30",
+    "2026-05-07 15:50",
+    "2026-05-07 16:50",
     "Keynote",
     "Voices in the Code: A Story about People, Their Values, and the Algorithm They Made",
     "David Robinson",
     "OpenAI",
     "index.html#keynotes",
     
-    "2026-05-07 16:30",
-    "2026-05-07 16:35",
+    "2026-05-07 16:50",
+    "2026-05-07 16:55",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 16:35",
-    "2026-05-07 16:37",
+    "2026-05-07 16:55",
+    "2026-05-07 16:57",
     "Session Intro",
     "",
     "",
     "",
     "",
     
-    "2026-05-07 16:37",
-    "2026-05-07 16:47",
+    "2026-05-07 16:57",
+    "2026-05-07 17:07",
     "Lightning Talk",
     "Streamlined Access to NHANES Data: Fast, Harmonized, and Reliable",
     "Natalie Neugaard & Amrit Baral",
     "University of Miami",
     "",
     
-    "2026-05-07 16:47",
-    "2026-05-07 16:57",
+    "2026-05-07 17:07",
+    "2026-05-07 17:17",
     "Lightning Talk",
     "Infodengue intramunicipal - An R package under development",
     "Ayrton Gouveia & Thais Riback",
     "Fundação Oswaldo Cruz",
     "",
     
-    "2026-05-07 16:57",
-    "2026-05-07 17:07",
+    "2026-05-07 17:17",
+    "2026-05-07 17:27",
     "Lightning Talk",
     "REDCapDM: Managing REDCap Data",
     "João Carmezim",
     "IGTP",
     "",
 
-    "2026-05-07 17:07",
-    "2026-05-07 17:12",
+    "2026-05-07 17:27",
+    "2026-05-07 17:32",
     "Closing remarks",
     "",
     "TBD",
@@ -724,10 +772,18 @@ gt(schedule_day_4) |>
     column_labels.background.color = "gray85",
     table.width = pct(100)
   ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
+    tab_style(
+        locations = cells_body(rows = t_type == "Break"),
+        style = cell_fill(color = "darkseagreen2", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Questions"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Session Intro"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
+    )
 ```
 
 # Meeting Day 2 
@@ -802,30 +858,38 @@ schedule_day_5 <-
     
     "2026-05-08 13:02",
     "2026-05-08 13:07",
-    "Break",
+    "Questions",
     "",
     "",
     "",
     "",
     
     "2026-05-08 13:07",
-    "2026-05-08 13:09",
+    "2026-05-08 13:12",
+    "Break",
+    "",
+    "",
+    "",
+    "",
+    
+    "2026-05-08 13:12",
+    "2026-05-08 13:14",
     "Session Intro",
     "",
     "",
     "",
     "",
     
-    "2026-05-08 13:09",
-    "2026-05-08 13:29",
+    "2026-05-08 13:14",
+    "2026-05-08 13:34",
     "Regular Talk",
     "blockr: Clinical Data Analysis without Code",
     "Christoph Sax",
     "cynkra / University of Basel",
     "",
     
-    "2026-05-08 13:29",
-    "2026-05-08 13:39",
+    "2026-05-08 13:34",
+    "2026-05-08 13:44",
     "Lightning Talk",
     "sumExtras: Streamlining Table Workflows in Clinical Research with R
 ",
@@ -833,8 +897,8 @@ schedule_day_5 <-
     "University of Miami",
     "",
 
-    "2026-05-08 13:39",
-    "2026-05-08 13:49",
+    "2026-05-08 13:44",
+    "2026-05-08 13:54",
     "Lightning Talk",
     "An R-Based Pipeline for Resource-Optimized Participant Selection in High-Cost Clinical Research
 ",
@@ -842,160 +906,192 @@ schedule_day_5 <-
     "Johns Hopkins University",
     "",
 
-    "2026-05-08 13:49",
     "2026-05-08 13:54",
+    "2026-05-08 13:59",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+
+    "2026-05-08 13:59",
+    "2026-05-08 14:04",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-08 13:54",
-    "2026-05-08 13:56",
+    "2026-05-08 14:04",
+    "2026-05-08 14:06",
     "Session Intro",
     "",
     "",
     "",
     "",
 
-    "2026-05-08 13:56",
-    "2026-05-08 14:16",
+    "2026-05-08 14:06",
+    "2026-05-08 14:26",
     "Regular Talk",
     "medicalcoder: A Unified and Longitudinally Aware Framework for ICD-Based Comorbidity Assessment in R",
     "Peter DeWitt",
     "University of Colorado Anschutz",
     "",
 
-    "2026-05-08 14:16",
     "2026-05-08 14:26",
+    "2026-05-08 14:36",
     "Lightning Talk",
     "Modeling Fall Risk with Staged Trees and Expert Judgement",
     "Rachel Wilkerson & Anika Dachiraju",
     "Baylor University",
     "",
 
-    "2026-05-08 14:26",
     "2026-05-08 14:36",
+    "2026-05-08 14:46",
     "Lightning Talk",
     "Using ggregions for building intuitive coding interfaces for anatomical visualizations",
     "Evangeline (Gina) Reynolds",
     "Consultant",
     "",
 
-    "2026-05-08 14:36",
-    "2026-05-08 14:41",
+    "2026-05-08 14:46",
+    "2026-05-08 14:51",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+
+    "2026-05-08 14:51",
+    "2026-05-08 14:56",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-08 14:41",
-    "2026-05-08 14:43",
+    "2026-05-08 14:56",
+    "2026-05-08 14:58",
     "Session Intro",
     "",
     "",
     "",
     "",
 
-    "2026-05-08 14:43",
-    "2026-05-08 15:03",
+    "2026-05-08 14:58",
+    "2026-05-08 15:18",
     "Regular Talk",
     "Beyond Sequential: Scaling Existing Medical Pipelines with 'futurize'",
     "Henrik Bengtsson",
     "University of California San Francisco",
     "",
 
-    "2026-05-08 15:03",
-    "2026-05-08 15:13",
+    "2026-05-08 15:18",
+    "2026-05-08 15:28",
     "Lightning Talk",
     "Parallel computing in R to analyze big health data",
     "Ariel Mundo Ortiz",
     "Centre de recherche du CHUM",
     "",
 
-    "2026-05-08 15:13",
-    "2026-05-08 15:23",
+    "2026-05-08 15:28",
+    "2026-05-08 15:38",
     "Lightning Talk",
     "The MBCproject R Package: Enabling reproducible analysis of multi-omic data in metastatic breast cancer",
     "Diana Garcia Cortes",
     "Dana Farber Cancer Institute",
     "",
 
-    "2026-05-08 15:23",
-    "2026-05-08 15:28",
+    "2026-05-08 15:38",
+    "2026-05-08 15:43",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+
+    "2026-05-08 15:43",
+    "2026-05-08 15:48",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-08 15:28",
-    "2026-05-08 15:30",
+    "2026-05-08 15:48",
+    "2026-05-08 15:50",
     "Session Intro",
     "",
     "",
     "",
     "",
 
-    "2026-05-08 15:30",
     "2026-05-08 15:50",
+    "2026-05-08 16:10",
     "Regular Talk",
     "Synthetic by Design: Pairing toysurveydata and NSSP Synthetic Data Generator for Privacy-Safe Public Health Training and Development",
     "Abigail Stamm & Eric Kvale",
     "Minnesota Department of Health",
     "",
 
-    "2026-05-08 15:50",
-    "2026-05-08 16:00",
+    "2026-05-08 16:10",
+    "2026-05-08 16:20",
     "Lightning Talk",
     "DIVINE: Curated Datasets and Tools for Medical Data",
     "Natàlia Pallarès & João Carmezim",
     "IDIBAPS/IGTP",
     "",
 
-    "2026-05-08 16:00",
-    "2026-05-08 16:10",
+    "2026-05-08 16:20",
+    "2026-05-08 16:30",
     "Lightning Talk",
     "Preventing Data Leakage in Clinical Machine Learning: Guarded Resampling Workflows with fastml in R",
     "Fikret Bartu Yurdacan",
     "Trakya University",
     "",
 
-    "2026-05-08 16:10",
-    "2026-05-08 16:15",
+    "2026-05-08 16:30",
+    "2026-05-08 16:35",
+    "Questions",
+    "",
+    "",
+    "",
+    "",
+
+    "2026-05-08 16:35",
+    "2026-05-08 16:40",
     "Break",
     "",
     "",
     "",
     "",
     
-    "2026-05-08 16:15",
-    "2026-05-08 16:17",
+    "2026-05-08 16:40",
+    "2026-05-08 16:42",
     "Session Intro",
     "",
     "",
     "",
     "",
 
-    "2026-05-08 16:17",
-    "2026-05-08 16:37",
+    "2026-05-08 16:42",
+    "2026-05-08 17:02",
     "Regular Talk",
     "When Quant Meets Qual: Extending the R Ecosystem for Qualitative Data",
     "Abiraahmi Shankar",
     "New York University",
     "",
 
-    "2026-05-08 16:37",
-    "2026-05-08 16:57",
+    "2026-05-08 17:02",
+    "2026-05-08 17:22",
     "Regular Talk",
     "Rapid and comprehensive power analysis in R, with a focus on planned error control for multiple outcomes",
     "Kristen Hunter & Luke Miratrix",
     "University of New South Wales",
     "",
 
-    "2026-05-08 16:57",
-    "2026-05-08 17:02",
+    "2026-05-08 17:22",
+    "2026-05-08 17:27",
     "Closing Remarks",
     "",
     "TBD",
@@ -1040,8 +1136,16 @@ gt(schedule_day_5) |>
     column_labels.background.color = "gray85",
     table.width = pct(100)
   ) |>
-  tab_style(
-    locations = cells_body(rows = t_type == "Break"),
-    style = cell_fill(color = "bisque")
-  )
+    tab_style(
+        locations = cells_body(rows = t_type == "Break"),
+        style = cell_fill(color = "darkseagreen2", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Questions"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
+    ) |>
+    tab_style(
+        locations = cells_body(rows = t_type == "Session Intro"),
+        style = cell_fill(color = "darkseagreen3", alpha = 0.5)
+    )
 ```
