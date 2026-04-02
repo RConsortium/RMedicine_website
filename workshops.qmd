@@ -188,7 +188,10 @@ PANEL
 [Raymond Balise](INFO HERE){target="_blank"}, [Richard Hanna](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, others
 :::
 ::: {.workshop-desc}
-COMING SOON
+REDCap has become a cornerstone platform for clinical and translational research, supporting secure data capture for thousands of studies worldwide. As research teams increasingly adopt reproducible, code-driven workflows, R has emerged as a powerful solution for accessing, transforming, and analyzing REDCap data.
+Several R packages have been developed to interface with REDCap, each offering distinct approaches to authentication, data retrieval, data transformation, and integration with modern data science workflows. Widely used tools such as [REDCapR](https://ouhscbbmc.github.io/REDCapR/), [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/), [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/), [REDCapSync](https://thecodingdocs.github.io/REDCapSync/), and [RosyREDCap](https://thecodingdocs.github.io/RosyREDCap/) provide alternative strategies for importing REDCap data into R and preparing it for analysis. While these packages share common goals, they differ in philosophy, functionality, and design decisions that influence how researchers might structure their data pipelines.
+This panel brings together the developers of these packages to explore the evolving REDCap and R landscape. Panelists will discuss the motivations behind their tools, highlight strengths and trade-offs between approaches, and share perspectives on best practices for reproducible REDCap data workflows. The discussion will also address common challenges faced by researchers working with REDCap data and opportunities for collaboration. 
+Audience participation will be encouraged throughout the session and attendees will be invited to share their experiences, identify gaps in existing tooling, and suggest new features that could improve REDCap and R integration.
 :::
 ::: {.workshop-links}
 [Pre-workshop setup](info here.)
