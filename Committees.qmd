@@ -31,7 +31,6 @@ title: "Committees for R/Medicine 2026"
 ::: {.column width="45%"}
 ## Program Committee
 
--   Emily Zabor, Cleveland Clinic
 -   Steven Schwager, Cornell University
 -   Ben Gerber, UMass
 -   Beth Atkinson, Mayo Clinic
