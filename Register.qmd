@@ -28,12 +28,14 @@ Tell us why you need one of the limited number of complimentary registrations. L
 
 **Scholarship award notification:** Friday, April 10th, 2026
 
-<button class="btn btn-primary"
+**Scholarship applications now closed**
 
-style = "background-color: #009473"
+<!-- <button class="btn btn-primary" -->
 
-onclick="window.location.href='https://forms.gle/kBWL6PfsrguDxWkx5'">
+<!-- style = "background-color: #009473" -->
 
-  **Apply for scholarship**
+<!-- onclick="window.location.href='https://forms.gle/kBWL6PfsrguDxWkx5'"> -->
 
-</button>
+<!--   **Apply for scholarship** -->
+
+<!-- </button> -->
