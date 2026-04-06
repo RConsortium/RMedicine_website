@@ -743,7 +743,7 @@ schedule_day_4 <-
 ```{r}
 # Create a table for the day of events
 gt(schedule_day_4) |>
-  tab_header(title = md("<br>Meeting Day 1<br>Thursday, June 12, 2025<br><br>")) |> # <- insert the date
+  tab_header(title = md("<br>Meeting Day 1<br>Thursday, May 7, 2026<br><br>")) |> # <- insert the date
   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
   fmt_duration(
     columns = duration,
@@ -1107,7 +1107,7 @@ schedule_day_5 <-
 ```{r}
 # Create a table for the day of events
 gt(schedule_day_5) |>
-  tab_header(title = md("<br>Meeting Day 2<br>Friday, June 13, 2025<br><br>")) |> # <- insert the date
+  tab_header(title = md("<br>Meeting Day 2<br>Friday, May 8, 2026<br><br>")) |> # <- insert the date
   fmt_time(columns = c(start_time, end_time), time_style = "h_m_p") |>
   fmt_duration(
     columns = duration,
