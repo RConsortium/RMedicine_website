@@ -87,7 +87,15 @@ For **advanced contributors** ready to tackle more substantial work. Participant
 
 ## Recommended Preparation
 
-To get the most out of the hackathon, we strongly recommend attending the following workshop offered during R/Medicine 2026:
+To get the most out of the hackathon, we strongly recommend attending the following workshop offered prior to the hackathon.
+
+<button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href='https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html'">
+
+**Register for the workshop here**
+
+</button>
+
+<br>
 
 ::: {.workshop-card}
 ::: {.card-left}
@@ -117,7 +125,7 @@ We will start with creating branches and pull requests within your own repositor
 By the end of the workshop, you will be able to fork a repository, make changes in a local branch, and submit a pull request to the original project for maintainer review.
 :::
 ::: {.workshop-links}
-[Full workshop details coming soon]()
+[Register here](https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html)
 :::
 :::
 :::
