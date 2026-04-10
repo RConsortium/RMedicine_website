@@ -89,9 +89,7 @@ For **advanced contributors** ready to tackle more substantial work. Participant
 
 To get the most out of the hackathon, we strongly recommend attending the following workshop offered prior to the hackathon.
 
-<button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href='https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html'">
-
-**Register for the workshop here**
+The video of this workshop is available [here](https://www.youtube.com/watch?v=1cIpyi8oX10&list=PL4IzsxWztPdncdf8q6TBT6xT2imoqurxX).
 
 </button>
 
@@ -124,9 +122,9 @@ We will start with creating branches and pull requests within your own repositor
 
 By the end of the workshop, you will be able to fork a repository, make changes in a local branch, and submit a pull request to the original project for maintainer review.
 :::
-::: {.workshop-links}
-[Register here](https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html)
-:::
+<!-- ::: {.workshop-links} -->
+<!-- [Register here](https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html) -->
+<!-- ::: -->
 :::
 :::
 
