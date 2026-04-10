@@ -738,8 +738,8 @@ schedule_day_4 <-
     "2026-05-07 17:37",
     "Closing remarks",
     "",
-    "TBD",
-    "",
+    "Beth Atkinson",
+    "Mayo Clinic",
     ""
   ) |>
   dplyr::mutate(
@@ -1110,8 +1110,8 @@ schedule_day_5 <-
     "2026-05-08 17:32",
     "Closing Remarks",
     "",
-    "TBD",
-    "",
+    "Ray Balise",
+    "University of Miami",
     ""
   ) |>
   dplyr::mutate(
