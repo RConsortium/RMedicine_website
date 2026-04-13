@@ -15,7 +15,7 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Richard Hanna](INFO HERE){target="_blank"}
+[Richard Hanna](https://www.linkedin.com/in/richard-hanna-ms-0164162a/){target="_blank"}
 :::
 ::: {.workshop-desc}
 A gentle introduction to R and data science for healthcare professionals and clinical researchers.
@@ -206,7 +206,7 @@ Audience participation will be encouraged throughout the session and attendees w
 ::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
-WORKSHOP
+DEMO
 :::
 ::: {.speaker-imgs}
 ![](images/w4-charlotte-wickham.jpg)
@@ -226,12 +226,89 @@ Come see practical strategies for producing Quarto documents that meet organizat
 :::
 :::
 
+## TealFlow Demo {#tealflow}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+DEMO
+:::
+::: {.speaker-imgs}
+![](images/demo-marcin-dubel.png)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Marcin Dubel ](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Building clinical trial applications with {teal} is powerful but comes with a steep learning curve. In this demo, we'll show why current AI approaches still fall short. They lack the domain context needed and produce frequent errors, even with top models. We'll then walk through TealFlow, our open-source solution that tackles this from two angles: a web-based chat interface designed for non-coders to assemble {teal} dashboards, and TealFlow MCP, a developer tool that plugs into VS Code, Positron, or RStudio to augment your existing workflow. We'll wrap up with our roadmap and ways for the community to contribute.
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](https://github.com/Appsilon/tealflow-demo )
+:::
+:::
+:::
+
+## Mapping in R {#mapping}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+DEMO
+:::
+::: {.speaker-imgs}
+![](images/demo-anjile.jpg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Anjile An](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Data comes in many forms, but the spatial components can be overlooked. You’ll get some history of mapping and learn the basic building blocks of spatial data.  The demo portion will go over how to use the trusty {ggplot2} as well as some new tools like {sf} and {tmap} to plot different types of spatial data. 
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](INFO HERE)
+:::
+:::
+:::
+
+
+
+## Parameterized Reports {#parameterized-reports}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+DEMO
+:::
+::: {.speaker-imgs}
+![](images/demo-nicola.jpg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Nicola Rennie](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code. This workshop is for you if you make similar PDF reports every month, or you want to create the same plot for different subsets of your data, or you just want some {ggplot2} and Quarto tips!
+:::
+::: {.workshop-links}
+[Demo GitHub repo](https://github.com/nrennie/r-medicine-2026-parameterized-reports)
+:::
+:::
+:::
+
 ## Ctrialsgov R Package {#ctrialsgov}
 
 ::: {.workshop-card}
 ::: {.card-left}
 ::: {.card-badge-top}
-WORKSHOP
+DEMO
 :::
 ::: {.speaker-imgs}
 ![](images/test-img.png)
@@ -250,3 +327,4 @@ COMING SOON
 :::
 :::
 :::
+
