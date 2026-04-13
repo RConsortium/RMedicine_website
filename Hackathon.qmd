@@ -31,6 +31,8 @@ onclick="window.location.href='https://forms.gle/9BMTU5jDxTpWhVuW6'">
 
 *All times are in Eastern Time (ET).*
 
+Prior to the hackathon kickoff, please review the [prerequisites document](https://drive.google.com/file/d/1mv71Ug29zpbBeJ5bm_Slt61Xkvq2FEQV/view?usp=sharing).
+
 
 ::: {.callout-tip}
 ## Focus: the teal Package
