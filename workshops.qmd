@@ -15,7 +15,7 @@ WORKSHOP
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Richard Hanna](INFO HERE){target="_blank"}
+[Richard Hanna](https://www.linkedin.com/in/richard-hanna-ms-0164162a/){target="_blank"}
 :::
 ::: {.workshop-desc}
 A gentle introduction to R and data science for healthcare professionals and clinical researchers.
