@@ -514,8 +514,7 @@ schedule_day_4 <-
     "Bridging the Gap Between Spreadsheets and Shiny: Interactive Clinical Data Entry with esq.handsontable",
     "Anastasiia Kostiv",
     "ESQlabs",
-    # "abstracts.html#retrospective-clinical-date-harmonisation-reporting",
-    "",
+    "Abstracts.html#bridging-the-gap-between-spreadsheets-and-shiny-interactive-",
     
     "2026-05-07 12:42",
     "2026-05-07 13:02",
@@ -523,7 +522,7 @@ schedule_day_4 <-
     "MetaInsight v7: A Comprehensive and Reproducible Shiny App for Network Meta-analysis",
     "Simon Smart",
     "University of Leicester",
-    "",
+    "Abstracts.html#metainsight-v7-a-comprehensive-and-reproducible-shiny-app-fo",
     
     "2026-05-07 13:02",
     "2026-05-07 13:07",
@@ -552,10 +551,10 @@ schedule_day_4 <-
     "2026-05-07 13:14",
     "2026-05-07 13:34",
     "Regular Talk",
-    "NIH: Not Invented Here: balancing unique software needs vs out-of-box (almost) perfect generic solution. Teal “module-first” as a case study.",
+    "NIH: Not Invented Here: balancing unique software needs vs out-of-box (almost) perfect generic solution. Teal 'module-first' as a case study.",
     "Dror Berel",
     "Consultant",
-    "",
+    "Abstracts.html#nih-not-invented-here-balancing-unique-software-needs-vs-out",
     
     "2026-05-07 13:34",
     "2026-05-07 13:44",
@@ -563,7 +562,7 @@ schedule_day_4 <-
     "CougarStats: An Interactive R-Based Platform for Applied Health Data Science",
     "Ashok Krishnamurthy & Darren Law Yan Lun",
     "Mount Royal University",
-    "",
+    "Abstracts.html#cougarstats-an-interactive-r-based-platform-for-applied-heal",
     
     "2026-05-07 13:44",
     "2026-05-07 13:54",
@@ -571,7 +570,7 @@ schedule_day_4 <-
     "Toggling Between Traditional and Chat-Based Data Filters in Shiny",
     "Alex Zajichek",
     "Cleveland Clinic",
-    "",
+    "Abstracts.html#toggling-between-traditional-and-chat-based-data-filters-in-",
     
     "2026-05-07 13:54",
     "2026-05-07 13:59",
@@ -603,7 +602,7 @@ schedule_day_4 <-
     "From Prompt to Proof: Governing LLM Intelligence in Pharma with Snowflake and Shiny",
     "Tanya Cashorali",
     "TCB Analytics",
-    "",
+    "Abstracts.html#from-prompt-to-proof-governing-llm-intelligence-in-pharma-wi",
     
     "2026-05-07 14:26",
     "2026-05-07 14:36",
@@ -611,7 +610,7 @@ schedule_day_4 <-
     "Report Agent: An LLM-Powered Framework for Automated Shell-to-Code Report Generation",
     "Lucie Zhang",
     "Genentech",
-    "",
+    "Abstracts.html#report-agent-an-llm-powered-framework-for-automated-shell-to",
     
     "2026-05-07 14:36",
     "2026-05-07 14:46",
@@ -619,7 +618,7 @@ schedule_day_4 <-
     "AI-Assisted Authoring of an Open-Access Portuguese Biostatistics Book in Quarto and R",
     "Audrei Pavanello & Leonardo Pestillo de Oliveira",
     "Cesumar Institute of Science, Technology and Innovation",
-    "",
+    "Abstracts.html#ai-assisted-authoring-of-an-open-access-portuguese-biostatis",
     
     "2026-05-07 14:46",
     "2026-05-07 14:51",
@@ -651,7 +650,7 @@ schedule_day_4 <-
     "Supercharging Reproducible Research in R with GitHub Actions",
     "Jonathan Pearce",
     "McGill University",
-    "",
+    "Abstracts.html#supercharging-reproducible-research-in-r-with-github-actions",
     
     "2026-05-07 15:18",
     "2026-05-07 15:38",
@@ -659,7 +658,7 @@ schedule_day_4 <-
     "Care and Feeding of Your Biostats Team: Scaling best practices in a large hybrid SAS/R team",
     "John Ehrlinger",
     "Cleveland Clinic",
-    "",
+    "Abstracts.html#care-and-feeding-of-your-biostats-team-scaling-best-practice",
     
     "2026-05-07 15:38",
     "2026-05-07 15:43",
@@ -715,7 +714,7 @@ schedule_day_4 <-
     "Streamlined Access to NHANES Data: Fast, Harmonized, and Reliable",
     "Natalie Neugaard & Amrit Baral",
     "University of Miami",
-    "",
+    "Abstracts.html#streamlined-access-to-nhanes-data-fast-harmonized-and-reliab",
     
     "2026-05-07 17:07",
     "2026-05-07 17:17",
@@ -723,7 +722,7 @@ schedule_day_4 <-
     "Infodengue intramunicipal - An R package under development",
     "Ayrton Gouveia & Thais Riback",
     "Fundação Oswaldo Cruz",
-    "",
+    "Abstracts.html#infodengue-intramunicipal-an-r-package-under-development",
     
     "2026-05-07 17:17",
     "2026-05-07 17:27",
@@ -731,7 +730,7 @@ schedule_day_4 <-
     "REDCapDM: Managing REDCap Data",
     "João Carmezim",
     "IGTP",
-    "",
+    "Abstracts.html#redcapdm-managing-redcap-data",
     
     "2026-05-07 17:27",
     "2026-05-07 17:32",
@@ -853,7 +852,7 @@ schedule_day_5 <-
     "bulkreadr: Fast, Reproducible Bulk Data Import for R-Based Research Workflows",
     "Ezekiel Ogundepo",
     "African Institute for Mathematical Sciences",
-    "",
+    "Abstracts.html#bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res",
     
     "2026-05-08 12:42",
     "2026-05-08 12:52",
@@ -861,7 +860,7 @@ schedule_day_5 <-
     "From Chaos to Consistency: Building a Long‑Lasting Polish Arthroplasty Registry Data Pipeline",
     "Dominik Żabiński",
     "Gruca Orthopaedic and Trauma Teaching Hospital",
-    "",
+    "Abstracts.html#from-chaos-to-consistency-building-a-long-lasting-polish-art",
     
     "2026-05-08 12:52",
     "2026-05-08 13:02",
@@ -869,7 +868,7 @@ schedule_day_5 <-
     "Encapsulated Test Coverage: test.assessr – a package for R unit testing",
     "Edward Gillian",
     "Sanofi",
-    "",
+    "Abstracts.html#encapsulated-test-coverage-testassessr-a-package-for-r-unit-",
     
     "2026-05-08 13:02",
     "2026-05-08 13:07",
@@ -901,7 +900,7 @@ schedule_day_5 <-
     "blockr: Clinical Data Analysis without Code",
     "Christoph Sax",
     "cynkra / University of Basel",
-    "",
+    "Abstracts.html#blockr-clinical-data-analysis-without-code",
     
     "2026-05-08 13:34",
     "2026-05-08 13:44",
@@ -910,7 +909,7 @@ schedule_day_5 <-
 ",
     "Kyle Grealis",
     "University of Miami",
-    "",
+    "Abstracts.html#sumextras-streamlining-table-workflows-in-clinical-research-",
 
     "2026-05-08 13:44",
     "2026-05-08 13:54",
@@ -919,7 +918,7 @@ schedule_day_5 <-
 ",
     "Aparna Bhattacharyya",
     "Johns Hopkins University",
-    "",
+    "Abstracts.html#an-r-based-pipeline-for-resource-optimized-participant-selec",
 
     "2026-05-08 13:54",
     "2026-05-08 13:59",
@@ -951,7 +950,7 @@ schedule_day_5 <-
     "medicalcoder: A Unified and Longitudinally Aware Framework for ICD-Based Comorbidity Assessment in R",
     "Peter DeWitt",
     "University of Colorado Anschutz",
-    "",
+    "Abstracts.html#medicalcoder-a-unified-and-longitudinally-aware-framework-fo",
 
     "2026-05-08 14:26",
     "2026-05-08 14:36",
@@ -959,7 +958,7 @@ schedule_day_5 <-
     "Modeling Fall Risk with Staged Trees and Expert Judgement",
     "Rachel Wilkerson & Anika Dachiraju",
     "Baylor University",
-    "",
+    "Abstracts.html#modeling-fall-risk-with-staged-trees-and-expert-judgement",
 
     "2026-05-08 14:36",
     "2026-05-08 14:46",
@@ -967,7 +966,7 @@ schedule_day_5 <-
     "Using ggregions for building intuitive coding interfaces for anatomical visualizations",
     "Evangeline (Gina) Reynolds",
     "Consultant",
-    "",
+    "Abstracts.html#using-ggregions-for-building-intuitive-coding-interfaces-for",
 
     "2026-05-08 14:46",
     "2026-05-08 14:51",
@@ -999,7 +998,7 @@ schedule_day_5 <-
     "Beyond Sequential: Scaling Existing Medical Pipelines with 'futurize'",
     "Henrik Bengtsson",
     "University of California San Francisco",
-    "",
+    "Abstracts.html#beyond-sequential-scaling-existing-medical-pipelines-with-fu",
 
     "2026-05-08 15:18",
     "2026-05-08 15:28",
@@ -1007,7 +1006,7 @@ schedule_day_5 <-
     "Parallel computing in R to analyze big health data",
     "Ariel Mundo Ortiz",
     "Centre de recherche du CHUM",
-    "",
+    "Abstracts.html#parallel-computing-in-r-to-analyze-big-health-data",
 
     "2026-05-08 15:28",
     "2026-05-08 15:38",
@@ -1015,7 +1014,7 @@ schedule_day_5 <-
     "The MBCproject R Package: Enabling reproducible analysis of multi-omic data in metastatic breast cancer",
     "Diana Garcia Cortes",
     "Dana Farber Cancer Institute",
-    "",
+    "Abstracts.html#the-mbcproject-r-package-enabling-reproducible-analysis-of-m",
 
     "2026-05-08 15:38",
     "2026-05-08 15:43",
@@ -1047,7 +1046,7 @@ schedule_day_5 <-
     "Synthetic by Design: Pairing toysurveydata and NSSP Synthetic Data Generator for Privacy-Safe Public Health Training and Development",
     "Abigail Stamm & Eric Kvale",
     "Minnesota Department of Health",
-    "",
+    "Abstracts.html#synthetic-by-design-pairing-toysurveydata-and-nssp-synthetic",
 
     "2026-05-08 16:10",
     "2026-05-08 16:20",
@@ -1055,7 +1054,7 @@ schedule_day_5 <-
     "DIVINE: Curated Datasets and Tools for Medical Data",
     "Natàlia Pallarès & João Carmezim",
     "IDIBAPS/IGTP",
-    "",
+    "Abstracts.html#divine-curated-datasets-and-tools-for-medical-data",
 
     "2026-05-08 16:20",
     "2026-05-08 16:30",
@@ -1063,7 +1062,7 @@ schedule_day_5 <-
     "Preventing Data Leakage in Clinical Machine Learning: Guarded Resampling Workflows with fastml in R",
     "Fikret Bartu Yurdacan",
     "Trakya University",
-    "",
+    "Abstracts.html#preventing-data-leakage-in-clinical-machine-learning-guarded",
 
     "2026-05-08 16:30",
     "2026-05-08 16:35",
@@ -1095,7 +1094,7 @@ schedule_day_5 <-
     "When Quant Meets Qual: Extending the R Ecosystem for Qualitative Data",
     "Abiraahmi Shankar",
     "New York University",
-    "",
+    "Abstracts.html#when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat",
 
     "2026-05-08 17:02",
     "2026-05-08 17:22",
@@ -1103,7 +1102,7 @@ schedule_day_5 <-
     "Rapid and comprehensive power analysis in R, with a focus on planned error control for multiple outcomes",
     "Kristen Hunter & Luke Miratrix",
     "University of New South Wales",
-    "",
+    "Abstracts.html#rapid-and-comprehensive-power-analysis-in-r-with-a-focus-on-",
 
     "2026-05-08 17:22",
     "2026-05-08 17:27",
