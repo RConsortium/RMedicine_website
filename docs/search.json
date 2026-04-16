@@ -21,8 +21,8 @@
     "text": "Abstracts are listed by day. Click a talk title on the Program page to jump directly to its abstract."
   },
   {
-    "objectID": "Abstracts.html#you-should-probably-map-that-introduction-to-geospatial-anal",
-    "href": "Abstracts.html#you-should-probably-map-that-introduction-to-geospatial-anal",
+    "objectID": "Abstracts.html#you-should-probably-map-that-introduction-to-geospatial",
+    "href": "Abstracts.html#you-should-probably-map-that-introduction-to-geospatial",
     "title": "R/Medicine Abstracts",
     "section": "You Should Probably Map That: Introduction to Geospatial Analysis in R",
     "text": "You Should Probably Map That: Introduction to Geospatial Analysis in R\nAnjile An | Weill Cornell Medical College\nDemo — Tuesday, May 5, 2026\nMaps can simplify huge amounts of data in an elegant way, and it doesn’t have to be complicated. Join me as I nerd out about why maps are important and how they can be used in your work. We’ll join tabular data and make maps using familiar {ggplot2} commands and also explore mapping with shapefile data (the standard for geospatial specific software like ArcGIS) using {sf} and {tmap}."
@@ -95,7 +95,7 @@
     "href": "Abstracts.html#software-sustainability-and-community-management",
     "title": "R/Medicine Abstracts",
     "section": "Software sustainability and community management",
-    "text": "Software sustainability and community management\nYanini Bellini | rOpenSci\nKeynote — Thursday, May 7, 2026\nAbstract coming soon."
+    "text": "Software sustainability and community management\nYanini Bellini | rOpenSci\nKeynote — Thursday, May 7, 2026\nSustainable software depends as much on people and practices as it does on code. In this talk, I’ll draw on my experience leading and supporting R communities to show how intentional community management contributes to long-term software sustainability. Using concrete examples, I’ll highlight how communities of practice help distribute maintenance, grow skills, and support inclusive, resilient software ecosystems across research and open source."
   },
   {
     "objectID": "Abstracts.html#bridging-the-gap-between-spreadsheets-and-shiny-interactive-",
@@ -172,7 +172,7 @@
     "href": "Abstracts.html#voices-in-the-code-a-story-about-people-their-values-and-the",
     "title": "R/Medicine Abstracts",
     "section": "Voices in the Code: A Story about People, Their Values, and the Algorithm They Made",
-    "text": "Voices in the Code: A Story about People, Their Values, and the Algorithm They Made\nDavid Robinson | OpenAI\nKeynote — Thursday, May 7, 2026\nAbstract coming soon."
+    "text": "Voices in the Code: A Story about People, Their Values, and the Algorithm They Made\nDavid Robinson | OpenAI\nKeynote — Thursday, May 7, 2026\nToday policymakers and scholars are seeking better ways to share the moral decisionmaking within high stakes software — exploring ideas like public participation, transparency, forecasting, and algorithmic audits. But there are few real examples of those techniques in use. In Voices in the Code, scholar David G. Robinson tells the story of how one community built a life-and-death algorithm in a relatively inclusive, accountable way. Between 2004 and 2014, a diverse group of patients, surgeons, clinicians, data scientists, public officials and advocates collaborated and compromised to build a new transplant matching algorithm – a system to offer donated kidneys to particular patients from the U.S. national waiting list."
   },
   {
     "objectID": "Abstracts.html#streamlined-access-to-nhanes-data-fast-harmonized-and-reliab",
@@ -200,7 +200,7 @@
     "href": "Abstracts.html#the-truth-seekers-learning-how-to-assess-generative-ai-from-",
     "title": "R/Medicine Abstracts",
     "section": "The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics",
-    "text": "The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics\nPeter Gruber | USI Università della Svizzera italiana\nKeynote — Friday, May 8, 2026\nAbstract coming soon."
+    "text": "The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics\nPeter Gruber | USI Università della Svizzera italiana\nKeynote — Friday, May 8, 2026\nPeter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008.\nDr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis."
   },
   {
     "objectID": "Abstracts.html#bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res",
