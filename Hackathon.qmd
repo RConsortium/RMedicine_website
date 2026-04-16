@@ -5,6 +5,11 @@ We are excited to host a **Pharmaverse Hackathon** as part of R/Medicine 2026! T
 
 Whether you're new to open source or a seasoned contributor, there's a track for you.
 
+::: {.callout-tip}
+## Focus: the teal Package
+This hackathon will focus specifically on the [teal](https://insightsengineering.github.io/teal/latest-tag/){target="_blank"} package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and **two of the package's developers will be present** throughout the event to guide and support participants.
+:::
+
 Use the link below to sign up for the hackathon. You will then receive a Zoom link to join. 
 
 
@@ -17,6 +22,7 @@ onclick="window.location.href='https://zoom.us/meeting/register/Xd8TldoLS12ETPBV
   **SIGN UP FOR THE HACKATHON**
 
 </button>
+
 
 *Please note that R/Medicine conference registration is required in order to participate in the hackathon. Register for the conference [here](Register.html).*
 
@@ -31,13 +37,17 @@ onclick="window.location.href='https://zoom.us/meeting/register/Xd8TldoLS12ETPBV
 
 *All times are in Eastern Time (ET).*
 
-Prior to the hackathon kickoff, please review the [prerequisites document](https://drive.google.com/file/d/1mv71Ug29zpbBeJ5bm_Slt61Xkvq2FEQV/view?usp=sharing).
 
+## Suggested preparation
 
-::: {.callout-tip}
-## Focus: the teal Package
-This hackathon will focus specifically on the [teal](https://insightsengineering.github.io/teal/latest-tag/){target="_blank"} package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and **two of the package's developers will be present** throughout the event to guide and support participants.
-:::
+* Review the [hackathon prerequisites document](https://drive.google.com/file/d/1mv71Ug29zpbBeJ5bm_Slt61Xkvq2FEQV/view?usp=sharing).
+
+* Recording of Dony Unardi's workshop from R/Medicine 2025 on the [teal package](https://insightsengineering.github.io/teal/latest-tag/)
+
+* Recording of Daniel Chen's workshop, [Make your first R open source project contribution with Git, forks, and PRs](https://www.youtube.com/watch?v=1cIpyi8oX10&list=PL4IzsxWztPdncdf8q6TBT6xT2imoqurxX).
+ 
+* Recording of the hackathon [kickoff meeting](https://youtu.be/RQFcj-X_79s) and the [presented slides](/files/R_Medicine teal Hackathon APR 2026.pdf)
+
 
 ## Meet the Developers
 
@@ -87,11 +97,9 @@ Ideal for **newcomers** to open-source contribution. You'll work on beginner-fri
 
 For **advanced contributors** ready to tackle more substantial work. Participants in this track will work in pairs or mini-teams on feature-level issues that require deeper understanding of package architecture and R programming.
 
-## Recommended Preparation
+## Pre-hackathon workshop
 
 To get the most out of the hackathon, we strongly recommend attending the following workshop offered prior to the hackathon.
-
-The video of this workshop is available [here](https://www.youtube.com/watch?v=1cIpyi8oX10&list=PL4IzsxWztPdncdf8q6TBT6xT2imoqurxX).
 
 </button>
 
@@ -130,7 +138,7 @@ By the end of the workshop, you will be able to fork a repository, make changes 
 :::
 :::
 
-Additionally, review the recording of **Dony Unardi's** workshop from R/Medicine 2025 on the [teal package](https://insightsengineering.github.io/teal/latest-tag/){target="_blank"}: *"https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/"*, which covers one of the key pharmaverse packages.
+
 
 ## What to Expect
 
