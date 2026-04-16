@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>hackathon – R/Medicine 2026</title>
+<title>r101-prework – R/Medicine 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Workshops</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Hackathon.html" aria-current="page"> 
+    <a class="nav-link" href="./Hackathon.html"> 
 <span class="menu-text">Hackathon</span></a>
   </li>  
   <li class="nav-item">
@@ -148,24 +148,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-the-hackathon" id="toc-about-the-hackathon" class="nav-link active" data-scroll-target="#about-the-hackathon">About the Hackathon</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#meet-the-developers" id="toc-meet-the-developers" class="nav-link" data-scroll-target="#meet-the-developers">Meet the Developers</a></li>
-  <li><a href="#tracks" id="toc-tracks" class="nav-link" data-scroll-target="#tracks">Tracks</a>
-  <ul class="collapse">
-  <li><a href="#track-a-good-first-issues" id="toc-track-a-good-first-issues" class="nav-link" data-scroll-target="#track-a-good-first-issues">Track A: Good First Issues</a></li>
-  <li><a href="#track-b-feature-level-issues" id="toc-track-b-feature-level-issues" class="nav-link" data-scroll-target="#track-b-feature-level-issues">Track B: Feature-Level Issues</a></li>
-  </ul></li>
-  <li><a href="#recommended-preparation" id="toc-recommended-preparation" class="nav-link" data-scroll-target="#recommended-preparation">Recommended Preparation</a></li>
-  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link" data-scroll-target="#what-to-expect">What to Expect</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -173,155 +157,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="about-the-hackathon" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-hackathon">About the Hackathon</h2>
-<p>We are excited to host a <strong>Pharmaverse Hackathon</strong> as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the <a href="https://pharmaverse.org/" target="_blank">pharmaverse</a> ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.</p>
-<p>Whether you’re new to open source or a seasoned contributor, there’s a track for you.</p>
-<p>Use the link below to sign up for the hackathon. You will then receive a Zoom link to join.</p>
-<button class="btn btn-primary" style="background-color: #009473" onclick="window.location.href='https://zoom.us/meeting/register/Xd8TldoLS12ETPBVRcYY6w'">
-<p><strong>SIGN UP FOR THE HACKATHON</strong></p>
-</button>
-<p><em>Please note that R/Medicine conference registration is required in order to participate in the hackathon. Register for the conference <a href="Register.html">here</a>.</em></p>
-</section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 29%">
-<col style="width: 25%">
-<col style="width: 45%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Event</th>
-<th>Date</th>
-<th>Time (ET)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Daniel Chen’s Workshop</strong></td>
-<td>Wednesday, April 8th</td>
-<td>11:00 AM – 1:00 PM</td>
-</tr>
-<tr class="even">
-<td><strong>Hackathon Kickoff</strong></td>
-<td>Thursday, April 16th</td>
-<td>11:00 AM – 12:00 PM</td>
-</tr>
-<tr class="odd">
-<td><strong>Hackathon</strong></td>
-<td>Thursday, April 23rd</td>
-<td>11:00 AM – 3:00 PM</td>
-</tr>
-</tbody>
-</table>
-<p><em>All times are in Eastern Time (ET).</em></p>
-<p>Prior to the hackathon kickoff, please review the <a href="https://drive.google.com/file/d/1mv71Ug29zpbBeJ5bm_Slt61Xkvq2FEQV/view?usp=sharing">prerequisites document</a>.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Focus: the teal Package
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This hackathon will focus specifically on the <a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">teal</a> package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and <strong>two of the package’s developers will be present</strong> throughout the event to guide and support participants.</p>
-</div>
-</div>
-</section>
-<section id="meet-the-developers" class="level2">
-<h2 class="anchored" data-anchor-id="meet-the-developers">Meet the Developers</h2>
-<p>Two of the <code>teal</code> package developers will be present throughout the hackathon to guide and support participants.</p>
-<div class="workshop-card">
-<div class="card-left">
-<div class="speaker-imgs">
-<p><img src="images/hackathon_dony_26.png" class="img-fluid"></p>
-</div>
-</div>
-<div class="card-right">
-<div class="workshop-speakers-name">
-<p>Dony Unardi</p>
-</div>
-<div class="workshop-desc">
-<p>Dony Unardi is a Principal Data Scientist and Engineering Team Lead at Roche/Genentech. He leads development of teal, an open-source R framework for interactive clinical trial data exploration. His work focuses on scalable analytical platforms, reproducible computing, and modern software engineering practices that enable data-driven clinical development.</p>
-</div>
-</div>
-</div>
-<div class="workshop-card">
-<div class="card-left">
-<div class="speaker-imgs">
-<p><img src="images/hackathon_peyman_26.png" class="img-fluid"></p>
-</div>
-</div>
-<div class="card-right">
-<div class="workshop-speakers-name">
-<p>Peyman Eshghi</p>
-</div>
-<div class="workshop-desc">
-<p>Peyman Eshghi is a Senior Principal Technical Lead at Johnson &amp; Johnson, with 20 years of experience in R and data science, dedicated to advancing R in regulated industries by promoting robust, reproducible tooling, community collaboration, and best practices in package development and visualization. Peyman specializes in interactive data visualization for pharma and co-leads the PHUSE working group on teal enhancements and cross‑industry adoption.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="tracks" class="level2">
-<h2 class="anchored" data-anchor-id="tracks">Tracks</h2>
-<p>The hackathon follows two tracks to accommodate different experience levels:</p>
-<section id="track-a-good-first-issues" class="level3">
-<h3 class="anchored" data-anchor-id="track-a-good-first-issues">Track A: Good First Issues</h3>
-<p>Ideal for <strong>newcomers</strong> to open-source contribution. You’ll work on beginner-friendly issues that help you get comfortable with the contribution workflow, forking repos, creating branches, opening pull requests, and more.</p>
-</section>
-<section id="track-b-feature-level-issues" class="level3">
-<h3 class="anchored" data-anchor-id="track-b-feature-level-issues">Track B: Feature-Level Issues</h3>
-<p>For <strong>advanced contributors</strong> ready to tackle more substantial work. Participants in this track will work in pairs or mini-teams on feature-level issues that require deeper understanding of package architecture and R programming.</p>
-</section>
-</section>
-<section id="recommended-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-preparation">Recommended Preparation</h2>
-<p>To get the most out of the hackathon, we strongly recommend attending the following workshop offered prior to the hackathon.</p>
-<p>The video of this workshop is available <a href="https://www.youtube.com/watch?v=1cIpyi8oX10&amp;list=PL4IzsxWztPdncdf8q6TBT6xT2imoqurxX">here</a>.</p>
-
-<p><br></p>
-<div class="workshop-card">
-<div class="card-left">
-<div class="card-badge-top">
-<p>WORKSHOP</p>
-</div>
-<div class="speaker-imgs">
-<p><img src="images/hackathon_daniel.jpeg" class="img-fluid"></p>
-</div>
-</div>
-<div class="card-right">
-<div class="workshop-speakers-name">
-<p>Daniel Chen</p>
-</div>
-<div class="workshop-desc">
-<p><strong>Make your first R open source project contribution with Git, forks, and PRs</strong></p>
-<p>Wednesday, April 8th, 11:00 AM – 1:00 PM ET</p>
-<p>Git is a foundational tool for version control in open source collaboration, but contributing to a project involves more than just the basics.</p>
-<p>In this workshop, you will get a brief introduction to Git fundamentals before diving into the workflows used in open source. Contributing as a non-collaborator adds an extra layer of complexity, your work needs to be reviewed, which means understanding pull requests, branching strategies, and working across forks.</p>
-<p>We will start with creating branches and pull requests within your own repositories, then extend these concepts to contributing to external projects using forks. Along the way, you will learn how tools like the {usethis} R package can simplify and streamline this process.</p>
-<p>By the end of the workshop, you will be able to fork a repository, make changes in a local branch, and submit a pull request to the original project for maintainer review.</p>
-</div>
-<!-- ::: {.workshop-links} -->
-<!-- [Register here](https://r-consortium.org/webinars/make-your-first-r-open-source-project-contribution.html) -->
-<!-- ::: -->
-</div>
-</div>
-<p>Additionally, review the recording of <strong>Dony Unardi’s</strong> workshop from R/Medicine 2025 on the <a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">teal package</a>: <em>“https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/”</em>, which covers one of the key pharmaverse packages.</p>
-</section>
-<section id="what-to-expect" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-expect">What to Expect</h2>
-<p>Technical prerequisites, setup instructions, and onboarding materials will be shared during the <strong>Kickoff session</strong> on April 16th and through follow-up communication with registered participants.</p>
-</section>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions?</h2>
-<p>If you have questions about the hackathon, reach out to us via our <a href="Contact.html">Contact page</a>.</p>
+<p>Hello Intro to R for Clinical Data workshop attendees!</p>
+<p>We’re looking forward to working with you! The workshop will be taking place Tuesday, May 5th from 11:00am - 2:00pm EST. See the R/Medicine program for more information related to the conference schedule.</p>
+<p>To help you get the most out of our time together, please take a few minutes beforehand to review the course materials and (light) pre-work:</p>
+<ol type="1">
+<li><p>Course Website Link: https://hannar1.quarto.pub/rmedicine-101-intro-to-r-for-clinical-data/ The course website contains many of the resources and pre-work necessary for following along with the workshop.</p></li>
+<li><p>Posit Cloud (no setup required) Link: https://posit.cloud/content/12136120 Verify you can access the link above after making a Posit Cloud account. Everything is preconfigured, and you can run the workshop directly in your web browser.</p></li>
+<li><p>Local Setup (for those comfortable with R/RStudio and GitHub) Link: https://github.com/rsh52/intro-to-r-for-clinical-data-rmed2026 If you are comfortable with GitHub, you are welcome to clone or fork the repository above and use the RStudio IDE locally on your own machine.</p></li>
+</ol>
+<p>Feel free to reach out with any questions ahead of the conference.</p>
+<p>Looking forward to seeing you there!</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

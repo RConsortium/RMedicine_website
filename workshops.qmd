@@ -23,7 +23,9 @@ A gentle introduction to R and data science for healthcare professionals and cli
 Rich is a Data Science Supervisor with the Cell and Gene Therapy Informatics Team at the Children’s Hospital of Philadelphia. With a background in biomedical and mechanical engineering, Rich specializes in automating clinical research workflows through advanced analytics and machine learning. His work is pivotal in supporting cell therapy research and enhancing patient care in pediatric medicine
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+[Workshop website](https://hannar1.quarto.pub/rmedicine-101-intro-to-r-for-clinical-data/)
+
+[Workshop pre-work](r101-prework.md)
 :::
 :::
 :::
@@ -49,7 +51,7 @@ WORKSHOP
 Este taller ofrece una introducción práctica al uso de R para el análisis de datos en investigación médica y en salud. Está dirigido a profesionales de la salud, investigadores clínicos y estudiantes sin experiencia previa en programación. A lo largo del taller, los participantes aprenderán los conceptos básicos de R, cómo trabajar con bases de datos, realizar análisis descriptivos y generar resultados reproducibles.
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
@@ -79,7 +81,7 @@ In this seminar, attendees will learn about ARDs and how can fit into the larger
 Lastly, we will review how this ecosystem naturally lends itself to Large Language Models (LLMs). Because {gtsummary} is so widely adopted, LLMs can generate complex {gtsummary} code without additional training. Additionally, LLMs can readily interpret our structured ARDs to assist medical writers summarizing both simple and sophisticated trial results.
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
@@ -112,7 +114,7 @@ The workshop covers essential workflows including reading and querying large CSV
 Attendees should have basic familiarity with R and the tidyverse. By the end of this 3-hour session, participants will be equipped with reproducible techniques to confidently tackle larger datasets in their own research and data analysis workflows.
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
@@ -138,7 +140,7 @@ This workshop is designed for ggplot users who know how to make basic graphs, bu
 This is a code-along workshop, so bring your own data and graphs, and we'll make something fun together!
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
@@ -163,7 +165,32 @@ WORKSHOP
 LLMs are transforming how we write code, build tools, and analyze data. This workshop will introduce participants to programming with LLM APIs in R using ellmer, an open-source package that makes it easy to work with LLMs from R. We'll cover the basics of calling LLMs from R, system prompt design, tool calling, and evaluation, and show how to use LLM-powered tools to support common data analysis tasks like exploratory data analysis. Participants will leave with example scripts they can adapt to their own data analysis projects.
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
+:::
+:::
+:::
+
+## Parameterized Reports {#parameterized-reports}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+WORKSHOP
+:::
+::: {.speaker-imgs}
+![](images/demo-nicola.jpg)
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Nicola Rennie](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code. This workshop is for you if you make similar PDF reports every month, or you want to create the same plot for different subsets of your data, or you just want some {ggplot2} and Quarto tips!
+:::
+::: {.workshop-links}
+[Workshop GitHub repo](https://github.com/nrennie/r-medicine-2026-parameterized-reports)
 :::
 :::
 :::
@@ -180,12 +207,14 @@ PANEL
 ::: {.speaker-imgs}
 ![](images/w7-1-raymond-balise.jpg)
 ![](images/w1-1-rich-hanna.png)
+![](images/rose-brandon-inset.png)
+
 :::
 :::
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Raymond Balise](INFO HERE){target="_blank"}, [Richard Hanna](INFO HERE){target="_blank"}, [Brandon](INFO HERE){target="_blank"}, others
+[Raymond Balise](INFO HERE){target="_blank"}, [Richard Hanna](INFO HERE){target="_blank"}, [Brandon Rose](INFO HERE){target="_blank"}, others
 :::
 ::: {.workshop-desc}
 REDCap has become a cornerstone platform for clinical and translational research, supporting secure data capture for thousands of studies worldwide. As research teams increasingly adopt reproducible, code-driven workflows, R has emerged as a powerful solution for accessing, transforming, and analyzing REDCap data.
@@ -194,7 +223,7 @@ This panel brings together the developers of these packages to explore the evolv
 Audience participation will be encouraged throughout the session and attendees will be invited to share their experiences, identify gaps in existing tooling, and suggest new features that could improve REDCap and R integration.
 :::
 ::: {.workshop-links}
-[Pre-workshop setup](info here.)
+<!-- [Pre-workshop setup](info here.) -->
 :::
 :::
 :::
@@ -221,7 +250,7 @@ DEMO
 Come see practical strategies for producing Quarto documents that meet organizational standards for both design and accessibility. You’ll learn how to implement consistent organizational branding using brand.yml, plus customization techniques for cases where you need more control. You’ll also learn about recent accessibility improvements for both PDF and HTML outputs.
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
@@ -246,7 +275,7 @@ DEMO
 Building clinical trial applications with {teal} is powerful but comes with a steep learning curve. In this demo, we'll show why current AI approaches still fall short. They lack the domain context needed and produce frequent errors, even with top models. We'll then walk through TealFlow, our open-source solution that tackles this from two angles: a web-based chat interface designed for non-coders to assemble {teal} dashboards, and TealFlow MCP, a developer tool that plugs into VS Code, Positron, or RStudio to augment your existing workflow. We'll wrap up with our roadmap and ways for the community to contribute.
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](https://github.com/Appsilon/tealflow-demo )
+[Demo GitHub repo](https://github.com/Appsilon/tealflow-demo )
 :::
 :::
 :::
@@ -271,37 +300,14 @@ DEMO
 Data comes in many forms, but the spatial components can be overlooked. You’ll get some history of mapping and learn the basic building blocks of spatial data.  The demo portion will go over how to use the trusty {ggplot2} as well as some new tools like {sf} and {tmap} to plot different types of spatial data. 
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
 
 
 
-## Parameterized Reports {#parameterized-reports}
 
-::: {.workshop-card}
-::: {.card-left}
-::: {.card-badge-top}
-DEMO
-:::
-::: {.speaker-imgs}
-![](images/demo-nicola.jpg)
-:::
-:::
-
-::: {.card-right}
-::: {.workshop-speakers-name}
-[Nicola Rennie](INFO HERE){target="_blank"}
-:::
-::: {.workshop-desc}
-Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code. This workshop is for you if you make similar PDF reports every month, or you want to create the same plot for different subsets of your data, or you just want some {ggplot2} and Quarto tips!
-:::
-::: {.workshop-links}
-[Demo GitHub repo](https://github.com/nrennie/r-medicine-2026-parameterized-reports)
-:::
-:::
-:::
 
 ## Ctrialsgov R Package {#ctrialsgov}
 
@@ -311,20 +317,84 @@ Tired of copying and pasting content from one word document to another each time
 DEMO
 :::
 ::: {.speaker-imgs}
-![](images/test-img.png)
+![](images/mike-kane.jpg)
 :::
 :::
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Mike Kane](INFO HERE){target="_blank"}
+[Michael Kane](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 COMING SOON
 :::
 ::: {.workshop-links}
-[Workshop GitHub repo](INFO HERE)
+<!-- [Workshop GitHub repo](INFO HERE) -->
 :::
 :::
 :::
 
+## REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User; Standardized Data Pipelines and a Companion Shiny App for any REDCap Project {#redcapdemo}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+DEMO
+:::
+::: {.speaker-imgs}
+![](images/rose-brandon-inset.png)
+![](images/natalie-goulett.png)
+
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Brandon Rose](INFO HERE){target="_blank"}, [Natalie Goulett](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+R and REDCap are both widely utilized in medicine, including basic science, clinical research, and clinal trials. Both have independent strengths, but together they can create powerful data pipelines. Several R packages exist for using however, REDCapSync is the first “get-everything” REDCap R package that is API-efficient and project-agnostic. RosyREDCap is a companion shiny application for exploratory data analysis.  
+
+Using a cache of last project save, a file directory, and the REDCap log, REDCapSync only updates the data that has been changed since the last API call. Each project is maintained as a standardized R6 object that can be used downstream for the best that R has to offer! Furthermore, REDCapSync can be used to upload labelled data using the API, a feature not available on the REDCap website. 
+
+RosyREDCap is an R shiny application that launches a local website for exploratory data analysis of REDCap projects. It is built to load all previous projects that were setup with the REDCapSync package. The user is able to toggle between projects, deidentify data, perform ad-hoc data visualizations, and more.  
+
+Using tools like REDCapSync and RosyREDCap allow even new R users to harness the power of the REDCap API without the burden of learning dozens of API endpoints. During my presentation I will demonstrate the combined strengths of R and REDCap for maintaining strong reproducible clinical data pipelines that can improve clinical research and patient care.
+:::
+::: {.workshop-links}
+<!-- [Workshop GitHub repo](INFO HERE) -->
+:::
+:::
+:::
+
+
+## Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards {#accessible}
+
+::: {.workshop-card}
+::: {.card-left}
+::: {.card-badge-top}
+DEMO
+:::
+::: {.speaker-imgs}
+![](images/abigail-stamm.jpg)
+![](images/eric-kvale.jpg)
+
+:::
+:::
+
+::: {.card-right}
+::: {.workshop-speakers-name}
+[Abigail Stamm](INFO HERE){target="_blank"}, [Eric Kvale](INFO HERE){target="_blank"}
+:::
+::: {.workshop-desc}
+Online dashboards use data visualizations to quickly convey information. Interactive elements like charts and data filters often display additional information not accessible by screen readers. Navigating these elements often relies on a mouse and may not be accessible by keyboard. Accessibility features improve the overall presentation and user experience by adding functionality. These features augment, amplify, and enhance the content so that users can interact with and understand the same content in multiple ways, depending on their needs and preferences.
+
+Our demonstration will cover how to address several accessibility issues in Shiny. We have chosen issues related to screen reader use, keyboard use, and understanding that may be overlooked in sources that cover accessibility in Shiny. We will use an example dashboard that failed several accessibility checks. For each check, we will demonstrate the issue, show a way to revise the dashboard code to address it, and demonstrate how to test it. We estimate 20 minutes of instruction, 15 minutes of live coding, and 15 minutes of demonstration, with 10 minutes for questions at the end.
+
+All files, including the presentation, starting script, and suggested solution script, will be available in the GitHub repository https://github.com/ajstamm/shiny-a11y-app for attendees who wish to code along. Our past presentations on accessibility in Shiny dashboards can also be found here.
+:::
+::: {.workshop-links}
+<!-- [Workshop GitHub repo](INFO HERE) -->
+:::
+:::
+:::
