@@ -11,142 +11,142 @@ format:
 
 ---
 
-# Workshop/Demo Day 1 — Tuesday, May 5, 2026
+<!-- # Workshop/Demo Day 1 — Tuesday, May 5, 2026 -->
 
-## You Should Probably Map That: Introduction to Geospatial Analysis in R {#you-should-probably-map-that-introduction-to-geospatial}
+<!-- ## You Should Probably Map That: Introduction to Geospatial Analysis in R {#you-should-probably-map-that-introduction-to-geospatial} -->
 
-**Anjile An** | Weill Cornell Medical College
+<!-- **Anjile An** | Weill Cornell Medical College -->
 
-*Demo — Tuesday, May 5, 2026*
+<!-- *Demo — Tuesday, May 5, 2026* -->
 
-Maps can simplify huge amounts of data in an elegant way, and it doesn't have to be complicated. Join me as I nerd out about why maps are important and how they can be used in your work. We'll join tabular data and make maps using familiar {ggplot2} commands and also explore mapping with shapefile data (the standard for geospatial specific software like ArcGIS) using {sf} and {tmap}. 
+<!-- Maps can simplify huge amounts of data in an elegant way, and it doesn't have to be complicated. Join me as I nerd out about why maps are important and how they can be used in your work. We'll join tabular data and make maps using familiar {ggplot2} commands and also explore mapping with shapefile data (the standard for geospatial specific software like ArcGIS) using {sf} and {tmap}.  -->
 
----
+<!-- --- -->
 
-## Interactive and Instant: GenAI-driven Creation of Clinical Trial Applications {#interactive-and-instant-genai-driven-creation-of-clinical-tr}
+<!-- ## Interactive and Instant: GenAI-driven Creation of Clinical Trial Applications {#interactive-and-instant-genai-driven-creation-of-clinical-tr} -->
 
-**Marcin Dubel** | Appsilon
+<!-- **Marcin Dubel** | Appsilon -->
 
-*Demo — Tuesday, May 5, 2026*
+<!-- *Demo — Tuesday, May 5, 2026* -->
 
-Building exploratory analysis dashboards for clinical trials requires considerable expertise, extensive time, and deep familiarity with specialized frameworks. In this talk, we share our GenAI solution to significantly streamline this process. We will present a tool, powered by Claude Code, that enables biostatisticians and clinical researchers to effortlessly create and immediately preview applications tailored for exploratory clinical data analysis using {teal} R package.
-Throughout our journey, we experimented with various GenAI-driven solutions, including code editors integrated with AI assistance tools, and approaches leveraging MCP servers. Current implementation is an interactive AI-powered chat interface designed to simplify the application-building experience, providing users with immediate previews, and reducing both development complexity and the learning curve associated with the {teal} package.
+<!-- Building exploratory analysis dashboards for clinical trials requires considerable expertise, extensive time, and deep familiarity with specialized frameworks. In this talk, we share our GenAI solution to significantly streamline this process. We will present a tool, powered by Claude Code, that enables biostatisticians and clinical researchers to effortlessly create and immediately preview applications tailored for exploratory clinical data analysis using {teal} R package. -->
+<!-- Throughout our journey, we experimented with various GenAI-driven solutions, including code editors integrated with AI assistance tools, and approaches leveraging MCP servers. Current implementation is an interactive AI-powered chat interface designed to simplify the application-building experience, providing users with immediate previews, and reducing both development complexity and the learning curve associated with the {teal} package. -->
 
-We will demonstrate how GenAI-driven solutions can empower users with limited programming backgrounds to rapidly build effective exploratory analysis dashboards, discuss challenges encountered, and highlight insights gained through our iterative development process.
+<!-- We will demonstrate how GenAI-driven solutions can empower users with limited programming backgrounds to rapidly build effective exploratory analysis dashboards, discuss challenges encountered, and highlight insights gained through our iterative development process. -->
 
----
+<!-- --- -->
 
-## Mastering Clinical Data Summaries with {gtsummary} and AI {#mastering-clinical-data-summaries-with-gtsummary-and-ai}
+<!-- ## Mastering Clinical Data Summaries with {gtsummary} and AI {#mastering-clinical-data-summaries-with-gtsummary-and-ai} -->
 
-**Daniel D. Sjoberg** | Genentech; **Shannon Pileggi** | The Prostate Cancer Clinical Trials Consortium
+<!-- **Daniel D. Sjoberg** | Genentech; **Shannon Pileggi** | The Prostate Cancer Clinical Trials Consortium -->
 
-*Workshop — Tuesday, May 5, 2026*
+<!-- *Workshop — Tuesday, May 5, 2026* -->
 
-Abstract coming soon.
+<!-- Abstract coming soon. -->
 
----
+<!-- --- -->
 
-## Building Accessible, On-Brand Documents with Quarto {#building-accessible-on-brand-documents-with-quarto}
+<!-- ## Building Accessible, On-Brand Documents with Quarto {#building-accessible-on-brand-documents-with-quarto} -->
 
-**Charlotte Wickham** | Posit
+<!-- **Charlotte Wickham** | Posit -->
 
-*Demo — Tuesday, May 5, 2026*
+<!-- *Demo — Tuesday, May 5, 2026* -->
 
-Abstract coming soon.
+<!-- Abstract coming soon. -->
 
----
+<!-- --- -->
 
-## R and RedCap Panel Discussion {#r-and-redcap-panel-discussion}
+<!-- ## R and RedCap Panel Discussion {#r-and-redcap-panel-discussion} -->
 
-**Raymond Balise, Brandon Rose, Rich Hanna, and others**
+<!-- **Raymond Balise, Brandon Rose, Rich Hanna, and others** -->
 
-*Panel — Tuesday, May 5, 2026*
+<!-- *Panel — Tuesday, May 5, 2026* -->
 
-Abstract coming soon.
+<!-- Abstract coming soon. -->
 
----
+<!-- --- -->
 
-## Ctrialsgov R Package {#ctrialsgov-r-package}
+<!-- ## Ctrialsgov R Package {#ctrialsgov-r-package} -->
 
-**Michael Kane** | MD Anderson Cancer Center
+<!-- **Michael Kane** | MD Anderson Cancer Center -->
 
-*Demo — Tuesday, May 5, 2026*
+<!-- *Demo — Tuesday, May 5, 2026* -->
 
-Abstract coming soon.
+<!-- Abstract coming soon. -->
 
----
+<!-- --- -->
 
-# Workshop/Demo Day 2 — Wednesday, May 6, 2026
+<!-- # Workshop/Demo Day 2 — Wednesday, May 6, 2026 -->
 
-## Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards {#demonstration-on-making-shiny-dashboards-accessible-for-user}
+<!-- ## Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards {#demonstration-on-making-shiny-dashboards-accessible-for-user} -->
 
-**Abigail Stamm & Eric Kvale** | Minnesota Department of Health
+<!-- **Abigail Stamm & Eric Kvale** | Minnesota Department of Health -->
 
-*Demo — Wednesday, May 6, 2026*
+<!-- *Demo — Wednesday, May 6, 2026* -->
 
-Online dashboards use data visualizations to quickly convey information. Interactive elements like charts and data filters often display additional information not accessible by screen readers. Navigating these elements often relies on a mouse and may not be accessible by keyboard. Accessibility features improve the overall presentation and user experience by adding functionality. These features augment, amplify, and enhance the content so that users can interact with and understand the same content in multiple ways, depending on their needs and preferences.
+<!-- Online dashboards use data visualizations to quickly convey information. Interactive elements like charts and data filters often display additional information not accessible by screen readers. Navigating these elements often relies on a mouse and may not be accessible by keyboard. Accessibility features improve the overall presentation and user experience by adding functionality. These features augment, amplify, and enhance the content so that users can interact with and understand the same content in multiple ways, depending on their needs and preferences. -->
 
-Our demonstration will cover how to address several accessibility issues in Shiny. We have chosen issues related to screen reader use, keyboard use, and understanding that may be overlooked in sources that cover accessibility in Shiny. We will use an example dashboard that failed several accessibility checks. For each check, we will demonstrate the issue, show a way to revise the dashboard code to address it, and demonstrate how to test it. We estimate 20 minutes of instruction, 15 minutes of live coding, and 15 minutes of demonstration, with 10 minutes for questions at the end.
+<!-- Our demonstration will cover how to address several accessibility issues in Shiny. We have chosen issues related to screen reader use, keyboard use, and understanding that may be overlooked in sources that cover accessibility in Shiny. We will use an example dashboard that failed several accessibility checks. For each check, we will demonstrate the issue, show a way to revise the dashboard code to address it, and demonstrate how to test it. We estimate 20 minutes of instruction, 15 minutes of live coding, and 15 minutes of demonstration, with 10 minutes for questions at the end. -->
 
-All files, including the presentation, starting script, and suggested solution script, will be available in the GitHub repository https://github.com/ajstamm/shiny-a11y-app for attendees who wish to code along. Our past presentations on accessibility in Shiny dashboards can also be found here.
+<!-- All files, including the presentation, starting script, and suggested solution script, will be available in the GitHub repository https://github.com/ajstamm/shiny-a11y-app for attendees who wish to code along. Our past presentations on accessibility in Shiny dashboards can also be found here. -->
 
----
+<!-- --- -->
 
-## REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User {#redcapsync-and-rosyredcap-advanced-redcap-api-for-even-the-b}
+<!-- ## REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User {#redcapsync-and-rosyredcap-advanced-redcap-api-for-even-the-b} -->
 
-**Brandon Rose & Natalie Goulett** | University of Texas Southwestern Medical Center
+<!-- **Brandon Rose & Natalie Goulett** | University of Texas Southwestern Medical Center -->
 
-*Demo — Wednesday, May 6, 2026*
+<!-- *Demo — Wednesday, May 6, 2026* -->
 
-R and REDCap are both widely utilized in medicine, including basic science, clinical research, and clinal trials. Both have independent strengths, but together they can create powerful data pipelines. Several R packages exist for using however, REDCapSync is the first “get-everything” REDCap R package that is API-efficient and project-agnostic. RosyREDCap is a companion shiny application for exploratory data analysis.  
+<!-- R and REDCap are both widely utilized in medicine, including basic science, clinical research, and clinal trials. Both have independent strengths, but together they can create powerful data pipelines. Several R packages exist for using however, REDCapSync is the first “get-everything” REDCap R package that is API-efficient and project-agnostic. RosyREDCap is a companion shiny application for exploratory data analysis.   -->
 
-Using a cache of last project save, a file directory, and the REDCap log, REDCapSync only updates the data that has been changed since the last API call. Each project is maintained as a standardized R6 object that can be used downstream for the best that R has to offer! Furthermore, REDCapSync can be used to upload labelled data using the API, a feature not available on the REDCap website. 
+<!-- Using a cache of last project save, a file directory, and the REDCap log, REDCapSync only updates the data that has been changed since the last API call. Each project is maintained as a standardized R6 object that can be used downstream for the best that R has to offer! Furthermore, REDCapSync can be used to upload labelled data using the API, a feature not available on the REDCap website.  -->
 
-RosyREDCap is an R shiny application that launches a local website for exploratory data analysis of REDCap projects. It is built to load all previous projects that were setup with the REDCapSync package. The user is able to toggle between projects, deidentify data, perform ad-hoc data visualizations, and more.  
+<!-- RosyREDCap is an R shiny application that launches a local website for exploratory data analysis of REDCap projects. It is built to load all previous projects that were setup with the REDCapSync package. The user is able to toggle between projects, deidentify data, perform ad-hoc data visualizations, and more.   -->
 
-Using tools like REDCapSync and RosyREDCap allow even new R users to harness the power of the REDCap API without the burden of learning dozens of API endpoints. During my presentation I will demonstrate the combined strengths of R and REDCap for maintaining strong reproducible clinical data pipelines that can improve clinical research and patient care.
+<!-- Using tools like REDCapSync and RosyREDCap allow even new R users to harness the power of the REDCap API without the burden of learning dozens of API endpoints. During my presentation I will demonstrate the combined strengths of R and REDCap for maintaining strong reproducible clinical data pipelines that can improve clinical research and patient care. -->
 
----
+<!-- --- -->
 
-## LLMs for Data Analysis in R {#llms-for-data-analysis-in-r}
+<!-- ## LLMs for Data Analysis in R {#llms-for-data-analysis-in-r} -->
 
-**Sara Altman** | Posit
+<!-- **Sara Altman** | Posit -->
 
-*Workshop — Wednesday, May 6, 2026*
+<!-- *Workshop — Wednesday, May 6, 2026* -->
 
-Abstract coming soon.
+<!-- Abstract coming soon. -->
 
----
+<!-- --- -->
 
-## No more copy and paste! Parameterized plots and reports with R and Quarto {#no-more-copy-and-paste-parameterized-plots-and-reports-with-}
+<!-- ## No more copy and paste! Parameterized plots and reports with R and Quarto {#no-more-copy-and-paste-parameterized-plots-and-reports-with-} -->
 
-**Nicola Rennin**
+<!-- **Nicola Rennin** -->
 
-*Workshop — Wednesday, May 6, 2026*
+<!-- *Workshop — Wednesday, May 6, 2026* -->
 
-Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code.
+<!-- Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code. -->
 
-This workshop is for you if:
+<!-- This workshop is for you if: -->
 
-✍️ you make similar PDF reports every month
-📊 you want to create the same plot for different subsets of your data
-💡 you just want some {ggplot2} or Quarto tips!
+<!-- ✍️ you make similar PDF reports every month -->
+<!-- 📊 you want to create the same plot for different subsets of your data -->
+<!-- 💡 you just want some {ggplot2} or Quarto tips! -->
 
 
 
----
+<!-- --- -->
 
 # Meeting Day 1 — Thursday, May 7, 2026
 
-## Software sustainability and community management {#software-sustainability-and-community-management}
+<!-- ## Software sustainability and community management {#software-sustainability-and-community-management} -->
 
-**Yanini Bellini** | rOpenSci
+<!-- **Yanini Bellini** | rOpenSci -->
 
-*Keynote — Thursday, May 7, 2026*
+<!-- *Keynote — Thursday, May 7, 2026* -->
 
-Sustainable software depends as much on people and practices as it does on code. In this talk, I’ll draw on my experience leading and supporting R communities to show how intentional community management contributes to long-term software sustainability. Using concrete examples, I’ll highlight how communities of practice help distribute maintenance, grow skills, and support inclusive, resilient software ecosystems across research and open source.
+<!-- Sustainable software depends as much on people and practices as it does on code. In this talk, I’ll draw on my experience leading and supporting R communities to show how intentional community management contributes to long-term software sustainability. Using concrete examples, I’ll highlight how communities of practice help distribute maintenance, grow skills, and support inclusive, resilient software ecosystems across research and open source. -->
 
----
+<!-- --- -->
 
 ## Bridging the Gap Between Spreadsheets and Shiny: Interactive Clinical Data Entry with esq.handsontable {#bridging-the-gap-between-spreadsheets-and-shiny-interactive-}
 
@@ -269,15 +269,15 @@ Abstract coming soon.
 
 The Cardiovascular Outcomes Registries and Research (CORR) group at Cleveland Clinic supports observational cardiovascular outcomes research, producing 75–100 peer-reviewed manuscripts per year from 19 core staff — and scaling to that size exposes every shortcut that worked when one person held the workflow in their head. Our core deliverable is the Analysis Report: each hypothesis maps to a statistical approach, each approach to a SAS or R job, and outputs are manually assembled into a document researchers use to write papers. At this scale, inconsistency in report structure is a production problem, not an aesthetic one. We describe a framework mapping SAS conventions to R equivalents: batch jobs to Quarto documents, reducing the manual collation step; a shared macro library to internal R packages (ggRandomForests, hvtiPlotR, hvtiRutilities) standardizing ggplot2 themes and utilities; informal environment tracking to RStudio Projects with renv; and a 25-year social contract of naming conventions and folder standards we are reinforcing with automated checks — moving toward "trust, but verify." The underlying motivation is reducing manual and cognitive load so biostatisticians can focus on science, making good practice the natural path for SAS and R users alike. We share what is working, where we have gaps, and how framing these investments as production reliability rather than methodological idealism changed conversations with leadership and colleagues.
 
----
+<!-- --- -->
 
-## Voices in the Code: A Story about People, Their Values, and the Algorithm They Made {#voices-in-the-code-a-story-about-people-their-values-and-the}
+<!-- ## Voices in the Code: A Story about People, Their Values, and the Algorithm They Made {#voices-in-the-code-a-story-about-people-their-values-and-the} -->
 
-**David Robinson** | OpenAI
+<!-- **David Robinson** | OpenAI -->
 
-*Keynote — Thursday, May 7, 2026*
+<!-- *Keynote — Thursday, May 7, 2026* -->
 
-Today policymakers and scholars are seeking better ways to share the moral decisionmaking within high stakes software — exploring ideas like public participation, transparency, forecasting, and algorithmic audits. But there are few real examples of those techniques in use. In Voices in the Code, scholar David G. Robinson tells the story of how one community built a life-and-death algorithm in a relatively inclusive, accountable way. Between 2004 and 2014, a diverse group of patients, surgeons, clinicians, data scientists, public officials and advocates collaborated and compromised to build a new transplant matching algorithm – a system to offer donated kidneys to particular patients from the U.S. national waiting list.
+<!-- Today policymakers and scholars are seeking better ways to share the moral decisionmaking within high stakes software — exploring ideas like public participation, transparency, forecasting, and algorithmic audits. But there are few real examples of those techniques in use. In Voices in the Code, scholar David G. Robinson tells the story of how one community built a life-and-death algorithm in a relatively inclusive, accountable way. Between 2004 and 2014, a diverse group of patients, surgeons, clinicians, data scientists, public officials and advocates collaborated and compromised to build a new transplant matching algorithm – a system to offer donated kidneys to particular patients from the U.S. national waiting list. -->
 
 ---
 
@@ -322,17 +322,17 @@ These updates make REDCapDM a more robust, flexible, and transparent tool for pr
 
 # Meeting Day 2 — Friday, May 8, 2026
 
-## The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics {#the-truth-seekers-learning-how-to-assess-generative-ai-from-}
+<!-- ## The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics {#the-truth-seekers-learning-how-to-assess-generative-ai-from-} -->
 
-**Peter Gruber** | USI Università della Svizzera italiana
+<!-- **Peter Gruber** | USI Università della Svizzera italiana -->
 
-*Keynote — Friday, May 8, 2026*
+<!-- *Keynote — Friday, May 8, 2026* -->
 
-Peter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008.
+<!-- Peter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008. -->
 
-Dr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis.
+<!-- Dr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis. -->
 
----
+<!-- --- -->
 
 ## bulkreadr: Fast, Reproducible Bulk Data Import for R-Based Research Workflows {#bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res}
 

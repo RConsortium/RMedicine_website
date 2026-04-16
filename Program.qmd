@@ -191,7 +191,7 @@ schedule_day_2 <-
         "You Should Probably Map That: Introduction to Geospatial Analysis in R"                             ,
         "Anjile An"                                                      ,
         "Weill Cornell Medical College"                             ,
-        "Abstracts.html#you-should-probably-map-that-introduction-to-geospatial",
+        "workshops.html#mapping",
         
         "2026-05-05 10:00"                                                ,
         "2026-05-05 11:00"                                                ,
@@ -200,7 +200,7 @@ schedule_day_2 <-
         "Interactive and Instant: GenAI-driven Creation of Clinical Trial Applications"                             ,
         "Marcin Dubel"                                                      ,
         "Appsilon"                             ,
-        "Abstracts.html#interactive-and-instant-genai-driven-creation-of-clinical-tr",
+        "workshops.html#tealflow",
         
         "2026-05-05 11:00"                                                ,
         "2026-05-05 14:00"                                                ,
@@ -219,6 +219,7 @@ schedule_day_2 <-
         "Catalina Cañizares-Escobar, New York University;"                ,
         "Francisco Cardozo, University of Miami"                          ,
         "workshops.html#equidad"                                          ,
+        
         "2026-05-05 14:00"                                                ,
         "2026-05-05 14:30"                                                ,
         ""                                                                ,
@@ -227,6 +228,7 @@ schedule_day_2 <-
         ""                                                                ,
         ""                                                                ,
         ""                                                                ,
+        
         "2026-05-05 14:30"                                                ,
         "2026-05-05 17:30"                                                ,
         "A"                                                               ,
@@ -234,7 +236,8 @@ schedule_day_2 <-
         "Mastering Clinical Data Summaries with {gtsummary} and AI"       ,
         "Daniel D. Sjoberg, Genentech;"                                   ,
         "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium" ,
-        "Abstracts.html#mastering-clinical-data-summaries-with-gtsummary-and-ai",
+        "workshops.html#gtsummary",
+        
         "2026-05-05 14:30"                                                ,
         "2026-05-05 15:30"                                                ,
         "B"                                                               ,
@@ -242,7 +245,8 @@ schedule_day_2 <-
         "Building Accessible, On-Brand Documents with Quarto"             ,
         "Charlotte Wickham"                                               ,
         "Posit"                                                           ,
-        "Abstracts.html#building-accessible-on-brand-documents-with-quarto",
+        "workshops.html#quarto-docs",
+        
         "2026-05-05 15:30"                                                ,
         "2026-05-05 16:30"                                                ,
         "B"                                                               ,
@@ -258,7 +262,7 @@ schedule_day_2 <-
         "Ctrialsgov R Package"                                            ,
         "Michael Kane"                                                    ,
         "MD Anderson Cancer Center"                                       ,
-        "Abstracts.html#ctrialsgov-r-package"
+        "workshops.html#redcap"
     ) |>
     dplyr::mutate(
         t_speakers = dplyr::if_else(
@@ -342,7 +346,7 @@ schedule_day_3 <-
         "Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards"                          ,
         "Abigail Stamm & Eric Kvale"                                                ,
         "Minnesota Department of Health"                                                              ,
-        "Abstracts.html#demonstration-on-making-shiny-dashboards-accessible-for-user",
+        "workshops.html#accessible",
 
         "2026-05-06 10:00"                                                   ,
         "2026-05-06 11:00"                                                   ,
@@ -351,7 +355,7 @@ schedule_day_3 <-
         "REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User; Standardized Data Pipelines and a Companion Shiny App for any REDCap Project"                          ,
         "Brandon Rose & Natalie Goulett"                                                ,
         "University of Texas Southwestern Medical Center"                                                              ,
-        "Abstracts.html#redcapsync-and-rosyredcap-advanced-redcap-api-for-even-the-b",
+        "workshops.html#redcapdemo",
 
         "2026-05-06 11:00"                                                   ,
         "2026-05-06 14:00"                                                   ,
@@ -385,7 +389,8 @@ schedule_day_3 <-
         "LLMs for Data Analysis in R"                                        ,
         "Sara Altman"                                                        ,
         "Posit"                                                              ,
-        "Abstracts.html#llms-for-data-analysis-in-r",
+        "workshops.html#llms",
+        
         "2026-05-05 14:30"                                                   ,
         "2026-05-05 17:30"                                                   ,
         "B"                                                                  ,
@@ -393,7 +398,7 @@ schedule_day_3 <-
         "No more copy and paste! Parameterized plots and reports with R and Quarto"                                                                ,
         "Nicola Rennin"                                                                   ,
         ""                                                                   ,
-        "Abstracts.html#no-more-copy-and-paste-parameterized-plots-and-reports-with-"
+        "workshops.html#parameterized-reports"
     ) |>
     dplyr::mutate(
         t_speakers = dplyr::if_else(
