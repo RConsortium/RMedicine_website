@@ -236,7 +236,8 @@ schedule_day_2 <-
         "Mastering Clinical Data Summaries with {gtsummary} and AI"       ,
         "Daniel D. Sjoberg, Genentech;"                                   ,
         "Shannon Pileggi, The Prostate Cancer Clinical Trials Consortium" ,
-        "workshops.html#gtsummary",
+        "workshops.html#gtsummary"
+        ,
         
         "2026-05-05 14:30"                                                ,
         "2026-05-05 15:30"                                                ,
@@ -245,7 +246,8 @@ schedule_day_2 <-
         "Building Accessible, On-Brand Documents with Quarto"             ,
         "Charlotte Wickham"                                               ,
         "Posit"                                                           ,
-        "workshops.html#quarto-docs",
+        "workshops.html#quarto-docs"
+        ,
         
         "2026-05-05 15:30"                                                ,
         "2026-05-05 16:30"                                                ,
@@ -254,7 +256,8 @@ schedule_day_2 <-
         "R and RedCap Panel Discussion"                                   ,
         "Raymond Balise, Brandon Rose, Rich Hanna, and others"            ,
         ""                                                                ,
-        "workshops.html#redcap",
+        "workshops.html#redcap"
+        ,
         
         "2026-05-05 16:30"                                                ,
         "2026-05-05 17:30"                                                ,
@@ -347,7 +350,7 @@ schedule_day_3 <-
         "Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards"                          ,
         "Abigail Stamm & Eric Kvale"                                                ,
         "Minnesota Department of Health"                                                              ,
-        "workshops.html#accessible",
+        "workshops.html#accessible"                                          ,
 
         "2026-05-06 10:00"                                                   ,
         "2026-05-06 11:00"                                                   ,
@@ -356,7 +359,7 @@ schedule_day_3 <-
         "REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User; Standardized Data Pipelines and a Companion Shiny App for any REDCap Project"                          ,
         "Brandon Rose & Natalie Goulett"                                                ,
         "University of Texas Southwestern Medical Center"                                                              ,
-        "workshops.html#redcapdemo",
+        "workshops.html#redcapdemo"                                           ,
 
         "2026-05-06 11:00"                                                   ,
         "2026-05-06 14:00"                                                   ,
@@ -374,7 +377,7 @@ schedule_day_3 <-
         "ggplot2 for Data Visualisation: Creativity, Clarity, Accessibility" ,
         "Cara Thompson"                                                      ,
         ""                                                                   ,
-        "workshops.html#ggplot2"                                             ,
+        "workshops.html#ggplot2"  ,
         
         "2026-05-05 14:00"                                                   ,
         "2026-05-05 14:30"                                                   ,
@@ -391,7 +394,7 @@ schedule_day_3 <-
         "LLMs for Data Analysis in R"                                        ,
         "Sara Altman"                                                        ,
         "Posit"                                                              ,
-        "workshops.html#llms",
+        "workshops.html#llms"                                                ,
         
         "2026-05-05 14:30"                                                   ,
         "2026-05-05 17:30"                                                   ,
