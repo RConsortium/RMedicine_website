@@ -254,7 +254,8 @@ schedule_day_2 <-
         "R and RedCap Panel Discussion"                                   ,
         "Raymond Balise, Brandon Rose, Rich Hanna, and others"            ,
         ""                                                                ,
-        "Abstracts.html#r-and-redcap-panel-discussion",
+        "workshops.html#redcap",
+        
         "2026-05-05 16:30"                                                ,
         "2026-05-05 17:30"                                                ,
         "B"                                                               ,
@@ -262,7 +263,7 @@ schedule_day_2 <-
         "Ctrialsgov R Package"                                            ,
         "Michael Kane"                                                    ,
         "MD Anderson Cancer Center"                                       ,
-        "workshops.html#redcap"
+        "workshops.html#ctrialsgov"
     ) |>
     dplyr::mutate(
         t_speakers = dplyr::if_else(
@@ -374,6 +375,7 @@ schedule_day_3 <-
         "Cara Thompson"                                                      ,
         ""                                                                   ,
         "workshops.html#ggplot2"                                             ,
+        
         "2026-05-05 14:00"                                                   ,
         "2026-05-05 14:30"                                                   ,
         ""                                                                   ,
