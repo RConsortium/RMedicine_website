@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>R/Medicine Abstracts – R/Medicine 2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">R/Medicine 2026</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Register.html"> 
+<span class="menu-text">Register</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Submit.html"> 
+<span class="menu-text">Submit</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Program.html"> 
+<span class="menu-text">Program</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./speaker_info.html"> 
+<span class="menu-text">Speaker guide</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workshops.html"> 
+<span class="menu-text">Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Hackathon.html"> 
+<span class="menu-text">Hackathon</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Attend.html"> 
+<span class="menu-text">Code of Conduct</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Committees.html"> 
+<span class="menu-text">Committees</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Events.html"> 
+<span class="menu-text">Past Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Contact.html"> 
+<span class="menu-text">Contact us</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#meeting-day-1-thursday-may-7-2026" id="toc-meeting-day-1-thursday-may-7-2026" class="nav-link active" data-scroll-target="#meeting-day-1-thursday-may-7-2026">Meeting Day 1 — Thursday, May 7, 2026</a>
+  <ul class="collapse">
+  <li><a href="#bridging-the-gap-between-spreadsheets-and-shiny-interactive-" id="toc-bridging-the-gap-between-spreadsheets-and-shiny-interactive-" class="nav-link" data-scroll-target="#bridging-the-gap-between-spreadsheets-and-shiny-interactive-">Bridging the Gap Between Spreadsheets and Shiny: Interactive Clinical Data Entry with esq.handsontable</a></li>
+  <li><a href="#metainsight-v7-a-comprehensive-and-reproducible-shiny-app-fo" id="toc-metainsight-v7-a-comprehensive-and-reproducible-shiny-app-fo" class="nav-link" data-scroll-target="#metainsight-v7-a-comprehensive-and-reproducible-shiny-app-fo">MetaInsight v7: A Comprehensive and Reproducible Shiny App for Network Meta-analysis</a></li>
+  <li><a href="#nih-not-invented-here-balancing-unique-software-needs-vs-out" id="toc-nih-not-invented-here-balancing-unique-software-needs-vs-out" class="nav-link" data-scroll-target="#nih-not-invented-here-balancing-unique-software-needs-vs-out">NIH: Not Invented Here: balancing unique software needs vs out-of-box (almost) perfect generic solution.</a></li>
+  <li><a href="#cougarstats-an-interactive-r-based-platform-for-applied-heal" id="toc-cougarstats-an-interactive-r-based-platform-for-applied-heal" class="nav-link" data-scroll-target="#cougarstats-an-interactive-r-based-platform-for-applied-heal">CougarStats: An Interactive R-Based Platform for Applied Health Data Science</a></li>
+  <li><a href="#toggling-between-traditional-and-chat-based-data-filters-in-" id="toc-toggling-between-traditional-and-chat-based-data-filters-in-" class="nav-link" data-scroll-target="#toggling-between-traditional-and-chat-based-data-filters-in-">Toggling Between Traditional and Chat-Based Data Filters in Shiny</a></li>
+  <li><a href="#from-prompt-to-proof-governing-llm-intelligence-in-pharma-wi" id="toc-from-prompt-to-proof-governing-llm-intelligence-in-pharma-wi" class="nav-link" data-scroll-target="#from-prompt-to-proof-governing-llm-intelligence-in-pharma-wi">From Prompt to Proof: Governing LLM Intelligence in Pharma with Snowflake and Shiny</a></li>
+  <li><a href="#report-agent-an-llm-powered-framework-for-automated-shell-to" id="toc-report-agent-an-llm-powered-framework-for-automated-shell-to" class="nav-link" data-scroll-target="#report-agent-an-llm-powered-framework-for-automated-shell-to">Report Agent: An LLM-Powered Framework for Automated Shell-to-Code Report Generation</a></li>
+  <li><a href="#ai-assisted-authoring-of-an-open-access-portuguese-biostatis" id="toc-ai-assisted-authoring-of-an-open-access-portuguese-biostatis" class="nav-link" data-scroll-target="#ai-assisted-authoring-of-an-open-access-portuguese-biostatis">AI-Assisted Authoring of an Open-Access Portuguese Biostatistics Book in Quarto and R</a></li>
+  <li><a href="#supercharging-reproducible-research-in-r-with-github-actions" id="toc-supercharging-reproducible-research-in-r-with-github-actions" class="nav-link" data-scroll-target="#supercharging-reproducible-research-in-r-with-github-actions">Supercharging Reproducible Research in R with GitHub Actions</a></li>
+  <li><a href="#care-and-feeding-of-your-biostats-team-scaling-best-practice" id="toc-care-and-feeding-of-your-biostats-team-scaling-best-practice" class="nav-link" data-scroll-target="#care-and-feeding-of-your-biostats-team-scaling-best-practice">Care and Feeding of Your Biostats Team: Scaling best practices in a large hybrid SAS/R team</a></li>
+  <li><a href="#streamlined-access-to-nhanes-data-fast-harmonized-and-reliab" id="toc-streamlined-access-to-nhanes-data-fast-harmonized-and-reliab" class="nav-link" data-scroll-target="#streamlined-access-to-nhanes-data-fast-harmonized-and-reliab">Streamlined Access to NHANES Data: Fast, Harmonized, and Reliable</a></li>
+  <li><a href="#infodengue-intramunicipal-an-r-package-under-development" id="toc-infodengue-intramunicipal-an-r-package-under-development" class="nav-link" data-scroll-target="#infodengue-intramunicipal-an-r-package-under-development">Infodengue intramunicipal - An R package under development</a></li>
+  <li><a href="#redcapdm-managing-redcap-data" id="toc-redcapdm-managing-redcap-data" class="nav-link" data-scroll-target="#redcapdm-managing-redcap-data">REDCapDM: Managing REDCap Data</a></li>
+  </ul></li>
+  <li><a href="#meeting-day-2-friday-may-8-2026" id="toc-meeting-day-2-friday-may-8-2026" class="nav-link" data-scroll-target="#meeting-day-2-friday-may-8-2026">Meeting Day 2 — Friday, May 8, 2026</a>
+  <ul class="collapse">
+  <li><a href="#bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res" id="toc-bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res" class="nav-link" data-scroll-target="#bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res">bulkreadr: Fast, Reproducible Bulk Data Import for R-Based Research Workflows</a></li>
+  <li><a href="#from-chaos-to-consistency-building-a-long-lasting-polish-art" id="toc-from-chaos-to-consistency-building-a-long-lasting-polish-art" class="nav-link" data-scroll-target="#from-chaos-to-consistency-building-a-long-lasting-polish-art">From Chaos to Consistency: Building a Long-Lasting Polish Arthroplasty Registry Data Pipeline</a></li>
+  <li><a href="#this-talk-examines-the-systematic-transformation-of-polish-arthroplasty-registry-data-analysis-from-a-fragmented-manual-practice-into-a-coordinated-and-sustainable-analytical-infrastructure.-initially-analytical-work-relied-on-ad-hoc-r-scripts-circulated-informally-among-analysts-resulting-in-inconsistent-methods-limited-reproducibility-and-substantial-manual-effort.-collaboration-with-clinicians-was-similarly-constrained-by-static-excel-outputs-that-were-difficult-to-maintain-and-update.-to-address-these-limitations-we-introduced-structured-version-control-to-formalize-collaboration-within-the-analytics-team-and-ensure-transparent-traceable-development-of-analytical-workflows.-we-then-replaced-static-reporting-with-quarto-documents-and-interactive-shiny-dashboards-deployed-on-the-posit-platform-enabling-clinicians-to-access-timely-reproducible-and-dynamically-updated-results.-to-further-enhance-consistency-and-reduce-duplication-of-effort-we-developed-a-suite-of-in-house-r-packages-that-standardize-data-preparation-modeling-procedures-and-reporting-formats-across-projects.-together-these-interventions-established-a-stable-multi-user-pipeline-that-has-supported-reliable-arthroplasty-analytics-for-several-years.-the-talk-outlines-the-technical-architecture-organizational-changes-and-methodological-principles-that-enabled-this-transition-and-reflects-on-the-broader-implications-for-data-driven-collaboration-in-clinical-settings." id="toc-this-talk-examines-the-systematic-transformation-of-polish-arthroplasty-registry-data-analysis-from-a-fragmented-manual-practice-into-a-coordinated-and-sustainable-analytical-infrastructure.-initially-analytical-work-relied-on-ad-hoc-r-scripts-circulated-informally-among-analysts-resulting-in-inconsistent-methods-limited-reproducibility-and-substantial-manual-effort.-collaboration-with-clinicians-was-similarly-constrained-by-static-excel-outputs-that-were-difficult-to-maintain-and-update.-to-address-these-limitations-we-introduced-structured-version-control-to-formalize-collaboration-within-the-analytics-team-and-ensure-transparent-traceable-development-of-analytical-workflows.-we-then-replaced-static-reporting-with-quarto-documents-and-interactive-shiny-dashboards-deployed-on-the-posit-platform-enabling-clinicians-to-access-timely-reproducible-and-dynamically-updated-results.-to-further-enhance-consistency-and-reduce-duplication-of-effort-we-developed-a-suite-of-in-house-r-packages-that-standardize-data-preparation-modeling-procedures-and-reporting-formats-across-projects.-together-these-interventions-established-a-stable-multi-user-pipeline-that-has-supported-reliable-arthroplasty-analytics-for-several-years.-the-talk-outlines-the-technical-architecture-organizational-changes-and-methodological-principles-that-enabled-this-transition-and-reflects-on-the-broader-implications-for-data-driven-collaboration-in-clinical-settings." class="nav-link" data-scroll-target="#this-talk-examines-the-systematic-transformation-of-polish-arthroplasty-registry-data-analysis-from-a-fragmented-manual-practice-into-a-coordinated-and-sustainable-analytical-infrastructure.-initially-analytical-work-relied-on-ad-hoc-r-scripts-circulated-informally-among-analysts-resulting-in-inconsistent-methods-limited-reproducibility-and-substantial-manual-effort.-collaboration-with-clinicians-was-similarly-constrained-by-static-excel-outputs-that-were-difficult-to-maintain-and-update.-to-address-these-limitations-we-introduced-structured-version-control-to-formalize-collaboration-within-the-analytics-team-and-ensure-transparent-traceable-development-of-analytical-workflows.-we-then-replaced-static-reporting-with-quarto-documents-and-interactive-shiny-dashboards-deployed-on-the-posit-platform-enabling-clinicians-to-access-timely-reproducible-and-dynamically-updated-results.-to-further-enhance-consistency-and-reduce-duplication-of-effort-we-developed-a-suite-of-in-house-r-packages-that-standardize-data-preparation-modeling-procedures-and-reporting-formats-across-projects.-together-these-interventions-established-a-stable-multi-user-pipeline-that-has-supported-reliable-arthroplasty-analytics-for-several-years.-the-talk-outlines-the-technical-architecture-organizational-changes-and-methodological-principles-that-enabled-this-transition-and-reflects-on-the-broader-implications-for-data-driven-collaboration-in-clinical-settings.">This talk examines the systematic transformation of Polish Arthroplasty Registry data analysis from a fragmented, manual practice into a coordinated and sustainable analytical infrastructure. Initially, analytical work relied on ad hoc R scripts circulated informally among analysts, resulting in inconsistent methods, limited reproducibility, and substantial manual effort. Collaboration with clinicians was similarly constrained by static Excel outputs that were difficult to maintain and update. To address these limitations, we introduced structured version control to formalize collaboration within the analytics team and ensure transparent, traceable development of analytical workflows. We then replaced static reporting with Quarto documents and interactive Shiny dashboards deployed on the Posit platform, enabling clinicians to access timely, reproducible, and dynamically updated results. To further enhance consistency and reduce duplication of effort, we developed a suite of in house R packages that standardize data preparation, modeling procedures, and reporting formats across projects. Together, these interventions established a stable, multi user pipeline that has supported reliable arthroplasty analytics for several years. The talk outlines the technical architecture, organizational changes, and methodological principles that enabled this transition, and reflects on the broader implications for data driven collaboration in clinical settings.</a></li>
+  <li><a href="#encapsulated-test-coverage-testassessr-a-package-for-r-unit-" id="toc-encapsulated-test-coverage-testassessr-a-package-for-r-unit-" class="nav-link" data-scroll-target="#encapsulated-test-coverage-testassessr-a-package-for-r-unit-">Encapsulated Test Coverage: test.assessr – a package for R unit testing</a></li>
+  <li><a href="#blockr-clinical-data-analysis-without-code" id="toc-blockr-clinical-data-analysis-without-code" class="nav-link" data-scroll-target="#blockr-clinical-data-analysis-without-code">blockr: Clinical Data Analysis without Code</a></li>
+  <li><a href="#sumextras-streamlining-table-workflows-in-clinical-research-" id="toc-sumextras-streamlining-table-workflows-in-clinical-research-" class="nav-link" data-scroll-target="#sumextras-streamlining-table-workflows-in-clinical-research-">sumExtras: Streamlining Table Workflows in Clinical Research with R</a></li>
+  <li><a href="#an-r-based-pipeline-for-resource-optimized-participant-selec" id="toc-an-r-based-pipeline-for-resource-optimized-participant-selec" class="nav-link" data-scroll-target="#an-r-based-pipeline-for-resource-optimized-participant-selec">An R-Based Pipeline for Resource-Optimized Participant Selection in High-Cost Clinical Research</a></li>
+  <li><a href="#medicalcoder-a-unified-and-longitudinally-aware-framework-fo" id="toc-medicalcoder-a-unified-and-longitudinally-aware-framework-fo" class="nav-link" data-scroll-target="#medicalcoder-a-unified-and-longitudinally-aware-framework-fo">medicalcoder: A Unified and Longitudinally Aware Framework for ICD-Based Comorbidity Assessment in R</a></li>
+  <li><a href="#modeling-fall-risk-with-staged-trees-and-expert-judgement" id="toc-modeling-fall-risk-with-staged-trees-and-expert-judgement" class="nav-link" data-scroll-target="#modeling-fall-risk-with-staged-trees-and-expert-judgement">Modeling Fall Risk with Staged Trees and Expert Judgement</a></li>
+  <li><a href="#falls-in-the-elderly-is-a-major-public-health-concern-in-the-us-especially-with-the-rapidly-aging-population.-in-addition-to-evaluating-these-pathways-there-is-a-great-need-to-customize-these-pathways-to-specific-locations-and-areas.-the-aim-of-this-study-was-to-perform-an-expert-elicitation-protocol-to-predict-the-ways-health-insurance-affordability-could-impact-the-falls-risk-of-an-individual-in-mclennan-county.-we-constructed-the-initial-staged-event-tree-with-the-stagedtrees-package-and-deployed-a-shiny-app-to-display-the-changes-to-probabilities-of-events-occurring-based-on-expert-judgement.-we-also-show-how-we-can-check-the-forecasts-from-the-model-with-prequential-diagnostic-monitors-for-the-staged-tree-with-a-new-set-of-functions-in-a-cegmonitor-package-httpsgithub.comrachwhatsitcegmonitor." id="toc-falls-in-the-elderly-is-a-major-public-health-concern-in-the-us-especially-with-the-rapidly-aging-population.-in-addition-to-evaluating-these-pathways-there-is-a-great-need-to-customize-these-pathways-to-specific-locations-and-areas.-the-aim-of-this-study-was-to-perform-an-expert-elicitation-protocol-to-predict-the-ways-health-insurance-affordability-could-impact-the-falls-risk-of-an-individual-in-mclennan-county.-we-constructed-the-initial-staged-event-tree-with-the-stagedtrees-package-and-deployed-a-shiny-app-to-display-the-changes-to-probabilities-of-events-occurring-based-on-expert-judgement.-we-also-show-how-we-can-check-the-forecasts-from-the-model-with-prequential-diagnostic-monitors-for-the-staged-tree-with-a-new-set-of-functions-in-a-cegmonitor-package-httpsgithub.comrachwhatsitcegmonitor." class="nav-link" data-scroll-target="#falls-in-the-elderly-is-a-major-public-health-concern-in-the-us-especially-with-the-rapidly-aging-population.-in-addition-to-evaluating-these-pathways-there-is-a-great-need-to-customize-these-pathways-to-specific-locations-and-areas.-the-aim-of-this-study-was-to-perform-an-expert-elicitation-protocol-to-predict-the-ways-health-insurance-affordability-could-impact-the-falls-risk-of-an-individual-in-mclennan-county.-we-constructed-the-initial-staged-event-tree-with-the-stagedtrees-package-and-deployed-a-shiny-app-to-display-the-changes-to-probabilities-of-events-occurring-based-on-expert-judgement.-we-also-show-how-we-can-check-the-forecasts-from-the-model-with-prequential-diagnostic-monitors-for-the-staged-tree-with-a-new-set-of-functions-in-a-cegmonitor-package-httpsgithub.comrachwhatsitcegmonitor.">Falls in the elderly is a major public health concern in the US, especially with the rapidly aging population. In addition to evaluating these pathways, there is a great need to customize these pathways to specific locations and areas. The aim of this study was to perform an expert elicitation protocol to predict the ways health insurance affordability could impact the falls risk of an individual in McLennan County. We constructed the initial staged event tree with the “stagedtrees” package and deployed a Shiny app to display the changes to probabilities of events occurring based on expert judgement. We also show how we can check the forecasts from the model with prequential diagnostic monitors for the staged tree with a new set of functions in a “cegmonitor” package (https://github.com/rachwhatsit/cegmonitor).</a></li>
+  <li><a href="#using-ggregions-for-building-intuitive-coding-interfaces-for" id="toc-using-ggregions-for-building-intuitive-coding-interfaces-for" class="nav-link" data-scroll-target="#using-ggregions-for-building-intuitive-coding-interfaces-for">Using ggregions for building intuitive coding interfaces for anatomical visualizations</a></li>
+  <li><a href="#beyond-sequential-scaling-existing-medical-pipelines-with-fu" id="toc-beyond-sequential-scaling-existing-medical-pipelines-with-fu" class="nav-link" data-scroll-target="#beyond-sequential-scaling-existing-medical-pipelines-with-fu">Beyond Sequential: Scaling Existing Medical Pipelines with ‘futurize’</a></li>
+  <li><a href="#parallel-computing-in-r-to-analyze-big-health-data" id="toc-parallel-computing-in-r-to-analyze-big-health-data" class="nav-link" data-scroll-target="#parallel-computing-in-r-to-analyze-big-health-data">Parallel computing in R to analyze big health data</a></li>
+  <li><a href="#the-mbcproject-r-package-enabling-reproducible-analysis-of-m" id="toc-the-mbcproject-r-package-enabling-reproducible-analysis-of-m" class="nav-link" data-scroll-target="#the-mbcproject-r-package-enabling-reproducible-analysis-of-m">The MBCproject R Package: Enabling reproducible analysis of multi-omic data in metastatic breast cancer</a></li>
+  <li><a href="#synthetic-by-design-pairing-toysurveydata-and-nssp-synthetic" id="toc-synthetic-by-design-pairing-toysurveydata-and-nssp-synthetic" class="nav-link" data-scroll-target="#synthetic-by-design-pairing-toysurveydata-and-nssp-synthetic">Synthetic by Design: Pairing toysurveydata and NSSP Synthetic Data Generator for Privacy-Safe Public Health Training and Development</a></li>
+  <li><a href="#divine-curated-datasets-and-tools-for-medical-data" id="toc-divine-curated-datasets-and-tools-for-medical-data" class="nav-link" data-scroll-target="#divine-curated-datasets-and-tools-for-medical-data">DIVINE: Curated Datasets and Tools for Medical Data</a></li>
+  <li><a href="#preventing-data-leakage-in-clinical-machine-learning-guarded" id="toc-preventing-data-leakage-in-clinical-machine-learning-guarded" class="nav-link" data-scroll-target="#preventing-data-leakage-in-clinical-machine-learning-guarded">Preventing Data Leakage in Clinical Machine Learning: Guarded Resampling Workflows with fastml in R</a></li>
+  <li><a href="#when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat" id="toc-when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat" class="nav-link" data-scroll-target="#when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat">When Quant Meets Qual: Extending the R Ecosystem for Qualitative Data</a></li>
+  <li><a href="#rapid-and-comprehensive-power-analysis-in-r-with-a-focus-on-" id="toc-rapid-and-comprehensive-power-analysis-in-r-with-a-focus-on-" class="nav-link" data-scroll-target="#rapid-and-comprehensive-power-analysis-in-r-with-a-focus-on-">Rapid and comprehensive power analysis in R, with a focus on planned error control for multiple outcomes</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">R/Medicine Abstracts</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>Abstracts are listed by day. Click a talk title on the <a href="Program.html">Program</a> page to jump directly to its abstract.</p>
+</blockquote>
+<hr>
+<!-- # Workshop/Demo Day 1 — Tuesday, May 5, 2026 -->
+<!-- ## You Should Probably Map That: Introduction to Geospatial Analysis in R {#you-should-probably-map-that-introduction-to-geospatial} -->
+<!-- **Anjile An** | Weill Cornell Medical College -->
+<!-- *Demo — Tuesday, May 5, 2026* -->
+<!-- Maps can simplify huge amounts of data in an elegant way, and it doesn't have to be complicated. Join me as I nerd out about why maps are important and how they can be used in your work. We'll join tabular data and make maps using familiar {ggplot2} commands and also explore mapping with shapefile data (the standard for geospatial specific software like ArcGIS) using {sf} and {tmap}.  -->
+<!-- --- -->
+<!-- ## Interactive and Instant: GenAI-driven Creation of Clinical Trial Applications {#interactive-and-instant-genai-driven-creation-of-clinical-tr} -->
+<!-- **Marcin Dubel** | Appsilon -->
+<!-- *Demo — Tuesday, May 5, 2026* -->
+<!-- Building exploratory analysis dashboards for clinical trials requires considerable expertise, extensive time, and deep familiarity with specialized frameworks. In this talk, we share our GenAI solution to significantly streamline this process. We will present a tool, powered by Claude Code, that enables biostatisticians and clinical researchers to effortlessly create and immediately preview applications tailored for exploratory clinical data analysis using {teal} R package. -->
+<!-- Throughout our journey, we experimented with various GenAI-driven solutions, including code editors integrated with AI assistance tools, and approaches leveraging MCP servers. Current implementation is an interactive AI-powered chat interface designed to simplify the application-building experience, providing users with immediate previews, and reducing both development complexity and the learning curve associated with the {teal} package. -->
+<!-- We will demonstrate how GenAI-driven solutions can empower users with limited programming backgrounds to rapidly build effective exploratory analysis dashboards, discuss challenges encountered, and highlight insights gained through our iterative development process. -->
+<!-- --- -->
+<!-- ## Mastering Clinical Data Summaries with {gtsummary} and AI {#mastering-clinical-data-summaries-with-gtsummary-and-ai} -->
+<!-- **Daniel D. Sjoberg** | Genentech; **Shannon Pileggi** | The Prostate Cancer Clinical Trials Consortium -->
+<!-- *Workshop — Tuesday, May 5, 2026* -->
+<!-- Abstract coming soon. -->
+<!-- --- -->
+<!-- ## Building Accessible, On-Brand Documents with Quarto {#building-accessible-on-brand-documents-with-quarto} -->
+<!-- **Charlotte Wickham** | Posit -->
+<!-- *Demo — Tuesday, May 5, 2026* -->
+<!-- Abstract coming soon. -->
+<!-- --- -->
+<!-- ## R and RedCap Panel Discussion {#r-and-redcap-panel-discussion} -->
+<!-- **Raymond Balise, Brandon Rose, Rich Hanna, and others** -->
+<!-- *Panel — Tuesday, May 5, 2026* -->
+<!-- Abstract coming soon. -->
+<!-- --- -->
+<!-- ## Ctrialsgov R Package {#ctrialsgov-r-package} -->
+<!-- **Michael Kane** | MD Anderson Cancer Center -->
+<!-- *Demo — Tuesday, May 5, 2026* -->
+<!-- Abstract coming soon. -->
+<!-- --- -->
+<!-- # Workshop/Demo Day 2 — Wednesday, May 6, 2026 -->
+<!-- ## Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards {#demonstration-on-making-shiny-dashboards-accessible-for-user} -->
+<!-- **Abigail Stamm & Eric Kvale** | Minnesota Department of Health -->
+<!-- *Demo — Wednesday, May 6, 2026* -->
+<!-- Online dashboards use data visualizations to quickly convey information. Interactive elements like charts and data filters often display additional information not accessible by screen readers. Navigating these elements often relies on a mouse and may not be accessible by keyboard. Accessibility features improve the overall presentation and user experience by adding functionality. These features augment, amplify, and enhance the content so that users can interact with and understand the same content in multiple ways, depending on their needs and preferences. -->
+<!-- Our demonstration will cover how to address several accessibility issues in Shiny. We have chosen issues related to screen reader use, keyboard use, and understanding that may be overlooked in sources that cover accessibility in Shiny. We will use an example dashboard that failed several accessibility checks. For each check, we will demonstrate the issue, show a way to revise the dashboard code to address it, and demonstrate how to test it. We estimate 20 minutes of instruction, 15 minutes of live coding, and 15 minutes of demonstration, with 10 minutes for questions at the end. -->
+<!-- All files, including the presentation, starting script, and suggested solution script, will be available in the GitHub repository https://github.com/ajstamm/shiny-a11y-app for attendees who wish to code along. Our past presentations on accessibility in Shiny dashboards can also be found here. -->
+<!-- --- -->
+<!-- ## REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User {#redcapsync-and-rosyredcap-advanced-redcap-api-for-even-the-b} -->
+<!-- **Brandon Rose & Natalie Goulett** | University of Texas Southwestern Medical Center -->
+<!-- *Demo — Wednesday, May 6, 2026* -->
+<!-- R and REDCap are both widely utilized in medicine, including basic science, clinical research, and clinal trials. Both have independent strengths, but together they can create powerful data pipelines. Several R packages exist for using however, REDCapSync is the first “get-everything” REDCap R package that is API-efficient and project-agnostic. RosyREDCap is a companion shiny application for exploratory data analysis.   -->
+<!-- Using a cache of last project save, a file directory, and the REDCap log, REDCapSync only updates the data that has been changed since the last API call. Each project is maintained as a standardized R6 object that can be used downstream for the best that R has to offer! Furthermore, REDCapSync can be used to upload labelled data using the API, a feature not available on the REDCap website.  -->
+<!-- RosyREDCap is an R shiny application that launches a local website for exploratory data analysis of REDCap projects. It is built to load all previous projects that were setup with the REDCapSync package. The user is able to toggle between projects, deidentify data, perform ad-hoc data visualizations, and more.   -->
+<!-- Using tools like REDCapSync and RosyREDCap allow even new R users to harness the power of the REDCap API without the burden of learning dozens of API endpoints. During my presentation I will demonstrate the combined strengths of R and REDCap for maintaining strong reproducible clinical data pipelines that can improve clinical research and patient care. -->
+<!-- --- -->
+<!-- ## LLMs for Data Analysis in R {#llms-for-data-analysis-in-r} -->
+<!-- **Sara Altman** | Posit -->
+<!-- *Workshop — Wednesday, May 6, 2026* -->
+<!-- Abstract coming soon. -->
+<!-- --- -->
+<!-- ## No more copy and paste! Parameterized plots and reports with R and Quarto {#no-more-copy-and-paste-parameterized-plots-and-reports-with-} -->
+<!-- **Nicola Rennin** -->
+<!-- *Workshop — Wednesday, May 6, 2026* -->
+<!-- Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code. -->
+<!-- This workshop is for you if: -->
+<!-- ✍️ you make similar PDF reports every month -->
+<!-- 📊 you want to create the same plot for different subsets of your data -->
+<!-- 💡 you just want some {ggplot2} or Quarto tips! -->
+<!-- --- -->
+<section id="meeting-day-1-thursday-may-7-2026" class="level1">
+<h1>Meeting Day 1 — Thursday, May 7, 2026</h1>
+<!-- ## Software sustainability and community management {#software-sustainability-and-community-management} -->
+<!-- **Yanini Bellini** | rOpenSci -->
+<!-- *Keynote — Thursday, May 7, 2026* -->
+<!-- Sustainable software depends as much on people and practices as it does on code. In this talk, I’ll draw on my experience leading and supporting R communities to show how intentional community management contributes to long-term software sustainability. Using concrete examples, I’ll highlight how communities of practice help distribute maintenance, grow skills, and support inclusive, resilient software ecosystems across research and open source. -->
+<!-- --- -->
+<section id="bridging-the-gap-between-spreadsheets-and-shiny-interactive-" class="level2">
+<h2 class="anchored" data-anchor-id="bridging-the-gap-between-spreadsheets-and-shiny-interactive-">Bridging the Gap Between Spreadsheets and Shiny: Interactive Clinical Data Entry with esq.handsontable</h2>
+<p><strong>Anastasiia Kostiv</strong> | ESQlabs</p>
+<p><em>Regular Talk — Thursday, May 7, 2026</em></p>
+<p>Clinical researchers frequently rely on spreadsheets for data entry due to their familiar, interactive editing experience. Yet spreadsheets lack validation enforcement, audit trails, and integration with analytical pipelines. Existing R/Shiny table widgets — such as DT (read-only) and rhandsontable (largely unmaintained) — leave a gap: there is no actively maintained, feature-rich solution for structured data entry within Shiny applications.</p>
+<p>We present <code>esq.handsontable</code>, an open-source R package developed at esqlabs GmbH that brings Excel-like editing to Shiny with capabilities designed for clinical and life-science workflows. The package wraps the Handsontable JavaScript library via a React frontend and provides validated dropdowns, multi-select fields with drag-and-drop sorting, conditional cell disabling based on other cell values, dynamic option updates at runtime, and row-level action buttons — all configured declaratively from R.</p>
+<hr>
+</section>
+<section id="metainsight-v7-a-comprehensive-and-reproducible-shiny-app-fo" class="level2">
+<h2 class="anchored" data-anchor-id="metainsight-v7-a-comprehensive-and-reproducible-shiny-app-fo">MetaInsight v7: A Comprehensive and Reproducible Shiny App for Network Meta-analysis</h2>
+<p><strong>Simon Smart</strong> | University of Leicester</p>
+<p><em>Regular Talk — Thursday, May 7, 2026</em></p>
+<p>Network meta-analysis (NMA) enables comparisons between treatments in different studies, even when no direct comparisons have been made, thereby determining the ‘best’ intervention for patients. Researchers may lack the statistical knowledge or programming expertise to conduct NMA in R, limiting uptake of cutting-edge methods. MetaInsight is an R Shiny web app that was developed to enable NMA to be conducted through a user-friendly interface and has been cited over 300 times.</p>
+<p>We present a major update (https://crsu.shinyapps.io/MetaInsight_Scholar/) focussed on enabling reproducibility by refactoring the app using the shinyscholar template. Now analyses can be stored permanently, either as a Quarto or html document and also saved and restored from disk. Additionally, we have improved the quality of plot downloads, added the option to upload risk of bias data, developed a new interface for excluding studies from sensitivity analyses, made models refit automatically and enabled data exports to the CINeMA app (Confidence in Network Meta-Analysis). As a side product of enabling reproducibility, the functionality of the app is made available as an R package, providing a simple interface to the various R packages used to conduct NMA.</p>
+<p>The talk will demonstrate the new features whilst conducting a NMA in MetaInsight and discuss some of the challenges associated with refactoring an existing codebase and developing apps that analyse data uploaded by users.</p>
+<hr>
+</section>
+<section id="nih-not-invented-here-balancing-unique-software-needs-vs-out" class="level2">
+<h2 class="anchored" data-anchor-id="nih-not-invented-here-balancing-unique-software-needs-vs-out">NIH: Not Invented Here: balancing unique software needs vs out-of-box (almost) perfect generic solution.</h2>
+<p><strong>Dror Berel</strong> | Consultant</p>
+<p><em>Regular Talk — Thursday, May 7, 2026</em></p>
+<p>Biomedical Researchers face persistent tension between building bespoke software solutions and adopting existing frameworks. This “Not Invented Here” (NIH) syndrome often leads to costly reinvention, yet unique regulatory and scientific demands sometimes justify custom approaches. This presentation examines this balance through Teal, Pharmavers’ open-source framework for clinical trial reporting. Teal’s “module-first” architecture provides a validated foundation while enabling domain-specific customization through modular components. The Module-First approach features four key characteristics: Reusability through study-agnostic analytical modules; Configuration-Driven customization via YAML rather than code changes; Rapid Deployment by combining existing modules; and Unified Experience through a meta-UI framework providing linked data filtering, standardized reporting, and consistent user experience. This significantly reduces development time while maintaining quality and consistency. Through real-world examples, I demonstrate how this approach addresses regulatory compliance, data traceability, and cross-functional collaboration requirements. The presentation explores three critical decision points for developers: when to build versus adopt; how to evaluate “almost perfect” solutions; and strategies for extending generic frameworks without compromising validation or maintainability.</p>
+<hr>
+</section>
+<section id="cougarstats-an-interactive-r-based-platform-for-applied-heal" class="level2">
+<h2 class="anchored" data-anchor-id="cougarstats-an-interactive-r-based-platform-for-applied-heal">CougarStats: An Interactive R-Based Platform for Applied Health Data Science</h2>
+<p><strong>Ashok Krishnamurthy &amp; Darren Law Yan Lun</strong> | Mount Royal University</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>CougarStats (www.cougarstats.ca) is a web-based analytical platform designed to support applied health data science workflows using the R ecosystem. The application enables biomedical researchers and health analysts to explore datasets, fit statistical and predictive models, and generate publication-ready visualizations through an intuitive browser interface. Emphasis is placed on transparent computation, reproducibility, and interactive model exploration so that users can move efficiently from raw clinical or population health data to interpretable insights. By lowering technical barriers while exposing the underlying R logic,</p>
+<p>CougarStats also serves as a practical bridge for attendees seeking to strengthen their R proficiency in real-world health analytics contexts. This presentation demonstrates how the platform can be used to accelerate exploratory analysis, generate data visualizations, and enhance methodological understanding in health data science settings.</p>
+<hr>
+</section>
+<section id="toggling-between-traditional-and-chat-based-data-filters-in-" class="level2">
+<h2 class="anchored" data-anchor-id="toggling-between-traditional-and-chat-based-data-filters-in-">Toggling Between Traditional and Chat-Based Data Filters in Shiny</h2>
+<p><strong>Alex Zajichek</strong> | Cleveland Clinic</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>Packages like {ellmer} and {querychat} have opened new doors for how users can interact with data within Shiny applications. In this talk, we’ll provide a brief introduction to these packages, explain their clever advantages for data security and statistical integrity, and provide an example of how to implement a toggle in the application’s user interface (UI) to enable the user to switch between traditional data filters and an LLM-based chat interface for filtering map, table, and plot components in the context of the Hospital Readmissions Reduction Program (HRRP).</p>
+<hr>
+</section>
+<section id="from-prompt-to-proof-governing-llm-intelligence-in-pharma-wi" class="level2">
+<h2 class="anchored" data-anchor-id="from-prompt-to-proof-governing-llm-intelligence-in-pharma-wi">From Prompt to Proof: Governing LLM Intelligence in Pharma with Snowflake and Shiny</h2>
+<p><strong>Tanya Cashorali</strong> | TCB Analytics</p>
+<p><em>Regular Talk — Thursday, May 7, 2026</em></p>
+<p>This talk presents a production-ready AI architecture for generating defensible competitive and clinical intelligence in the pharmaceutical industry. While large language models can summarize biomedical content, healthcare decisions demand traceability, source attribution, and reproducibility. We demonstrate how to transform LLM outputs into governed, auditable, and reusable insights aligned with real-world regulatory and strategic requirements.</p>
+<p>Our approach separates probabilistic AI reasoning from deterministic data execution. The intelligence pipeline lives natively in Snowflake and is exposed through REST API endpoints, making it fully language agnostic. R, Python, or other clients can interface with the same services while keeping the user interface decoupled from orchestration and core logic.</p>
+<p>We showcase LLM-based question classification, structured entity extraction, semantic caching with embeddings, knowledge graph execution for grounded retrieval, and source-aware integration with PubMed and ClinicalTrials.gov. A Shiny interface deployed with Posit Team demonstrates how human-in-the-loop validation, audit trails, and versioned knowledge objects can support institutional memory and continuous monitoring. Attendees will learn reproducible design patterns for building trustworthy, scalable AI systems in regulated healthcare environments.</p>
+<hr>
+</section>
+<section id="report-agent-an-llm-powered-framework-for-automated-shell-to" class="level2">
+<h2 class="anchored" data-anchor-id="report-agent-an-llm-powered-framework-for-automated-shell-to">Report Agent: An LLM-Powered Framework for Automated Shell-to-Code Report Generation</h2>
+<p><strong>Lucie Zhang</strong> | Genentech</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>The development of clinical Tables, Listings, and Graphs (TLGs) from Statistical Analysis Plan (SAP) shells remains a labor-intensive and error-prone step in statistical programming workflows. Although the pharmaverse ecosystem has improved clinical reporting infrastructure, programmers still manually translate narrative shell specifications into executable R code, introducing inefficiencies, variability across programmers, and increased quality-control burden.</p>
+<p>To address this challenge, we developed TLG-Agent for clinical research, this is an LLM-driven framework that automates the conversion of shell specifications into reproducible R code. TLG-Agent parses shell content—including titles, footnotes, table structure, column definitions, and summary statistics—and converts these elements into structured prompts for a Large Language Model. The generated code is executed within a controlled environment to produce TLG outputs, while an interactive R Shiny interface allows users to review prompts, inspect AI-generated code, and preview results in a transparent workflow.</p>
+<p>In a proof-of-concept evaluation using a baseline demographics shell, TLG-Agent reproduced expected table layouts and summary statistics. Preliminary results suggest reduced development time, improved programming consistency, and strong potential for integrating LLM-based agents into clinical reporting workflows.</p>
+<hr>
+</section>
+<section id="ai-assisted-authoring-of-an-open-access-portuguese-biostatis" class="level2">
+<h2 class="anchored" data-anchor-id="ai-assisted-authoring-of-an-open-access-portuguese-biostatis">AI-Assisted Authoring of an Open-Access Portuguese Biostatistics Book in Quarto and R</h2>
+<p><strong>Audrei Pavanello &amp; Leonardo Pestillo de Oliveira</strong> | Cesumar Institute of Science, Technology and Innovation</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>Teaching biostatistics to healthcare doctoral students presents a persistent challenge: students need rigorous statistical foundations, practical R skills, and real-world health data applications, but few open-access resources address all three simultaneously, particularly in Portuguese. This talk describes the development of “Bioestatística Aplicada à Saúde usando R,” a free, open-access biostatistics book built with Quarto and R, covering tidyverse data wrangling, ggplot2 visualization, hypothesis testing, regression modeling, psychometric analysis, and text mining with LLMs. All examples use real hospital admission data from DATASUS, Brazil’s public health information system. The book was developed using an AI-assisted authoring workflow powered by Claude Code, which substantially accelerated the production of reproducible code examples, chapter structure, and Quarto formatting. We discuss how this workflow was implemented, where it helped most, and its limitations for technical educational content requiring domain expertise. The resulting book is published via Zenodo (DOI: 10.5281/zenodo.18458781), hosted on GitHub Pages, and used in a PhD-level Health Promotion program. We argue that AI-assisted authoring, when anchored in subject-matter expertise, offers a reproducible model for developing open educational resources in R, particularly for non-English-speaking research communities underserved by existing materials.</p>
+<hr>
+</section>
+<section id="supercharging-reproducible-research-in-r-with-github-actions" class="level2">
+<h2 class="anchored" data-anchor-id="supercharging-reproducible-research-in-r-with-github-actions">Supercharging Reproducible Research in R with GitHub Actions</h2>
+<p><strong>Jonathan Pearce</strong> | McGill University</p>
+<p><em>Regular Talk — Thursday, May 7, 2026</em></p>
+<p>Abstract coming soon.</p>
+<hr>
+</section>
+<section id="care-and-feeding-of-your-biostats-team-scaling-best-practice" class="level2">
+<h2 class="anchored" data-anchor-id="care-and-feeding-of-your-biostats-team-scaling-best-practice">Care and Feeding of Your Biostats Team: Scaling best practices in a large hybrid SAS/R team</h2>
+<p><strong>John Ehrlinger</strong> | Cleveland Clinic</p>
+<p><em>Regular Talk — Thursday, May 7, 2026</em></p>
+<p>The Cardiovascular Outcomes Registries and Research (CORR) group at Cleveland Clinic supports observational cardiovascular outcomes research, producing 75–100 peer-reviewed manuscripts per year from 19 core staff — and scaling to that size exposes every shortcut that worked when one person held the workflow in their head. Our core deliverable is the Analysis Report: each hypothesis maps to a statistical approach, each approach to a SAS or R job, and outputs are manually assembled into a document researchers use to write papers. At this scale, inconsistency in report structure is a production problem, not an aesthetic one. We describe a framework mapping SAS conventions to R equivalents: batch jobs to Quarto documents, reducing the manual collation step; a shared macro library to internal R packages (ggRandomForests, hvtiPlotR, hvtiRutilities) standardizing ggplot2 themes and utilities; informal environment tracking to RStudio Projects with renv; and a 25-year social contract of naming conventions and folder standards we are reinforcing with automated checks — moving toward “trust, but verify.” The underlying motivation is reducing manual and cognitive load so biostatisticians can focus on science, making good practice the natural path for SAS and R users alike. We share what is working, where we have gaps, and how framing these investments as production reliability rather than methodological idealism changed conversations with leadership and colleagues.</p>
+<!-- --- -->
+<!-- ## Voices in the Code: A Story about People, Their Values, and the Algorithm They Made {#voices-in-the-code-a-story-about-people-their-values-and-the} -->
+<!-- **David Robinson** | OpenAI -->
+<!-- *Keynote — Thursday, May 7, 2026* -->
+<!-- Today policymakers and scholars are seeking better ways to share the moral decisionmaking within high stakes software — exploring ideas like public participation, transparency, forecasting, and algorithmic audits. But there are few real examples of those techniques in use. In Voices in the Code, scholar David G. Robinson tells the story of how one community built a life-and-death algorithm in a relatively inclusive, accountable way. Between 2004 and 2014, a diverse group of patients, surgeons, clinicians, data scientists, public officials and advocates collaborated and compromised to build a new transplant matching algorithm – a system to offer donated kidneys to particular patients from the U.S. national waiting list. -->
+<hr>
+</section>
+<section id="streamlined-access-to-nhanes-data-fast-harmonized-and-reliab" class="level2">
+<h2 class="anchored" data-anchor-id="streamlined-access-to-nhanes-data-fast-harmonized-and-reliab">Streamlined Access to NHANES Data: Fast, Harmonized, and Reliable</h2>
+<p><strong>Natalie Neugaard &amp; Amrit Baral</strong> | University of Miami</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>The National Health and Nutrition Examination Survey (NHANES) offers nationally representative health, examination, and laboratory data on US adults aged 18 years and older spanning more than 25 years. Despite its value, working with NHANES data is often tedious. Researchers must reconcile inconsistent dataset structures and correctly specify complex survey weights when combining cycles. Unreliable CDC server access can also break reproducible pipelines, and the cycle suffix system turns data discovery into a scavenger hunt. The nhanesdata R package delivers fast, harmonized, analysis-ready NHANES tables. Public datasets are hosted on reliable cloud storage and pre-merged across survey cycles. The read_nhanes() function returns multi-cycle data with a cycle/year variable, consistent column classes, and a clean structure. Built-in search tools help users locate variables across the NHANES catalog without navigating suffix tables such as DEMO, DEMO_B through DEMO_L. The create_design() function constructs survey designs and recalculates multi-cycle weights following NHANES guidance. Data loads in seconds, allowing researchers to focus on analysis. The package is available on CRAN, and datasets are publicly hosted without requiring user authentication. The data can be used with any Arrow-compatible language. The presentation will demonstrate how researchers can retrieve harmonized NHANES datasets and construct valid survey designs with a few lines of code.</p>
+<hr>
+</section>
+<section id="infodengue-intramunicipal-an-r-package-under-development" class="level2">
+<h2 class="anchored" data-anchor-id="infodengue-intramunicipal-an-r-package-under-development">Infodengue intramunicipal - An R package under development</h2>
+<p><strong>Ayrton Gouveia &amp; Thais Riback</strong> | Fundação Oswaldo Cruz</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>Infodengue is a pioneering Brazilian project that uses R to monitor and forecast arboviruses (dengue, chikungunya, Zika) nationwide, informing data-driven decisions by the Ministry of Health. Infodengue is a successful surveillance system at the city (municipality) level, however capturing transmission dynamics at intramunicipal scale—crucial for targeted interventions—has been a major challenge. This difficulty arises because the sparse case notification data at this level makes robust analysis difficult. This work presents a R pipeline developed to tackle this challenge, and discusses its successful implementation in generating Infodengue’s outputs: climate receptivity, alert level, and Rt at the intramunicipal level for two Brazilian cities: Recife and Joinville. This pipeline is being consolidated into an R package, to facilitate use and adaptation by other municipalities and researchers.</p>
+<p>The pipeline operates by aggregating individual case notification data to the neighborhood level using two key variables: neighborhood ID and name. This requires a table containing these identifiers for all official neighborhoods in a municipality, along with population estimates to calculate incidence rates. Once neighborhood-level data is prepared, the pipeline can aggregate cases into larger spatial units that align with each city’s administrative structure—health districts in Joinville and administrative regions in Recife—enabling comparisons across different governance scales.</p>
+<hr>
+</section>
+<section id="redcapdm-managing-redcap-data" class="level2">
+<h2 class="anchored" data-anchor-id="redcapdm-managing-redcap-data">REDCapDM: Managing REDCap Data</h2>
+<p><strong>João Carmezim</strong> | IGTP</p>
+<p><em>Lightning Talk — Thursday, May 7, 2026</em></p>
+<p>REDCap (Research Electronic Data Capture) is widely used in clinical research for data collection, but preparing REDCap exports for statistical analysis often requires a laborious and a time-consuming task. The R package REDCapDM was introduced at R/Medicine 2023 to streamline this process by providing tools for data import, transformation, query generation, and query follow-up. Since then, the package has been formally published in BMC Medical Research Methodology (https://doi.org/10.1186/s12874-024-02178-6) and has undergone a substantial redesign.</p>
+<p>The most notable change in this release is a redesigned data transformation pipeline. Previously handled by a single function, the workflow has now been divided into a step-by-step process. This allows users to apply each transformation independently, inspect intermediate results at every stage, and transparently track how REDCap exported data are converted into analysis-ready datasets. The new design also makes it easier to customize the pipeline to accommodate different REDCap project structures. This release also includes improved error handling with more informative messages and resolving previous inconsistencies.</p>
+<p>These updates make REDCapDM a more robust, flexible, and transparent tool for preparing analysis-ready REDCap data within reproducible R workflows, supporting both researchers and developers working with clinical data. The package is available on CRAN and actively developed on GitHub.</p>
+<hr>
+</section>
+</section>
+<section id="meeting-day-2-friday-may-8-2026" class="level1">
+<h1>Meeting Day 2 — Friday, May 8, 2026</h1>
+<!-- ## The Truth Seekers: Learning How to Assess Generative AI from Professional Sceptics {#the-truth-seekers-learning-how-to-assess-generative-ai-from-} -->
+<!-- **Peter Gruber** | USI Università della Svizzera italiana -->
+<!-- *Keynote — Friday, May 8, 2026* -->
+<!-- Peter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008. -->
+<!-- Dr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis. -->
+<!-- --- -->
+<section id="bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res" class="level2">
+<h2 class="anchored" data-anchor-id="bulkreadr-fast-reproducible-bulk-data-import-for-r-based-res">bulkreadr: Fast, Reproducible Bulk Data Import for R-Based Research Workflows</h2>
+<p><strong>Ezekiel Ogundepo</strong> | African Institute for Mathematical Sciences</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>Research and public health data workflows often begin with fragmented inputs: multiple spreadsheets, delimited text files, and labelled survey extracts collected across sites, teams, or time points. Importing these files manually is inefficient, difficult to reproduce, and prone to error. Although the R ecosystem offers strong tools for reading individual file types, researchers still lack a simple, unified approach for bulk import across heterogeneous sources.</p>
+<p>bulkreadr is an open-source R package that streamlines this process through a consistent, vectorised interface built on packages such as readxl, readr, googlesheets4, and haven. It enables users to import all sheets in Excel workbooks or Google Sheets, read whole directories of CSV and related text files, preserve variable labels from SPSS and Stata files, and automatically generate data dictionaries and missing-data summaries. Outputs are returned as tibbles, making the package easy to integrate into tidyverse-based analytical pipelines.</p>
+<p>In a Multidimensional Poverty Research Project spanning 19 northern Nigerian states, bulkreadr reduced data-loading time from about 40 minutes of manual processing to under 3 minutes of scripted execution. Automated dictionary generation also improved questionnaire harmonisation across survey rounds and reduced downstream coding errors.</p>
+<p>By reducing friction at the data-ingestion stage, bulkreadr supports more reproducible, scalable, and transparent research workflows.</p>
+<hr>
+</section>
+<section id="from-chaos-to-consistency-building-a-long-lasting-polish-art" class="level2">
+<h2 class="anchored" data-anchor-id="from-chaos-to-consistency-building-a-long-lasting-polish-art">From Chaos to Consistency: Building a Long-Lasting Polish Arthroplasty Registry Data Pipeline</h2>
+<p><strong>Dominik Żabiński</strong> | Gruca Orthopaedic and Trauma Teaching Hospital</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+</section>
+<section id="this-talk-examines-the-systematic-transformation-of-polish-arthroplasty-registry-data-analysis-from-a-fragmented-manual-practice-into-a-coordinated-and-sustainable-analytical-infrastructure.-initially-analytical-work-relied-on-ad-hoc-r-scripts-circulated-informally-among-analysts-resulting-in-inconsistent-methods-limited-reproducibility-and-substantial-manual-effort.-collaboration-with-clinicians-was-similarly-constrained-by-static-excel-outputs-that-were-difficult-to-maintain-and-update.-to-address-these-limitations-we-introduced-structured-version-control-to-formalize-collaboration-within-the-analytics-team-and-ensure-transparent-traceable-development-of-analytical-workflows.-we-then-replaced-static-reporting-with-quarto-documents-and-interactive-shiny-dashboards-deployed-on-the-posit-platform-enabling-clinicians-to-access-timely-reproducible-and-dynamically-updated-results.-to-further-enhance-consistency-and-reduce-duplication-of-effort-we-developed-a-suite-of-in-house-r-packages-that-standardize-data-preparation-modeling-procedures-and-reporting-formats-across-projects.-together-these-interventions-established-a-stable-multi-user-pipeline-that-has-supported-reliable-arthroplasty-analytics-for-several-years.-the-talk-outlines-the-technical-architecture-organizational-changes-and-methodological-principles-that-enabled-this-transition-and-reflects-on-the-broader-implications-for-data-driven-collaboration-in-clinical-settings." class="level2">
+<h2 class="anchored" data-anchor-id="this-talk-examines-the-systematic-transformation-of-polish-arthroplasty-registry-data-analysis-from-a-fragmented-manual-practice-into-a-coordinated-and-sustainable-analytical-infrastructure.-initially-analytical-work-relied-on-ad-hoc-r-scripts-circulated-informally-among-analysts-resulting-in-inconsistent-methods-limited-reproducibility-and-substantial-manual-effort.-collaboration-with-clinicians-was-similarly-constrained-by-static-excel-outputs-that-were-difficult-to-maintain-and-update.-to-address-these-limitations-we-introduced-structured-version-control-to-formalize-collaboration-within-the-analytics-team-and-ensure-transparent-traceable-development-of-analytical-workflows.-we-then-replaced-static-reporting-with-quarto-documents-and-interactive-shiny-dashboards-deployed-on-the-posit-platform-enabling-clinicians-to-access-timely-reproducible-and-dynamically-updated-results.-to-further-enhance-consistency-and-reduce-duplication-of-effort-we-developed-a-suite-of-in-house-r-packages-that-standardize-data-preparation-modeling-procedures-and-reporting-formats-across-projects.-together-these-interventions-established-a-stable-multi-user-pipeline-that-has-supported-reliable-arthroplasty-analytics-for-several-years.-the-talk-outlines-the-technical-architecture-organizational-changes-and-methodological-principles-that-enabled-this-transition-and-reflects-on-the-broader-implications-for-data-driven-collaboration-in-clinical-settings.">This talk examines the systematic transformation of Polish Arthroplasty Registry data analysis from a fragmented, manual practice into a coordinated and sustainable analytical infrastructure. Initially, analytical work relied on ad hoc R scripts circulated informally among analysts, resulting in inconsistent methods, limited reproducibility, and substantial manual effort. Collaboration with clinicians was similarly constrained by static Excel outputs that were difficult to maintain and update. To address these limitations, we introduced structured version control to formalize collaboration within the analytics team and ensure transparent, traceable development of analytical workflows. We then replaced static reporting with Quarto documents and interactive Shiny dashboards deployed on the Posit platform, enabling clinicians to access timely, reproducible, and dynamically updated results. To further enhance consistency and reduce duplication of effort, we developed a suite of in house R packages that standardize data preparation, modeling procedures, and reporting formats across projects. Together, these interventions established a stable, multi user pipeline that has supported reliable arthroplasty analytics for several years. The talk outlines the technical architecture, organizational changes, and methodological principles that enabled this transition, and reflects on the broader implications for data driven collaboration in clinical settings.</h2>
+</section>
+<section id="encapsulated-test-coverage-testassessr-a-package-for-r-unit-" class="level2">
+<h2 class="anchored" data-anchor-id="encapsulated-test-coverage-testassessr-a-package-for-r-unit-">Encapsulated Test Coverage: test.assessr – a package for R unit testing</h2>
+<p><strong>Edward Gillian</strong> | Sanofi</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>The test.assessr package has been developed to address the growing need for a dedicated, flexible, and fully isolated unit‑testing infrastructure for R package validation. As validation needs evolved, the Sanofi Validation team identified a distinct requirement: a standalone package capable of generating robust, reproducible unit‑test coverage across diverse and sometimes highly unconventional testing environments. The motivation for test.assessr stems from both business and technical considerations. A new validation business use case requires the ability to assess R packages to remediate test coverage. Also, R package unit testing requires support for numerous non‑standard frameworks such as data.table, tinytest, RUnit, and test-cran. CRAN reviewers have further emphasized the need for isolated testing environments for unit test coverage. By externalizing testing functionality to test.assessr, we enable modularity, maintainability, and long‑term sustainability. Although cross‑package coordination introduces some complexity, these trade‑offs are outweighed by the clarity and stability gained through a dedicated testing architecture. This talk presents the design motivations, practical implementation insights, and lessons learned, contributing to ongoing conversations in the validation community about reproducible validation workflows and sustainable software engineering practices.</p>
+<hr>
+</section>
+<section id="blockr-clinical-data-analysis-without-code" class="level2">
+<h2 class="anchored" data-anchor-id="blockr-clinical-data-analysis-without-code">blockr: Clinical Data Analysis without Code</h2>
+<p><strong>Christoph Sax</strong> | cynkra / University of Basel</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>We present a clinical data analysis tool built with blockr, an open-source block-based visual programming framework for R, built on Shiny. The tool operates on CDISC ADaM datasets and provides multiple views for safety review: patient profile timelines with adverse events, laboratory panels, vital sign trends, and cohort-level summary tables with cross-filtering. An AI assistant allows users to ask natural-language questions about the data. Clinicians and medical monitors can conduct safety reviews without programming and without waiting for custom reports.</p>
+<p>blockr is a group of R packages that provides reusable analytical blocks covering data import, dplyr transformations, ggplot2 visualizations, and clinical displays. Users assemble these blocks into pipelines through a point-and-click interface. Because blocks are modular, the same tool can be reconfigured for different trials, endpoints, or therapeutic areas. Every interaction maps to generated R code, so analyses are reproducible and auditable. New blocks can be added by writing R functions. The tool has been developed in collaboration with Bristol Myers Squibb.</p>
+<hr>
+</section>
+<section id="sumextras-streamlining-table-workflows-in-clinical-research-" class="level2">
+<h2 class="anchored" data-anchor-id="sumextras-streamlining-table-workflows-in-clinical-research-">sumExtras: Streamlining Table Workflows in Clinical Research with R</h2>
+<p><strong>Kyle Grealis</strong> | University of Miami</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>Creating publication-quality summary tables is a core task in clinical research. However, the repetitive formatting code required by standard R packages adds friction to reproducible workflows. Analysts often apply the same sequence of functions to every table by adding overall columns, calculating p-values, and incorporating stylized labels and headers. This repetition increases the risk of inconsistencies and adds a significant maintenance burden when project requirements change.</p>
+<p>The sumExtras package addresses this by consolidating gtsummary formatting steps into a single, robust function call. By replacing multiple boilerplate functions with the extras() call, users can reduce styIing code by nearly 50% while ensuring a standardized aesthetic. This package provides a labeling system that integrates data dictionaries with R attributes to ensure label consistency across gtsummary and gt tables and ggplot2 figures.</p>
+<p>Key features include a warn-and-continue design to enable table rendering even when individual formatting steps fail. It also includes JAMA-style compact themes and project-level options for global labeling behavior. This talk will demonstrate how sumExtras integrates into clinical trial and academic reporting pipelines to reduce maintenance burden. Attendees will see how the package allows researchers to focus on analysis decisions rather than formatting semantics.</p>
+<hr>
+</section>
+<section id="an-r-based-pipeline-for-resource-optimized-participant-selec" class="level2">
+<h2 class="anchored" data-anchor-id="an-r-based-pipeline-for-resource-optimized-participant-selec">An R-Based Pipeline for Resource-Optimized Participant Selection in High-Cost Clinical Research</h2>
+<p><strong>Aparna Bhattacharyya</strong> | Johns Hopkins University</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>Omics assays such as metabolomics and proteomics can provide valuable biological insight, but their high cost often makes full-cohort profiling impractical. In heterogenous clinical datasets, random sample selection may miss meaningful subgroup structure and overrepresent noisy or ambiguous cases. We present a reproducible R workflow implemented in the SciDataReportR package for prioritizing participants for downstream omics using a public dataset as a stand-in for private clinical data. Using laboratory variables from the 2013-2014 NHANES cycle retrieved with the nhanesdata package, we used SciDataReportR for exploratory data analysis and an implemented pipeline to select variables of interest, apply dimension reduction with self-organizing maps, cluster participants with Gaussian mixture models, and identify high-confidence representatives of each cluster using their posterior probability of cluster membership to exclude ambiguous cases before costly follow-up assays are performed. Attendees will learn a practical, reusable strategy for combining exploratory reporting, unsupervised learning, and probability-based filtering to support budget-conscious sample selection in heterogenous clinical datasets. This presentation will also help us to refine the workflow through community feedback and strengthen its use in future collaborative clinical research.</p>
+<hr>
+</section>
+<section id="medicalcoder-a-unified-and-longitudinally-aware-framework-fo" class="level2">
+<h2 class="anchored" data-anchor-id="medicalcoder-a-unified-and-longitudinally-aware-framework-fo">medicalcoder: A Unified and Longitudinally Aware Framework for ICD-Based Comorbidity Assessment in R</h2>
+<p><strong>Peter DeWitt</strong> | University of Colorado Anschutz</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>Comorbidity algorithms derived from International Classification of Diseases (ICD) codes are central to risk adjustment and cohort characterization in clinical research. However, existing implementations often fragment across packages, inconsistently handle mixed ICD-9 and ICD-10 data, and typically rely on encounter-level aggregation that may under-ascertain chronic disease burden.</p>
+<p>We present medicalcoder, an R package providing a unified, longitudinally aware framework for applying multiple variants of the Charlson, Elixhauser, and Pediatric Complex Chronic Conditions algorithms. The package includes an internal ICD database, supports full and compact codes, accommodates mixed ICD versions within a dataset, and integrates present-on-admission and primary diagnosis indicators.</p>
+<p>Unlike encounter-level approaches that simply aggregate flags, medicalcoder implements cumulative longitudinal methods that propagate qualifying diagnoses forward in time, increasing sensitivity and improving detection of disease severity. The package is self-contained (R ≥ 3.5.0) and designed for portability in restricted computing environments while dynamically leveraging modern R workflows when available.</p>
+<p>This talk will demonstrate longitudinal sensitivity gains, mixed-version handling, and practical workflows for reproducible comorbidity assessment in real-world EHR data.</p>
+<hr>
+</section>
+<section id="modeling-fall-risk-with-staged-trees-and-expert-judgement" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-fall-risk-with-staged-trees-and-expert-judgement">Modeling Fall Risk with Staged Trees and Expert Judgement</h2>
+<p><strong>Rachel Wilkerson &amp; Anika Dachiraju</strong> | Baylor University</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+</section>
+<section id="falls-in-the-elderly-is-a-major-public-health-concern-in-the-us-especially-with-the-rapidly-aging-population.-in-addition-to-evaluating-these-pathways-there-is-a-great-need-to-customize-these-pathways-to-specific-locations-and-areas.-the-aim-of-this-study-was-to-perform-an-expert-elicitation-protocol-to-predict-the-ways-health-insurance-affordability-could-impact-the-falls-risk-of-an-individual-in-mclennan-county.-we-constructed-the-initial-staged-event-tree-with-the-stagedtrees-package-and-deployed-a-shiny-app-to-display-the-changes-to-probabilities-of-events-occurring-based-on-expert-judgement.-we-also-show-how-we-can-check-the-forecasts-from-the-model-with-prequential-diagnostic-monitors-for-the-staged-tree-with-a-new-set-of-functions-in-a-cegmonitor-package-httpsgithub.comrachwhatsitcegmonitor." class="level2">
+<h2 class="anchored" data-anchor-id="falls-in-the-elderly-is-a-major-public-health-concern-in-the-us-especially-with-the-rapidly-aging-population.-in-addition-to-evaluating-these-pathways-there-is-a-great-need-to-customize-these-pathways-to-specific-locations-and-areas.-the-aim-of-this-study-was-to-perform-an-expert-elicitation-protocol-to-predict-the-ways-health-insurance-affordability-could-impact-the-falls-risk-of-an-individual-in-mclennan-county.-we-constructed-the-initial-staged-event-tree-with-the-stagedtrees-package-and-deployed-a-shiny-app-to-display-the-changes-to-probabilities-of-events-occurring-based-on-expert-judgement.-we-also-show-how-we-can-check-the-forecasts-from-the-model-with-prequential-diagnostic-monitors-for-the-staged-tree-with-a-new-set-of-functions-in-a-cegmonitor-package-httpsgithub.comrachwhatsitcegmonitor.">Falls in the elderly is a major public health concern in the US, especially with the rapidly aging population. In addition to evaluating these pathways, there is a great need to customize these pathways to specific locations and areas. The aim of this study was to perform an expert elicitation protocol to predict the ways health insurance affordability could impact the falls risk of an individual in McLennan County. We constructed the initial staged event tree with the “stagedtrees” package and deployed a Shiny app to display the changes to probabilities of events occurring based on expert judgement. We also show how we can check the forecasts from the model with prequential diagnostic monitors for the staged tree with a new set of functions in a “cegmonitor” package (https://github.com/rachwhatsit/cegmonitor).</h2>
+</section>
+<section id="using-ggregions-for-building-intuitive-coding-interfaces-for" class="level2">
+<h2 class="anchored" data-anchor-id="using-ggregions-for-building-intuitive-coding-interfaces-for">Using ggregions for building intuitive coding interfaces for anatomical visualizations</h2>
+<p><strong>Evangeline (Gina) Reynolds</strong> | Consultant</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>Among chart types, maps are some of the most compelling and intuitive. There is great support for mapping in R and in the data visualization library {ggplot2}. However, producing a simple map visualizations like choropleth maps can feel much less intuitive than producing other chart types, like a scatterplot, bar chart, histogram, etc in ggplot2. The new ggregions package makes writing new region-specific layer functions easy, i.e.&nbsp;geom_() and stat_*(), resulting in user-friendly code interfaces for mapping. Demonstrations of geographic applications as well as with anatomical application, with region objects from the gganatogram and teethr packages, will be featured in the talk.</p>
+<hr>
+</section>
+<section id="beyond-sequential-scaling-existing-medical-pipelines-with-fu" class="level2">
+<h2 class="anchored" data-anchor-id="beyond-sequential-scaling-existing-medical-pipelines-with-fu">Beyond Sequential: Scaling Existing Medical Pipelines with ‘futurize’</h2>
+<p><strong>Henrik Bengtsson</strong> | University of California San Francisco</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>In medical research, we rely on trusted R packages such as ‘lme4’, ‘survival’, and ‘boot’. However, as datasets and simulations grow, sequential analyses become a bottleneck. Parallelizing code typically requires a “refactoring tax”, forcing researchers to adopt complex, package-specific APIs that can obscure the original analytical logic and deter parallel adoption.</p>
+<p>I introduce ‘futurize’ (<a href="https://futurize.futureverse.org/" class="uri">https://futurize.futureverse.org/</a>), a universal adapter for the R parallel ecosystem. The <code>futurize()</code> function allows researchers to parallelize existing code with minimal friction. Leveraging the Futureverse framework, it works with common workflows like <code>purrr::map()</code>, <code>lapply()</code>, and domain-specific tools like ‘boot’, ‘caret’, ‘glmnet’, and Tidymodels. Parallelization becomes as simple as <code>ys &lt;- map(xs, slow_fcn) |&gt; futurize()</code> or <code>b &lt;- boot(data, statistic, R = 1000) |&gt; futurize()</code>, fully preserving original logic.</p>
+<p><code>futurize()</code> separates the declaration of what to parallelize from the execution environment. I will demonstrate how the same script can scale from a notebook to an HPC cluster without changing any of the code. I will also showcase how this powerful technology injects progress-reporting via <code>progressify()</code>, providing essential feedback for long-running medical simulations. By lowering the entry barrier to large-scale computing, ‘futurize’ empowers life-science researchers to scale their analyses while maintaining the original pipeline as-is.</p>
+<hr>
+</section>
+<section id="parallel-computing-in-r-to-analyze-big-health-data" class="level2">
+<h2 class="anchored" data-anchor-id="parallel-computing-in-r-to-analyze-big-health-data">Parallel computing in R to analyze big health data</h2>
+<p><strong>Ariel Mundo Ortiz</strong> | Centre de recherche du CHUM</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>Large biomedical datasets present interesting research opportunities, but also represent major computational challenges. Many statistical analyses require repeated calculations that become slow or impractical when run sequentially in R. Relative recent developments in the R ecosystem (such as the future and mirai libraries) can be integrated to parallelise code in a flexible manner to perform analyses that would be otherwise virtually impossible to execute. This talk will present a use case of parallel computing in R using real world big health database (~9 million observations from &gt;250,000 patients). Bootstrap analyses using random effects models on this database were performed on this database using future and mirai. This talk can help biomedical researchers get acquainted with the current parallel computing capabilities of R, and how they can be harnessed to analyze health data.</p>
+<hr>
+</section>
+<section id="the-mbcproject-r-package-enabling-reproducible-analysis-of-m" class="level2">
+<h2 class="anchored" data-anchor-id="the-mbcproject-r-package-enabling-reproducible-analysis-of-m">The MBCproject R Package: Enabling reproducible analysis of multi-omic data in metastatic breast cancer</h2>
+<p><strong>Diana Garcia Cortes</strong> | Dana Farber Cancer Institute</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>The Metastatic Breast Cancer Project (MBCproject) is a patient-partnered research initiative launched in October 2015 by Count Me In, a nonprofit research program of the Broad Institute and the Dana-Farber Cancer Institute. This study collected clinical, genomic, and survey data through online enrollment to better understand the genomic and clinical landscape of metastatic breast cancer by capturing the diverse experiences of patients treated across various clinical settings. The cohort includes whole exome sequencing (WES) from 379 tumor biopsies with matched germline from 301 patients and RNA-seq from 200 biopsies (141 patients). In addition to confirming prior observations, this multi-omics dataset has enabled the discovery of novel MBC characteristics and is one of the largest publicly available multi-omic resources for MBC. To facilitate access and reproducibility, we developed an R package to share analysis-ready clinical and genomic data from the MBCproject. The package provides an easy-to-use interface for researchers, ensuring reproducibility of results and enabling the broader research community to accelerate discoveries in MBC genomics. We hope this resource will serve as a valuable tool for advancing precision medicine in metastatic breast cancer.</p>
+<hr>
+</section>
+<section id="synthetic-by-design-pairing-toysurveydata-and-nssp-synthetic" class="level2">
+<h2 class="anchored" data-anchor-id="synthetic-by-design-pairing-toysurveydata-and-nssp-synthetic">Synthetic by Design: Pairing toysurveydata and NSSP Synthetic Data Generator for Privacy-Safe Public Health Training and Development</h2>
+<p><strong>Abigail Stamm &amp; Eric Kvale</strong> | Minnesota Department of Health</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>Access to realistic healthcare data for training and tool validation is a persistent challenge in public health informatics. Privacy regulations and data sensitivity create barriers for educators and developers who need representative data to learn or test against. We present two complementary open-source R tools addressing this gap across common public health data paradigms.</p>
+<p>The toysurveydata package (Stamm) generates synthetic survey data from a priori response proportions via a single settings table. The NSSP Synthetic Healthcare Data Generator (Kvale) is a Shiny dashboard producing HIPAA-safe ED visit records modeled after the CDC NSSP BioSense Platform, including all five core BioSense tables, LOINC-coded lab results, and ten configurable public health disruption scenarios.</p>
+<p>Together these tools enable agencies to onboard analysts, validate pipelines, and demonstrate methods without touching real patient records. We demonstrate combined use in a Minnesota Department of Health context and invite community feedback on gaps and improvements.</p>
+<ul>
+<li>toysurveydata source: https://github.com/ajstamm/toysurveydata</li>
+<li>toysurveydata documentation: https://ajstamm.github.io/toysurveydata/</li>
+<li>NSSP app: https://0v0ins-ekvale.shinyapps.io/nssp-synthetic-data/</li>
+<li><h2 id="nssp-source-httpsgithub.comekvalenssp-synthetic-data" class="anchored">NSSP source: https://github.com/ekvale/nssp-synthetic-data</h2></li>
+</ul>
+</section>
+<section id="divine-curated-datasets-and-tools-for-medical-data" class="level2">
+<h2 class="anchored" data-anchor-id="divine-curated-datasets-and-tools-for-medical-data">DIVINE: Curated Datasets and Tools for Medical Data</h2>
+<p><strong>Natàlia Pallarès &amp; João Carmezim</strong> | IDIBAPS/IGTP</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>DIVINE is an R package that provides 14 curated datasets and 6 data management functions to streamline medical research workflows. It helps researchers in access clean, structured data and perform essential tasks such as cleaning, summarizing, visualization, and exporting with minimal effort.</p>
+<p>The datasets originate from a multicenter COVID-19 study conducted in 2020-2021 in the south metropolitan area of Barcelona (Spain), including data from 5813 patients across four pandemic waves. They contain information on baseline characteristics (e.g.&nbsp;demographics and comorbidities), follow-up during hospitalisation (e.g.&nbsp;intensive care unit admission and treatments received), and clinical outcomes (e.g.&nbsp;complications and in-hospital mortality).</p>
+<p>The 6 functions included in DIVINE follow a data curation pipeline: data_overview() for data inspection, impute_missing() for handling missing values, multi_join() to merge datasets, stats_table() to create descriptive tables, multi_plot() for visualization (e.g., boxplots and histograms), and export_data() to export results to formats such as CSV and RDS.</p>
+<p>The datasets have been made publicly available to support reproducible research and enable its reuse in research applications such as validating existing COVID-19 predictive models or studying outcome incidence and prognostic factors. They can also be used as a teaching resource in biostatistics, epidemiology, or data science courses.</p>
+<p>The DIVINE package is available on CRAN and GitHub.</p>
+<hr>
+</section>
+<section id="preventing-data-leakage-in-clinical-machine-learning-guarded" class="level2">
+<h2 class="anchored" data-anchor-id="preventing-data-leakage-in-clinical-machine-learning-guarded">Preventing Data Leakage in Clinical Machine Learning: Guarded Resampling Workflows with fastml in R</h2>
+<p><strong>Fikret Bartu Yurdacan</strong> | Trakya University</p>
+<p><em>Lightning Talk — Friday, May 8, 2026</em></p>
+<p>Data leakage is one of the most common yet underrecognized pitfalls in clinical machine learning. It occurs when information from outside the training set — often introduced during preprocessing — inadvertently influences model evaluation, leading to inflated performance metrics. In medical research, where predictions can affect patient care, overly optimistic models are not just misleading — they can be harmful.</p>
+<p>This talk introduces fastml, an R package that addresses data leakage through guarded resampling workflows. Unlike conventional pipelines where preprocessing is applied before splitting, fastml re-estimates all preprocessing and fitting steps within each resampling fold. This ensures no information from held-out data contaminates training, producing honest and reproducible performance estimates.</p>
+<p>Built on tidymodels, fastml provides a lightweight AutoML interface that automates training, tuning, and comparison across multiple algorithms — including XGBoost, random forest, and logistic regression — while keeping evaluation transparent and user-controlled.</p>
+<p>We demonstrate a complete workflow using a clinical dataset: from raw data through guarded cross-validation to model selection, integrating explainability tools (SHAP, PDP) and fairness diagnostics for publication-ready analyses. Attendees will leave with practical knowledge to build safer ML pipelines for biomedical research.</p>
+<hr>
+</section>
+<section id="when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat" class="level2">
+<h2 class="anchored" data-anchor-id="when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat">When Quant Meets Qual: Extending the R Ecosystem for Qualitative Data</h2>
+<p><strong>Abiraahmi Shankar</strong> | New York University</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>Quantitative research has benefited enormously from open, reproducible tools such as R, while qualitative analysis often remains confined to proprietary software and less transparent workflows. The gap is not in rigor, but in interoperability, reproducibility, and integration with modern data science pipelines.</p>
+<p>In this talk, I introduce DedooseR, an open-source R package published on CRAN that bridges qualitative coding conducted in Dedoose with the R ecosystem. DedooseR standardizes raw exports, generates code summaries, computes and visualizes saturation, and maps code co-occurrence through matrices and network plots. It also supports interactive excerpt review and text exploration, enabling user-friendly inspection of coded material alongside quantitative analyses within a unified workflow.</p>
+<p>Reproducible pipelines and clear documentation of analytic decisions are especially pertinent in qualitative research, given its iterative and interpretive nature. By bringing coded qualitative data into R, DedooseR supports transparent reporting, flexible exploration, and allows qualitative research to leverage the richness and breadth of quantitative resources available through R.</p>
+<p>Attendees will gain practical tools for importing and analyzing qualitative datasets in R and a framework for extending reproducible research practices to mixed-methods and qualitative health and social science research.</p>
+<p>Package details: https://cran.r-project.org/web/packages/DedooseR/index.html</p>
+<hr>
+</section>
+<section id="rapid-and-comprehensive-power-analysis-in-r-with-a-focus-on-" class="level2">
+<h2 class="anchored" data-anchor-id="rapid-and-comprehensive-power-analysis-in-r-with-a-focus-on-">Rapid and comprehensive power analysis in R, with a focus on planned error control for multiple outcomes</h2>
+<p><strong>Kristen Hunter &amp; Luke Miratrix</strong> | University of New South Wales</p>
+<p><em>Regular Talk — Friday, May 8, 2026</em></p>
+<p>Researchers planning on assessing impacts on multiple outcomes in a randomized trial need to account for multiple testing adjustments for controlling error rates. These adjustments impact both whether an experiment is adequately powered and what sample size is needed to achieve a desired level of power. With multiple testing, even the definition of power is more complex: are you powering to detect all effects? To detect some fraction of effects? This talk introduces PUMP, an R package designed to calculate power when planning to use either false discovery rate control or family-wise error control methods such as Bonferroni or Westfall-Young. With PUMP, researchers can easily calculate how small of an effect could reliably be detected, or how large of a sample would need to be obtained, under a variety of scenarios. The scenarios supported by PUMP include different definitions of power, several commonly-used multiple testing adjustment procedures, a range of different experimental designs, and choices of planned analytic models, along with the usual design parameters. PUMP supports a variety of common multilevel experimental designs, including multisite (blocked) randomized experiments, cluster randomized experiments, and blocked, cluster-randomized experiments. The talk will also showcase PUMP’s ability to rapidly explore ranges of scenarios and design parameters for sensitivity checks on all results.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/RConsortium\.github\.io\/RMedicine_website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
