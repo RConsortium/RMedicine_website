@@ -550,21 +550,28 @@
     "href": "Hackathon.html",
     "title": "R/Medicine 2026",
     "section": "",
-    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\nUse the link below to sign up for the hackathon. You will then receive a Zoom link to join.\n\nSIGN UP FOR THE HACKATHON\n\nPlease note that R/Medicine conference registration is required in order to participate in the hackathon. Register for the conference here."
+    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\n\n\n\n\n\n\nTipFocus: the teal Package\n\n\n\nThis hackathon will focus specifically on the teal package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and two of the package’s developers will be present throughout the event to guide and support participants.\n\n\nUse the link below to sign up for the hackathon. You will then receive a Zoom link to join.\n\nSIGN UP FOR THE HACKATHON\n\nPlease note that R/Medicine conference registration is required in order to participate in the hackathon. Register for the conference here."
   },
   {
     "objectID": "Hackathon.html#about-the-hackathon",
     "href": "Hackathon.html#about-the-hackathon",
     "title": "R/Medicine 2026",
     "section": "",
-    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\nUse the link below to sign up for the hackathon. You will then receive a Zoom link to join.\n\nSIGN UP FOR THE HACKATHON\n\nPlease note that R/Medicine conference registration is required in order to participate in the hackathon. Register for the conference here."
+    "text": "We are excited to host a Pharmaverse Hackathon as part of R/Medicine 2026! This is a collaborative event where participants contribute to open-source R packages in the pharmaverse ecosystem, a collection of packages designed to support clinical reporting workflows in the pharmaceutical industry.\nWhether you’re new to open source or a seasoned contributor, there’s a track for you.\n\n\n\n\n\n\nTipFocus: the teal Package\n\n\n\nThis hackathon will focus specifically on the teal package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and two of the package’s developers will be present throughout the event to guide and support participants.\n\n\nUse the link below to sign up for the hackathon. You will then receive a Zoom link to join.\n\nSIGN UP FOR THE HACKATHON\n\nPlease note that R/Medicine conference registration is required in order to participate in the hackathon. Register for the conference here."
   },
   {
     "objectID": "Hackathon.html#schedule",
     "href": "Hackathon.html#schedule",
     "title": "R/Medicine 2026",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\nEvent\nDate\nTime (ET)\n\n\n\n\nDaniel Chen’s Workshop\nWednesday, April 8th\n11:00 AM – 1:00 PM\n\n\nHackathon Kickoff\nThursday, April 16th\n11:00 AM – 12:00 PM\n\n\nHackathon\nThursday, April 23rd\n11:00 AM – 3:00 PM\n\n\n\nAll times are in Eastern Time (ET).\nPrior to the hackathon kickoff, please review the prerequisites document.\n\n\n\n\n\n\nTipFocus: the teal Package\n\n\n\nThis hackathon will focus specifically on the teal package, a framework for building interactive exploratory data analysis applications in clinical trials. All issues and features during the hackathon will be related to {teal}, and two of the package’s developers will be present throughout the event to guide and support participants."
+    "text": "Schedule\n\n\n\n\n\n\n\n\nEvent\nDate\nTime (ET)\n\n\n\n\nDaniel Chen’s Workshop\nWednesday, April 8th\n11:00 AM – 1:00 PM\n\n\nHackathon Kickoff\nThursday, April 16th\n11:00 AM – 12:00 PM\n\n\nHackathon\nThursday, April 23rd\n11:00 AM – 3:00 PM\n\n\n\nAll times are in Eastern Time (ET)."
+  },
+  {
+    "objectID": "Hackathon.html#suggested-preparation",
+    "href": "Hackathon.html#suggested-preparation",
+    "title": "R/Medicine 2026",
+    "section": "Suggested preparation",
+    "text": "Suggested preparation\n\nReview the hackathon prerequisites document.\nRecording of Dony Unardi’s workshop from R/Medicine 2025 on the teal package\nRecording of Daniel Chen’s workshop, Make your first R open source project contribution with Git, forks, and PRs.\nRecording of the hackathon kickoff meeting and the presented slides"
   },
   {
     "objectID": "Hackathon.html#meet-the-developers",
@@ -581,11 +588,11 @@
     "text": "Tracks\nThe hackathon follows two tracks to accommodate different experience levels:\n\nTrack A: Good First Issues\nIdeal for newcomers to open-source contribution. You’ll work on beginner-friendly issues that help you get comfortable with the contribution workflow, forking repos, creating branches, opening pull requests, and more.\n\n\nTrack B: Feature-Level Issues\nFor advanced contributors ready to tackle more substantial work. Participants in this track will work in pairs or mini-teams on feature-level issues that require deeper understanding of package architecture and R programming."
   },
   {
-    "objectID": "Hackathon.html#recommended-preparation",
-    "href": "Hackathon.html#recommended-preparation",
+    "objectID": "Hackathon.html#pre-hackathon-workshop",
+    "href": "Hackathon.html#pre-hackathon-workshop",
     "title": "R/Medicine 2026",
-    "section": "Recommended Preparation",
-    "text": "Recommended Preparation\nTo get the most out of the hackathon, we strongly recommend attending the following workshop offered prior to the hackathon.\nThe video of this workshop is available here.\n\n\n\n\n\nWORKSHOP\n\n\n\n\n\n\n\nDaniel Chen\n\n\nMake your first R open source project contribution with Git, forks, and PRs\nWednesday, April 8th, 11:00 AM – 1:00 PM ET\nGit is a foundational tool for version control in open source collaboration, but contributing to a project involves more than just the basics.\nIn this workshop, you will get a brief introduction to Git fundamentals before diving into the workflows used in open source. Contributing as a non-collaborator adds an extra layer of complexity, your work needs to be reviewed, which means understanding pull requests, branching strategies, and working across forks.\nWe will start with creating branches and pull requests within your own repositories, then extend these concepts to contributing to external projects using forks. Along the way, you will learn how tools like the {usethis} R package can simplify and streamline this process.\nBy the end of the workshop, you will be able to fork a repository, make changes in a local branch, and submit a pull request to the original project for maintainer review.\n\n\n\n\n\n\nAdditionally, review the recording of Dony Unardi’s workshop from R/Medicine 2025 on the teal package: “https://r-consortium.org/posts/teal-mastery-from-pre-built-modules-to-custom-module-creation/”, which covers one of the key pharmaverse packages."
+    "section": "Pre-hackathon workshop",
+    "text": "Pre-hackathon workshop\nTo get the most out of the hackathon, we strongly recommend attending the following workshop offered prior to the hackathon.\n\n\n\n\n\nWORKSHOP\n\n\n\n\n\n\n\nDaniel Chen\n\n\nMake your first R open source project contribution with Git, forks, and PRs\nWednesday, April 8th, 11:00 AM – 1:00 PM ET\nGit is a foundational tool for version control in open source collaboration, but contributing to a project involves more than just the basics.\nIn this workshop, you will get a brief introduction to Git fundamentals before diving into the workflows used in open source. Contributing as a non-collaborator adds an extra layer of complexity, your work needs to be reviewed, which means understanding pull requests, branching strategies, and working across forks.\nWe will start with creating branches and pull requests within your own repositories, then extend these concepts to contributing to external projects using forks. Along the way, you will learn how tools like the {usethis} R package can simplify and streamline this process.\nBy the end of the workshop, you will be able to fork a repository, make changes in a local branch, and submit a pull request to the original project for maintainer review."
   },
   {
     "objectID": "Hackathon.html#what-to-expect",
