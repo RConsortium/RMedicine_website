@@ -161,6 +161,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#big-data" id="toc-big-data" class="nav-link" data-scroll-target="#big-data">Working with Larger than Memory Data in R</a></li>
   <li><a href="#ggplot2" id="toc-ggplot2" class="nav-link" data-scroll-target="#ggplot2">ggplot2 for Data Visualisation: Creativity, Clarity, Accessibility</a></li>
   <li><a href="#llms" id="toc-llms" class="nav-link" data-scroll-target="#llms">LLMs for Data Analysis in R</a></li>
+  <li><a href="#parameterized-reports" id="toc-parameterized-reports" class="nav-link" data-scroll-target="#parameterized-reports">Parameterized Reports</a></li>
   </ul></li>
   <li><a href="#panels" id="toc-panels" class="nav-link" data-scroll-target="#panels">Panels</a>
   <ul class="collapse">
@@ -169,7 +170,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#demos" id="toc-demos" class="nav-link" data-scroll-target="#demos">Demos</a>
   <ul class="collapse">
   <li><a href="#quarto-docs" id="toc-quarto-docs" class="nav-link" data-scroll-target="#quarto-docs">Building Accessible, On-Brand Documents with Quarto</a></li>
+  <li><a href="#tealflow" id="toc-tealflow" class="nav-link" data-scroll-target="#tealflow">TealFlow Demo</a></li>
+  <li><a href="#mapping" id="toc-mapping" class="nav-link" data-scroll-target="#mapping">Mapping in R</a></li>
   <li><a href="#ctrialsgov" id="toc-ctrialsgov" class="nav-link" data-scroll-target="#ctrialsgov">Ctrialsgov R Package</a></li>
+  <li><a href="#redcapdemo" id="toc-redcapdemo" class="nav-link" data-scroll-target="#redcapdemo">REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User; Standardized Data Pipelines and a Companion Shiny App for any REDCap Project</a></li>
+  <li><a href="#accessible" id="toc-accessible" class="nav-link" data-scroll-target="#accessible">Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -195,14 +200,15 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="card-right">
 <div class="workshop-speakers-name">
-<p><a href="INFO HERE" target="_blank">Richard Hanna</a></p>
+<p><a href="https://www.linkedin.com/in/richard-hanna-ms-0164162a/" target="_blank">Richard Hanna</a></p>
 </div>
 <div class="workshop-desc">
 <p>A gentle introduction to R and data science for healthcare professionals and clinical researchers.</p>
 <p>Rich is a Data Science Supervisor with the Cell and Gene Therapy Informatics Team at the Children’s Hospital of Philadelphia. With a background in biomedical and mechanical engineering, Rich specializes in automating clinical research workflows through advanced analytics and machine learning. His work is pivotal in supporting cell therapy research and enhancing patient care in pediatric medicine</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<p><a href="https://hannar1.quarto.pub/rmedicine-101-intro-to-r-for-clinical-data/">Workshop website</a></p>
+<p><a href="./r101-prework.html">Workshop pre-work</a></p>
 </div>
 </div>
 </div>
@@ -226,7 +232,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Este taller ofrece una introducción práctica al uso de R para el análisis de datos en investigación médica y en salud. Está dirigido a profesionales de la salud, investigadores clínicos y estudiantes sin experiencia previa en programación. A lo largo del taller, los participantes aprenderán los conceptos básicos de R, cómo trabajar con bases de datos, realizar análisis descriptivos y generar resultados reproducibles.</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
 </div>
 </div>
 </div>
@@ -252,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Lastly, we will review how this ecosystem naturally lends itself to Large Language Models (LLMs). Because {gtsummary} is so widely adopted, LLMs can generate complex {gtsummary} code without additional training. Additionally, LLMs can readily interpret our structured ARDs to assist medical writers summarizing both simple and sophisticated trial results.</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
 </div>
 </div>
 </div>
@@ -279,7 +285,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Attendees should have basic familiarity with R and the tidyverse. By the end of this 3-hour session, participants will be equipped with reproducible techniques to confidently tackle larger datasets in their own research and data analysis workflows.</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
 </div>
 </div>
 </div>
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This workshop is designed for ggplot users who know how to make basic graphs, but want to make them look better and save themselves precious time by building reuseable components. We’ll explore how to choose the right graphs for different aspects of our data story and how to apply a consistent style across them. In doing so, we will focus on making design choices which are accessible, and on making the most of new ggplot2 features. Because getting from a static graph to an interactive one is much easier than most people realise, we’ll finish by exploring how to link two or more interactive graphs together to allow users to explore different aspects of a data story. This is a code-along workshop, so bring your own data and graphs, and we’ll make something fun together!</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
 </div>
 </div>
 </div>
@@ -327,7 +333,31 @@ ul.task-list li input[type="checkbox"] {
 <p>LLMs are transforming how we write code, build tools, and analyze data. This workshop will introduce participants to programming with LLM APIs in R using ellmer, an open-source package that makes it easy to work with LLMs from R. We’ll cover the basics of calling LLMs from R, system prompt design, tool calling, and evaluation, and show how to use LLM-powered tools to support common data analysis tasks like exploratory data analysis. Participants will leave with example scripts they can adapt to their own data analysis projects.</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
+</div>
+</div>
+</div>
+</section>
+<section id="parameterized-reports" class="level2">
+<h2 class="anchored" data-anchor-id="parameterized-reports">Parameterized Reports</h2>
+<div class="workshop-card">
+<div class="card-left">
+<div class="card-badge-top">
+<p>WORKSHOP</p>
+</div>
+<div class="speaker-imgs">
+<p><img src="images/demo-nicola.jpg" class="img-fluid"></p>
+</div>
+</div>
+<div class="card-right">
+<div class="workshop-speakers-name">
+<p><a href="INFO HERE" target="_blank">Nicola Rennie</a></p>
+</div>
+<div class="workshop-desc">
+<p>Tired of copying and pasting content from one word document to another each time you write a similar report? Use parameterized reports instead! Parameterized reports allow you write dynamic reports based on input parameters, resulting in more reproducible and quicker reporting. In this workshop, you’ll learn how to write custom {ggplot2} functions to create parameterized plots. You’ll also learn how to create parameterized documents with Quarto, to create multiple versions of HTML documents, Word documents, or PDFs. By the end of the workshop, you’ll be able to create multiple versions of the same report with just one line of code.&nbsp;This workshop is for you if you make similar PDF reports every month, or you want to create the same plot for different subsets of your data, or&nbsp;you just want some {ggplot2} and Quarto tips!</p>
+</div>
+<div class="workshop-links">
+<p><a href="https://github.com/nrennie/r-medicine-2026-parameterized-reports">Workshop GitHub repo</a></p>
 </div>
 </div>
 </div>
@@ -343,18 +373,18 @@ ul.task-list li input[type="checkbox"] {
 <p>PANEL</p>
 </div>
 <div class="speaker-imgs">
-<p><img src="images/w7-1-raymond-balise.jpg" class="img-fluid"> <img src="images/w1-1-rich-hanna.png" class="img-fluid"></p>
+<p><img src="images/w7-1-raymond-balise.jpg" class="img-fluid"> <img src="images/w1-1-rich-hanna.png" class="img-fluid"> <img src="images/rose-brandon-inset.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="card-right">
 <div class="workshop-speakers-name">
-<p><a href="INFO HERE" target="_blank">Raymond Balise</a>, <a href="INFO HERE" target="_blank">Richard Hanna</a>, <a href="INFO HERE" target="_blank">Brandon</a>, others</p>
+<p><a href="INFO HERE" target="_blank">Raymond Balise</a>, <a href="INFO HERE" target="_blank">Richard Hanna</a>, <a href="INFO HERE" target="_blank">Brandon Rose</a>, others</p>
 </div>
 <div class="workshop-desc">
 <p>REDCap has become a cornerstone platform for clinical and translational research, supporting secure data capture for thousands of studies worldwide. As research teams increasingly adopt reproducible, code-driven workflows, R has emerged as a powerful solution for accessing, transforming, and analyzing REDCap data. Several R packages have been developed to interface with REDCap, each offering distinct approaches to authentication, data retrieval, data transformation, and integration with modern data science workflows. Widely used tools such as <a href="https://ouhscbbmc.github.io/REDCapR/">REDCapR</a>, <a href="https://chop-cgtinformatics.github.io/REDCapTidieR/">REDCapTidieR</a>, <a href="https://raymondbalise.github.io/tidyREDCap/">tidyREDCap</a>, <a href="https://thecodingdocs.github.io/REDCapSync/">REDCapSync</a>, and <a href="https://thecodingdocs.github.io/RosyREDCap/">RosyREDCap</a> provide alternative strategies for importing REDCap data into R and preparing it for analysis. While these packages share common goals, they differ in philosophy, functionality, and design decisions that influence how researchers might structure their data pipelines. This panel brings together the developers of these packages to explore the evolving REDCap and R landscape. Panelists will discuss the motivations behind their tools, highlight strengths and trade-offs between approaches, and share perspectives on best practices for reproducible REDCap data workflows. The discussion will also address common challenges faced by researchers working with REDCap data and opportunities for collaboration. Audience participation will be encouraged throughout the session and attendees will be invited to share their experiences, identify gaps in existing tooling, and suggest new features that could improve REDCap and R integration.</p>
 </div>
 <div class="workshop-links">
-<p><a href="info here.">Pre-workshop setup</a></p>
+<!-- [Pre-workshop setup](info here.) -->
 </div>
 </div>
 </div>
@@ -367,7 +397,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="workshop-card">
 <div class="card-left">
 <div class="card-badge-top">
-<p>WORKSHOP</p>
+<p>DEMO</p>
 </div>
 <div class="speaker-imgs">
 <p><img src="images/w4-charlotte-wickham.jpg" class="img-fluid"></p>
@@ -381,7 +411,55 @@ ul.task-list li input[type="checkbox"] {
 <p>Come see practical strategies for producing Quarto documents that meet organizational standards for both design and accessibility. You’ll learn how to implement consistent organizational branding using brand.yml, plus customization techniques for cases where you need more control. You’ll also learn about recent accessibility improvements for both PDF and HTML outputs.</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
+</div>
+</div>
+</div>
+</section>
+<section id="tealflow" class="level2">
+<h2 class="anchored" data-anchor-id="tealflow">TealFlow Demo</h2>
+<div class="workshop-card">
+<div class="card-left">
+<div class="card-badge-top">
+<p>DEMO</p>
+</div>
+<div class="speaker-imgs">
+<p><img src="images/demo-marcin-dubel.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="card-right">
+<div class="workshop-speakers-name">
+<p><a href="INFO HERE" target="_blank">Marcin Dubel</a></p>
+</div>
+<div class="workshop-desc">
+<p>Building clinical trial applications with {teal} is powerful but comes with a steep learning curve. In this demo, we’ll show why current AI approaches still fall short. They lack the domain context needed and produce frequent errors, even with top models. We’ll then walk through TealFlow, our open-source solution that tackles this from two angles: a web-based chat interface designed for non-coders to assemble {teal} dashboards, and TealFlow MCP, a developer tool that plugs into VS Code, Positron, or RStudio to augment your existing workflow. We’ll wrap up with our roadmap and ways for the community to contribute.</p>
+</div>
+<div class="workshop-links">
+<p><a href="https://github.com/Appsilon/tealflow-demo">Demo GitHub repo</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="mapping" class="level2">
+<h2 class="anchored" data-anchor-id="mapping">Mapping in R</h2>
+<div class="workshop-card">
+<div class="card-left">
+<div class="card-badge-top">
+<p>DEMO</p>
+</div>
+<div class="speaker-imgs">
+<p><img src="images/demo-anjile.jpg" class="img-fluid"></p>
+</div>
+</div>
+<div class="card-right">
+<div class="workshop-speakers-name">
+<p><a href="INFO HERE" target="_blank">Anjile An</a></p>
+</div>
+<div class="workshop-desc">
+<p>Data comes in many forms, but the spatial components can be overlooked. You’ll get some history of mapping and learn the basic building blocks of spatial data.&nbsp; The demo portion will go over how to use the trusty {ggplot2} as well as some new tools like {sf} and {tmap} to plot different types of spatial data.&nbsp;</p>
+</div>
+<div class="workshop-links">
+<!-- [Workshop GitHub repo](INFO HERE) -->
 </div>
 </div>
 </div>
@@ -391,21 +469,74 @@ ul.task-list li input[type="checkbox"] {
 <div class="workshop-card">
 <div class="card-left">
 <div class="card-badge-top">
-<p>WORKSHOP</p>
+<p>DEMO</p>
 </div>
 <div class="speaker-imgs">
-<p><img src="images/test-img.png" class="img-fluid"></p>
+<p><img src="images/mike-kane.jpg" class="img-fluid"></p>
 </div>
 </div>
 <div class="card-right">
 <div class="workshop-speakers-name">
-<p><a href="INFO HERE" target="_blank">Mike Kane</a></p>
+<p><a href="INFO HERE" target="_blank">Michael Kane</a></p>
 </div>
 <div class="workshop-desc">
 <p>COMING SOON</p>
 </div>
 <div class="workshop-links">
-<p><a href="INFO HERE">Workshop GitHub repo</a></p>
+<!-- [Workshop GitHub repo](INFO HERE) -->
+</div>
+</div>
+</div>
+</section>
+<section id="redcapdemo" class="level2">
+<h2 class="anchored" data-anchor-id="redcapdemo">REDCapSync and RosyREDCap: Advanced REDCap API for Even the Basic R User; Standardized Data Pipelines and a Companion Shiny App for any REDCap Project</h2>
+<div class="workshop-card">
+<div class="card-left">
+<div class="card-badge-top">
+<p>DEMO</p>
+</div>
+<div class="speaker-imgs">
+<p><img src="images/rose-brandon-inset.png" class="img-fluid"> <img src="images/natalie-goulett.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="card-right">
+<div class="workshop-speakers-name">
+<p><a href="INFO HERE" target="_blank">Brandon Rose</a>, <a href="INFO HERE" target="_blank">Natalie Goulett</a></p>
+</div>
+<div class="workshop-desc">
+<p>R and REDCap are both widely utilized in medicine, including basic science, clinical research, and clinal trials. Both have independent strengths, but together they can create powerful data pipelines. Several R packages exist for using however, REDCapSync is the first “get-everything” REDCap R package that is API-efficient and project-agnostic. RosyREDCap is a companion shiny application for exploratory data analysis.</p>
+<p>Using a cache of last project save, a file directory, and the REDCap log, REDCapSync only updates the data that has been changed since the last API call. Each project is maintained as a standardized R6 object that can be used downstream for the best that R has to offer! Furthermore, REDCapSync can be used to upload labelled data using the API, a feature not available on the REDCap website.</p>
+<p>RosyREDCap is an R shiny application that launches a local website for exploratory data analysis of REDCap projects. It is built to load all previous projects that were setup with the REDCapSync package. The user is able to toggle between projects, deidentify data, perform ad-hoc data visualizations, and more.</p>
+<p>Using tools like REDCapSync and RosyREDCap allow even new R users to harness the power of the REDCap API without the burden of learning dozens of API endpoints. During my presentation I will demonstrate the combined strengths of R and REDCap for maintaining strong reproducible clinical data pipelines that can improve clinical research and patient care.</p>
+</div>
+<div class="workshop-links">
+<!-- [Workshop GitHub repo](INFO HERE) -->
+</div>
+</div>
+</div>
+</section>
+<section id="accessible" class="level2">
+<h2 class="anchored" data-anchor-id="accessible">Demonstration on making Shiny dashboards accessible for users who rely on screen readers and keyboards</h2>
+<div class="workshop-card">
+<div class="card-left">
+<div class="card-badge-top">
+<p>DEMO</p>
+</div>
+<div class="speaker-imgs">
+<p><img src="images/abigail-stamm.jpg" class="img-fluid"> <img src="images/eric-kvale.jpg" class="img-fluid"></p>
+</div>
+</div>
+<div class="card-right">
+<div class="workshop-speakers-name">
+<p><a href="INFO HERE" target="_blank">Abigail Stamm</a>, <a href="INFO HERE" target="_blank">Eric Kvale</a></p>
+</div>
+<div class="workshop-desc">
+<p>Online dashboards use data visualizations to quickly convey information. Interactive elements like charts and data filters often display additional information not accessible by screen readers. Navigating these elements often relies on a mouse and may not be accessible by keyboard. Accessibility features improve the overall presentation and user experience by adding functionality. These features augment, amplify, and enhance the content so that users can interact with and understand the same content in multiple ways, depending on their needs and preferences.</p>
+<p>Our demonstration will cover how to address several accessibility issues in Shiny. We have chosen issues related to screen reader use, keyboard use, and understanding that may be overlooked in sources that cover accessibility in Shiny. We will use an example dashboard that failed several accessibility checks. For each check, we will demonstrate the issue, show a way to revise the dashboard code to address it, and demonstrate how to test it. We estimate 20 minutes of instruction, 15 minutes of live coding, and 15 minutes of demonstration, with 10 minutes for questions at the end.</p>
+<p>All files, including the presentation, starting script, and suggested solution script, will be available in the GitHub repository https://github.com/ajstamm/shiny-a11y-app for attendees who wish to code along. Our past presentations on accessibility in Shiny dashboards can also be found here.</p>
+</div>
+<div class="workshop-links">
+<!-- [Workshop GitHub repo](INFO HERE) -->
 </div>
 </div>
 </div>
