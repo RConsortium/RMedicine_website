@@ -377,7 +377,7 @@ DEMO
 :::
 ::: {.speaker-imgs}
 ![](images/abigail-stamm.jpg)
-![](images/eric-kvale.jpg)
+![](images/eric-kvale.jfif)
 
 :::
 :::
@@ -394,7 +394,7 @@ Our demonstration will cover how to address several accessibility issues in Shin
 All files, including the presentation, starting script, and suggested solution script, will be available in the GitHub repository https://github.com/ajstamm/shiny-a11y-app for attendees who wish to code along. Our past presentations on accessibility in Shiny dashboards can also be found here.
 :::
 ::: {.workshop-links}
-<!-- [Workshop GitHub repo](INFO HERE) -->
+[Demo GitHub repo](https://github.com/ajstamm/shiny-a11y-app)
 :::
 :::
 :::
