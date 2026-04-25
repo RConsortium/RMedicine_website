@@ -250,7 +250,7 @@ DEMO
 Come see practical strategies for producing Quarto documents that meet organizational standards for both design and accessibility. You’ll learn how to implement consistent organizational branding using brand.yml, plus customization techniques for cases where you need more control. You’ll also learn about recent accessibility improvements for both PDF and HTML outputs.
 :::
 ::: {.workshop-links}
-<!-- [Workshop GitHub repo](INFO HERE) -->
+[Demo GitHub repo](https://github.com/cwickham/accessible-branded-documents )
 :::
 :::
 :::
