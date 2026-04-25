@@ -8,6 +8,10 @@
 
 </button>
 
+::: {.callout-important}
+Note that Zoom Events restricts registration in certain countries. R/Medicine allows people to attend from any country and there is an alternative registration method for those who are not able to register through Zoom Events. Please email [rmedicine.conference@gmail.com](mailto:rmedicine.conference@gmail.com) with your registration category included and we will provide the alternate link to register.
+:::
+
 ### Registration Pricing
 
 The following table lists the registration fees for three categories of attendees: students, academics and members of non-profit organizations, and professionals employed in industry who do not have non-profit status. All prices are in U.S. dollars. 
