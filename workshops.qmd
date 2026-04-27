@@ -309,7 +309,7 @@ Data comes in many forms, but the spatial components can be overlooked. You’ll
 
 
 
-## Ctrialsgov R Package {#ctrialsgov}
+## Programmatic Access and Analysis of Bulk Clinical Trial Information in R {#ctrialsgov}
 
 ::: {.workshop-card}
 ::: {.card-left}
@@ -326,7 +326,7 @@ DEMO
 [Michael Kane](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
-COMING SOON
+ClinicalTrials.gov is a publicly accessible, web-based registry and results database maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). It serves as a central resource for information on publicly and privately supported clinical studies involving human participants across a wide range of diseases and conditions. Federal law, NIH policy, FDA regulations, and International Committee of Medical Journal Editors (ICMJE) standards require registration of many clinical  trials, particularly Applicable Clinical Trials (ACTs) and NIH-funded studies, before participant enrollment begins. The database currently lists approximately 485,000 studies conducted across all 50 U.S. states and 223 countries. In this demo, we will use the ctrialsgov package to download bulk snapshots of the database, examine its structure, and explore analytical applications—such as estimating enrollment rates based on eligibility criteria, disease area, and site utilization.
 :::
 ::: {.workshop-links}
 <!-- [Workshop GitHub repo](INFO HERE) -->
