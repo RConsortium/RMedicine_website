@@ -208,13 +208,13 @@ PANEL
 ![](images/w7-1-raymond-balise.jpg)
 ![](images/w1-1-rich-hanna.png)
 ![](images/rose-brandon-inset.png)
-
+![](images/Will-Beasley.jpg)
 :::
 :::
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Raymond Balise](INFO HERE){target="_blank"}, [Richard Hanna](INFO HERE){target="_blank"}, [Brandon Rose](INFO HERE){target="_blank"}, others
+[Raymond Balise](INFO HERE){target="_blank"}, [Richard Hanna](INFO HERE){target="_blank"}, [Brandon Rose](INFO HERE){target="_blank"}, [Will Beasley](INFO HERE){target="_blank"}
 :::
 ::: {.workshop-desc}
 REDCap has become a cornerstone platform for clinical and translational research, supporting secure data capture for thousands of studies worldwide. As research teams increasingly adopt reproducible, code-driven workflows, R has emerged as a powerful solution for accessing, transforming, and analyzing REDCap data.
