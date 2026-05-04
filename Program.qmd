@@ -646,11 +646,11 @@ schedule_day_4 <-
     
     "2026-05-07 14:58",
     "2026-05-07 15:18",
-    "Regular Talk",
-    "Supercharging Reproducible Research in R with GitHub Actions",
-    "Jonathan Pearce",
-    "McGill University",
-    "Abstracts.html#supercharging-reproducible-research-in-r-with-github-actions",
+    "TBD",
+    "",
+    "",
+    "",
+    "",
     
     "2026-05-07 15:18",
     "2026-05-07 15:38",

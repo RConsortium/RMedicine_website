@@ -251,16 +251,6 @@ The resulting book is published via Zenodo (DOI: 10.5281/zenodo.18458781), hoste
 
 ---
 
-## Supercharging Reproducible Research in R with GitHub Actions {#supercharging-reproducible-research-in-r-with-github-actions}
-
-**Jonathan Pearce** | McGill University
-
-*Regular Talk — Thursday, May 7, 2026*
-
-Biomedical research relies heavily on robust, reproducible, and up-to-date data analysis pipelines. GitHub Actions brings powerful Continuous Integration and Continuous Deployment (CI/CD) practices from software engineering directly into the R ecosystem, offering a transformative workflow for both biomedical researchers and package developers. This talk will demystify GitHub Actions, demonstrating how it can automate critical, everyday components of biomedical data science. We will explore practical applications tailored for the R user, starting with automated unit testing (e.g., via testthat and R CMD check) to ensure analytical code reliability and catch errors early. Next, we will cover how to use scheduled workflows for periodic tasks. This allows researchers to run "hands-free" cron jobs for automated data scraping from public health registries, refreshing clinical datasets, and re-rendering Quarto or RMarkdown reports. Finally, we will highlight other key use cases, including the automated deployment of Shiny applications and building package documentation with pkgdown. By bridging software engineering best practices with the practical needs of clinical researchers, this session will empower attendees to build automated, error-resilient R pipelines that enhance reproducibility, save time, and accelerate scientific discovery.
-
----
-
 ## Care and Feeding of Your Biostats Team: Scaling best practices in a large hybrid SAS/R team {#care-and-feeding-of-your-biostats-team-scaling-best-practice}
 
 **John Ehrlinger** | Cleveland Clinic

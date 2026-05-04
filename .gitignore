@@ -15,3 +15,4 @@ package.json
 _site/
 .sass-cache/
 **/*.quarto_ipynb
+.positai
