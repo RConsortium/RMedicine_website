@@ -488,7 +488,7 @@ schedule_day_4 <-
     "2026-05-07 12:15",
     "Keynote",
     "Software sustainability and community management",
-    "Yanini Bellini",
+    "Yanina Bellini Saibene",
     "rOpenSci",
     "index.html#keynotes",
     
