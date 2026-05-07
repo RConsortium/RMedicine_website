@@ -492,33 +492,6 @@ The DIVINE package is available on CRAN and GitHub.
 
 ---
 
-## Preventing Data Leakage in Clinical Machine Learning: Guarded Resampling Workflows with fastml in R {#preventing-data-leakage-in-clinical-machine-learning-guarded}
-
-**Fikret Bartu Yurdacan** | Trakya University
-
-*Lightning Talk — Friday, May 8, 2026*
-
-
-Data leakage is one of the most common yet underrecognized pitfalls in clinical machine learning. It occurs when
-information from outside the training set — often introduced during preprocessing — inadvertently influences model
-evaluation, leading to inflated performance metrics. In medical research, where predictions can affect patient care,
-overly optimistic models are not just misleading — they can be harmful.
-
-This talk introduces fastml, an R package that addresses data leakage through guarded resampling workflows. Unlike
-conventional pipelines where preprocessing is applied before splitting, fastml re-estimates all preprocessing and
-fitting steps within each resampling fold. This ensures no information from held-out data contaminates training,
-producing honest and reproducible performance estimates.
-
-Built on tidymodels, fastml provides a lightweight AutoML interface that automates training, tuning, and comparison
-across multiple algorithms — including XGBoost, random forest, and logistic regression — while keeping evaluation
-transparent and user-controlled.
-
-We demonstrate a complete workflow using a clinical dataset: from raw data through guarded cross-validation to model
-selection, integrating explainability tools (SHAP, PDP) and fairness diagnostics for publication-ready analyses.
-Attendees will leave with practical knowledge to build safer ML pipelines for biomedical research.
-
----
-
 ## When Quant Meets Qual: Extending the R Ecosystem for Qualitative Data {#when-quant-meets-qual-extending-the-r-ecosystem-for-qualitat}
 
 **Abiraahmi Shankar** | New York University
