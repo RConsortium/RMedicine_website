@@ -86,15 +86,13 @@ KEYNOTE
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-Peter Gruber
+[Peter H. Gruber](https://www.abitof.ai/){target="_blank"}
 :::
 ::: {.workshop-desc}
 **Friday May 8th, 11:15AM-12:15PM ET**
 <br>
 
-Peter Gruber is the academic director of the Master in Financial Technology and Computing at Università della Svizzera italiana (USI). He holds a PhD in Particle Physics from TU Wien and was a CERN fellow before obtaining an MA in Quantitative Finance from University of St. Gallen (HSG) and a second PhD in Financial Economics from USI. He joined USI in 2008. 
-
-Dr. Gruber has been teaching statistics, financial econometrics, and numerical methods with MATLAB, R, and Python since 2005. He has been an early adopter of Large Language Models for teaching and research and leads his university’s efforts to integrate LLMs into the curriculum. In the short history of ChatGPT, Dr. Gruber has led seminars for thousands of researchers from around the globe on the competent use of Large Language models, including at the Royal Statistical Society, the Bank of Portugal, Georgetown University, City St George’s University of London, University of St. Gallen, Frankfurt School of Finance & Management, among others. He is currently working on models that apply the structure of LLMs to time series analysis.
+AI assistants and agents have become an indispensable part of knowledge work, despite their known shortcomings such as hallucinations and biases. In “The Truth Seekers”, scholar Peter H. Gruber identifies a veritable Assessment Crisis, insomuch that prompting skills are much more common than experience in assessing the (potentially faulty) output of AI. With his "Trust but Verify" framework, he asserts that the verification problem is not a new one – it has existed for centuries in professions as diverse a judges, doctors, teachers or journalists. He advocates a systematic study of existing assessment frameworks leading to a culture of AI assessment that is inspired by centuries old assessment techniques.
 :::
 ::: {.workshop-links}
 <!-- [Personal website](INFO HERE){target="_blank"} -->
