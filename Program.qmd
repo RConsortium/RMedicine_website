@@ -646,10 +646,10 @@ schedule_day_4 <-
     
     "2026-05-07 14:58",
     "2026-05-07 15:18",
-    "TBD",
-    "",
-    "",
-    "",
+    "Live recap",
+    "{teal} package hackathon summary",
+    "Dony Unardi",
+    "Genentech",
     "",
     
     "2026-05-07 15:18",
@@ -1058,11 +1058,11 @@ schedule_day_5 <-
 
     "2026-05-08 16:20",
     "2026-05-08 16:30",
-    "Lightning Talk",
-    "Preventing Data Leakage in Clinical Machine Learning: Guarded Resampling Workflows with fastml in R",
-    "Fikret Bartu Yurdacan",
-    "Trakya University",
-    "Abstracts.html#preventing-data-leakage-in-clinical-machine-learning-guarded",
+    "Questions/Discussion",
+    "",
+    "",
+    "",
+    "",
 
     "2026-05-08 16:30",
     "2026-05-08 16:35",

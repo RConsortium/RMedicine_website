@@ -30,7 +30,7 @@ KEYNOTE
 
 ::: {.card-right}
 ::: {.workshop-speakers-name}
-[Yanina Bellini](https://yabellini.netlify.app){target="_blank"}
+[Yanina Bellini Saibene](https://yabellini.netlify.app){target="_blank"}
 :::
 ::: {.workshop-desc}
 **Thursday May 7th, 11:15AM-12:15PM ET**
