@@ -5,6 +5,7 @@ project:
 website:
   title: "R/Medicine 2026"
   favicon: images/favicon.ico
+  google-analytics: "G-B697SX1BNN"
   navbar:
     left:
       - href: index.qmd
